@@ -19,5 +19,6 @@ steps:
     npm install
     npm run generate
     git remote add deploy https://github.com/JensKrumsieck/TestPush.git
+    git remote -v
     npm run deploy
   displayName: 'npm install and build'
