@@ -18,6 +18,8 @@ steps:
 - script: |
     npm install
     npm run generate
+    git config --global user.email "jenso666@live.de"
+    git config --global user.name "JensKrumsieck"
     git remote add deploy https://$(GithubPAT)@github.com/JensKrumsieck/TestPush.git
     git remote -v
     npm run deploy
