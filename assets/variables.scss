@@ -1,16 +1,32 @@
+/*
+** Colors
+*/
 $green: #85CB33; //green tone for links, active menu item and more
 $dark: #252525; //background tone
 $red: #B71C1C;
 $primary: $dark; 
 $link: $green;
 $scheme-main: $dark;
+
+/*
+** Body Stuff
+*/
 $body-background-color: $scheme-main;   
+$body-line-height: 2;
+$body-size: 20px;
+$body-size-mobile: $body-size - 5;
+
+
+/*
+** Typography
+*/
 $family-primary: 'Raleway';
 $text: #fff;
-$body-size: 25px;
-$body-size-mobile: $body-size - 5;
+$text-strong: $text;
 $title-color: $text;
 $title-weight: bold;
+
+$button-padding-horizontal: 1.25rem;
 $gap: 64px;
 
 /*

@@ -24,16 +24,21 @@
       </div>
     </div>
     <Articles />
+    <section class="projects" id="projects">
+      <PorphyStruct/>
+    </section>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 import Articles from '~/components/Articles.vue'
+import PorphyStruct from '~/components/PorphyStruct.vue'
 
 export default Vue.extend({
   components: {
-    Articles
+    Articles,
+    PorphyStruct
   }
 })
 </script>
@@ -49,5 +54,9 @@ h1.title {
 
 .heroimg {
   max-width: 50%;
+}
+
+.projects{
+  margin-top: 5rem;
 }
 </style>

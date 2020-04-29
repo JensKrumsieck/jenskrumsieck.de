@@ -16,7 +16,8 @@
     "@nuxt/typescript-runtime": "^0.4.0",
     "@nuxtjs/axios": "^5.3.6",
     "nuxt": "^2.0.0",
-    "nuxt-buefy": "^0.3.28"
+    "nuxt-buefy": "^0.3.28",
+    "vue-scrollto": "^2.18.1"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.0",

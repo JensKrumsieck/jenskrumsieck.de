@@ -7,7 +7,7 @@
     </template>
     <template slot="end">
       <b-navbar-item tag="nuxt-link" :to="{ path: '/' }">Home</b-navbar-item>
-      <b-navbar-item tag="nuxt-link" :to="{ path: '/projects' }">Projects</b-navbar-item>
+      <b-navbar-item tag="nuxt-link" :to="{ path: '/', hash: '#projects' }" v-scroll-to="'#projects'">Projects</b-navbar-item>
       <b-navbar-item href="/blazor">Publications</b-navbar-item>
       <b-navbar-item href="/blazor">CV</b-navbar-item>
       <b-navbar-item href="/blazor">Blog</b-navbar-item>
