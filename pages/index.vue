@@ -29,7 +29,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import Articles from '~/components/Articles'
+import Articles from '~/components/Articles.vue'
 
 export default Vue.extend({
   components: {
