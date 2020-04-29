@@ -1,69 +1,53 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        jenskrumsieck.de
-      </h1>
-      <h2 class="subtitle">
-        My personal website
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <div class="hero">
+      <div class="hero-body">
+        <div class="container is-fluid">
+          <div class="columns is-vcentered is-desktop">
+            <div class="column has-text-centered">
+              <h1 class="title is-1">
+                Let's
+                <span class="has-text-link">dissolve</span> Problems!
+              </h1>
+              <div class="is-divider" />
+              <img src="/img/logo.svg" alt="logo" class="logo" />
+              <p class="subheadline">Chemist - .NET Developer - Webdesigner - Wrestler</p>
+            </div>
+            <div class="column has-text-centered">
+              <img src="/img/heroimage.png" alt="jens krumsieck" class="heroimg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="has-text-centered scroll-icon">
+        <b-icon icon="chevron-down" size="is-large" class="bounce" />
       </div>
     </div>
+    <Articles />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import Logo from '~/components/Logo.vue'
+import Articles from '~/components/Articles'
 
 export default Vue.extend({
   components: {
-    Logo
+    Articles
   }
 })
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style lang="scss" scoped>
+h1.title {
+  font-style: italic;
+  font-size: 4rem;
+}
+.logo {
+  height: 2.5rem;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.heroimg {
+  max-width: 50%;
 }
 </style>

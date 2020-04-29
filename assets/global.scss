@@ -1,0 +1,30 @@
+@import "~bulma/sass/utilities/_all";
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+.is-divider{
+    display: block;
+    position: relative;
+    border-top: .05rem solid $green;
+    height: .05rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.title.is-4.has-bar {
+    &:before {
+      display: block;
+      content: '';
+      border-top: 0.05rem solid $red;
+      position: relative;
+      top: 1rem;
+      left: -3rem;
+      width: 2.5rem;
+    }
+  }
+
+@media(max-width: $tablet){
+    html{
+        font-size: $body-size-mobile;
+    }
+}

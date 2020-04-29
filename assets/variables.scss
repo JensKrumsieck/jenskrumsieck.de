@@ -1,0 +1,21 @@
+$green: #85CB33; //green tone for links, active menu item and more
+$dark: #252525; //background tone
+$red: #B71C1C;
+$primary: $dark; 
+$link: $green;
+$scheme-main: $dark;
+$body-background-color: $scheme-main;   
+$family-primary: 'Raleway';
+$text: #fff;
+$body-size: 25px;
+$body-size-mobile: $body-size - 5;
+$title-color: $text;
+$title-weight: bold;
+$gap: 64px;
+
+/*
+** Navbar
+*/
+$navbar-background-color: $scheme-main;
+$navbar-item-color: $text;
+$navbar-item-active-color: $green;

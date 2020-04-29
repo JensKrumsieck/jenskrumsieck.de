@@ -23,7 +23,11 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    'assets/global.scss',
+    'assets/fonts.scss',
+    'assets/animations.scss'
+  ],
   /*
    ** Plugins to load before mounting the App
    */
@@ -37,10 +41,23 @@ export default {
    */
   modules: [
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma',
+    'nuxt-buefy',
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/style-resources'
   ],
+
+  router: {
+    linkExactActiveClass: 'is-active'
+  },
+
+  /*
+   ** Style resources configuration 
+   */
+  styleResources: {
+    scss: ['assets/variables.scss']
+  },
+
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
@@ -60,6 +77,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   }
 }
