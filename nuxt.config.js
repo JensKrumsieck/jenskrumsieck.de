@@ -49,8 +49,7 @@ export default {
   ],
 
   router: {
-    linkExactActiveClass: 'is-active',
-    mode: 'history'
+    linkExactActiveClass: 'is-active'
   },
 
   /*

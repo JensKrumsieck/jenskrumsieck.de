@@ -1,4 +1,4 @@
-export default async function scrollBehavior(to, from, savedPos) {
+export default async function scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
         return savedPosition
     }
