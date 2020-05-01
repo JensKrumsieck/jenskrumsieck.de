@@ -23,24 +23,39 @@
         <b-icon icon="chevron-down" size="is-large" class="bounce" />
       </div>
     </div>
-    <Articles />
+    <section class="blog-articles">
+      <Articles />
+    </section>
     <section class="projects" id="projects">
-      <PorphyStruct/>
+      <PorphyStruct />
+      <Isoporphyrins />
+      <OtherProjects />
+    </section>
+    <section class="publications" id="publications">
+      <Publications />
     </section>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import Articles from '~/components/Articles.vue'
-import PorphyStruct from '~/components/PorphyStruct.vue'
+import Articles from '~/components/index/Articles.vue'
+import PorphyStruct from '~/components/index/PorphyStruct.vue'
+import Isoporphyrins from '~/components/index/Isoporphyrins.vue'
+import OtherProjects from '~/components/index/OtherProjects.vue'
+import Publications from '~/components/index/Publications.vue'
 
-export default Vue.extend({
+import { Vue, Component } from 'nuxt-property-decorator'
+
+@Component({
   components: {
     Articles,
-    PorphyStruct
+    PorphyStruct,
+    Isoporphyrins,
+    OtherProjects,
+    Publications
   }
 })
+export default class Index extends Vue{ }
 </script>
 
 <style lang="scss" scoped>
@@ -56,7 +71,7 @@ h1.title {
   max-width: 50%;
 }
 
-.projects{
-  margin-top: 5rem;
+.projects {
+  margin-top: 7rem;
 }
 </style>

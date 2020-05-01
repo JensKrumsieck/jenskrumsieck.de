@@ -8,14 +8,17 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
 import Navbar from '~/layouts/partials/Navbar.vue'
-import scrollBehavior from '~/app/router.scrollBehavior'
+import scrollBehavior from '~/app/router.scrollBehavior.js'
+import { Vue, Component } from 'nuxt-property-decorator'
 
-export default Vue.extend({
+@Component({
   components: {
     Navbar
-  },
+  }
+})
+export default class Default extends Vue {
+  
   mounted() {
     //handles scrolling to hash when loading
     if (this.$route.hash)
@@ -26,30 +29,29 @@ export default Vue.extend({
     )
     var self = this
     window.addEventListener('scroll', function() {
-      self.handleURL(elements)
+      setTimeout(() => self.handleURL(elements), 300)
     })
-  },
-  methods: {
-    handleURL: function(elements: NodeListOf<Element>) {
-      var io = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((s) => {
-            if (s.target.id != '__nuxt' && s.target.id != '__layout') {
-              if (history.state == null && s.isIntersecting)
-                history.pushState({ hash: s.target.id }, '', '#' + s.target.id)
-              else if (!s.isIntersecting && history.state != null)
-                history.pushState(null, '', '/')
-            }
-          })
-        },
-        {
-          root: null,
-          rootMargin: '0px',
-          threshold: 0.5
-        }
-      )
-      elements.forEach((s) => io.observe(s))
-    }
   }
-})
+
+  handleURL(elements: NodeListOf<Element>) {
+    var io = new IntersectionObserver(
+      (entries) => {
+        let s = entries.filter((s) => s.isIntersecting).pop()
+        if (s == undefined) {
+          document.location.hash = ''
+          return
+        } else if (s.target.id != document.location.hash) {
+          document.location.hash = s.target.id
+          return
+        }
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.3
+      }
+    )
+    elements.forEach((s) => io.observe(s))
+  }
+}
 </script>

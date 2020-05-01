@@ -14,7 +14,7 @@ $scheme-main: $dark;
 $body-background-color: $scheme-main;   
 $body-line-height: 2;
 $body-size: 20px;
-$body-size-mobile: $body-size - 5;
+$body-size-mobile: $body-size - 2;
 
 
 /*
@@ -25,9 +25,10 @@ $text: #fff;
 $text-strong: $text;
 $title-color: $text;
 $title-weight: bold;
+$link-hover: darken($green, 10%);
 
 $button-padding-horizontal: 1.25rem;
-$gap: 64px;
+$gap: 100px;
 
 /*
 ** Navbar
@@ -35,3 +36,9 @@ $gap: 64px;
 $navbar-background-color: $scheme-main;
 $navbar-item-color: $text;
 $navbar-item-active-color: $green;
+
+/*
+** Card
+*/
+$card-background-color: $dark;
+$card-shadow: unset;

@@ -10,6 +10,12 @@ body {
 .tags > .tag {
     font-size: 0.6rem;
 }
+
+.has-padding-columns {
+    > .column {
+        padding: 3rem 5rem;
+    }
+}
 .is-divider {
     display: block;
     position: relative;
@@ -17,6 +23,24 @@ body {
     height: 0.05rem;
     margin: 2rem 0;
     text-align: center;
+}
+.has-dividers {
+    margin: 3rem 0;
+    vertical-align: middle;
+    display: table;
+    text-align: center;
+    > * {
+        display: table-cell;
+        position: relative;
+    }
+    > :not(.is-divider) {
+        white-space: nowrap;
+        padding: 1rem;
+    }
+    > .is-divider {
+        width: 50%;
+        top: 2.1rem;
+    }
 }
 
 .title.is-4.has-bar {
@@ -26,20 +50,13 @@ body {
         border-top: 0.05rem solid $red;
         position: relative;
         top: 1rem;
-        left: -3rem;
-        width: 2.5rem;
+        left: -5.5rem;
+        width: 5rem;
     }
 }
 
 @media (max-width: $tablet) {
     html {
         font-size: $body-size-mobile;
-    }
-}
-@media (max-width: $fullhd) {
-    .text {
-        &.is-size-5 {
-            font-size: 1rem !important;
-        }
     }
 }

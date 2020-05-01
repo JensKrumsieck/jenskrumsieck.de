@@ -1,47 +1,45 @@
 <template>
-  <section class="blog-articles">
-    <div class="container is-fluid">
-      <h2 class="title is-4 has-bar">Latest Articles</h2>
-      <div class="article-list">
-        <b-carousel-list :data="items" :config="config">
-          <template slot="item" slot-scope="props">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-2by1">
-                  <img :src="props.list.image" :alt="props.list.title" />
-                </figure>
-              </div>
-              <div class="card-content is-overlay">
-                <p class="title is-5">{{props.list.title}}</p>
-                <div class="content has-text-justified">
-                  {{props.list.teaser}}
-              </div>
-              <div class="columns is-mobile content is-small">
-                    <div class="column">
-                      <div class="tags">
-                        <b-tag
-                          v-for="(value,index) in props.list.badges"
-                          :key="index"
-                          type="is-danger"
-                        >{{ value }}</b-tag>
-                      </div>
-                    </div>
-                    <div class="column">
-                      <p class="has-text-right has-text-grey-light is-small">{{props.list.time}}</p>
-                    </div>
+  <div class="container is-fluid">
+    <h2 class="title is-4 has-bar">Latest Articles</h2>
+    <div class="article-list">
+      <b-carousel-list :data="items" :config="config">
+        <template slot="item" slot-scope="props">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-2by1">
+                <img :src="props.list.image" :alt="props.list.title" />
+              </figure>
+            </div>
+            <div class="card-content is-overlay">
+              <p class="title is-5">{{props.list.title}}</p>
+              <div class="content has-text-justified">{{props.list.teaser}}</div>
+              <div class="columns is-mobile">
+                <div class="column">
+                  <div class="tags">
+                    <b-tag
+                      v-for="(value,index) in props.list.badges"
+                      :key="index"
+                      type="is-danger"
+                    >{{ value }}</b-tag>
                   </div>
                 </div>
+                <div class="column">
+                  <p class="has-text-right has-text-grey-light small is-size-7">{{props.list.time}}</p>
+                </div>
+              </div>
             </div>
-          </template>
-        </b-carousel-list>
-      </div>
+          </div>
+        </template>
+      </b-carousel-list>
     </div>
-  </section>
+  </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
+import { Vue,  Component } from 'nuxt-property-decorator'
+
+@Component
+export default class Articles extends Vue{ 
   data() {
     let items = [
       {
@@ -84,17 +82,17 @@ export default Vue.extend({
         hasDrag: true,
         itemsToShow: 1,
         breakpoints: {
-          768: {
+          840: {
             itemsToShow: 2
           },
-          960: {
+          1100: {
             itemsToShow: 2.5
           }
         }
       }
     }
   }
-})
+}
 </script>
 
 <style lang="scss" scoped>
@@ -122,6 +120,6 @@ export default Vue.extend({
 
 <style lang="scss">
 .carousel-slide {
-  padding: 0 10px;
+  padding-right: 20px;
 }
 </style>
