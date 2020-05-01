@@ -1,0 +1,14 @@
+{
+    "doi" : "doi:10.1002/anie.201604297",
+    "title": "Metal-Assisted One-Pot Synthesis of Isoporphyrin Complexes",
+    "authors": ["P. Schweyen", "M. Hoffmann", "J. Krumsieck", "B. Wolfram", "X. Xie", "M. Bröring"],
+    "abstract": "Abstract Zinc and cadmium complexes of meso-arylisoporphyrins carrying a pyrrolyl or dipyrrinyl substituent at the sp3 carbon atom were obtained through a simple one-pot variation of the Alder–Longo porphyrin synthesis. Key to the formation and stabilization of isoporphyrins is the presence of metal acetates during the oxidative macrocyclization step. The characteristic Q-bands of isoporphyrins are found in the NIR region between 750 nm and 880 nm. All of the isolated pyrrolyl- and dipyrrinyl-appended isoporphyrins are stable under typical laboratory conditions and allow chemical transformations like BF2 coordination, transmetalation, and ligand exchange.",
+    "journal": {
+        "name" : "Angewandte Chemie International Edition",
+        "abbreviation": "Angew. Chem. Int. Ed.",
+        "volume": 55,
+        "number": 34,
+        "pages": "10118-10121",
+        "year": 2016
+    }
+}

@@ -1,5 +1,5 @@
 export default {
-  mode: 'spa',
+  mode: 'universal',
   /*
    ** Headers of the page
    */
@@ -45,7 +45,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
-     ['vue-scrollto/nuxt', {duration: 700, container: 'html', cancelable: false}]
+    ['vue-scrollto/nuxt', { duration: 700, container: 'html', cancelable: false }]
   ],
 
   router: {
@@ -78,6 +78,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) { }
+    extend(config, ctx) {
+    }
   }
 }

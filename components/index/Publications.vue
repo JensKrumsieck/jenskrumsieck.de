@@ -10,7 +10,7 @@
 
     <div class="container is-fluid">
       <ul>
-        <li v-for="pub in publications" :key="pub.id">
+        <li v-for="pub in publications" :key="pub.doi">
           <article>
             <div class="media">
               <div class="media-content">
@@ -21,14 +21,14 @@
                     class="has-text-white"
                   >{{pub.title}}</a>
                 </h3>
-                <p class="has-text-justified">{{pub.abstractText}}</p>
+                <p class="has-text-justified">{{pub.abstract}}</p>
                 <br />
                 <small>
-                  {{pub.authorString}}
-                  <em>{{pub.journalInfo.journal.isoabbreviation}}</em>
-                  <strong>{{pub.pubYear}}</strong>,
-                  <em>{{pub.journalInfo.volume}}</em>
-                  , {{pub.pageInfo}}.
+                  {{pub.authors.join(', ')}}
+                  <em>{{pub.journal.abbreviation}}</em>
+                  <strong>{{pub.journal.year}}</strong>,
+                  <em>{{pub.journal.volume}}</em>
+                  , {{pub.journal.pages}}.
                 </small>
                 <br />
                 <small>
@@ -48,15 +48,6 @@
 
 <script lang="ts">
 import { Vue, Component, State } from 'nuxt-property-decorator'
-import { AxiosResponse } from 'axios'
-
-interface PMCResult {
-  resultList: Result[]
-}
-interface Result
-{
-  result: []
-}
 
 @Component({})
 export default class Publications extends Vue {
@@ -68,7 +59,8 @@ export default class Publications extends Vue {
     }
   }
 
-  async fetch() {
+  fetch() {
+    this.publications = this.$store.state.publications
   }
 }
 </script>

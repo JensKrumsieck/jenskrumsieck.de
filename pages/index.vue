@@ -43,7 +43,6 @@ import PorphyStruct from '~/components/index/PorphyStruct.vue'
 import Isoporphyrins from '~/components/index/Isoporphyrins.vue'
 import OtherProjects from '~/components/index/OtherProjects.vue'
 import Publications from '~/components/index/Publications.vue'
-
 import { Vue, Component } from 'nuxt-property-decorator'
 
 @Component({
@@ -55,7 +54,7 @@ import { Vue, Component } from 'nuxt-property-decorator'
     Publications
   }
 })
-export default class Index extends Vue{ }
+export default class Index extends Vue{  }
 </script>
 
 <style lang="scss" scoped>
