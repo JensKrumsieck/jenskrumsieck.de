@@ -4,21 +4,22 @@
       <navbar />
     </header>
     <nuxt />
+    <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Navbar from '~/layouts/partials/Navbar.vue'
-import scrollBehavior from '~/app/router.scrollBehavior.js'
+import Footer from '~/layouts/partials/Footer.vue'
 import { Vue, Component } from 'nuxt-property-decorator'
 
 @Component({
   components: {
-    Navbar
+    Navbar,
+    Footer
   }
 })
 export default class Default extends Vue {
-  
   mounted() {
     //handles scrolling to hash when loading
     if (this.$route.hash)
@@ -37,11 +38,11 @@ export default class Default extends Vue {
     var io = new IntersectionObserver(
       (entries) => {
         let s = entries.filter((s) => s.isIntersecting).pop()
-        if (s == undefined) {
-          document.location.hash = ''
+        if (s == undefined && this.$route.hash != '') {
+          this.$router.replace({ hash: '' })
           return
-        } else if (s.target.id != document.location.hash) {
-          document.location.hash = s.target.id
+        } else if (s != undefined && '#' + s.target.id != this.$route.hash) {
+          this.$router.replace({ hash: '#' + s.target.id })
           return
         }
       },

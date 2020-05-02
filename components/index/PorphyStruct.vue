@@ -2,38 +2,42 @@
   <div class="container is-fluid porphystruct">
     <figure class="image">
       <img src="/img/porphystruct.svg" alt="PorphyStruct" class="logo" />
-      <div class="columns is-vcentered is-multiline is-desktop is-centered margin-top">
-        <div class="column is-6-desktop">
-          <figure class="image">
-            <img src="/img/screen_porphystruct.png" alt="Screenshot" />
-          </figure>
-          <div class="tags">
-            <b-tag type="is-danger">C#</b-tag>
-            <b-tag type="is-danger">.NET</b-tag>
-            <b-tag type="is-danger">WPF</b-tag>
+    </figure>
+    <div class="columns is-vcentered  is-desktop is-centered margin-top">
+      <div class="column is-7-desktop">
+        <div class="mosaic">
+          <div class="mosaic-item">
+            <figure class="image">
+              <img src="/img/screen_porphystruct.png" alt="Screenshot" />
+            </figure>
+            <div class="tags">
+              <b-tag type="is-danger">C#</b-tag>
+              <b-tag type="is-danger">.NET</b-tag>
+              <b-tag type="is-danger">WPF</b-tag>
+            </div>
           </div>
-        </div>
-        <div class="column is-5-desktop is-offset-1-desktop">
-          <p class="text has-text-justified">
-            <strong>PorphyStruct</strong> is one of my Ph.D. Projects as a Chemist bringing my Software Development ability to my Work as a Chemist.
-            Molecular structures of porphyrinoid macrocycles can be analyzed quantitatively with this new software to gain insights to their properties and reactivity.
-          </p>
-          <div class="has-text-right margin-top">
-            <a class="button is-danger">Explore</a>
-          </div>
-        </div>
-        <div class="column is-5-desktop">
-          <figure class="image">
-            <img src="/img/screen_website.png" alt="Web Screenshot" />
-          </figure>
-          <div class="tags">
-            <b-tag type="is-danger">HTML5</b-tag>
-            <b-tag type="is-danger">Vue</b-tag>
-            <b-tag type="is-danger">SCSS</b-tag>
+          <div class="mosaic-item">
+            <figure class="image">
+              <img src="/img/screen_website.png" alt="Web Screenshot" />
+            </figure>
+            <div class="tags">
+              <b-tag type="is-danger">HTML5</b-tag>
+              <b-tag type="is-danger">Vue</b-tag>
+              <b-tag type="is-danger">SCSS</b-tag>
+            </div>
           </div>
         </div>
       </div>
-    </figure>
+      <div class="column is-4-desktop is-offset-1-desktop">
+        <p class="text has-text-justified">
+          <strong>PorphyStruct</strong> is one of my Ph.D. Projects as a Chemist bringing my Software Development ability to my Work as a Chemist.
+          Molecular structures of porphyrinoid macrocycles can be analyzed quantitatively with this new software to gain insights to their properties and reactivity.
+        </p>
+        <div class="has-text-right margin-top">
+          <a class="button is-danger">Explore</a>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -64,5 +68,18 @@ export default class PorphyStruct extends Vue {}
 }
 .tags {
   margin-top: 1rem;
+}
+.mosaic {
+  display: grid;
+}
+.mosaic-item {
+  &:first-of-type {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+  }
+  &:last-of-type {
+    grid-column: 3 / span 3;
+    grid-row: 2 / span 2;
+  }
 }
 </style>

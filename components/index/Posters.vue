@@ -8,13 +8,14 @@
       </figure>
       <div class="media-content">
         <div class="content">
-          <p>
+          <h4 class="has-text-weight-normal">
             <strong>
               <a v-if="poster.url" :href="poster.url">{{poster.title}}</a>
               <span v-else>{{poster.title}}</span>
             </strong>
             <em class="has-text-light">({{poster.type}})</em>
-          </p>
+          </h4>
+
           <ul class="is-size-7">
             <li v-for="loc in poster.conferences" :key="loc.date">
               {{loc.title}}

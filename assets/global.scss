@@ -1,20 +1,24 @@
 @import "~bulma/sass/utilities/_all";
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
+
+html {
+    overflow: unset;
+}
 body {
     overflow-x: hidden;
 }
 .margin-top {
     margin-top: 4rem;
 }
+.margin-top-large {
+    margin-top: 7rem;
+}
 .tags > .tag {
     font-size: 0.6rem;
 }
-
-.has-padding-columns {
-    > .column {
-        padding: 3rem 5rem;
-    }
+.alvl {
+    display: inline-flex;
 }
 .is-divider {
     display: block;

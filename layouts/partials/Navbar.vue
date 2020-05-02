@@ -9,7 +9,7 @@
       <b-navbar-item tag="nuxt-link" :to="{ path: '/' }">Home</b-navbar-item>
       <b-navbar-item tag="nuxt-link" :to="{ path: '/', hash: '#projects' }" v-scroll-to="'#projects'">Projects</b-navbar-item>
       <b-navbar-item tag="nuxt-link" :to="{ path: '/', hash: '#publications' }" v-scroll-to="'#publications'">Publications</b-navbar-item>
-      <b-navbar-item href="/blazor">CV</b-navbar-item>
+      <b-navbar-item tag="nuxt-link" :to="{ path: '/', hash: '#about' }" v-scroll-to="'#about'">CV</b-navbar-item>
       <b-navbar-item href="/blazor">Blog</b-navbar-item>
     </template>
   </b-navbar>

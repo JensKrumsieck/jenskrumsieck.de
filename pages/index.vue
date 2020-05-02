@@ -35,6 +35,9 @@
       <Publications />
       <Posters/>
     </section>
+    <section class="about" id="about">
+      <About/>
+    </section>
   </div>
 </template>
 
@@ -45,6 +48,8 @@ import Isoporphyrins from '~/components/index/Isoporphyrins.vue'
 import OtherProjects from '~/components/index/OtherProjects.vue'
 import Publications from '~/components/index/Publications.vue'
 import Posters from '~/components/index/Posters.vue'
+import About from '~/components/index/About.vue'
+
 import { Vue, Component } from 'nuxt-property-decorator'
 
 @Component({
@@ -54,7 +59,8 @@ import { Vue, Component } from 'nuxt-property-decorator'
     Isoporphyrins,
     OtherProjects,
     Publications,
-    Posters
+    Posters,
+    About
   }
 })
 export default class Index extends Vue{  }

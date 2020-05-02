@@ -99,9 +99,6 @@ import { Vue, Component } from 'nuxt-property-decorator'
 export default class OtherProjects extends Vue {}
 </script>
 <style lang="scss" scoped>
-.alvl {
-  display: inline-flex;
-}
 .fcms {
   opacity: 0.6;
 }
