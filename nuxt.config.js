@@ -4,6 +4,9 @@ export default {
    ** Headers of the page
    */
   head: {
+    htmlAttrs: {
+      class: 'has-navbar-fixed-top'
+    },
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
@@ -48,7 +51,14 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
-    ['vue-scrollto/nuxt', { duration: 700, container: 'html', cancelable: false }]
+    ['vue-scrollto/nuxt', {
+      duration: 700,
+      container: 'html',
+      cancelable: false,
+      offset: () => {
+        return - parseFloat(getComputedStyle(document.documentElement).fontSize) * 3.25;
+      }
+    }]
   ],
 
   router: {

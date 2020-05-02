@@ -1,5 +1,7 @@
 export default async function scrollBehavior(to, from, savedPosition) {
-    return false;
+   
+    if(to.param['temp'] && to.param['temp'] == "noreload") return
+    
     if (savedPosition) {
         return savedPosition
     }
@@ -15,12 +17,8 @@ export default async function scrollBehavior(to, from, savedPosition) {
     }
 
     if (to.hash) {
-        let el = await findEl(to.hash)
-        if ('scrollBehavior' in document.documentElement.style) {
-            return window.scrollTo({ top: el.offsetTop, behavior: 'smooth' })
-        } else {
-            return window.scrollTo(0, el.offsetTop)
-        }
+        return
+        //hashing are handled otherwise
     }
 
     return { x: 0, y: 0 }

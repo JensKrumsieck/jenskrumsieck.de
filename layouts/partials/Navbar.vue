@@ -1,5 +1,5 @@
 <template>
-  <b-navbar type="is-transparent" wrapper-class="container is-fluid">
+  <b-navbar type="is-transparent is-fixed-top" wrapper-class="container is-fluid">
     <template slot="brand">
       <b-navbar-item tag="nuxt-link" :to="{ path: '/' }">
         <img src="/img/logo.svg" alt="logo" class="logo" />

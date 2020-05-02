@@ -4,7 +4,7 @@
       <navbar />
     </header>
     <nuxt />
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
@@ -26,7 +26,7 @@ export default class Default extends Vue {
       setTimeout(() => (this as any).$scrollTo(this.$route.hash), 1)
 
     const elements: NodeListOf<Element> = window.document.querySelectorAll(
-      '[id]'
+      'section[id]'
     )
     var self = this
     window.addEventListener('scroll', function() {
@@ -35,24 +35,45 @@ export default class Default extends Vue {
   }
 
   handleURL(elements: NodeListOf<Element>) {
-    var io = new IntersectionObserver(
-      (entries) => {
-        let s = entries.filter((s) => s.isIntersecting).pop()
-        if (s == undefined && this.$route.hash != '') {
-          this.$router.replace({ hash: '' })
-          return
-        } else if (s != undefined && '#' + s.target.id != this.$route.hash) {
-          this.$router.replace({ hash: '#' + s.target.id })
+    if (!elements || elements.length == 0) return
+
+    const scrollTop = Math.max(
+      window.pageYOffset,
+      document.documentElement.scrollTop,
+      document.body.scrollTop
+    )
+    const offset =
+      window.document.getElementsByClassName('navbar')[0].clientHeight + 10
+
+    const first = elements[0] as HTMLElement
+    if (scrollTop < first.offsetTop - offset && this.$route.hash != '') {
+      //obviously haven't reached first item
+      this.$router.replace({
+        hash: '',
+        params: {
+          temp: 'noreload'
+        }
+      })
+    }
+
+    for (var i = 0; i < elements.length; i++) {
+      let anchor = elements[i] as HTMLElement
+      let nextAnchor = elements[i + 1] as HTMLElement
+      if (
+        scrollTop >= anchor.offsetTop - offset &&
+        (!nextAnchor || scrollTop <= nextAnchor.offsetTop - offset)
+      ) {
+        if ('#' + anchor.id != this.$route.hash) {
+          this.$router.replace({
+            hash: '#' + anchor.id,
+            params: {
+              temp: 'noreload'
+            }
+          })
           return
         }
-      },
-      {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.3
       }
-    )
-    elements.forEach((s) => io.observe(s))
+    }
   }
 }
 </script>
