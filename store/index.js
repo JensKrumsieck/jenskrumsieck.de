@@ -1,11 +1,15 @@
 export const state = () => ({
     publications: [],
+    posters: [],
 });
 
 export const mutations = {
     setPublications(state, list) {
         state.publications = list;
     },
+    setPosters(state, list){
+        state.posters = list;
+    }
 };
 
 export const actions = {
@@ -16,5 +20,14 @@ export const actions = {
             return res;
         });
         await commit('setPublications', publications);
+        
+        files = await require.context('~/assets/content/posters/', false, /\.json$/);
+        let posters = files.keys().map(key => {
+            let res = files(key);
+            return res;
+        });
+        //reverse so the lastest is first
+        posters = posters.reverse();
+        await commit('setPosters', posters);
     },
 };

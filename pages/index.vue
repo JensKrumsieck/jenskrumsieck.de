@@ -33,6 +33,7 @@
     </section>
     <section class="publications" id="publications">
       <Publications />
+      <Posters/>
     </section>
   </div>
 </template>
@@ -43,6 +44,7 @@ import PorphyStruct from '~/components/index/PorphyStruct.vue'
 import Isoporphyrins from '~/components/index/Isoporphyrins.vue'
 import OtherProjects from '~/components/index/OtherProjects.vue'
 import Publications from '~/components/index/Publications.vue'
+import Posters from '~/components/index/Posters.vue'
 import { Vue, Component } from 'nuxt-property-decorator'
 
 @Component({
@@ -51,7 +53,8 @@ import { Vue, Component } from 'nuxt-property-decorator'
     PorphyStruct,
     Isoporphyrins,
     OtherProjects,
-    Publications
+    Publications,
+    Posters
   }
 })
 export default class Index extends Vue{  }

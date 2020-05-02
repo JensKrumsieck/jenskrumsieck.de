@@ -11,31 +11,29 @@
     <div class="container is-fluid">
       <ul>
         <li v-for="pub in publications" :key="pub.doi">
-          <article>
-            <div class="media">
-              <div class="media-content">
-                <h3 class="title is-5">
-                  <a
-                    :href="'https://dx.doi.org/' + pub.doi"
-                    target="_blank"
-                    class="has-text-white"
-                  >{{pub.title}}</a>
-                </h3>
-                <p class="has-text-justified">{{pub.abstract}}</p>
-                <br />
-                <small>
-                  {{pub.authors.join(', ')}}
-                  <em>{{pub.journal.abbreviation}}</em>
-                  <strong>{{pub.journal.year}}</strong>,
-                  <em>{{pub.journal.volume}}</em>
-                  , {{pub.journal.pages}}.
-                </small>
-                <br />
-                <small>
-                  DOI:
-                  <a :href="'https://dx.doi.org/' + pub.doi" target="_blank">{{pub.doi}}</a>
-                </small>
-              </div>
+          <article class="media">
+            <div class="media-content">
+              <h3 class="title is-5">
+                <a
+                  :href="'https://dx.doi.org/' + pub.doi"
+                  target="_blank"
+                  class="has-text-white"
+                >{{pub.title}}</a>
+              </h3>
+              <p class="has-text-justified">{{pub.abstract}}</p>
+              <br />
+              <small>
+                {{pub.authors.join(', ')}}
+                <em>{{pub.journal.abbreviation}}</em>
+                <strong>{{pub.journal.year}}</strong>,
+                <em>{{pub.journal.volume}}</em>
+                , {{pub.journal.pages}}.
+              </small>
+              <br />
+              <small>
+                DOI:
+                <a :href="'https://dx.doi.org/' + pub.doi" target="_blank">{{pub.doi}}</a>
+              </small>
             </div>
           </article>
         </li>
@@ -64,3 +62,31 @@ export default class Publications extends Vue {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.publication-container {
+  position: relative;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 0.1;
+    height: 100%;
+    width: 50%;
+  }
+  &:after {
+    background: url('/img/flask.svg') no-repeat right center;
+    right: 0;
+    transform: rotate(15deg);
+    background-size: 25rem;
+  }
+  &:before {
+    left: 0;
+    transform: rotate(-10deg);
+    background: url('/img/isopor.svg') no-repeat left center;
+    background-size: 25rem;
+  }
+}
+</style>

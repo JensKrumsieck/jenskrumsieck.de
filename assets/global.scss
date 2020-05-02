@@ -2,7 +2,7 @@
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .margin-top {
     margin-top: 4rem;
@@ -55,6 +55,11 @@ body {
     }
 }
 
+@media (max-width: $tablet + 2*$gap) {
+    section {
+        margin: 1rem;
+    }
+}
 @media (max-width: $tablet) {
     html {
         font-size: $body-size-mobile;
