@@ -14,14 +14,14 @@ export const mutations = {
 
 export const actions = {
     async nuxtServerInit({ commit }) {
-        let files = await require.context('~/assets/content/publications/', false, /\.json$/);
+        let files = await require.context('./content/publications/', false, /\.json$/);
         let publications = files.keys().map(key => {
             let res = files(key);
             return res;
         });
         await commit('setPublications', publications);
         
-        files = await require.context('~/assets/content/posters/', false, /\.json$/);
+        files = await require.context('./content/posters/', false, /\.json$/);
         let posters = files.keys().map(key => {
             let res = files(key);
             return res;
