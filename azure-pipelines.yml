@@ -38,9 +38,6 @@ steps:
     cd tmp
     git clone https://github.com/JensKrumsieck/CHN-Tool.git
     dotnet build --configuration 'Release' CHN.Blazor/CHN.Blazor.csproj
-    cd dist
-    echo "Hello World" >> README.md
-    cd ../
   displayName: 'add CHN Tool'
 
 - task: DotNetCoreCLI@2
@@ -50,6 +47,7 @@ steps:
     arguments: "--configuration 'Release' --output 'dist/static'"
 
 - script: |
+    cd ../
     npm run deploy
   displayName: 'deploy'
 
