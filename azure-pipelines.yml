@@ -44,7 +44,8 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: true
-    arguments: "--configuration 'Release' --output '../dist/static'"
+    arguments: '--configuration ''Release'''
+    zipAfterPublish: false
 
 - script: |
     npm run deploy
