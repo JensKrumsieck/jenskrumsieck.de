@@ -35,20 +35,9 @@ steps:
   displayName: 'setup deploy git'
 
 - script: |
-    git clone https://github.com/JensKrumsieck/CHN-Tool.git
-    dotnet build --configuration 'Release' CHN-Tool/CHN.Blazor/CHN.Blazor.csproj
-  displayName: 'add CHN Tool'
-
-- script: |
     cd CHN-Tool/CHN.Blazor
-    dotnet publish -c "Release --output $(Build.ArtifactStagingDirectory)"
+    dotnet publish -c "Release --output ../../temp"
   displayName: 'dotnet publish'    
-
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: $(Build.ArtifactStagingDirectory)
-    Contents: '**'
-    TargetFolder: 'dist'
 
 - script: |
     ls
