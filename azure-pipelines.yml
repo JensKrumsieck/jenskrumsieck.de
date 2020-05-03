@@ -36,7 +36,6 @@ steps:
 
 - script: |
     git clone https://github.com/JensKrumsieck/CHN-Tool.git
-    ls
     dotnet build --configuration 'Release' CHN-Tool/CHN.Blazor/CHN.Blazor.csproj
   displayName: 'add CHN Tool'
 
@@ -46,6 +45,7 @@ steps:
   displayName: 'dotnet publish'
 
 - script: |
+    ls
     npm run deploy
   displayName: 'deploy'
 
