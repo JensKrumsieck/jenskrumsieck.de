@@ -51,6 +51,7 @@ steps:
     TargetFolder: 'dist'
 
 - script: |
+    ls
     npm run deploy
   displayName: 'deploy'
 
