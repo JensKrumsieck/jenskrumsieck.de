@@ -1,7 +1,7 @@
 <template>
   <footer class="footer margin-top-large">
     <div class="container is-fluid">
-      <div class="columns is-mobile is-variable is-8">
+      <div class="columns is-touch is-variable is-8">
         <div class="column has-text-centered">
           <ul class="icons">
             <li>
@@ -46,7 +46,7 @@
             </li>
           </ul>
         </div>
-        <div class="column is-4">
+        <div class="column is-desktop-4">
           <strong>Jens Krumsieck, M.Sc.</strong>
           <br />Celler Str. 108
           <br />38114 Braunschweig
@@ -68,11 +68,15 @@ export default class Footer extends Vue {}
   border-top: 0.05rem solid $green;
 }
 .icons {
-  width: 25%;
   column-count: 4;
   column-gap: 0;
   li {
     padding-top: 1rem;
+  }
+}
+@media (min-width: $desktop) {
+  .icons {
+    width: 25%;
   }
 }
 </style>

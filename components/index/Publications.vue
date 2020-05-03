@@ -89,4 +89,9 @@ export default class Publications extends Vue {
     background-size: 25rem;
   }
 }
+@media (max-width: $tablet) {
+  .is-3 {
+    font-size: 1.5rem;
+  }
+}
 </style>

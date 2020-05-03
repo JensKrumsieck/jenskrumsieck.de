@@ -1,7 +1,6 @@
 export default async function scrollBehavior(to, from, savedPosition) {
-   
-    if(to.param['temp'] && to.param['temp'] == "noreload") return
     
+    if(to.params && to.params['temp'] && to.params['temp'] == "noreload") return
     if (savedPosition) {
         return savedPosition
     }

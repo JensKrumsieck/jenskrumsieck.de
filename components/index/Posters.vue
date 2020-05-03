@@ -58,8 +58,13 @@ export default class Posters extends Vue {
   margin-bottom: 2rem;
 }
 .media-left {
-  max-width: 150px;
   margin-right: 3rem;
+  max-width: 75px;
+}
+@media (min-width: $tablet) {
+  .media-left {
+    max-width: 150px;
+  }
 }
 .posters {
   background: url(/img/presentation.svg) no-repeat right center;

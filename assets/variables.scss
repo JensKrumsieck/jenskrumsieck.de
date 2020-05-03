@@ -1,4 +1,13 @@
 /*
+** Breakpoints
+*/
+$gap: 100px;
+$tablet: 760px;
+$desktop: 960px + (2 * $gap);
+$widescreen: 1152px + (2 * $gap);
+$fullhd: 1344px + (2 * $gap);
+
+/*
 ** Colors
 */
 $green: #85CB33; //green tone for links, active menu item and more
@@ -14,7 +23,7 @@ $scheme-main: $dark;
 $body-background-color: $scheme-main;   
 $body-line-height: 2;
 $body-size: 20px;
-$body-size-mobile: $body-size - 2;
+$body-size-mobile: $body-size - 4;
 
 
 /*
@@ -28,8 +37,6 @@ $title-weight: bold;
 $link-hover: darken($green, 10%);
 
 $button-padding-horizontal: 1.25rem;
-$gap: 100px;
-
 /*
 ** Navbar
 */
