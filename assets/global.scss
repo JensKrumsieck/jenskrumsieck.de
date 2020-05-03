@@ -1,6 +1,11 @@
 @import "~bulma/sass/utilities/_all";
 @import "~bulma";
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts" !default;
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";  
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";  
 @import "~buefy/src/scss/buefy";
+
 a,
 span,
 .navbar,

@@ -10,13 +10,13 @@
             <ul>
               <li>
                 <a class="level alvl" href="https://github.com/JensKrumsieck/CHN-Tool">
-                  <b-icon icon="github" />
+                  <b-icon icon="github" pack="fab" />
                   <span>Repository</span>
                 </a>
               </li>
               <li>
                 <a class="level alvl" href="/chn">
-                  <b-icon icon="window-maximize" />
+                  <b-icon icon="window-maximize" pack="far" />
                   <span>Online Version</span>
                 </a>
               </li>
@@ -33,7 +33,7 @@
             <ul>
               <li>
                 <a class="level alvl" href="https://github.com/JensKrumsieck/BluEPRint2">
-                  <b-icon icon="github" />
+                  <b-icon icon="github" pack="fab" />
                   <span>Repository</span>
                 </a>
               </li>
@@ -47,7 +47,7 @@
             <ul>
               <li>
                 <a class="level alvl" href="https://github.com/JensKrumsieck/orca-input-file">
-                  <b-icon icon="github" />
+                  <b-icon icon="github" pack="fab" />
                   <span>Repository</span>
                 </a>
               </li>
@@ -56,7 +56,7 @@
                   class="level alvl"
                   href="https://marketplace.visualstudio.com/items?itemName=JensKrumsieck.orca-input-file"
                 >
-                  <b-icon icon="microsoft-windows" />
+                  <b-icon icon="windows" pack="fab" />
                   <span>Marketplace</span>
                 </a>
               </li>
@@ -76,7 +76,7 @@
             <ul>
               <li>
                 <a class="level alvl" href="https://github.com/codeQuake/Fireball">
-                  <b-icon icon="github" />
+                  <b-icon icon="github" pack="fab" />
                   <span>Repository</span>
                 </a>
               </li>
