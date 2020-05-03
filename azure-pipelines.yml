@@ -44,7 +44,9 @@ steps:
   displayName: 'dotnet publish'    
 
 - script: |
-    cp -a temp/dist/ dist/
+    cd  temp
+    ls
+    cp "/dist/"* "~/dist"
     npm run deploy
   displayName: 'deploy'
 
