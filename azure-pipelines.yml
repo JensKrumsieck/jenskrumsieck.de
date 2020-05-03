@@ -35,8 +35,10 @@ steps:
   displayName: 'setup deploy git'
 
 - script: |
+    mkdir tmp
     cd tmp
     git clone https://github.com/JensKrumsieck/CHN-Tool.git
+    ls
     dotnet build --configuration 'Release' CHN.Blazor/CHN.Blazor.csproj
   displayName: 'add CHN Tool'
 
