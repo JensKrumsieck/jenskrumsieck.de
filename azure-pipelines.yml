@@ -52,6 +52,9 @@ steps:
 
 - script: |
     ls
+    cd $(Build.ArtifactStagingDirectory)
+    ls
+    cd
     npm run deploy
   displayName: 'deploy'
 
