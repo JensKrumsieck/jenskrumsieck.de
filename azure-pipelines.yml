@@ -46,15 +46,12 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(Build.ArtifactStagingDirectory)'
+    SourceFolder: $(Build.ArtifactStagingDirectory)
     Contents: '**'
     TargetFolder: 'dist'
 
 - script: |
     ls
-    cd $(Build.ArtifactStagingDirectory)
-    ls
-    cd
     npm run deploy
   displayName: 'deploy'
 
