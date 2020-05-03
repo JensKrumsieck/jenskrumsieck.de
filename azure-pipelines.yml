@@ -44,7 +44,7 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: true
-    arguments: "--configuration 'Release' --output 'dist/static'"
+    arguments: "--configuration 'Release' --output '../dist/static'"
 
 - script: |
     cd ../
