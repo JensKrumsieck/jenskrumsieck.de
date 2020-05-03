@@ -26,15 +26,13 @@ steps:
 - script: |
     npm install
     npm run generate
-    
-    displayName: 'npm install and generate'
+  displayName: 'npm install and generate'
 
 - script: |
     git config --global user.email "jenso666@live.de"
     git config --global user.name "JensKrumsieck"
     git remote add deploy https://$(GithubPAT)@github.com/JensKrumsieck/TestPush.git
-    
-    displayName: 'setup deploy git'
+  displayName: 'setup deploy git'
 
 - script: |
     cd tmp
@@ -43,8 +41,7 @@ steps:
     cd dist
     echo "Hello World" >> README.md
     cd ../
-    
-    displayName: 'add CHN Tool'
+  displayName: 'add CHN Tool'
 
 - task: DotNetCoreCLI@2
   inputs:
@@ -54,6 +51,5 @@ steps:
 
 - script: |
     npm run deploy
-    
-    displayName: 'deploy'
+  displayName: 'deploy'
 
