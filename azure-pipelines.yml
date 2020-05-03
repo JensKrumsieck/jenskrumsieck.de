@@ -36,7 +36,7 @@ steps:
 
 - script: |
     cd CHN-Tool/CHN.Blazor
-    dotnet publish -c "Release"
+    dotnet publish -c Release
   displayName: 'dotnet publish'    
 
 - script: |
