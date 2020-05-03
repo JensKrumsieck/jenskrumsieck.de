@@ -40,12 +40,10 @@ steps:
     dotnet build --configuration 'Release' CHN-Tool/CHN.Blazor/CHN.Blazor.csproj
   displayName: 'add CHN Tool'
 
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'publish'
-    publishWebProjects: true
-    arguments: '--configuration ''Release'''
-    zipAfterPublish: false
+- script: |
+    cd CHN-Tool
+    dotnet publish -c "Release"    
+  displayName: 'dotnet publish'
 
 - script: |
     npm run deploy
