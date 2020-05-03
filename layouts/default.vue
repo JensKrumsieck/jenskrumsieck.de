@@ -20,7 +20,7 @@ import { Vue, Component } from 'nuxt-property-decorator'
   }
 })
 export default class Default extends Vue {
-  mounted() {
+  beforeMount() {
     //handles scrolling to hash when loading
     if (this.$route.hash)
       setTimeout(() => (this as any).$scrollTo(this.$route.hash), 1)
