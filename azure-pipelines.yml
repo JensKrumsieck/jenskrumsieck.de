@@ -23,7 +23,7 @@ steps:
     git remote add deploy https://$(GithubPAT)@github.com/JensKrumsieck/TestPush.git
 
     cd dist
-    'Hello World' >> README.md
+    echo "Hello World" >> README.md
     cd ../
 
     npm run deploy
