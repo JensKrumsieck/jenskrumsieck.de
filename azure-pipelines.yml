@@ -35,6 +35,10 @@ steps:
   displayName: 'setup deploy git'
 
 - script: |
+    git clone https://github.com/JensKrumsieck/CHN-Tool.git
+  displayName: 'clone'
+
+- script: |
     cd CHN-Tool/CHN.Blazor
     dotnet publish -c Release
   displayName: 'dotnet publish'    
