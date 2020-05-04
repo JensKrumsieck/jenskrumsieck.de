@@ -17,12 +17,6 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
-
-- task: UseDotNet@2
-  displayName: 'Installing .NET Core SDK'
-  inputs:
-    version: 3.1.201
-
 - script: |
     npm install
     npm run generate
@@ -34,19 +28,7 @@ steps:
     git remote add deploy https://$(GithubPAT)@github.com/JensKrumsieck/TestPush.git
   displayName: 'setup deploy git'
 
-- script: |
-    git clone https://github.com/JensKrumsieck/CHN-Tool.git
-  displayName: 'clone'
-
-- script: |
-    cd CHN-Tool/CHN.Blazor
-    dotnet publish -c Release -o ../../temp
-  displayName: 'dotnet publish'    
-
-- script: |
-    cd  temp
-    ls
-    cp "/dist/"* "~/dist"
+- script: 
     npm run deploy
   displayName: 'deploy'
 
