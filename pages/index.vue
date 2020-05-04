@@ -10,8 +10,11 @@
                 <span class="has-text-link">dissolve</span> Problems!
               </h1>
               <div class="is-divider" />
-              <img src="/img/logo.svg" alt="logo" class="logo" />
-              <p class="subheadline">Chemist - .NET Developer - Webdesigner - Wrestler</p>
+              <LogoAnimation />
+              <p class="subheadline boxContainer">
+                <span>Chemist - .NET Developer - Webdesigner - Wrestler</span>
+                <span class="_box _box2" />
+              </p>
             </div>
             <div class="column has-text-centered">
               <div class="heroimg">
@@ -76,6 +79,7 @@ import OtherProjects from '~/components/index/OtherProjects.vue'
 import Publications from '~/components/index/Publications.vue'
 import Posters from '~/components/index/Posters.vue'
 import About from '~/components/index/About.vue'
+import LogoAnimation from '~/components/LogoAnimation.vue'
 
 import { Vue, Component } from 'nuxt-property-decorator'
 
@@ -87,7 +91,8 @@ import { Vue, Component } from 'nuxt-property-decorator'
     OtherProjects,
     Publications,
     Posters,
-    About
+    About,
+    LogoAnimation
   }
 })
 export default class Index extends Vue {}
@@ -120,5 +125,12 @@ h1.title {
 
 .projects {
   margin-top: 7rem;
+}
+.boxContainer {
+  span:first-of-type {
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 2.8s;
+    opacity: 0;
+  }
 }
 </style>

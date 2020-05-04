@@ -9,7 +9,7 @@
           </figure>
         </div>
         <div class="card-content is-overlay">
-          <h4 class="title is-5">
+          <h4 class="title is-5 glitch" :data-text="item.title">
             <span>{{item.title}}</span>
           </h4>
           <div class="content has-text-justified is-small teaser">
@@ -82,10 +82,17 @@ export default class Articles extends Vue {
   margin-top: 2rem;
   background-color: transparent;
   .card-content {
-    .title > span {
-      background-color: $red;
+    .title.glitch {
+      &::before,
+      &:after {
+        padding: 0.15rem 0.25rem 0;
+      }
+      > span {
+        position: relative;
+        background-color: $red;
+        display: inline;
+      }
       padding: 0.15rem 0.25rem 0;
-      display: inline;
       font-weight: 200;
     }
     .teaser > span {
@@ -98,7 +105,7 @@ export default class Articles extends Vue {
     line-height: 1.4;
   }
   .card-image {
-      box-shadow: 20px 20px 0px 1px $green;
+    box-shadow: 20px 20px 0px 1px $green;
     img {
       object-fit: cover;
     }
