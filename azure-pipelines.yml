@@ -22,6 +22,7 @@ steps:
   displayName: 'npm install'
 
 - script: |
+    ls
     node prebuild.js
   workingDirectory: build
   displayName: 'prebuild'
