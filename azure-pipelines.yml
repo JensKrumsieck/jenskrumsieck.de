@@ -21,10 +21,11 @@ steps:
     npm install
   displayName: 'npm install'
 
-- script: |
-    ls
-    node prebuild.js
-  workingDirectory: build
+- task: Bash@3
+  inputs:
+    filePath: 'chn.sh'
+    workingDirectory: 'build'
+    failOnStderr: true
   displayName: 'prebuild'
 
 - script: |
