@@ -18,10 +18,9 @@ export default {
       }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'preload', as: 'image', href: '/img/hero/top.png' },
-      { rel: 'preload', as: 'image', href: '/img/hero/bottom.png' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    base: {href: '/'}
   },
   /*
    ** Customize the progress-bar color
@@ -66,7 +65,8 @@ export default {
   ],
 
   router: {
-    linkExactActiveClass: 'is-active'
+    linkExactActiveClass: 'is-active',
+    base: '/'
   },
 
   /*

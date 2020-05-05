@@ -95,7 +95,16 @@ import { Vue, Component } from 'nuxt-property-decorator'
     LogoAnimation
   }
 })
-export default class Index extends Vue {}
+export default class Index extends Vue {
+  head() {
+    return {
+      link: [
+        { rel: 'preload', as: 'image', href: '/img/hero/top.png' },
+        { rel: 'preload', as: 'image', href: '/img/hero/bottom.png' }
+      ]
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
