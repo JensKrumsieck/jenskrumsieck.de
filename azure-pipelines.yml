@@ -19,6 +19,7 @@ steps:
   displayName: 'Install Node.js'
 - script: |
     npm install
+    npm run prebuild
     npm run generate
   displayName: 'npm install and generate'
 
