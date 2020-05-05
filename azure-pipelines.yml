@@ -25,7 +25,6 @@ steps:
   inputs:
     filePath: build/chn.sh
     workingDirectory: build
-    failOnStderr: true
   displayName: 'prebuild'
 
 - script: |
