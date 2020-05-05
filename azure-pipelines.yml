@@ -23,7 +23,7 @@ steps:
 
 - task: Bash@3
   inputs:
-    filePath: chn.sh
+    filePath: build/chn.sh
     workingDirectory: build
     failOnStderr: true
   displayName: 'prebuild'
