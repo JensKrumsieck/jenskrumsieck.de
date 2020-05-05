@@ -19,9 +19,16 @@ steps:
   displayName: 'Install Node.js'
 - script: |
     npm install
-    npm run prebuild
+  displayName: 'npm install'
+
+- script: |
+    npm prebuild
+  workingDirectory: /build
+  displayName: 'prebuild'
+
+- script: |
     npm run generate
-  displayName: 'npm install and generate'
+  displayName: 'npm generate'
 
 - script: |
     git config --global user.email "jenso666@live.de"
