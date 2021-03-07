@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="41" viewBox="0 0 36 41">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Polygon_2" data-name="Polygon 2" d="M29.006,0a3,3,0,0,1,2.607,1.515l8.542,15a3,3,0,0,1,0,2.969l-8.542,15A3,3,0,0,1,29.006,36H11.994a3,3,0,0,1-2.607-1.515l-8.542-15a3,3,0,0,1,0-2.969l8.542-15A3,3,0,0,1,11.994,0Z" transform="translate(92 51.5) rotate(90)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_maskieren_1" data-name="Gruppe maskieren 1" transform="translate(-56 -51.5)" clip-path="url(#clip-path)">
+    <g id="de" transform="translate(40.065 51.982)">
+      <rect id="black_stripe" width="68" height="40" transform="translate(-0.065 0.018)"/>
+      <rect id="red_stripe" width="68" height="27" transform="translate(-0.065 13.018)" fill="#d00"/>
+      <rect id="gold_stripe" width="68" height="13" transform="translate(-0.065 27.018)" fill="#ffce00"/>
+    </g>
+  </g>
+</svg>

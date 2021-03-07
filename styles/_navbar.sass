@@ -1,0 +1,39 @@
+.navbar-brand
+    font-size: 1.75rem
+    font-family: "Exo", "Arial"
+    font-weight: bold
+    .navbar-item span
+        mix-blend-mode: exclusion   
+        filter: invert(1)
+    a.navbar-item:hover,
+    a.navbar-item.is-active
+        color: $black
+
+.navbar-start
+    .navbar-item
+        margin-left: 1.5rem
+        font-size: 1.25rem       
+        mix-blend-mode: exclusion
+        filter: invert(1)
+        z-index: 30
+        &.is-active
+            font-weight: bold
+            color: $black
+
+.navbar-burger
+    z-index: 2
+    background: $black
+    color: $green
+    &:hover
+        color: $white !important
+        background: $black
+
+.navbar
+    z-index: unset
+
+@include touch
+    #navbarmenu
+        z-index: 30
+        background-color: $white
+        position: absolute
+        width: 85%

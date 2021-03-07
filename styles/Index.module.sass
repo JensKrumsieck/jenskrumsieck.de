@@ -1,0 +1,77 @@
+@import "../node_modules/bulma/sass/utilities/mixins.sass"
+.heroafter
+    position: relative
+    margin: auto
+    z-index: 0
+    width: 50vw
+    height: 50vw
+    top: -7rem
+    >div
+        overflow: unset !important
+    @include tablet
+        position: absolute
+        width: 50vw
+        right: 0
+        height: 100vh
+        img
+            padding: 0 7vw 0 7vw !important
+            filter: drop-shadow(50px 50px 70px transparentize(#222831, .5))
+.products
+    li
+        margin-right: 1.5rem
+        display: inline-block
+        svg
+            height: 32px
+            width: auto
+
+.isSvgBackground
+    position: absolute
+    top: 0
+    z-index: -1
+    width: 100%
+    height: 100%
+    opacity: 0.05
+
+.ps
+    line-height: 3rem
+
+.leftCenteredCircle
+    display: none
+    z-index: -1
+    
+.rightCenteredCircle
+    display: none
+    z-index: -1
+
+@include tablet
+    $circleWidth: 100%
+    .leftCenteredCircle
+        display: block
+        position: absolute
+        width: $circleWidth
+        height: $circleWidth
+        top: $circleWidth
+        transform: translateY(-$circleWidth)rotate(90deg)
+        left: calc(#{$circleWidth}/-2)
+
+    .rightCenteredCircle
+        display: block
+        position: absolute
+        width: $circleWidth
+        height: $circleWidth
+        top: $circleWidth
+        transform: translateY(-$circleWidth)rotate(90deg)
+        right: calc(#{$circleWidth}/-2)
+
+@include widescreen
+    .screenshot
+        img,video
+            padding: 5rem
+
+@include mobile
+    .porphystruct
+        flex-direction: column-reverse
+        display: flex
+
+.threejs
+    height: 85vh

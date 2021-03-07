@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="41" viewBox="0 0 36 41">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Polygon_1" data-name="Polygon 1" d="M29.006,0a3,3,0,0,1,2.607,1.515l8.542,15a3,3,0,0,1,0,2.969l-8.542,15A3,3,0,0,1,29.006,36H11.994a3,3,0,0,1-2.607-1.515l-8.542-15a3,3,0,0,1,0-2.969l8.542-15A3,3,0,0,1,11.994,0Z" transform="translate(50 4.5) rotate(90)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Pfad_7" data-name="Pfad 7" d="M0,0V42.065H84.13V0Z"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="Pfad_4" data-name="Pfad 4" d="M42.065,21.032H84.13V42.065Zm0,0V42.065H0Zm0,0H0V0Zm0,0V0H84.13Z"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_maskieren_2" data-name="Gruppe maskieren 2" transform="translate(-14 -4.5)" clip-path="url(#clip-path)">
+    <g id="gb" transform="translate(-10.065 3.435)" clip-path="url(#clip-path-2)">
+      <path id="Pfad_1" data-name="Pfad 1" d="M0,0V42.065H84.13V0Z" fill="#012169"/>
+      <path id="Pfad_2" data-name="Pfad 2" d="M0,0,84.13,42.065M84.13,0,0,42.065" stroke="#fff" stroke-width="6"/>
+      <g id="Gruppe_1" data-name="Gruppe 1" clip-path="url(#clip-path-3)">
+        <path id="Pfad_3" data-name="Pfad 3" d="M0,0,84.13,42.065M84.13,0,0,42.065" stroke="#c8102e" stroke-width="4"/>
+      </g>
+      <path id="Pfad_5" data-name="Pfad 5" d="M42.065,0V42.065M0,21.032H84.13" stroke="#fff" stroke-width="10"/>
+      <path id="Pfad_6" data-name="Pfad 6" d="M42.065,0V42.065M0,21.032H84.13" stroke="#c8102e" stroke-width="6"/>
+    </g>
+  </g>
+</svg>

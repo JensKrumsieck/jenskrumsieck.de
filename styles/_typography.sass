@@ -1,0 +1,26 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    font-family: "Exo", "Arial"
+    color: $black
+
+.title
+    font-weight: 700
+    font-size: 2rem
+    color: $black
+    @include desktop
+        font-size: 3.5rem
+
+.line-subheading
+    font-family: $family-sans-serif
+    text-transform: uppercase
+    font-size: 0.95rem
+    &:before
+        display: inline-block
+        content:""
+        border-top: .5rem solid $green
+        width: 5rem
+        margin: 0 1rem 0 0

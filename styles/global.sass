@@ -1,0 +1,85 @@
+@charset "utf-8"
+@import "./_montserrat.scss"
+@import "./_exo.scss"
+@import "./variables.sass"
+@import "../node_modules/bulma/bulma"
+@import "./_typography.sass"
+
+@import "./_navbar.sass"
+@import "./_social.sass"
+@import "./_buttons.sass"
+html
+    overflow: initial
+body
+    overflow-x: hidden
+
+body, section
+    position: relative
+
+section:not(.hero)
+    padding-top: 5rem
+    padding-bottom: 5rem
+
+.container
+    &.is-fluid
+        padding-left: $gap-mobile !important
+        padding-right: $gap-mobile !important
+        @include desktop
+            padding-left: $gap !important
+            padding-right: $gap !important
+    &.is-semifluid
+        max-width: none !important
+        width: 100%
+        padding-left: $gap-mobile-semi
+        padding-right: $gap-mobile-semi
+        @include desktop
+            padding-left: $gap-semi !important
+            padding-right: $gap-semi !important
+
+.my-7
+    margin-top: 5rem !important
+    margin-bottom: 5rem !important
+    @include desktop
+        margin-top: 7rem !important
+        margin-bottom: 7rem !important
+
+@include tablet
+    .is-half
+        width: 50%
+
+@include mobile
+    .hero.is-fullheight-with-navbar
+        min-height: calc(50vw - 3.25rem) !important
+
+.languageSelect
+    margin-top: 2rem
+    position: absolute
+    z-index: 5
+    left: 0
+    display: grid
+    padding: 7px 7px 7px 15px
+    background: $black
+    border-radius: 0 5px 5px 0
+    img,a
+        width: 18px
+        height: 18px
+        vertical-align: middle
+        text-align: center
+.hero-body, .invertible
+    mix-blend-mode: exclusion
+    filter: invert(1)
+
+@include touch
+    .invertible
+        mix-blend-mode: unset
+        filter: unset
+
+$circleWidth: 95vw
+.layout-circle
+    width: $circleWidth
+    height: $circleWidth
+    display: block
+    position: absolute
+    z-index: -1
+    top: calc(#{$circleWidth}/-2)
+    right: calc(#{$circleWidth}/-2)

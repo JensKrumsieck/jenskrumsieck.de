@@ -1,0 +1,30 @@
+.social
+    ul
+        li
+            margin-bottom: 1rem
+            a
+                color: $black
+                &:hover
+                    color: $dark
+            &.hint
+                margin: 0 0 5px 0px
+                writing-mode: vertical-lr
+                text-transform: uppercase
+                transform: rotate(180deg)
+                font-size: 0.75rem
+            &.line
+                writing-mode: vertical-lr
+                letter-spacing: -0.1rem
+                display: inline-block
+                opacity: 0.5
+                margin: 0 0 5px 0px
+            
+aside.social
+    .fa-2x
+        font-size: 1.5rem 
+    left: $gap-mobile-semi  
+    @include desktop
+        left: $gap-semi
+    top: 20vh !important
+    position: absolute
+    z-index: 5
