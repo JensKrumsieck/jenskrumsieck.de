@@ -1,10 +1,33 @@
+import Slider from 'react-slick'
+import ThreeMolecule from "../ThreeMolecule"
+import hljs from 'highlight.js';
+import csharp from 'highlight.js/lib/languages/csharp'
+import { useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import PorphyStruct from "../../assets/svg/porphystruct.svg"
 import HeroCircles from '../../assets/svg/herocircle.svg'
+import 'highlight.js/styles/stackoverflow-dark.css'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import styles from "../../styles/Index.module.sass"
-import ThreeMolecule from "../ThreeMolecule"
 
 export default function Projects() {
+    hljs.registerLanguage('csharp', csharp);
+    useEffect(() => {
+        hljs.highlightAll();
+    }, []);
+
+    var sliderSettings = {
+        dots: true,
+        cssEase: "linear",
+        infinite: true,
+        swipeToSlide: true,
+        speed: 500,
+        autoplay: true,
+        autoplaySpeed: 7000,
+        slidesToShow: 1,
+    }
+
     return (
         <>
             <section className="projects">
@@ -42,7 +65,7 @@ export default function Projects() {
             </section>
 
             <section className="projects">
-            <HeroCircles className={styles.rightCenteredCircle} />
+                <HeroCircles className={styles.rightCenteredCircle} />
                 <div className="container is-fluid">
                     <div className="columns is-vcentered is-variable is-8">
                         <div className="column">
@@ -65,6 +88,63 @@ export default function Projects() {
                         <div className={["column", styles.threejs].join(" ")}>
                             <ThreeMolecule file="molecules/oriluy.cif" />
                         </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section className="notification is-black my-7 projects">
+                <div className="container is-fluid">
+                    <div className={["columns", "is-vcentered", "is-variable", "is-8", styles.chemsharp].join(" ")}>
+                        <div className="column">
+                            <Slider {...sliderSettings} className={styles.codeSlider}>
+                                <div>
+                                    <pre className="code">
+                                        <code className="csharp">
+                                            {`
+//Creates an UV/Vis Spectrum
+const string path = "files/uvvis.dsw";
+var uvvis = SpectrumFactory.Create(path);
+
+//You can also create spectra by choosing the provider 
+//explicitly. e.g. csv files
+//Reads in an CSV Spectrum (first data only)
+const string path = "files/uvvis.csv";
+var prov = new GenericCSVProvider(path);
+var uvvis = new Spectrum(prov);
+
+//To read in all CSV Data stored as (X,Y) pairs use the MultiCSVProvider
+//Each Spectrum will be stored as DataPoint[] in MultiXYData
+const string file = "files/multicsv.csv";
+var provider = new MultiCSVProvider(file);
+                                `}
+                                        </code>
+                                    </pre>
+                                </div>
+                                <div>
+                                    <pre className="code">
+                                        <code className="csharp">
+                                            {`
+//Creates a molecule from cif file
+const string path = "files/cif.cif";
+var mol = MoleculeFactory.Create(path);
+
+//You can also create molecules by selecting the provider yourself
+const string path = "files/benzene.mol2";
+var provider = new Mol2DataProvider(path);
+var mol = new Molecule(provider);
+
+//...or by just adding the Atoms & Bonds as Lists
+const string path = "files/cif.cif";
+var provider = new CIFDataProvider(path);
+var mol = new Molecule(provider.Atoms, provider.Bonds);
+                                `}
+                                        </code>
+                                    </pre>
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="column"></div>
                     </div>
                 </div>
             </section>
