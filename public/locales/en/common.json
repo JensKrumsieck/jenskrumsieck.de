@@ -5,5 +5,7 @@
     "read-publications": "Read Publications",
     "projects": "Projects",
     "publications": "Publications",
-    "change-lang" : "Zu Deutsch wechseln"
+    "change-lang" : "Zu Deutsch wechseln",
+    "chemsharp-description": "ChemSharp is a software library based on C#.NET created for processing file types commonly used in chemistry. Mainly raw files from spectrometers and file types describing molecules are supported. The library is used in PorphyStruct, SPCViewer and CHN-Tool among others."
+
 }
