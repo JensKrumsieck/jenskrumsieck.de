@@ -6,6 +6,7 @@ import { useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import PorphyStruct from "../../assets/svg/porphystruct.svg"
 import HeroCircles from '../../assets/svg/herocircle.svg'
+import ChemSharp from "../../assets/svg/chemsharp.svg"
 import 'highlight.js/styles/stackoverflow-dark.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -98,7 +99,7 @@ export default function Projects() {
                     <div className={["columns", "is-vcentered", "is-variable", "is-8", styles.chemsharp].join(" ")}>
                         <div className="column">
                             <Slider {...sliderSettings} className={styles.codeSlider}>
-                                <div>
+                                <div className={styles.sliderSlide}>
                                     <pre className="code">
                                         <code className="csharp">
                                             {`
@@ -144,7 +145,21 @@ var mol = new Molecule(provider.Atoms, provider.Bonds);
                                 </div>
                             </Slider>
                         </div>
-                        <div className="column"></div>
+                        <div className="column">
+                            <ChemSharp className={styles.chemsharpLogo} />
+                            <p className="my-7">
+                                <strong>ChemSharp</strong> is an open source library for processing chemistry related files.
+                            </p>
+                            <div className="buttons my-7">
+                                <a href="" className="button is-primary">Tell me more!</a>
+                                <a href="https://github.com/JensKrumsieck/ChemSharp" className="button is-primary is-outlined">
+                                    <span className="icon-text has-text-white">
+                                        <FontAwesomeIcon icon={["fab", "github"]} className="icon" />
+                                        <span>GitHub Repository</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
