@@ -6,6 +6,8 @@
     "projects": "Projects",
     "publications": "Publications",
     "change-lang" : "Zu Deutsch wechseln",
-    "chemsharp-description": "ChemSharp is a software library based on C#.NET created for processing file types commonly used in chemistry. Mainly raw files from spectrometers and file types describing molecules are supported. The library is used in PorphyStruct, SPCViewer and CHN-Tool among others."
-
+    "chemsharp-description": "ChemSharp is a software library based on C#.NET created for processing file types commonly used in chemistry. Mainly raw files from spectrometers and file types describing molecules are supported. The library is used in PorphyStruct, SPCViewer and CHN-Tool among others.",
+    "isopor" : "Synthesis of Isoporphyrins",
+    "isopor-description": "Isoporphyrins are a specific tautomeric form of porphyrin, which plays an important role in many different biomolecules. Isoporphyrins absorb light in the near IR range, which makes their application in medicine or photovoltaics conceivable - however, isoporphyrins have long been difficult to access through synthesis.",
+    "porphystruct-description": "The solid state structure of tetrapyrrolic macrocycles can be described in terms of the lowest frequency vibrational modes - as the spatial structure has direct effects on both chemical and physical properties of the compound, structural analysis is of high importance. These are typically very time-consuming, but with PorphyStruct they are done in a matter of seconds."
 }

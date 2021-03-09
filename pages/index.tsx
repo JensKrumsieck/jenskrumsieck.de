@@ -17,8 +17,8 @@ export default function Index() {
                 <div className="hero-body">
                     <div className="container is-fluid">
                         <div className="is-half">
-                            <h2 className="subtitle line-subheading my-7">Jens Krumsieck</h2>
-                            <h1 className="title my-7">{t('hero-title')}</h1>
+                            <h2 className="subtitle line-subheading my-5">Jens Krumsieck</h2>
+                            <h1 className="title my-5">{t('hero-title')}</h1>
                             <div className="buttons">
                                 <Link href="/projects/">
                                     <a className="button is-primary">{t('view-projects')}</a>
@@ -27,7 +27,7 @@ export default function Index() {
                                     <a className="button is-primary is-outlined">{t('read-publications')}</a>
                                 </Link>
                             </div>
-                            <ul className={[styles.products, "my-7"].join(' ')}>
+                            <ul className={[styles.products, "my-5"].join(' ')}>
                                 <li>
                                     <Link href="/projects/porphystruct">
                                         <a title="PorphyStruct"><PorphyStruct /></a>

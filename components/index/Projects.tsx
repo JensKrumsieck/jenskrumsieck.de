@@ -38,10 +38,8 @@ export default function Projects() {
                                 </div>
                                 <span className={styles.ps}>PorphyStruct</span>
                             </h2>
-                            <p className="my-7">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae debitis eius culpa! Reprehenderit vero in rem amet distinctio tenetur nobis excepturi, rerum corporis facilis iusto iste eveniet vel temporibus nisi illum, cum dicta quo! Harum veniam velit hic vel neque quam, unde consequatur fuga in nihil cupiditate repudiandae ut? Facilis, possimus, ullam deleniti consequatur, quos dicta nulla odit animi officiis vitae dolorum magnam incidunt omnis exercitationem natus porro explicabo iste aspernatur! Tenetur, expedita illum! Corrupti molestiae atque fugit blanditiis, saepe illum ex error porro. Doloremque facilis dolorem quam, saepe ut dolores velit ad odit, praesentium pariatur totam distinctio vel libero dicta ex rerum?
-                            </p>
-                            <div className="buttons my-7">
+                            <p className="my-5">{t('porphystruct-description')}</p>
+                            <div className="buttons my-5">
                                 <a href="" className="button is-primary">Tell me more!</a>
                                 <a href="https://github.com/JensKrumsieck/PorphyStruct" className="button is-primary is-outlined">
                                     <span className="icon-text">
@@ -60,13 +58,9 @@ export default function Projects() {
                 <div className="container is-fluid">
                     <div className="columns is-vcentered is-variable is-8">
                         <div className="column">
-                            <h2 className="title">
-                                Synthesis of Isoporphyrins
-                            </h2>
-                            <p className="my-7">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique possimus neque quia explicabo itaque molestiae doloremque odit officiis porro quae! Veritatis, autem odio. Officiis dolor aperiam vitae nesciunt quisquam blanditiis cumque, eius, numquam porro sed molestias nemo doloribus inventore aspernatur quia. Labore voluptate expedita obcaecati architecto illum dignissimos error porro!
-                            </p>
-                            <div className="buttons my-7">
+                            <h2 className="title">{t('isopor')}  </h2>
+                            <p className="my-5">{t('isopor-description')}</p>
+                            <div className="buttons my-5">
                                 <a href="" className="button is-primary">Tell me more!</a>
                                 <a href="" className="button is-primary is-outlined">
                                     <div className="icon-text">
@@ -84,7 +78,7 @@ export default function Projects() {
             </section>
 
 
-            <section className="notification is-black my-7 projects">
+            <section className="notification is-black my-5 projects">
                 <div className="container is-fluid">
                     <div className={["columns", "is-vcentered", "is-variable", "is-8", styles.chemsharp].join(" ")}>
                         <div className="column">
@@ -112,10 +106,10 @@ var mol = new Molecule(provider.Atoms, provider.Bonds);
                         </div>
                         <div className="column">
                             <ChemSharp className={styles.chemsharpLogo} />
-                            <p className="my-7">
+                            <p className="my-5">
                                 {t('chemsharp-description')}
                             </p>
-                            <div className="buttons my-7">
+                            <div className="buttons my-5">
                                 <a href="" className="button is-primary">Tell me more!</a>
                                 <a href="https://github.com/JensKrumsieck/ChemSharp" className="button is-primary is-outlined">
                                     <span className="icon-text has-text-white">
