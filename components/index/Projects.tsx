@@ -1,8 +1,6 @@
-import hljs from 'highlight.js';
-import csharp from 'highlight.js/lib/languages/csharp'
-import React, { useEffect } from "react"
-import { useTranslation, Trans } from 'next-i18next';
+import { useTranslation } from 'next-i18next';
 
+import { LightAsync as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import ThreeMolecule from "../ThreeMolecule"
 
@@ -10,14 +8,10 @@ import PorphyStruct from "../../assets/svg/porphystruct.svg"
 import HeroCircles from '../../assets/svg/herocircle.svg'
 import ChemSharp from "../../assets/svg/chemsharp.svg"
 
-import 'highlight.js/styles/stackoverflow-dark.css'
 import styles from "../../styles/Index.module.sass"
+import { stackoverflowDark } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
 export default function Projects() {
-    hljs.registerLanguage('csharp', csharp);
-    useEffect(() => {
-        hljs.highlightAll();
-    }, []);
     const { t } = useTranslation('common')
     return (
         <>
@@ -83,9 +77,8 @@ export default function Projects() {
                     <div className={["columns", "is-vcentered", "is-variable", "is-8", styles.chemsharp].join(" ")}>
                         <div className="column">
                             <div>
-                                <pre className="code">
-                                    <code className="csharp">
-                                        {`
+                                <SyntaxHighlighter language="csharp" style={stackoverflowDark} className="code">
+                                    {`
 //Creates a molecule from cif file
 const string path = "files/cif.cif";
 var mol = MoleculeFactory.Create(path);
@@ -100,8 +93,7 @@ const string path = "files/cif.cif";
 var provider = new CIFDataProvider(path);
 var mol = new Molecule(provider.Atoms, provider.Bonds);
                                 `}
-                                    </code>
-                                </pre>
+                                </SyntaxHighlighter>
                             </div>
                         </div>
                         <div className="column">
