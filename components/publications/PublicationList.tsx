@@ -1,4 +1,3 @@
-import Link from 'next/link'
 
 export default function PublicationList({ publications }) {
     if (publications === 'undefined') return null
@@ -9,10 +8,9 @@ export default function PublicationList({ publications }) {
                 {publications &&
                     publications.map((pub) => {
                         return (
-                            <li key={pub.slug}>
-                                <Link href={{ pathname: `/pub/${pub.slug}` }}>
-                                    <a>{pub.frontmatter.title}</a>
-                                </Link>
+                            <li key={pub.title}>
+                               <img src={pub.image} alt="image"/>
+                               <h3 className="title">{pub.title}</h3>
                             </li>
                         )
                     })}

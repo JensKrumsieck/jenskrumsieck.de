@@ -16,7 +16,6 @@ doi: 10.1002/anie.201604297
 image: img/uploads/anie201604297-toc-0001-m.jpg
 imageCopyright: © 2016 WILEY‐VCH Verlag GmbH & Co. KGaA, Weinheim
 ---
-
 Zinc and cadmium complexes of _meso_‐arylisoporphyrins carrying a
 pyrrolyl or dipyrrinyl substituent at the sp<sup>3</sup> carbon atom were
 obtained through a simple one‐pot variation of the Alder–Longo porphyrin
