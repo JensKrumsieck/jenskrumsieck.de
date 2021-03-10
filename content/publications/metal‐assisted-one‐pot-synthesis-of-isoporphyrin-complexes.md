@@ -14,7 +14,7 @@ journal:
   page: 10118
 date: 2016-07-15T14:50:06.221Z
 doi: 10.1002/anie.201604297
-image: null
+image: img/uploads/anie201604297-toc-0001-m.jpg
 imageCopyright: © 2016 WILEY‐VCH Verlag GmbH & Co. KGaA, Weinheim
 abstract: Zinc and cadmium complexes of *meso*‐arylisoporphyrins carrying a
   pyrrolyl or dipyrrinyl substituent at the sp<sup>3</sup> carbon atom were
