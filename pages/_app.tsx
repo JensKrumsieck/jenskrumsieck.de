@@ -6,9 +6,9 @@ import { faTwitter, faFacebookSquare, faGithub, faInstagram, faOrcid, faResearch
 import { appWithTranslation } from 'next-i18next'
 
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps, router }: AppProps) {
   library.add(faTwitter, faFacebookSquare, faInstagram, faGithub, faOrcid, faResearchgate, faXing)
-  
+  if (router.pathname.includes('admin')) return <Component {...pageProps} />
   return (
     <Layout>
       <Component {...pageProps} />

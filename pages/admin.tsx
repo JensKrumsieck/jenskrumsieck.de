@@ -10,7 +10,9 @@ export default function Admin() {
             CMS.registerPreviewStyle()
         })()
      },[])
-     return <div/>
+     return (
+        <div/>
+     )
 }
 
 export const getStaticProps = async ({ locale }) => ({
