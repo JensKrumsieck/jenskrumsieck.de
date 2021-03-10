@@ -7,6 +7,7 @@ export default {
     repo: 'jenskrumsieck/jenskrumsieck.de',
     branch: 'master'
   },
+  local_backend: true,
 
   i18n: {
     structure: 'multiple_folders',
@@ -33,7 +34,7 @@ export default {
           { name: 'page', label: 'Page', widget: 'number', value_type: 'int' },
         ]
       },
-      { name: 'date', label: 'Publish Date', widget: 'date' },
+      { name: 'date', label: 'Publish Date', widget: 'datetime', format: 'YYYY-MM-DD', dateFormat: 'YYYY-MM-DD', timeFormat: false },
       { name: 'doi', label: 'DOI', widget: 'string' },
       { name: 'image', label: 'Image', widget: 'image', required: false },
       { name: 'imageCopyright', label: 'Image Copyright', widget: 'string', required: false },

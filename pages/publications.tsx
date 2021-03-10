@@ -20,10 +20,11 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
         const data = keys.map((key, index) => {
             const value = values[index]
             const document = matter(value.default)
-            console.log(document)
+            var date = document.data.date.toLocaleDateString("en-US", { year: "numeric" })
             return {
                 frontmatter: document.data,
-                markdownBody: document.content
+                markdownBody: document.content,
+                date: date
             }
         })
         return data

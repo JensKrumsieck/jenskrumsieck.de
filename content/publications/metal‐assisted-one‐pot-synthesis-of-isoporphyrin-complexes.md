@@ -11,7 +11,7 @@ journal:
   journalAbbr: Angew. Chem. Int. Ed
   issue: 55
   page: 10118
-date: 2016-07-15T14:50:06.221Z
+date: 2016-07-15
 doi: 10.1002/anie.201604297
 image: img/uploads/anie201604297-toc-0001-m.jpg
 imageCopyright: © 2016 WILEY‐VCH Verlag GmbH & Co. KGaA, Weinheim
