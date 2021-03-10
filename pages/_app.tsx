@@ -8,6 +8,7 @@ import { appWithTranslation } from 'next-i18next'
 
 function MyApp({ Component, pageProps }: AppProps) {
   library.add(faTwitter, faFacebookSquare, faInstagram, faGithub, faOrcid, faResearchgate, faXing)
+  
   return (
     <Layout>
       <Component {...pageProps} />
