@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next'
 import Link from "./Link";
-import Logo from "../assets/svg/Logo.svg"
+import Logo from "../assets/svg/logo.svg"
 
 const toggleNav = (event) => {
     document.querySelector("#burger").classList.toggle("is-active");
