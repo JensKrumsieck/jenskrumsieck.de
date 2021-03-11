@@ -70,8 +70,8 @@ export const getStaticProps = async ({ locale }) => {
         return data
     })(require.context('../content/posters', true, /\.md$/))
 
-    publications = publications.sort((s: any) => s.date).reverse()
-    posters = posters.sort((s: any) => s.startDate).reverse()
+    publications = publications.sort((a: any, b: any) => Date.parse(a.date) - Date.parse(b.date)).reverse()
+    posters = posters.sort((a, b) => Date.parse(a.conferences[0].startDate) - Date.parse((b.conferences[0].startDate))).reverse()
     return {
 
         props: {
