@@ -62,6 +62,7 @@ const config: CmsConfig = {
             { name: 'startDate', label: 'startDate', widget: 'datetime', format: 'YYYY-MM-DD', dateFormat: 'YYYY-MM-DD', timeFormat: false },
             { name: 'endDate', label: 'endDate', widget: 'datetime', format: 'YYYY-MM-DD', dateFormat: 'YYYY-MM-DD', timeFormat: false, required: false },
             { name: 'location', label: 'Location', widget: 'string', required: false },
+            { name: 'url', label: 'URL', widget: 'string', required: false }
           ]
         }
       ]

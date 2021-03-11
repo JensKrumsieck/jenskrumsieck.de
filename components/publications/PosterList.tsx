@@ -15,8 +15,8 @@ export default function PosterList({ posters }) {
                                         </figure>
                                     </div>
                                     <div className="column">
-                                        <h3 className="title is-size-3 is-spaced">{p.title}</h3>
-                                        <h4 className="subtitle">
+                                        <h3 className="title is-size-4 is-spaced">{p.title}</h3>
+                                        <h4 className="subtitle is-6">
                                             {p.authors.map((a) => {
                                                 var parts: string[] = a.split(" ");
                                                 var lastName = parts.pop()
@@ -35,7 +35,8 @@ export default function PosterList({ posters }) {
                                             {p.conferences.map(c => {
                                                 return(
                                                     <li key={c.title}>
-                                                        {c.title} | {c.startDate} {c.EndDate && c.EndDate != "" ? "- " + c.EndDate : ""}  {c.location && c.location != "" ? " | " + c.location : ""}
+                                                        <p>{c.title} | {c.startDate} {c.EndDate && c.EndDate != "" ? "- " + c.EndDate : ""}  {c.location && c.location != "" ? " | " + c.location : ""}</p>
+                                                        {c.url && c.url != "" ? <a href={c.url}>Read Publication</a> : ""}
                                                     </li>
                                                 )
                                             })}
