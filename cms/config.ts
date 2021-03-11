@@ -7,6 +7,7 @@ const config: CmsConfig = {
     name: 'github',
     repo: 'jenskrumsieck/jenskrumsieck.de',
     branch: 'master',
+    base_url: 'https://jenskrumsieck-de.vercel.app/',
     squash_merges: true
   },
 
