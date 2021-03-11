@@ -30,7 +30,7 @@ export default function PosterList({ posters }) {
                                                     return twoNamers.map(n => n.substring(0, 1)).join(".-")
                                                 })
                                                 return (
-                                                    <span>{initials.join(". ")}. {lastName}{i != p.authors.length - 1 && ", "}</span>
+                                                    <span key={a}>{initials.join(". ")}. {lastName}{i != p.authors.length - 1 && ", "}</span>
                                                 )
                                             })}
                                         </h4>

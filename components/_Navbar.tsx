@@ -31,7 +31,7 @@ export default function Navbar() {
                 <div id="navbarmenu" className="navbar-menu">
                     <div className="navbar-start">
                         <Link href="/">
-                            <a className="navbar-item">Home</a>
+                            <a className="navbar-item">{t('home')}</a>
                         </Link>
                         <Link href="/projects">
                             <a className="navbar-item">{t('projects')}</a>

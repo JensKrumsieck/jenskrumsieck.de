@@ -1,4 +1,5 @@
 import { useTranslation } from 'next-i18next';
+import Link from 'next/link'
 
 import { LightAsync as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -56,12 +57,14 @@ export default function Projects() {
                             <p className="my-5">{t('isopor-description')}</p>
                             <div className="buttons my-5">
                                 <a href="" className="button is-primary">Tell me more!</a>
-                                <a href="" className="button is-primary is-outlined">
-                                    <div className="icon-text">
-                                        <FontAwesomeIcon icon={["fab", "orcid"]} className="icon" />
-                                        <span>Read Publications</span>
-                                    </div>
-                                </a>
+                                <Link href="/publications/">
+                                    <a className="button is-primary is-outlined">
+                                        <div className="icon-text">
+                                            <FontAwesomeIcon icon={["fab", "orcid"]} className="icon" />
+                                            <span>Read Publications</span>
+                                        </div>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                         <div className={["column", styles.threejs].join(" ")}>
@@ -69,8 +72,7 @@ export default function Projects() {
                         </div>
                     </div>
                 </div>
-            </section>
-
+            </section> 
 
             <section className="notification is-black my-5 projects">
                 <div className="container is-fluid">

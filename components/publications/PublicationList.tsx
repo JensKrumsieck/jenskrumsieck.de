@@ -28,7 +28,7 @@ export default function PublicationList({ publications }) {
                                                     return twoNamers.map(n => n.substring(0, 1)).join(".-")
                                                 })
                                                 return (
-                                                    <span>
+                                                    <span key={a}>
                                                         {initials.join(". ")}. {lastName},&nbsp;
                                                     </span>
                                                 )

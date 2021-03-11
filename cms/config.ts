@@ -67,6 +67,19 @@ const config: CmsConfig = {
         }
       ]
     },
+    {
+      name: 'projects',
+      label: 'Projects',
+      label_singular: 'Project',
+      folder: 'content/projects',
+      create: true,
+      i18n: true,
+      fields: [
+        { name: 'title', label: 'Title', widget: 'string', i18n: true },
+        { name: 'image', label: 'Image', widget: 'image', required: false },
+        { name: 'body', label: 'Abstract', widget: 'markdown', i18n: true }
+      ]
+    },
   ]
 }
 
