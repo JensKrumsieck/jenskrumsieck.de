@@ -8,7 +8,7 @@ authors:
   - Xiulan Xie
   - Martin Bröring
 journal:
-  journalAbbr: Angew. Chem. Int. Ed
+  journalAbbr: Angew. Chem. Int. Ed.
   issue: 55
   page: 10118
 date: 2016-07-15

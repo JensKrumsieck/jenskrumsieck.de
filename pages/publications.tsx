@@ -2,15 +2,26 @@ import matter from 'gray-matter'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import PublicationList from '../components/publications/PublicationList'
 import yaml from 'js-yaml'
+import { useTranslation } from 'next-i18next'
 
 
-export default function Publications(props) {
+export default function Publications(props) {    
+    const { t } = useTranslation('common')
     return (
-        <section className="section">
-            <div className="container is-fluid">
-                <PublicationList publications={props.publications} />
-            </div>
-        </section>
+        <>
+            <section className="hero">
+                <div className="container is-fluid">
+                    <div className="hero-body">
+                        <h1 className="title my-5">{t('publications')}</h1>
+                    </div>
+                </div>
+            </section>
+            <section className="section">
+                <div className="container is-fluid">
+                    <PublicationList publications={props.publications} />
+                </div>
+            </section>
+        </>
     )
 }
 
