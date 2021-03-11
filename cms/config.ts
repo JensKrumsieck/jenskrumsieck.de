@@ -8,7 +8,8 @@ const config: CmsConfig = {
     repo: 'jenskrumsieck/jenskrumsieck.de',
     branch: 'master',
     base_url: 'https://jenskrumsieck-de.vercel.app/',
-    squash_merges: true
+    squash_merges: true,
+    auth_endpoint: 'api/auth'
   },
 
   i18n: {
