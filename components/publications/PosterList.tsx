@@ -1,5 +1,10 @@
+import moment from 'moment'
+import { useRouter } from 'next/router'
+
 export default function PosterList({ posters }) {
     if (posters === 'undefined') return null
+    const router = useRouter()
+    const locale = router.locale
     return (
         <div>
             {!posters && <div>No pubs!</div>}
@@ -15,9 +20,9 @@ export default function PosterList({ posters }) {
                                         </figure>
                                     </div>
                                     <div className="column">
-                                        <h3 className="title is-size-4 is-spaced">{p.title}</h3>
+                                        <h3 className="title is-size-4 is-spaced">{p.title} {p.type && p.type != "misc" && <span className="tag is-dark">{p.type.charAt(0).toUpperCase() + p.type.slice(1)}</span>}</h3>
                                         <h4 className="subtitle is-6">
-                                            {p.authors.map((a) => {
+                                            {p.authors.map((a, i) => {
                                                 var parts: string[] = a.split(" ");
                                                 var lastName = parts.pop()
                                                 var initials = parts.map(s => {
@@ -25,18 +30,28 @@ export default function PosterList({ posters }) {
                                                     return twoNamers.map(n => n.substring(0, 1)).join(".-")
                                                 })
                                                 return (
-                                                    <span>
-                                                        {initials.join(". ")}. {lastName},&nbsp;
-                                                    </span>
+                                                    <span>{initials.join(". ")}. {lastName}{i != p.authors.length - 1 && ", "}</span>
                                                 )
                                             })}
                                         </h4>
                                         <ul>
                                             {p.conferences.map(c => {
-                                                return(
+                                                return (
                                                     <li key={c.title}>
-                                                        <p>{c.title} | {c.startDate} {c.EndDate && c.EndDate != "" ? "- " + c.EndDate : ""}  {c.location && c.location != "" ? " | " + c.location : ""}</p>
-                                                        {c.url && c.url != "" ? <a href={c.url}>Read Publication</a> : ""}
+                                                        <h5 className="is-6 has-text-weight-semibold">
+                                                            <span>{c.title}</span>
+                                                            {c.url && c.url != "" &&
+                                                                (
+                                                                    <>
+                                                                        &nbsp;
+                                                                        <a className="tag is-danger" href={c.url}>Read Publication</a>
+                                                                    </>
+                                                                )}
+                                                        </h5>
+                                                        <p>
+                                                            <span className="is-italic">{moment(c.startDate).locale(locale).format("Do MMM YYYY")} {c.endDate && c.endDate != "" && "- " + moment(c.endDate).locale(locale).format("Do MMM YYYY")} </span>
+                                                            {c.location && c.location != "" && " @ " + c.location}
+                                                        </p>
                                                     </li>
                                                 )
                                             })}

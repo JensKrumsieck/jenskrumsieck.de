@@ -13,7 +13,7 @@ export default function Publications(props) {
             <section className="hero">
                 <div className="container is-fluid">
                     <div className="hero-body">
-                        <h1 className="title my-5">{t('publications')}</h1>
+                        <h1 className="title mt-6">{t('publications')}</h1>
                     </div>
                 </div>
             </section>
