@@ -53,6 +53,7 @@ const config: CmsConfig = {
       create: true,
       fields: [
         { name: 'title', label: 'Title', widget: 'string' },
+        { name: 'authors', label: 'Authors', widget: 'list', collapsed: true, summary: '{{fields.name}}', field: { name: 'name', label: 'Name', widget: 'string' } },
         { name: 'image', label: 'Image', widget: 'image' },
         { name: 'type', label: 'Type', widget: 'select', options: ['poster', 'oral', 'misc'] },
         {
