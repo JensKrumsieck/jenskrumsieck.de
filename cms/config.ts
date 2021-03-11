@@ -1,4 +1,6 @@
-export default {
+import { CmsConfig } from "netlify-cms-core"
+
+const config : CmsConfig = {
   display_url: 'https://jenskrumsieck.de',
   load_config_file: false,
   publish_mode: 'editorial_workflow',
@@ -43,3 +45,5 @@ export default {
   }
   ]
 }
+
+export default config

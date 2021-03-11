@@ -1,12 +1,15 @@
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Projects from '../components/index/Projects'
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
+
+import Projects from '../components/index/Projects'
+
 import PorphyStruct from "../assets/svg/porphystruct.svg"
 import CHN from "../assets/svg/chn.svg"
 import SPC from "../assets/svg/spc.svg"
 import ChemSharp from "../assets/svg/chemsharp.svg"
+
 import styles from "../styles/Index.module.sass"
 
 export default function Index() {
@@ -53,11 +56,11 @@ export default function Index() {
                     </div>
                 </div>
                 <div className={styles.heroafter}>
-                    <Image src="/img/laptop.png" alt="laptop" layout="fill" objectFit="contain"/>
+                    <Image src="/img/laptop.png" alt="laptop" layout="fill" objectFit="contain" />
                 </div>
             </section>
-            <Projects/>
-            
+            <Projects />
+
         </>
     )
 }
