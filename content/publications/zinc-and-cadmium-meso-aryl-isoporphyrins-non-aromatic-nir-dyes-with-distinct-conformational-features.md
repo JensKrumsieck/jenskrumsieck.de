@@ -10,9 +10,9 @@ authors:
 journal:
   journalAbbr: Chem. Eur. J.
   issue: 0
-  page: 0
+  page: ""
 date: 2021-03-11
-doi: accepted
+doi: ""
 image: img/uploads/stars_withuv.png
 ---
 A series of pyrrolyl and dipyrrinyl isoporphyrins carrying
