@@ -7,6 +7,7 @@ authors:
   - William-Dale-Möller
   - Dominik Körner
   - Martin Bröring
+annotation: "* These authors contributed equally"
 journal:
   journalAbbr: Chem. Eur. J.
   issue: 0
