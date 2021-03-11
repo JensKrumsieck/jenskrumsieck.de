@@ -4,7 +4,7 @@ title: "Zinc- and Cadmium meso-Aryl-Isoporphyrins: Non-Aromatic NIR Dyes with
 authors:
   - Çağla Baş*
   - Jens Krumsieck*
-  - William-Dale-Möller
+  - William-Dale Möller
   - Dominik Körner
   - Martin Bröring
 annotation: "* These authors contributed equally"
@@ -28,7 +28,7 @@ bridge strongly favours one of the two possible atropisomers.
 Hindered rotation of the *meso*-aryl groups is observed only in the
 cases of methylbenzothienyl derivatives **10** and **15** and leads to the
 observation of several diastereomers. NIR absorptions up to 923 nm
-are found throughout. Electrochemical investigations into the 1e- and
+are found throughout. Electrochemical investigations into the 1e<sup>-</sup> and
 2e<sup>-</sup> reduced species unravel axial ligand exchange dynamics for the
 zinc isoporphyrin radical, and the probable formation of a zinc
 phlorinate.

@@ -5,7 +5,7 @@ import yaml from 'js-yaml'
 import { useTranslation } from 'next-i18next'
 
 
-export default function Publications(props) {    
+export default function Publications(props) {
     const { t } = useTranslation('common')
     return (
         <>
@@ -27,7 +27,7 @@ export default function Publications(props) {
 
 export const getStaticProps = async ({ locale }) => {
 
-    const publications = ((context) => {
+    let publications = ((context) => {
         const keys = context.keys()
         const values = keys.map(context)
         const data = keys.map((key, index) => {
@@ -45,6 +45,7 @@ export const getStaticProps = async ({ locale }) => {
         return data
     })(require.context('../content/publications', true, /\.md$/))
 
+    publications = publications.sort((s: any) => s.date).reverse()
     return {
 
         props: {
