@@ -3,7 +3,6 @@ import { CmsConfig } from "netlify-cms-core"
 const config: CmsConfig = {
   display_url: 'https://jenskrumsieck.de',
   load_config_file: false,
-  publish_mode: 'editorial_workflow',
   backend: {
     name: 'github',
     repo: 'jenskrumsieck/jenskrumsieck.de',
@@ -76,7 +75,7 @@ const config: CmsConfig = {
       i18n: true,
       fields: [
         { name: 'title', label: 'Title', widget: 'string', i18n: true },
-        { name: 'image', label: 'Image', widget: 'image', required: false },
+        { name: 'image', label: 'Image', widget: 'image', required: false, i18n: 'duplicate' },
         { name: 'body', label: 'Abstract', widget: 'markdown', i18n: true }
       ]
     },
