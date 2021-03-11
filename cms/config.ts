@@ -7,9 +7,9 @@ const config: CmsConfig = {
   backend: {
     name: 'github',
     repo: 'jenskrumsieck/jenskrumsieck.de',
-    branch: 'master'
+    branch: 'master',
+    squash_merges: true
   },
-  local_backend: true,
 
   i18n: {
     structure: 'multiple_folders',
@@ -38,7 +38,7 @@ const config: CmsConfig = {
             { name: 'page', label: 'Page', widget: 'number', value_type: 'int', required: false },
           ]
         },
-        { name: 'date', label: 'Publish Date', widget: 'datetime', format: 'YYYY-MM-DD', dateFormat: 'YYYY-MM-DD', timeFormat: false },
+        { name: 'date', label: 'Publish Date', widget: 'datetime', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false },
         { name: 'doi', label: 'DOI', widget: 'string', required: false },
         { name: 'image', label: 'Image', widget: 'image', required: false },
         { name: 'imageCopyright', label: 'Image Copyright', widget: 'string', required: false },
@@ -59,8 +59,8 @@ const config: CmsConfig = {
         {
           name: 'conferences', label: 'Conferences', widget: 'list', required: false, summary: '{{fields.title}}', fields: [
             { name: 'title', label: 'Title', widget: 'string' },
-            { name: 'startDate', label: 'startDate', widget: 'datetime', format: 'YYYY-MM-DD', dateFormat: 'YYYY-MM-DD', timeFormat: false },
-            { name: 'endDate', label: 'endDate', widget: 'datetime', format: 'YYYY-MM-DD', dateFormat: 'YYYY-MM-DD', timeFormat: false, required: false },
+            { name: 'startDate', label: 'startDate', widget: 'datetime', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false },
+            { name: 'endDate', label: 'endDate', widget: 'datetime', format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false, required: false },
             { name: 'location', label: 'Location', widget: 'string', required: false },
             { name: 'url', label: 'URL', widget: 'string', required: false }
           ]
