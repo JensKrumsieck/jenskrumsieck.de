@@ -7,7 +7,7 @@ export type Publication = {
     doi?: string,
     image: string,
     imageCopyright?: string,
-    abstract: string
+    content: string
 }
 
 export type Journal = {

@@ -78,7 +78,8 @@ const config: CmsConfig = {
       fields: [
         { name: 'title', label: 'Title', widget: 'string', i18n: true },
         { name: 'image', label: 'Image', widget: 'image', required: false, i18n: 'duplicate' },
-        { name: 'body', label: 'Abstract', widget: 'markdown', i18n: true }
+        { name: 'body', label: 'Content', widget: 'markdown', i18n: true },
+        { name: 'priority', label: 'Priority', widget: 'number', i18n: 'duplicate' }
       ]
     },
   ]

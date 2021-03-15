@@ -46,7 +46,7 @@ export default function Publication(props) {
                     <br />{pub.annotation != "" ? <span className="is-size-7 has-text-centered is-italic has-text-weight-light">{pub.annotation}</span> : ""}
                 </h4>
                 <div className="content has-text-justified">
-                    <ReactMarkdown allowDangerousHtml>{pub.abstract}</ReactMarkdown>
+                    <ReactMarkdown allowDangerousHtml>{pub.content}</ReactMarkdown>
                 </div>
                 {pub.doi != "" &&
                     (

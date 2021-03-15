@@ -1,11 +1,12 @@
-import matter from 'gray-matter'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import yaml from 'js-yaml'
 import { useTranslation } from 'next-i18next'
+import readData from '../cms/readData'
 
 import PublicationList from '../components/publications/PublicationList'
 import PosterList from '../components/publications/PosterList'
 import Meta from '../components/Meta'
+import { Publication } from '../lib/publication'
+import { Poster } from '../lib/poster'
 
 export default function Publications(props) {
     const { t } = useTranslation('common')
@@ -38,40 +39,8 @@ export default function Publications(props) {
 
 export const getStaticProps = async ({ locale }) => {
 
-    let publications = ((context) => {
-        const keys = context.keys()
-        const values = keys.map(context)
-        const data = keys.map((key, index) => {
-            const value: any = values[index]
-            const { data, content } = matter(value.default, {
-                engines: {
-                    yaml: s => yaml.safeLoad(s, { schema: yaml.JSON_SCHEMA })
-                }
-            })
-            return {
-                ...data,
-                abstract: content
-            }
-        })
-        return data
-    })(require.context('../content/publications', true, /\.md$/))
-
-    let posters = ((context) => {
-        const keys = context.keys()
-        const values = keys.map(context)
-        const data = keys.map((key, index) => {
-            const value: any = values[index]
-            const { data, content } = matter(value.default, {
-                engines: {
-                    yaml: s => yaml.safeLoad(s, { schema: yaml.JSON_SCHEMA })
-                }
-            })
-            return {
-                ...data
-            }
-        })
-        return data
-    })(require.context('../content/posters', true, /\.md$/))
+    let publications = readData<Publication>('publications')
+    let posters = readData<Poster>('posters')
 
     publications = publications.sort((a: any, b: any) => Date.parse(a.date) - Date.parse(b.date)).reverse()
     posters = posters.sort((a, b) => Date.parse(a.conferences[0].startDate) - Date.parse((b.conferences[0].startDate))).reverse()
