@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import Projects from '../components/index/Projects'
+import Meta from '../components/Meta'
 
 import PorphyStruct from "../assets/svg/porphystruct.svg"
 import CHN from "../assets/svg/chn.svg"
@@ -16,6 +17,8 @@ export default function Index() {
     const { t } = useTranslation('common')
     return (
         <>
+            <Meta title={"Jens Krumsieck | " + t('hero-title')}
+                desc={t('description')} img="img/og_image.png" />
             <section className="hero is-fullheight-with-navbar">
                 <div className="hero-body">
                     <div className="container is-fluid">

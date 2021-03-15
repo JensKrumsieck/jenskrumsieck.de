@@ -5,11 +5,14 @@ import { useTranslation } from 'next-i18next'
 
 import PublicationList from '../components/publications/PublicationList'
 import PosterList from '../components/publications/PosterList'
+import Meta from '../components/Meta'
 
 export default function Publications(props) {
     const { t } = useTranslation('common')
     return (
-        <>
+        <>       
+            <Meta title={t('publications') + " | Jens Krumsieck"}
+                desc={t('publication-description')} img="img/og_image.png" />     
             <section className="hero">
                 <div className="container is-fluid">
                     <div className="hero-body">

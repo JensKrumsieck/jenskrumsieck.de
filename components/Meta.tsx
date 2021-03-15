@@ -1,6 +1,10 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 export default function Meta(props) {
+    const router = useRouter()
+    const locale = router.locale
+    const hostname = typeof window !== 'undefined' && window.location.origin ? window.location.origin + "/" : '/';
     return (
         <Head>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,15 +17,15 @@ export default function Meta(props) {
             <meta property="og:description" content={props.desc} />
             <meta name="twitter:description" content={props.desc} />
 
-            <meta name="og:image" content={props.hostname + props.img} />
-            <meta name="twitter:image" content={props.hostname + props.img} />
+            <meta name="og:image" content={hostname + props.img} />
+            <meta name="twitter:image" content={hostname + props.img} />
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="627" />
 
-            <meta property="og:locale" content={props.locale} />
-            <link rel="canonical" href={props.hostname + props.locale + props.pathname} />
-            <link rel="alternate" href={props.hostname + "de" + props.pathname} hrefLang="de" />
-            <link rel="alternate" href={props.hostname + "en" + props.pathname} hrefLang="en" />
+            <meta property="og:locale" content={locale} />
+            <link rel="canonical" href={hostname + locale + router.pathname} />
+            <link rel="alternate" href={hostname + "de" + router.pathname} hrefLang="de" />
+            <link rel="alternate" href={hostname + "en" + router.pathname} hrefLang="en" />
 
             <link rel="icon" type="icon/ico" href="/favicon.ico" />
             <link rel="apple-touch-icon" href="/favicon.ico" />
