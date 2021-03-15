@@ -15,7 +15,7 @@ export default function PublicationTemplate(props) {
         } as Journal,
         date: entry.getIn(['data', 'date']),
         image: props.getAsset(image),
-        abstract: entry.getIn(['data', 'body']),
+        content: entry.getIn(['data', 'body']),
         doi: entry.getIn(['data', 'doi'])
     }
 
