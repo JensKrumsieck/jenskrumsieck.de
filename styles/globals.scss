@@ -1,0 +1,39 @@
+@import "include/mixins.scss";
+@import "include/variables.scss";
+@import "include/typography.scss";
+@import "include/navbar.scss";
+@import "include/button.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.social {
+    ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        li {
+            padding-right: 1em;
+            font-size: 1.5rem;
+            a {
+                color: var(--dark);
+                &:hover {
+                    color: var(--green);
+                }
+            }
+        }
+    }
+}
+
+.container {
+    max-width: 80vw;
+    margin: auto;
+}
+
+.headline-block {
+    margin-bottom: 1.5em;
+}
+
+@import "hero.scss";

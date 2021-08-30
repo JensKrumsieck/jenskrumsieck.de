@@ -1,0 +1,35 @@
+.hero {
+    .hero-subheadline {
+        position: relative;
+        display: flex;
+        height: 2em;
+        padding-left: 3em;
+        font-size: 1.25rem;
+        &:before {
+            width: 2em;
+            height: 2em;
+            content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="44" height="38" viewBox="0 0 44 38"><path d="M27.234,0a10,10,0,0,1,8.654,4.99l5.211,9a10,10,0,0,1,0,10.021l-5.211,9A10,10,0,0,1,27.234,38H16.766a10,10,0,0,1-8.654-4.99l-5.211-9a10,10,0,0,1,0-10.021l5.211-9A10,10,0,0,1,16.766,0Z" fill="hsl(146, 52%, 54%)"/></svg>');
+            position: absolute;
+            left: 0;
+            top: -0.25em;
+        }
+    }
+    .social {
+        margin-top: 3em;
+    }
+    .button {
+        margin-top: 2em;
+    }
+    p {
+        padding: 1em 0;
+        &:before {
+            display: block;
+            content: "";
+            width: 34px;
+            height: 5px;
+            background: var(--green);
+            position: relative;
+            top: -1em;
+        }
+    }
+}

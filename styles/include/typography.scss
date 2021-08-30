@@ -1,0 +1,49 @@
+@import "_gothic_a1.scss";
+body {
+    font-size: var(--base-font-size);
+    color: var(--dark);
+    background: var(--white);
+    font-weight: var(--regular);
+    font-family: "Gothic A1";
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+    @include mobile{
+        font-size: var(--h1-mobile-size);
+    }
+    font-weight: var(--bold);
+}
+h2 {
+    font-size: var(--h2-font-size);
+    @include mobile{
+        font-size: var(--h2-mobile-size);
+    }
+    font-weight: var(--semi-bold);
+}
+h3 {
+    font-size: var(--h3-font-size);
+    @include mobile{
+        font-size: var(--h3-mobile-size);
+    }
+}
+
+.light {
+    font-weight: var(--light);
+}
+.black {
+    font-weight: var(--black);
+}
+.bold {
+    font-weight: var(--bold);
+}
+.italic {
+    font-style: italic;
+}
+.upper {
+    text-transform: uppercase;
+}
+.stretch{
+    letter-spacing: .25vw;
+}
