@@ -10,22 +10,32 @@ body {
 
 h1 {
     font-size: var(--h1-font-size);
-    @include mobile{
+    @include mobile {
         font-size: var(--h1-mobile-size);
     }
     font-weight: var(--bold);
 }
 h2 {
     font-size: var(--h2-font-size);
-    @include mobile{
+    @include mobile {
         font-size: var(--h2-mobile-size);
     }
-    font-weight: var(--semi-bold);
+    font-weight: var(--bold);
 }
 h3 {
     font-size: var(--h3-font-size);
-    @include mobile{
+    @include mobile {
         font-size: var(--h3-mobile-size);
+    }
+}
+
+.headline-block {
+    margin-bottom: 1.5em;
+}
+
+.headline-icon {
+    span {
+        margin-left: 0.5em;
     }
 }
 
@@ -44,6 +54,19 @@ h3 {
 .upper {
     text-transform: uppercase;
 }
-.stretch{
-    letter-spacing: .25vw;
+.stretch {
+    letter-spacing: 0.25vw;
+}
+
+.indent {
+    margin-left: 1.25em;
+}
+
+a:not(.button) {
+    color: var(--dark);
+    text-decoration: none;
+    border-bottom: 1px solid $green;
+    &:hover {
+        color: var(--primary);
+    }
 }

@@ -1,11 +1,11 @@
 import Hero from '../components/index/Hero'
-import PorphyStruct from '../components/index/PorphyStruct'
+import Publications from '../components/index/Publications'
 
 export default function Index() {
   return (
     <>
       <Hero />
-      <PorphyStruct/>
+      <Publications/>
     </>
   )
 }

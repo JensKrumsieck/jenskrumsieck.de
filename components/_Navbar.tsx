@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useEffect } from 'react';
 
 import Logo from '../assets/svg/logo.svg'
+import _Social from './_Social';
 
 const openNav = () => {
     var navLinks = document.querySelector('.nav-links');
@@ -29,22 +30,11 @@ return (
             <Link href="/">
                 <a>
                     <Logo />
-                    <span>Jens Krumsieck</span>
+                    <h1>Jens Krumsieck</h1>
                 </a>
             </Link>
         </div>
-        <ul className="nav-links">
-            <li>
-                <Link href="/">
-                    <a className="nav-item">Home</a>
-                </Link>
-            </li>
-            <li>
-                <Link href="/">
-                    <a className="nav-item">Home</a>
-                </Link>
-            </li>
-        </ul>
+       <_Social/>
     </nav >
 )
 }

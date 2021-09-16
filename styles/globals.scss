@@ -8,32 +8,70 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    overflow-x: hidden;
+}
 
 .social {
     ul {
         list-style: none;
         display: flex;
+        flex-wrap: wrap;
         padding: 0;
         li {
             padding-right: 1em;
-            font-size: 1.5rem;
             a {
                 color: var(--dark);
+                border: none;
                 &:hover {
-                    color: var(--green);
+                    color: var(--dark);
                 }
             }
         }
     }
 }
 
+section:not(.hero) {
+    position: relative;
+    padding: 5rem 0;
+}
 .container {
     max-width: 80vw;
     margin: auto;
 }
-
-.headline-block {
-    margin-bottom: 1.5em;
-}
-
 @import "hero.scss";
+@import "index.scss";
+@include desktop {
+    .grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2em;
+    }
+}
+.mobile-grid {
+    display: grid;
+    grid-template-columns: 5% 95%;
+    gap: 1em;
+    @include mobile {
+        margin-top: 2em;
+    }
+}
+.absolute {
+    position: absolute;
+}
+.relative {
+    position: relative;
+}
+.flex {
+    display: flex;
+}
+.badge{
+    background: var(--primary);
+    display: inline-block;
+    border-radius: 1em;
+    font-size: 1.1rem;
+    color: var(--white);
+    font-weight: var(--regular);
+    padding: .1em 1em;
+    margin-left: 1em;
+}

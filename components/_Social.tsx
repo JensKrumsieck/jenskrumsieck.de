@@ -4,7 +4,7 @@ import { faFacebook, faGithub, faInstagram, faLinkedin, faOrcid, faResearchgate,
 export default function _Social() {
     return (
         <div className="social">
-            <ul>
+            <ul className="nav-links">
                 <li>
                     <a href="https://github.com/jenskrumsieck" title="GitHub: JensKrumsieck">
                         <FontAwesomeIcon icon={faGithub} />

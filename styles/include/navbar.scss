@@ -6,18 +6,27 @@ nav.navbar {
     z-index: 30;
     a {
         text-decoration: none;
+        border: none;
         color: var(--dark);
     }
     .nav-brand {
-        font-size: 1.75rem;
+        margin-top: auto;
+        margin-bottom: auto;
+        @include desktop {
+            font-size: 1.75rem;
+        }
         font-weight: var(--black);
         text-align: center;
         z-index: 10;
+        margin-right: 3em;
         a {
             display: flex;
             > * {
                 margin: auto;
             }
+        }
+        h1 {
+            font-size: 1.75rem !important;
         }
         svg {
             height: 2.5rem;
@@ -39,7 +48,8 @@ nav.navbar {
     }
     ul.nav-links {
         position: fixed;
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         top: 0;
         left: 0;
         flex-direction: column;
@@ -50,7 +60,7 @@ nav.navbar {
         list-style: none;
         height: 100vh;
         width: 100vw;
-        font-size: var(--h1-font-size);
+        font-size: 10vw;
         font-weight: var(--semi-bold);
         transition: all ease-out 1s;
         clip-path: circle(0px at 90% -10%);
@@ -59,7 +69,7 @@ nav.navbar {
             color: var(--white);
         }
         @include desktop {
-            font-size: 1.25rem;
+            font-size: 1.5rem;
             background: none;
             display: flex;
             flex-direction: unset;
@@ -75,7 +85,10 @@ nav.navbar {
             clip-path: circle(150vh at 90% -10%);
         }
         li {
-            padding: 0.5em;
+            padding: 0.5em 1em;
+            @include mobile {
+                margin: auto;
+            }
         }
     }
 }
