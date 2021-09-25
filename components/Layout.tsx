@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './_Footer'
 import Navbar from './_Navbar'
 
 export default function Layout({ children }: { children: React.ReactNode; }) {
@@ -11,7 +12,7 @@ export default function Layout({ children }: { children: React.ReactNode; }) {
                 {children}
             </main>
             <footer>
-
+                <Footer/>
             </footer>
         </>
     )

@@ -48,6 +48,11 @@ section:not(.hero) {
         gap: 2em;
     }
 }
+.mgrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2em;
+}
 .mobile-grid {
     display: grid;
     grid-template-columns: 5% 95%;
@@ -65,13 +70,51 @@ section:not(.hero) {
 .flex {
     display: flex;
 }
-.badge{
+.badge {
     background: var(--primary);
     display: inline-block;
     border-radius: 1em;
     font-size: 1.1rem;
     color: var(--white);
     font-weight: var(--regular);
-    padding: .1em 1em;
+    padding: 0.1em 1em;
     margin-left: 1em;
+}
+
+footer {
+    padding: 4rem 0;
+    border-top: solid var(--dark) 1px;
+    .logo {
+        margin: auto 0;
+        vertical-align: middle;
+        h2 {
+            font-size: 1.5rem;
+        }
+        display: flex;
+        svg {
+            width: 32px;
+        }
+    }
+    .social {
+        text-align: right;
+        font-size: 1.5vw;
+        ul {
+            justify-content: flex-end;
+        }
+        @include mobile {
+            font-size: 5vw;
+        }
+    }
+    .footerNav {
+        margin-top: 1rem;
+        ul {
+            list-style: none;
+        }
+    }
+    .copyright {
+        font-size: 0.75rem;
+        margin: 1rem auto;
+        display: flex;
+        justify-content: center;
+    }
 }
