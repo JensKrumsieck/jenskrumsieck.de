@@ -74,7 +74,7 @@ export default function Privacy() {
                 <p>Die Daten werden spätestens nach sieben Tage wieder gelöscht, soweit keine weitere Aufbewahrung zu Beweiszwecken
                     erforderlich ist. Andernfalls sind die Daten bis zur endgültigen Klärung eines Vorfalls ganz oder teilweise von der
                     Löschung ausgenommen.</p>
-                    <p>Dieses Angebot wird über "Vercel" bereitgestellt. Informationen über die <a href="https://vercel.com/docs/concepts/analytics#hosted-on-vercel">Speicherung von Besuchsdaten sind hier beschrieben</a>.</p>
+                    <p>Dieses Angebot wird über Vercel bereitgestellt. Informationen über die <a href="https://vercel.com/docs/concepts/analytics#hosted-on-vercel">Speicherung von Besuchsdaten sind hier beschrieben</a>.</p>
                 <h4>Twitter</h4>
                 <p>Wir unterhalten bei Twitter eine Onlinepräsenz um unser Unternehmen sowie unsere Leistungen zu präsentieren und mit
                     Kunden/Interessenten zu kommunizieren. Twitter ist ein Service der Twitter Inc., 1355 Market Street, Suite 900, San
@@ -84,7 +84,7 @@ export default function Privacy() {
                     als dass z.B. der spätere Zugriff auf die Nutzerdaten erschwert werden kann. Auch haben wir keinen Zugriff auf diese
                     Nutzerdaten. Die Zugriffsmöglichkeit liegt ausschließlich bei Twitter.</p>
                 <p>Die Datenschutzhinweise von Twitter finden Sie unter</p>
-                <p><a href="https://twitter.com/de/privacy" target="_blank" rel="noopener">https://twitter.com/de/privacy</a></p>
+                <p><a href="https://twitter.com/de/privacy" target="_blank"rel="noreferrer">https://twitter.com/de/privacy</a></p>
                 <h4>YouTube</h4>
                 <p>Wir unterhalten bei YouTube eine Onlinepräsenz um unser Unternehmen sowie unsere Leistungen zu präsentieren und mit
                     Kunden/Interessenten zu kommunizieren. YouTube ist ein Service der Google Ireland Limited, Gordon House, Barrow
@@ -95,7 +95,7 @@ export default function Privacy() {
                     als dass z.B. der spätere Zugriff auf die Nutzerdaten erschwert werden kann. Auch haben wir keinen Zugriff auf diese
                     Nutzerdaten. Die Zugriffsmöglichkeit liegt ausschließlich bei YouTube.</p>
                 <p>Die Datenschutzhinweise von YouTube finden Sie unter</p>
-                <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
+                <p><a href="https://policies.google.com/privacy" target="_blank"rel="noreferrer">https://policies.google.com/privacy</a>
                 </p>
                 <h4>LinkedIn</h4>
                 <p>Wir unterhalten bei LinkedIn eine Onlinepräsenz um unser Unternehmen sowie unsere Leistungen zu präsentieren und mit
@@ -108,20 +108,20 @@ export default function Privacy() {
                     Nutzerdaten. Die Zugriffsmöglichkeit liegt ausschließlich bei LinkedIn.</p>
                 <p>Die Datenschutzhinweise von LinkedIn finden Sie unter</p>
                 <p><a href="https://www.linkedin.com/legal/privacy-policy" target="_blank"
-                    rel="noopener">https://www.linkedin.com/legal/privacy-policy</a></p>
+                   rel="noreferrer">https://www.linkedin.com/legal/privacy-policy</a></p>
                 <h4>Facebook</h4>
                 <p>Zur Bewerbung unserer Produkte und Leistungen sowie zur Kommunikation mit Interessenten oder Kunden betreiben wir
                     eine Firmenpräsenz auf der Plattform Facebook.</p>
                 <p>Auf dieser Social-Media-Plattform sind wir gemeinsam mit der Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal
                     Harbour, Dublin 2 Ireland, verantwortlich.</p>
                 <p>Der Datenschutzbeauftragte von Facebook kann über ein Kontaktformular erreicht werden:</p>
-                <p><a href="https://www.facebook.com/help/contact/540977946302970" target="_blank" rel="noopener"
+                <p><a href="https://www.facebook.com/help/contact/540977946302970" target="_blank"rel="noreferrer"
                     aria-invalid="true">https://www.facebook.com/help/contact/540977946302970</a></p>
                 <p>Die gemeinsame Verantwortlichkeit haben wir in einer Vereinbarung bezüglich der jeweiligen Verpflichtungen im Sinne
                     der DSGVO geregelt. Diese Vereinbarung, aus der sich die gegenseitigen Verpflichtungen ergeben, ist unter dem
                     folgenden Link abrufbar:</p>
                 <p><a href="https://www.facebook.com/legal/terms/page_controller_addendum" target="_blank"
-                    rel="noopener">https://www.facebook.com/legal/terms/page_controller_addendum</a></p>
+                   rel="noreferrer">https://www.facebook.com/legal/terms/page_controller_addendum</a></p>
                 <p>Rechtsgrundlage für die dadurch erfolgende und nachfolgend wiedergegebene Verarbeitung von personenbezogenen Daten
                     ist Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse besteht an der Analyse, der Kommunikation sowie dem
                     Absatz und der Bewerbung unserer Produkte und Leistungen.</p>
@@ -151,7 +151,7 @@ export default function Privacy() {
                 <p>Näheres zu den Verarbeitungstätigkeiten, deren Unterbindung und zur Löschung der von Facebook verarbeiteten Daten
                     finden sich in der Datenrichtlinie von Facebook:</p>
                 <p><a href="https://www.facebook.com/privacy/explanation" target="_blank"
-                    rel="noopener">https://www.facebook.com/privacy/explanation</a></p>
+                   rel="noreferrer">https://www.facebook.com/privacy/explanation</a></p>
                 <p>Es ist nicht ausgeschlossen, dass die Verarbeitung durch die Facebook Ireland Ltd. auch über die Facebook Inc., 1601
                     Willow Road, Menlo Park, California 94025 in den USA erfolgt.</p>
                 <h4>Instagram</h4>
@@ -160,13 +160,13 @@ export default function Privacy() {
                 <p>Auf dieser Social-Media-Plattform sind wir gemeinsam mit der Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal
                     Harbour, Dublin 2 Ireland, verantwortlich.</p>
                 <p>Der Datenschutzbeauftragte von Instagram kann über ein Kontaktformular erreicht werden:</p>
-                <p><a href="https://www.facebook.com/help/contact/540977946302970" target="_blank" rel="noopener"
+                <p><a href="https://www.facebook.com/help/contact/540977946302970" target="_blank"rel="noreferrer"
                     aria-invalid="true">https://www.facebook.com/help/contact/540977946302970</a></p>
                 <p>Die gemeinsame Verantwortlichkeit haben wir in einer Vereinbarung bezüglich der jeweiligen Verpflichtungen im Sinne
                     der DSGVO geregelt. Diese Vereinbarung, aus der sich die gegenseitigen Verpflichtungen ergeben, ist unter dem
                     folgenden Link abrufbar:</p>
                 <p><a href="https://www.facebook.com/legal/terms/page_controller_addendum" target="_blank"
-                    rel="noopener">https://www.facebook.com/legal/terms/page_controller_addendum</a></p>
+                   rel="noreferrer">https://www.facebook.com/legal/terms/page_controller_addendum</a></p>
                 <p>Rechtsgrundlage für die dadurch erfolgende und nachfolgend wiedergegebene Verarbeitung von personenbezogenen Daten
                     ist Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse besteht an der Analyse, der Kommunikation sowie dem
                     Absatz und der Bewerbung unserer Produkte und Leistungen.</p>
@@ -196,7 +196,7 @@ export default function Privacy() {
                 <p>Näheres zu den Verarbeitungstätigkeiten, deren Unterbindung und zur Löschung der von Instagram verarbeiteten Daten
                     finden sich in der Datenrichtlinie von Instagram:</p>
                 <p><a href="https://help.instagram.com/519522125107875" target="_blank"
-                    rel="noopener">https://help.instagram.com/519522125107875</a></p>
+                   rel="noreferrer">https://help.instagram.com/519522125107875</a></p>
                 <p>Es ist nicht ausgeschlossen, dass die Verarbeitung durch die Facebook Ireland Ltd. auch über die Facebook Inc., 1601
                     Willow Road, Menlo Park, California 94025 in den USA erfolgt.</p>
                 <h3>Verlinkung Social-Media über Grafik oder Textlink</h3>
@@ -220,30 +220,30 @@ export default function Privacy() {
                 <p>Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Ireland, ein Tochterunternehmen der Facebook Inc., 1601 S.
                     California Ave., Palo Alto, CA 94304, USA.</p>
                 <p>Datenschutzerklärung: <a href="https://www.facebook.com/policy.php" target="_blank"
-                    rel="noopener">https://www.facebook.com/policy.php</a></p>
+                   rel="noreferrer">https://www.facebook.com/policy.php</a></p>
                 <h4>twitter</h4>
                 <p>Twitter Inc., 795 Folsom St., Suite 600, San Francisco, CA 94107, USA</p>
                 <p>Datenschutzerklärung: <a href="https://twitter.com/privacy" target="_blank"
-                    rel="noopener">https://twitter.com/privacy</a></p>
+                   rel="noreferrer">https://twitter.com/privacy</a></p>
                 <h4>YouTube</h4>
                 <p>Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, ein Tochterunternehmen der Google LLC, 1600
                     Amphitheatre Parkway, Mountain View, CA 94043 USA</p>
                 <p>Datenschutzerklärung: <a href="https://policies.google.com/privacy" target="_blank"
-                    rel="noopener">https://policies.google.com/privacy</a></p>
+                   rel="noreferrer">https://policies.google.com/privacy</a></p>
                 <h4>LinkedIn</h4>
                 <p>LinkedIn Ireland Unlimited Company, Wilton Plaza, Wilton Place, Dublin 2, Irland, ein Tochterunternehmen der LinkedIn
                     Corporation, 1000 W. Maude Avenue, Sunnyvale, CA 94085 USA.</p>
                 <p>Datenschutzerklärung: <a href="https://www.linkedin.com/legal/privacy-policy" target="_blank"
-                    rel="noopener">https://www.linkedin.com/legal/privacy-policy</a></p>
+                   rel="noreferrer">https://www.linkedin.com/legal/privacy-policy</a></p>
                 <h4>Instagram</h4>
                 <p>Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Ireland, ein Tochterunternehmen der Facebook Inc., 1601 S.
                     California Ave., Palo Alto, CA 94304, USA.</p>
                 <p>Datenschutzerklärung: <a href="https://help.instagram.com/519522125107875" target="_blank"
-                    rel="noopener">https://help.instagram.com/519522125107875</a></p>
+                   rel="noreferrer">https://help.instagram.com/519522125107875</a></p>
                 <p><a href="https://www.ratgeberrecht.eu/leistungen/muster-datenschutzerklaerung.html" target="_blank"
-                    rel="noopener">Muster-Datenschutzerklärung</a> der <a
+                   rel="noreferrer">Muster-Datenschutzerklärung</a> der <a
                         href="https://www.ratgeberrecht.eu/datenschutz/datenschutzerklaerung-generator-dsgvo.html" target="_blank"
-                        rel="noopener">Anwaltskanzlei Weiß &amp; Partner</a></p>
+                       rel="noreferrer">Anwaltskanzlei Weiß &amp; Partner</a></p>
             </div>
         </section>
     )
