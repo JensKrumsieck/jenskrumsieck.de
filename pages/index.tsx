@@ -18,11 +18,11 @@ Jens Krumsieck is currently a research associate at TU Braunschweig in Martin Br
         <meta name="url" content="https://jenskrumsieck.de" />
         <meta name="canonical" content="https://jenskrumsieck.de" />
 
-        <meta name="og:title" content="Jens Krumsieck, M.Sc." />
-        <meta name="og:type" content="website" />
+        <meta property="og:title" content="Jens Krumsieck, M.Sc." />
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://jenskrumsieck.de" />
-        <meta name="og:image" content="/og_image.png" />
-        <meta name="og:description" content="Jens Krumsieck is currently a research associate at TU Braunschweig in Martin Brörings Group working on Metalcomplexes of Isoporphyrins. He developed PorphyStruct a digital tool for the investigation of non-planar distortion modes of a variety of porphyrinoids." />
+        <meta property="og:image" content="/og_image.png" />
+        <meta property="og:description" content="Jens Krumsieck is currently a research associate at TU Braunschweig in Martin Brörings Group working on Metalcomplexes of Isoporphyrins. He developed PorphyStruct a digital tool for the investigation of non-planar distortion modes of a variety of porphyrinoids." />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@jens_ation" />
