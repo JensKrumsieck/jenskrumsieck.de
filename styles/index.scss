@@ -19,3 +19,51 @@
         margin-top: 1.5rem;
     }
 }
+
+.aboutme{
+    .left p{
+        margin-top: 1rem;
+    }
+}
+.cv {
+    margin-top: 3rem;
+    ul {
+        list-style: none;
+        position: relative;
+        &:before{
+            position: absolute;
+            left: .25rem;
+            content:"";
+            height: 100%;
+            width: 4px;
+            background: var(--dark);
+        }
+    }
+    li {
+        margin-top: 1rem;
+        position: relative;
+        padding-left: 1.8rem;
+        &:before {
+            left: 0;
+            top: 0.35rem;
+            position: absolute;
+            content: "";
+            width: 14px;
+            height: 14px;
+            background: var(--primary);
+            border-radius: 100px;
+        }
+        .date {
+            font-style: italic;
+            font-size: 0.85rem;
+        }
+        h3 {
+            font-size: 1rem;
+        }
+        .description {
+            margin-top: 0.25rem;
+            display: block;
+            font-size: 0.85rem;
+        }
+    }
+}

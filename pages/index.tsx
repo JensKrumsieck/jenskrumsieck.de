@@ -1,6 +1,7 @@
 import Hero from '../components/index/Hero'
 import Publications from '../components/index/Publications'
 import Head from 'next/head'
+import About from '../components/index/About'
 
 export default function Index() {
   return (
@@ -32,6 +33,7 @@ Jens Krumsieck is currently a research associate at TU Braunschweig in Martin Br
       </Head>
       <Hero />
       <Publications />
+      <About/>
     </>
   )
 }
