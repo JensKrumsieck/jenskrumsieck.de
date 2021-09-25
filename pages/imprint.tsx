@@ -21,7 +21,7 @@ export default function Imprint() {
                         <li>Jens Krumsieck auf <a href="https://www.xing.com/profile/Jens_Krumsieck">XING</a></li>
                         <li>Jens Krumsieck auf <a href="https://www.researchgate.net/profile/Jens-Krumsieck">Researchgate</a></li>
                         <li>Jens Krumsieck auf <a href="https://orcid.org/0000-0001-6242-5846">ORCID</a></li>
-                        <li>Jens Krumsieck au <a href="https://www.youtube.com/channel/UCY00e-rWPB0jcpIcUjywCtg">YouTube</a></li>
+                        <li>Jens Krumsieck auf <a href="https://www.youtube.com/c/JensKrumsieck">YouTube</a></li>
                     </ul>
                 </p>
             </div>
