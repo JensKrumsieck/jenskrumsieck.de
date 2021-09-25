@@ -16,12 +16,12 @@ export default function _Footer() {
             </div>
             <div className="footerNav">
                 <ul>
-                    <li><Link href="/imprint">Imprint</Link></li>
-                    <li><Link href="/imprint">Privacy Policy</Link></li>
+                    <li><Link href="/imprint">Impressum</Link></li>
+                    <li><Link href="/privacy">Datenschutzerklärung</Link></li>
                 </ul>
             </div>
             <div className="copyright">
-                2021 Jens Krumsieck - Made in Germany
+                2021 Jens Krumsieck - Made in Germany - Keine Kekse! (No Cookies!)
             </div>
         </div>
     )

@@ -59,6 +59,7 @@ section:not(.hero) {
     gap: 1em;
     @include mobile {
         margin-top: 2em;
+        grid-template-columns: 20% 80%;
     }
 }
 .absolute {
@@ -89,10 +90,16 @@ footer {
         vertical-align: middle;
         h2 {
             font-size: 1.5rem;
+            @include mobile {
+                font-size: 1rem;
+            }
         }
         display: flex;
         svg {
             width: 32px;
+            @include mobile {
+                width: 16px;
+            }
         }
     }
     .social {

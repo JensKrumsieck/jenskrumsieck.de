@@ -39,7 +39,7 @@ export default function Hero() {
                         <div className="buttons">
                             <a href="https://chn.jenskrumsieck.de" className="button primary">
                                 <FontAwesomeIcon icon={faCalculator} />
-                                <span>Use CHN-Tool</span>
+                                <span>CHN-Tool</span>
                             </a>
                             <a href="https://github.com/JensKrumsieck/CHN-Tool" className="button primary">
                                 <FontAwesomeIcon icon={faGithub} />
