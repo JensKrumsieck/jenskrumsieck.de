@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faGithub, faInstagram, faLinkedin, faOrcid, faResearchgate, faTwitter, faXing } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faGithub, faInstagram, faLinkedin, faOrcid, faResearchgate, faTwitter, faXing, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 export default function _Social() {
     return (
@@ -33,6 +33,11 @@ export default function _Social() {
                 <li>
                     <a href="https://www.instagram.com/jens.ation/" title="Instagram: @jens.ation">
                         <FontAwesomeIcon icon={faInstagram} />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/c/JensKrumsieck" title="Jens Krumsieck on YouTube">
+                        <FontAwesomeIcon icon={faYoutube} />
                     </a>
                 </li>
                 <li>
