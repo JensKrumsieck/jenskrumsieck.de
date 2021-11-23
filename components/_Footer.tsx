@@ -21,7 +21,7 @@ export default function _Footer() {
                 </ul>
             </div>
             <div className="copyright">
-                2021 Jens Krumsieck - Made in Germany - Keine Kekse! (No Cookies!)
+                2021 Jens Krumsieck - Made in Germany
             </div>
         </div>
     )
