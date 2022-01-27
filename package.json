@@ -13,7 +13,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
-    "@jenskrumsieck/moleculesjs": "^0.0.4",
+    "@jenskrumsieck/moleculesjs": "^0.1.0",
     "@react-three/drei": "^7.7.0",
     "@react-three/fiber": "^7.0.6",
     "next": "11.1.3",
