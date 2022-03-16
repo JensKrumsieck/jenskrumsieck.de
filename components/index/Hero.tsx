@@ -6,7 +6,7 @@ import CSLogo from '../../assets/svg/cs_icon.svg'
 import React from 'react'
 import HeroImg from '../../assets/svg/hero.svg';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faCalculator, faDownload, faBook, faBrowser } from '@fortawesome/free-solid-svg-icons';
+import { faCalculator, faDownload, faBook, faTablet } from '@fortawesome/free-solid-svg-icons';
 
 export default function Hero() {
     return (
@@ -33,7 +33,7 @@ export default function Hero() {
                                 <span>Website &amp; Docs</span>
                             </a>
                             <a href="https://app.porphystruct.org/" className="button primary">
-                                <FontAwesomeIcon icon={faBrowser} />
+                                <FontAwesomeIcon icon={faTablet} />
                                 <span>Webversion</span>
                             </a>
                         </div>
