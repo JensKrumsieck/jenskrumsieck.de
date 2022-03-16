@@ -28,6 +28,8 @@ export default function Hero() {
                                 <FontAwesomeIcon icon={faGithub} />
                                 <span>GitHub</span>
                             </a>
+                        </div>
+                        <div className="buttons">                            
                             <a href="https://porphystruct.org/" className="button primary">
                                 <FontAwesomeIcon icon={faBook} />
                                 <span>Website &amp; Docs</span>
