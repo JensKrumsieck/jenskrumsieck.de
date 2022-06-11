@@ -9,7 +9,12 @@
   import "@fontsource/source-sans-pro/900.css";
   import "@fontsource/source-sans-pro/900-italic.css";
   import "../app.css";
+import Nav from "$lib/components/layout/Nav.svelte";
 </script>
+
+<header>
+  <Nav/>
+</header>
 
 <main>
   <slot />

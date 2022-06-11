@@ -11,6 +11,7 @@
   import relativeTime from "dayjs/plugin/relativeTime";
   import "dayjs/locale/de";
   import Subtitle from "$lib/components/typography/Subtitle.svelte";
+import Container from "$lib/components/layout/Container.svelte";
   dayjs.extend(relativeTime);
   dayjs.locale("de");
 
@@ -46,7 +47,7 @@
 </section>
 
 <section>
-  <div class="container mx-auto p-6 bg-white relative shadow-lg">
+  <Container class="p-6 bg-white relative shadow-lg">
     <img
       src={hero_image}
       class="float-right w-96 ml-8 mb-8"
@@ -54,11 +55,11 @@
     />
     <Title>{ph.asText(post.data.title)}</Title>
     <SliceZone slices={post.data.body} {components} />
-  </div>
+  </Container>
 </section>
 
 <section>
-  <div class="container mx-auto my-8 p-6 flex">
+  <Container class="my-8 p-6 flex">
     <div>
       <Subtitle>Über {ph.asText(post.data.author.data.name)}</Subtitle>
       <p>
@@ -74,5 +75,5 @@
           : "Avatar"}
       />
     </div>
-  </div>
+  </Container>
 </section>

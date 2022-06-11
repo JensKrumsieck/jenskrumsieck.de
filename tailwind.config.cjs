@@ -10,14 +10,15 @@ module.exports = {
       'light-green': '#B7D969',
       dark: '#333333',
       white: '#FFFFFF',
-      black: '#000000'
+      black: '#000000',
+      gray: '#F1F1F1'
     },
     fontFamily: {
       sans: ['Source Sans Pro', 'sans-serif']
     },
     extend: {
       letterSpacing: {
-        tightest: '-.075em'
+        tightest: '-.065em'
       }
     },
   },
