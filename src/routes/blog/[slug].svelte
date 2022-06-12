@@ -59,7 +59,7 @@
 </section>
 
 <section>
-  <Container class="my-8 p-6 flex">
+  <Container class="my-8 p-6 flex md:flex-row flex-col">
     <div>
       <Subtitle>Über {ph.asText(post.data.author.data.name)}</Subtitle>
       <p>
@@ -68,7 +68,7 @@
     </div>
     <div class="ml-6">
       <img
-        class="rounded-full w-[48rem]"
+        class="rounded-full md:w-[48rem] w-36 m-auto"
         src={ph.asImageSrc(post.data.author.data.avatar)}
         alt={post.data.author.data.avatar
           ? post.data.author.data.avatar

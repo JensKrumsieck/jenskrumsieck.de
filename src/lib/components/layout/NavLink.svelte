@@ -7,7 +7,7 @@
   export let button = false;
   let padding = button ? "pt-1" : "pt-3";
 
-  let linkCSS = "block px-4 pb-0 flex flex-col hover:font-bold " + padding;
+  let linkCSS = "block md:pl-12 md:px-0 px-4 pb-0 flex flex-col hover:font-bold " + padding;
 
   $: active =
     $page.url.href == href ||

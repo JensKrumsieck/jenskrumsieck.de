@@ -1,5 +1,6 @@
 <script>
-  import "@fontsource/source-sans-pro";
+  import "@fontsource/source-sans-pro/200.css";
+  import "@fontsource/source-sans-pro/200-italic.css";
   import "@fontsource/source-sans-pro/400.css";
   import "@fontsource/source-sans-pro/400-italic.css";
   import "@fontsource/source-sans-pro/600.css";

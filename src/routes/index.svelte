@@ -1,9 +1,8 @@
 <script>
-  import { faFacebook } from "@fortawesome/free-brands-svg-icons";
   import Button from "$lib/components/button/Button.svelte";
-  import RoundIconButton from "$lib/components/button/RoundIconButton.svelte";
   import Container from "$lib/components/layout/Container.svelte";
   import Rect from "$lib/components/deco/Rect.svelte";
+  import Social from "$lib/components/blocks/Social.svelte";
 </script>
 
 <Rect class="flex flex-col">
@@ -13,16 +12,26 @@
     class="mix-blend-multiply max-h-full w-auto align-bottom mt-auto"
   />
 </Rect>
-<Container class="h-screen" padding>
-  <div class="flex">
-    <div class="col">
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
-      <p>
-        Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-      </p>
-      <Button external>Hello Welt</Button>
-      <Button outlined>Hallo Welt</Button>
-      <RoundIconButton icon={faFacebook} />
+<Container class="h-screen-nav" padding>
+  <div class="flex flex-col md:max-w-[70%] md:pt-48 pt-16">
+    <span class="font-light md:text-xl text-lg">Hallo ich bin</span>
+    <h1 class="font-bold md:text-5xl text-3xl tracking-tighter">
+      Jens Krumsieck.
+    </h1>
+    <span class="font-light md:text-xl text-lg mt-6">Meine Themen sind</span>
+    <h1 class="font-black md:text-7xl text-4xl tracking-tighter">
+      Wissenschaft, Softwareentwicklung und Politik.
+    </h1>
+    <div class="mt-12">
+      <Button href="/blog">Beiträge lesen</Button>
+      <Button outlined href="/publications">Meine Veröffentlichungen</Button>
     </div>
+    <Social class="mt-12" />
   </div>
 </Container>
+
+<style>
+  .h-screen-nav {
+    height: calc(100vh - 88px);
+  }
+</style>
