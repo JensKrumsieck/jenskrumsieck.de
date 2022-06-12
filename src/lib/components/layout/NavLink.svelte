@@ -4,8 +4,10 @@
   export let prefetch = false;
   export let href = "";
   export let active = false;
+  export let button = false;
+  let padding = button ? "pt-1" : "pt-3";
 
-  let linkCSS = "block px-4 pt-3 pb-0 flex flex-col hover:font-bold"
+  let linkCSS = "block px-4 pb-0 flex flex-col hover:font-bold " + padding;
 
   $: active =
     $page.url.href == href ||
@@ -17,12 +19,12 @@
   {#if prefetch}
     <a {href} sveltekit:prefetch class={linkCSS}>
       <slot />
-      <div class="w-5 h-1 underliner self-end" />
+      {#if !button}<div class="w-5 h-1 underliner md:self-end" />{/if}
     </a>
   {:else}
     <a {href} class={linkCSS}>
       <slot />
-      <div class="w-5 h-1 underliner self-end" />
+      {#if !button}<div class="w-5 h-1 underliner md:self-end" />{/if}
     </a>
   {/if}
 </li>
@@ -34,9 +36,9 @@
       background: black;
     }
   }
-  a:hover{
-    .underliner{
-        background: theme('colors.green');
+  a:hover {
+    .underliner {
+      background: theme("colors.green");
     }
   }
 </style>

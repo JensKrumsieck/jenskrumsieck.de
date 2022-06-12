@@ -3,6 +3,8 @@
   import RichText from "$lib/components/prismic/RichText.svelte";
   import Title from "$lib/components/typography/Title.svelte";
   import LargeTitle from "$lib/components/typography/LargeTitle.svelte";
+  import Subtitle from "$lib/components/typography/Subtitle.svelte";
+  import Container from "$lib/components/layout/Container.svelte";
 
   import * as ph from "@prismicio/helpers";
   import { SliceZone } from "@prismicio/svelte";
@@ -10,8 +12,6 @@
   import dayjs from "dayjs";
   import relativeTime from "dayjs/plugin/relativeTime";
   import "dayjs/locale/de";
-  import Subtitle from "$lib/components/typography/Subtitle.svelte";
-import Container from "$lib/components/layout/Container.svelte";
   dayjs.extend(relativeTime);
   dayjs.locale("de");
 
@@ -32,7 +32,7 @@ import Container from "$lib/components/layout/Container.svelte";
   class="tint absolute min-h-full -z-50 w-full bg-green mix-blend-multiply"
 />
 <section class="hero px-2 lg:px-0">
-  <div class="container mx-auto min-h-[50vh] py-20">
+  <Container class="min-h-[50vh] py-20" padding>
     <LargeTitle>{ph.asText(post.data.title)}</LargeTitle>
     <p class="text-white uppercase my-10">
       von {ph.asText(post.data.author.data.name)}
@@ -43,7 +43,7 @@ import Container from "$lib/components/layout/Container.svelte";
         >{dayjs(ph.asDate(post.data.publish_date)).fromNow()}</span
       >
     </p>
-  </div>
+  </Container>
 </section>
 
 <section>

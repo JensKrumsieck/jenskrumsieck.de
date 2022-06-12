@@ -6,9 +6,15 @@
   import Rect from "$lib/components/deco/Rect.svelte";
 </script>
 
-<Rect />
-<Container class="h-screen">
-  <div class="flex h-full">
+<Rect>
+  <img
+    src="hero.png"
+    alt="Jens in seinem Labor"
+    class="ml-auto mix-blend-multiply max-h-full w-auto"
+  />
+</Rect>
+<Container class="h-screen" padding>
+  <div class="flex">
     <div class="col">
       <h1 class="text-3xl font-bold underline">Hello world!</h1>
       <p>
@@ -18,10 +24,5 @@
       <Button outlined>Hallo Welt</Button>
       <RoundIconButton icon={faFacebook} />
     </div>
-    <img
-      src="hero.png"
-      alt="Jens in seinem Labor"
-      class="ml-auto mix-blend-multiply"
-    />
   </div>
 </Container>
