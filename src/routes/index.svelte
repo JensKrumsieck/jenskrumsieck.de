@@ -6,11 +6,11 @@
   import Rect from "$lib/components/deco/Rect.svelte";
 </script>
 
-<Rect>
+<Rect class="flex flex-col">
   <img
     src="hero.png"
     alt="Jens in seinem Labor"
-    class="ml-auto mix-blend-multiply max-h-full w-auto"
+    class="mix-blend-multiply max-h-full w-auto align-bottom mt-auto"
   />
 </Rect>
 <Container class="h-screen" padding>

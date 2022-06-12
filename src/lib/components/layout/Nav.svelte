@@ -4,7 +4,7 @@
 
   import { page } from "$app/stores";
   import OpenClose from "../button/OpenClose.svelte";
-import Button from "../button/Button.svelte";
+  import Button from "../button/Button.svelte";
   let open = false;
 
   $: {
