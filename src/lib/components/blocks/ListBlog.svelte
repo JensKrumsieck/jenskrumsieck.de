@@ -11,7 +11,7 @@
     <div class="bg-white px-2">
       <Subtitle dense>{ph.asText(post.data.title)}</Subtitle>
       <p>
-        {@html getExcerpt(ph.asHTML(post.data.body[0].primary.content), 25)}
+        {@html getExcerpt(ph.asHTML(post.data.body[0].primary.content), 100)}
       </p>
     </div>
     <p class="uppercase italic text-xs mt-auto pt-2 bg-white px-2">
