@@ -29,7 +29,7 @@ import Date from "$lib/components/blocks/Date.svelte";
 />
 <section class="hero px-2 lg:px-0">
   <Container class="min-h-[50vh] py-20" padding>
-    <LargeTitle>{ph.asText(post.data.title)}</LargeTitle>
+    <LargeTitle white>{ph.asText(post.data.title)}</LargeTitle>
     <p class="text-white uppercase my-10">
       von {ph.asText(post.data.author.data.name)}
       -

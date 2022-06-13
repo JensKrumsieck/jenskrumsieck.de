@@ -8,7 +8,7 @@
 
 <div
   class={`container mx-auto ${clazz || ""} ${padding ? "  px-4" : ""} ${
-    fullHeight ? (nav ? "h-screen-nav " : "h-screen") : ""
+    fullHeight ? (nav ? "h-screen-nav " : "min-h-screen") : ""
   }`}
 >
   <slot />
@@ -16,6 +16,6 @@
 
 <style>
   .h-screen-nav {
-    height: calc(100vh - 88px);
+    min-height: calc(100vh - 88px);
   }
 </style>
