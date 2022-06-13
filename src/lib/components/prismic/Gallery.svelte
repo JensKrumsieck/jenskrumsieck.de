@@ -21,10 +21,12 @@
   >
     {#each slice.items as item}
       <div class="px-4">
-        <img
-          src={ph.asImageSrc(item.image)}
-          alt={item.alt ? item.alt : "Galerie"}
-        />
+        <a href={ph.asImageSrc(item.image)}>
+          <img
+            src={ph.asImageSrc(item.image)}
+            alt={item.alt ? item.alt : "Galerie"}
+          />
+        </a>
       </div>
     {/each}
   </svelte:component>
