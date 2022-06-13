@@ -6,9 +6,17 @@
   import Subtitle from "$lib/components/typography/Subtitle.svelte";
   import Container from "$lib/components/layout/Container.svelte";
   import Date from "$lib/components/blocks/Date.svelte";
-
+  import { page } from "$app/stores";
   import * as ph from "@prismicio/helpers";
   import { SliceZone } from "@prismicio/svelte";
+  import {
+    FacebookShare,
+    LinkedInShare,
+    RedditShare,
+    TwitterShare,
+    WhatsAppShare,
+  } from "$lib/components/button/share";
+  import PinterestShare from "$lib/components/button/share/PinterestShare.svelte";
 
   export let post;
 
@@ -46,6 +54,21 @@
     />
     <Title>{ph.asText(post.data.title)}</Title>
     <SliceZone slices={post.data.body} {components} />
+    <div class="my-6 flex items-end flex-col">
+      <Subtitle>Diesen Beitrag Teilen</Subtitle>
+      <div class="flex space-x-4">
+        <FacebookShare url={$page.url} title={ph.asText(post.data.title)} />
+        <TwitterShare url={$page.url} title={ph.asText(post.data.title)} />
+        <LinkedInShare url={$page.url} title={ph.asText(post.data.title)} />
+        <RedditShare url={$page.url} title={ph.asText(post.data.title)} />
+        <PinterestShare
+          url={$page.url}
+          title={ph.asText(post.data.title)}
+          media={hero_image}
+        />
+        <WhatsAppShare url={$page.url} title={ph.asText(post.data.title)} />
+      </div>
+    </div>
   </Container>
 </section>
 
