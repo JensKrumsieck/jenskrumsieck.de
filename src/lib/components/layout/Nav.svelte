@@ -1,4 +1,6 @@
 <script>
+  import Logo from "./Logo.svelte";
+
   import Container from "./Container.svelte";
   import NavLink from "./NavLink.svelte";
 
@@ -15,14 +17,7 @@
 
 <nav class="lg:bg-transparent bg-white z-20">
   <Container padding class="flex flex-wrap justify-between py-5">
-    <div class="logo">
-      <a href="/" class="flex block">
-        <img src="/logo.svg" alt="Logo" />
-        <span class="text-5xl font-black italic mx-3 tracking-tightest sm:flex hidden"
-          >Jens Krumsieck</span
-        >
-      </a>
-    </div>
+    <Logo />
     <button
       data-collapse-toggle="main-menu"
       type="button"

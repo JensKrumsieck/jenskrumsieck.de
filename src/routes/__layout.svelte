@@ -11,6 +11,7 @@
   import "@fontsource/source-sans-pro/900-italic.css";
   import "../app.css";
 import Nav from "$lib/components/layout/Nav.svelte";
+import Footer from "$lib/components/layout/Footer.svelte";
 </script>
 
 <header>
@@ -20,3 +21,7 @@ import Nav from "$lib/components/layout/Nav.svelte";
 <main>
   <slot />
 </main>
+
+<footer>
+  <Footer/>
+</footer>
