@@ -2,7 +2,7 @@
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    colors:{
+    colors: {
       transparent: 'transparent',
       current: 'currentColor',
       green: '#9CD919',

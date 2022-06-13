@@ -5,15 +5,11 @@
   import LargeTitle from "$lib/components/typography/LargeTitle.svelte";
   import Subtitle from "$lib/components/typography/Subtitle.svelte";
   import Container from "$lib/components/layout/Container.svelte";
+import Date from "$lib/components/blocks/Date.svelte";
 
   import * as ph from "@prismicio/helpers";
   import { SliceZone } from "@prismicio/svelte";
 
-  import dayjs from "dayjs";
-  import relativeTime from "dayjs/plugin/relativeTime";
-  import "dayjs/locale/de";
-  dayjs.extend(relativeTime);
-  dayjs.locale("de");
 
   export let post;
 
@@ -37,11 +33,7 @@
     <p class="text-white uppercase my-10">
       von {ph.asText(post.data.author.data.name)}
       -
-      <span
-        class="cursor-pointer"
-        title={dayjs(ph.asDate(post.data.publish_date)).format("DD.MM.YYYY")}
-        >{dayjs(ph.asDate(post.data.publish_date)).fromNow()}</span
-      >
+      <Date date={ph.asDate(post.data.publish_date)}/>
     </p>
   </Container>
 </section>

@@ -12,8 +12,8 @@
     class="mix-blend-multiply max-h-full w-auto align-bottom mt-auto"
   />
 </Rect>
-<Container class="h-screen-nav" padding>
-  <div class="flex flex-col md:max-w-[70%] md:pt-48 pt-16">
+<Container class="flex" padding fullHeight nav>
+  <div class="flex flex-col md:max-w-[70%] justify-center">
     <span class="font-light md:text-xl text-lg">Hallo ich bin</span>
     <h1 class="font-bold md:text-5xl text-3xl tracking-tighter">
       Jens Krumsieck.
@@ -30,8 +30,3 @@
   </div>
 </Container>
 
-<style>
-  .h-screen-nav {
-    height: calc(100vh - 88px);
-  }
-</style>

@@ -26,7 +26,7 @@
     <button
       data-collapse-toggle="main-menu"
       type="button"
-      class="inline-flex items-center p-2 text-sm rounded-lg md:hidden focus:outline-none focus:ring-2"
+      class="inline-flex items-center p-2 text-sm rounded-lg lg:hidden focus:outline-none focus:ring-2"
       aria-controls="main-menu"
       aria-expanded="false"
       on:click={() => (open = !open)}
@@ -36,10 +36,10 @@
     </button>
     <div
       class:hidden={!open}
-      class="font-semibold w-full items-center md:w-auto text-xl md:flex md:relative absolute md:bg-transparent bg-white left-0 md:top-0 top-20 z-20 md:py-0 py-4"
+      class="font-semibold w-full items-center lg:w-auto text-xl lg:flex lg:relative absolute lg:bg-transparent bg-white left-0 lg:top-0 top-20 z-20 lg:py-0 py-4"
       id="mainMenu"
     >
-      <ul class="flex navbar md:flex-row flex-col">
+      <ul class="flex navbar lg:flex-row flex-col">
         <NavLink href="/">Home</NavLink>
         <NavLink href="/blog">Blog</NavLink>
         <NavLink href="/publications">Veröffentlichungen</NavLink>
