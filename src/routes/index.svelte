@@ -3,6 +3,12 @@
   import Container from "$lib/components/layout/Container.svelte";
   import Rect from "$lib/components/deco/Rect.svelte";
   import Social from "$lib/components/blocks/Social.svelte";
+  import FirstBlog from "$lib/components/blocks/FirstBlog.svelte";
+  import SecondBlogs from "$lib/components/blocks/SecondBlogs.svelte";
+  import Hr from "$lib/components/deco/HR.svelte";
+  import ListBlog from "$lib/components/blocks/ListBlog.svelte";
+
+  export let posts;
 </script>
 
 <Rect class="flex flex-col">
@@ -30,3 +36,14 @@
   </div>
 </Container>
 
+<Container padding fullHeight class="justify-center flex flex-col">
+  <FirstBlog post={posts.results[0]} />
+  <Hr />
+  <div class="flex my-12 flex-wrap">
+    {#each posts.results.slice(1) as post}
+      <ListBlog {post} />
+    {/each}
+  </div>
+  <Hr />
+  <a href="/blog" class="justify-end self-end mt-4 font-bold text-xl">Mehr davon! &rArr;</a>
+</Container>

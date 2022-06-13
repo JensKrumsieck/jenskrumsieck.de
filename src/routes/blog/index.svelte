@@ -1,6 +1,8 @@
 <script>
   import FirstBlog from "$lib/components/blocks/FirstBlog.svelte";
+  import ListBlog from "$lib/components/blocks/ListBlog.svelte";
   import SecondBlogs from "$lib/components/blocks/SecondBlogs.svelte";
+  import Hr from "$lib/components/deco/HR.svelte";
   import Rect from "$lib/components/deco/Rect.svelte";
   import Container from "$lib/components/layout/Container.svelte";
   import BiggerTitle from "$lib/components/typography/BiggerTitle.svelte";
@@ -12,14 +14,17 @@
   <BiggerTitle>Was gibt's Neues?</BiggerTitle>
 
   <div class="flex flex-wrap justify-between">
-    {#each posts.results as post, i}
-      {#if i == 0}
-        <FirstBlog {post} />
-      {:else if i < 4}
-        <SecondBlogs {post} />
-      {:else}
-        not prepared
-      {/if}
+    <FirstBlog post={posts.results[0]} />
+    {#each posts.results.slice(1, 4) as post}
+      <SecondBlogs {post} />
     {/each}
+  </div>
+  <div class="my-12">
+    <Hr />
+    <div class="flex my-12 flex-wrap">
+      {#each posts.results.slice(4) as post}
+        <ListBlog {post} />
+      {/each}
+    </div>
   </div>
 </Container>
