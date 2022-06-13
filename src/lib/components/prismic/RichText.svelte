@@ -3,6 +3,6 @@
     export let slice
 </script>
 
-<article class="prose-lg">
+<article class="prose-lg prose-a:text-dark-green hover:prose-a:underline">
     {@html ph.asHTML(slice.primary.content)}
 </article>

@@ -15,14 +15,14 @@
 
   <div class="flex flex-wrap justify-between">
     <FirstBlog post={posts.results[0]} />
-    {#each posts.results.slice(1, 4) as post}
+    {#each posts.results.slice(1, 5) as post}
       <SecondBlogs {post} />
     {/each}
   </div>
   <div class="my-12">
     <Hr />
     <div class="flex my-12 flex-wrap">
-      {#each posts.results.slice(4) as post}
+      {#each posts.results.slice(5) as post}
         <ListBlog {post} />
       {/each}
     </div>

@@ -5,11 +5,10 @@
   import LargeTitle from "$lib/components/typography/LargeTitle.svelte";
   import Subtitle from "$lib/components/typography/Subtitle.svelte";
   import Container from "$lib/components/layout/Container.svelte";
-import Date from "$lib/components/blocks/Date.svelte";
+  import Date from "$lib/components/blocks/Date.svelte";
 
   import * as ph from "@prismicio/helpers";
   import { SliceZone } from "@prismicio/svelte";
-
 
   export let post;
 
@@ -33,7 +32,7 @@ import Date from "$lib/components/blocks/Date.svelte";
     <p class="text-white uppercase my-10">
       von {ph.asText(post.data.author.data.name)}
       -
-      <Date date={ph.asDate(post.data.publish_date)}/>
+      <Date date={ph.asDate(post.data.publish_date)} />
     </p>
   </Container>
 </section>
