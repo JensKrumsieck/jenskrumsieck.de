@@ -85,13 +85,9 @@
         >
           Download for Windows
         </IconLink>
-        <IconLink
-          icon={faEarthEurope}
-          href="https://app.porphystruct.org"
-        >
+        <IconLink icon={faEarthEurope} href="https://app.porphystruct.org">
           Webversion
         </IconLink>
-        
       </div>
       <div class="flex">
         <Button href="https://porphystruct.org" external>
@@ -140,5 +136,5 @@
       </Projects>
     </div>
   </div>
-  <div><Hex right /></div>
+  <div><Hex opaque right /></div>
 </Container>

@@ -1,4 +1,5 @@
 <script>
+  import Badge from '$lib/components/typography/Badge.svelte';
   import Container from "$lib/components/layout/Container.svelte";
   import LargeTitle from "$lib/components/typography/LargeTitle.svelte";
   import Title from "$lib/components/typography/Title.svelte";
@@ -68,11 +69,7 @@
               {ph.asText(poster.data.title)}
             </a>
           </Title>
-          <span
-            class="rounded-full bg-dark-green text-md inline-flex items-center justify-center px-2 py-1 max-h-8 mx-3 text-white font-bold"
-          >
-            {poster.data.type}
-          </span>
+          <Badge>{poster.data.type}</Badge>
         </div>
 
         {#each poster.data.presentations as presentation}

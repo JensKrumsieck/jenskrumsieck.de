@@ -6,9 +6,10 @@
   import Subtitle from "$lib/components/typography/Subtitle.svelte";
   import Container from "$lib/components/layout/Container.svelte";
   import Date from "$lib/components/blocks/Date.svelte";
+  import ShareButtons from "$lib/components/blocks/ShareButtons.svelte";
+  
   import * as ph from "@prismicio/helpers";
   import { SliceZone } from "@prismicio/svelte";
-import ShareButtons from "$lib/components/blocks/ShareButtons.svelte";
   export let post;
 
   const components = {
