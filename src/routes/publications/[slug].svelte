@@ -28,8 +28,8 @@
             -
             {dayjs(ph.asDate(presentation.end_date)).format("DD.MM.YYYY")}
           {/if}
-        </span>,
-        <span>{presentation.location}</span>.
+        </span>
+        <span>in {presentation.location}</span>.
       </p>
     {/each}
   </div>
