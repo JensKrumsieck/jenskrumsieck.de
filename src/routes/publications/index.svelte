@@ -1,11 +1,12 @@
 <script>
-  import Badge from '$lib/components/typography/Badge.svelte';
+  import Badge from "$lib/components/typography/Badge.svelte";
   import Container from "$lib/components/layout/Container.svelte";
   import LargeTitle from "$lib/components/typography/LargeTitle.svelte";
   import Title from "$lib/components/typography/Title.svelte";
   import * as ph from "@prismicio/helpers";
   import dayjs from "dayjs";
   export let publications;
+
 </script>
 
 <Container padding>

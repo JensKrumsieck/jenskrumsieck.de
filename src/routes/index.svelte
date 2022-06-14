@@ -14,11 +14,12 @@
   import { faDownload, faEarthEurope } from "@fortawesome/free-solid-svg-icons";
 
   export let posts;
+  
 </script>
 
 <Rect class="flex flex-col">
   <img
-    src="hero.png"
+    src="hero.webp"
     alt="Jens in seinem Labor"
     class="mix-blend-multiply max-h-full w-auto align-bottom mt-auto"
   />

@@ -10,12 +10,12 @@
   import "@fontsource/source-sans-pro/900.css";
   import "@fontsource/source-sans-pro/900-italic.css";
   import "../app.css";
-import Nav from "$lib/components/layout/Nav.svelte";
-import Footer from "$lib/components/layout/Footer.svelte";
+  import Nav from "$lib/components/layout/Nav.svelte";
+  import Footer from "$lib/components/layout/Footer.svelte";
 </script>
 
 <header>
-  <Nav/>
+  <Nav />
 </header>
 
 <main>
@@ -23,5 +23,5 @@ import Footer from "$lib/components/layout/Footer.svelte";
 </main>
 
 <footer>
-  <Footer/>
+  <Footer />
 </footer>
