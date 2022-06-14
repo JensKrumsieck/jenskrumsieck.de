@@ -7,7 +7,7 @@
 </script>
 
 <div
-  class={`absolute h-[90%] w-[90%] bg-no-repeat top-0 z-0 
+  class={`absolute h-[90%] w-[90%] bg-no-repeat top-0 
   ${right ? "bg-right" : ""} 
   ${opaque ? "" : "opacity-20"}
   ${clazz}`}
