@@ -9,7 +9,15 @@
   import dayjs from "dayjs";
   import { faDownload } from "@fortawesome/free-solid-svg-icons";
   import Hex from "$lib/components/deco/Hex.svelte";
+  import { SliceZone } from "@prismicio/svelte";
+  import RichText from "$lib/components/prismic/RichText.svelte";
+  import Gallery from "$lib/components/prismic/Gallery.svelte";
   export let researchItem;
+
+  const components = {
+    text: RichText,
+    galerie: Gallery,
+  };
 </script>
 
 <Container padding class="my-12 relative">
@@ -43,9 +51,7 @@
       </figure>
     {/if}
     <div class="flex flex-col md:mt-0 mt-6">
-      <div class="prose">
-        {@html ph.asHTML(researchItem.data.content)}
-      </div>
+      <SliceZone slices={researchItem.data.body} {components} />
       <div class="flex mt-8">
         <Button href={ph.asLink(researchItem.data.file)}>
           <div class="flex items-center space-x-4">
