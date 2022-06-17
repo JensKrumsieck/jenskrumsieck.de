@@ -36,7 +36,8 @@
 <Container padding class="my-12 text-xl flex flex-col space-y-12">
   <LargeTitle>Wie man mich erreicht</LargeTitle>
   <div>
-    <h2 class="font-bold text-2xl">Kontaktformular</h2>
+    <h2 class="font-bold text-3xl">Kontaktformular</h2>
+    <p class="text-xs italic text-light-green">Benutzt Google Forms</p>
     {#if status != 200}
       <form
         on:submit|preventDefault={submitForm}
