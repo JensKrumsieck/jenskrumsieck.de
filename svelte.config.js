@@ -11,10 +11,16 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
-		vite: { optimizeDeps: {
-			include: ['lodash.get', 'lodash.isequal', 'lodash.clonedeep']
-		}}
-	}
+		vite: {
+			optimizeDeps: {
+				include: ['lodash.get', 'lodash.isequal', 'lodash.clonedeep']
+			},
+			ssr: {
+				noExternal: ['@fortawesome/free-brands-svg-icons', '@fortawesome/free-solid-svg-icons']
+			}
+		}
+	},
+	experimental: { prebundleSvelteLibraries: true }
 };
 
 export default config;

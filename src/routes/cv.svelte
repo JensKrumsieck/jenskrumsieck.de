@@ -146,11 +146,11 @@
       </h2>
       <p class="my-6">
         <strong>Programmierung in C#</strong> (10+ Jahre, seit 2018 intensiv),
-        Python & Jupyter Notebooks (~1 Jahr), Typescript/Javascript (~1 Jahr) ,
-        PHP (seit 2015 nicht mehr, 3+ Jahre Erfahrung), HTML/(S)CSS/XML
+        Python & Jupyter Notebooks (~1 Jahr), Typescript/Javascript (~1 Jahr),
+        HTML/(S)CSS/XML
         <br /><strong>Arbeit mit Softwarebibliotheken und Frameworks</strong>:
         .NET(-Framework), Blazor, WPF, SvelteKit, scikit-learn, pandas, numpy,
-        NextJS, WoltLab Community Framework (seit 2015 nicht mehr)
+        NextJS
         <br /><strong>Langjährige Erfahrung mit MS-Office und Windows</strong>
         (bereits 2008 durch ECDL Zertifikat nachgewiesen)
         <br /><strong>Nutzererfahrung mit vielen Softwares</strong>: ChemDraw,
@@ -163,15 +163,6 @@
       <p class="my-6">
         <strong>Deutsch</strong> (Muttersprache), <strong>Englisch</strong>
         (fließend), <strong>Latein</strong> (Latinum in der Schule)
-      </p>
-    </div>
-    <div class="my-12">
-      <h2 class="text-3xl font-black italic tracking-tightest">Hobbys</h2>
-      <p class="my-6">
-        <strong>Veranstaltungen organisieren</strong> (B'90/GRÜNE),
-        <strong>Lastenrad-/Fahrradfahren</strong>
-        (insb. Critical Mass),
-        <strong>Programmierung/Webentwicklung und Grafikdesign</strong>
       </p>
     </div>
   </div>

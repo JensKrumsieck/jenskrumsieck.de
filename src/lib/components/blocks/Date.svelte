@@ -1,7 +1,7 @@
 <script>
   import dayjs from "dayjs";
-  import relativeTime from "dayjs/plugin/relativeTime";
-  import "dayjs/locale/de";
+  import relativeTime from "dayjs/plugin/relativeTime.js";
+  import "dayjs/locale/de.js";
   dayjs.extend(relativeTime);
   dayjs.locale("de");
   export let date

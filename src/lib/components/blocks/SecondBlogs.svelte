@@ -12,6 +12,7 @@
 >
   <img
     src={ph.asImageSrc(post.data.hero_image)}
+    srcset={ph.asImageWidthSrcSet(post.data.hero_image).srcset}
     alt={ph.asText(post.data.title)}
     class="w-full max-h-[15rem] ml-auto h-auto object-cover"
   />
