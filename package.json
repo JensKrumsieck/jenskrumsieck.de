@@ -19,6 +19,7 @@
 		"@prismicio/svelte": "^0.0.4",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
+		"@tailwindcss/forms": "^0.5.2",
 		"@tailwindcss/typography": "^0.5.2",
 		"autoprefixer": "^10.4.7",
 		"dayjs": "^1.11.3",

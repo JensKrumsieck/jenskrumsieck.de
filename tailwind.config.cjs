@@ -11,7 +11,8 @@ module.exports = {
       dark: '#333333',
       white: '#FFFFFF',
       black: '#000000',
-      gray: '#F1F1F1'
+      gray: '#F1F1F1',
+      red: '#DA0037'
     },
     fontFamily: {
       sans: ['Source Sans Pro', 'sans-serif']
@@ -24,5 +25,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
+    require('@tailwindcss/forms')
   ],
 }
