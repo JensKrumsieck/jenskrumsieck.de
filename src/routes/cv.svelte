@@ -1,3 +1,13 @@
+<script context="module">
+  export async function load({ params, fetch, session, stuff }) {
+    return {
+      stuff: {
+        title: "Lebenslauf",
+      },
+    };
+  }
+</script>
+
 <script>
   import CvItem from "$lib/components/blocks/CVItem.svelte";
   import Container from "$lib/components/layout/Container.svelte";

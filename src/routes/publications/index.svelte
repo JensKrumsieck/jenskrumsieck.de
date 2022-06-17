@@ -1,3 +1,19 @@
+<script context="module">
+  import { base } from "$app/paths";
+
+  export async function load({ params, fetch, session, stuff }) {
+    const data = await fetch(`${base}/publications.json`);
+    const posts = await data.json();
+    return {
+      props: posts,
+      stuff: {
+        title: "Veröffentlichungen",
+      },
+    };
+  }
+</script>
+
+
 <script>
   import Badge from "$lib/components/typography/Badge.svelte";
   import Container from "$lib/components/layout/Container.svelte";

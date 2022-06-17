@@ -16,3 +16,10 @@ export function getExcerpt(str: string, n: number): string {
     tagFree = tagFree.replace(/(<br \/>*)+/g, "<br/>");
     return truncateText(tagFree, n);
 }
+
+export function getDesc(str: string, n: number): string {
+    let tagFree = stripTags(str)
+    if (tagFree.length < n) return tagFree;
+
+    const sub = tagFree.substring(0, n - 1);
+    return sub.substring(0, sub.lastIndexOf(" "))}

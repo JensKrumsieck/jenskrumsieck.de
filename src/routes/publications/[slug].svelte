@@ -1,3 +1,24 @@
+<script context="module">
+  import { base } from "$app/paths";
+
+  export async function load({ params, fetch, session, stuff }) {
+    const data = await fetch(`${base}/publications/${params.slug}.json`);
+    const post = await data.json();
+    return {
+      props: post,
+      stuff: {
+        title: ph.asText(post.researchItem.data.title),
+        description: getDesc(
+          ph.asText(post.researchItem.data.body[0].primary.content),
+          250
+        ),
+        keywords: post.researchItem.tags.join(", ") + ", " + website.keywords,
+        image: ph.asImageSrc(post.researchItem.data.hero_image),
+      },
+    };
+  }
+</script>
+
 <script>
   import ShareButtons from "$lib/components/blocks/ShareButtons.svelte";
   import Container from "$lib/components/layout/Container.svelte";
@@ -12,6 +33,8 @@
   import { SliceZone } from "@prismicio/svelte";
   import RichText from "$lib/components/prismic/RichText.svelte";
   import Gallery from "$lib/components/prismic/Gallery.svelte";
+  import { getDesc } from "$lib/util/text-helpers";
+  import website from "$lib/util/website";
   export let researchItem;
 
   const components = {

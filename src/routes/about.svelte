@@ -1,3 +1,12 @@
+<script context="module">
+  export async function load({ params, fetch, session, stuff }) {
+    return {
+      stuff: {
+        title: "Über Mich"
+      },
+    };
+  }
+</script>
 <script>
   import Social from "$lib/components/blocks/Social.svelte";
   import Button from "$lib/components/button/Button.svelte";

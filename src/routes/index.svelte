@@ -14,7 +14,6 @@
   import { faDownload, faEarthEurope } from "@fortawesome/free-solid-svg-icons";
 
   export let posts;
-  
 </script>
 
 <Rect class="flex flex-col">

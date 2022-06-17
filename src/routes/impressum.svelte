@@ -1,3 +1,13 @@
+<script context="module">
+  export async function load({ params, fetch, session, stuff }) {
+    return {
+      stuff: {
+        title: "Impressum"
+      },
+    };
+  }
+</script>
+
 <script>
   import Container from "$lib/components/layout/Container.svelte";
   import BiggerTitle from "$lib/components/typography/BiggerTitle.svelte";

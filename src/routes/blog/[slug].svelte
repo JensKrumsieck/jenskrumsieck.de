@@ -1,3 +1,24 @@
+<script context="module">
+  import { base } from "$app/paths";
+
+  export async function load({ params, fetch, session, stuff }) {
+    const data = await fetch(`${base}/blog/${params.slug}.json`);
+    const post = await data.json();
+    return {
+      props: post,
+      stuff: {
+        title: ph.asText(post.post.data.title),
+        description: getDesc(
+          ph.asText(post.post.data.body[0].primary.content),
+          250
+        ),
+        keywords: post.post.tags.join(", ") + ", " + website.keywords,
+        image: ph.asImageSrc(post.post.data.hero_image),
+      },
+    };
+  }
+</script>
+
 <script>
   import Gallery from "$lib/components/prismic/Gallery.svelte";
   import RichText from "$lib/components/prismic/RichText.svelte";
@@ -7,9 +28,12 @@
   import Container from "$lib/components/layout/Container.svelte";
   import Date from "$lib/components/blocks/Date.svelte";
   import ShareButtons from "$lib/components/blocks/ShareButtons.svelte";
-  
+
   import * as ph from "@prismicio/helpers";
   import { SliceZone } from "@prismicio/svelte";
+  import { getDesc, getExcerpt } from "$lib/util/text-helpers";
+  import { faSitemap } from "@fortawesome/free-solid-svg-icons";
+  import website from "$lib/util/website";
   export let post;
 
   const components = {
