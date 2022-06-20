@@ -4,6 +4,7 @@
   export async function load({ params, fetch, session, stuff }) {
     const data = await fetch(`${base}/publications/${params.slug}.json`);
     const post = await data.json();
+    if (!post.researchItem) return {};
     return {
       props: post,
       stuff: {
