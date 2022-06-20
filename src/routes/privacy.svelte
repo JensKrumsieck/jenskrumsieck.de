@@ -2,11 +2,12 @@
   export async function load({ params, fetch, session, stuff }) {
     return {
       stuff: {
-        title: "Datenschutzerklärung"
+        title: "Datenschutzerklärung",
       },
     };
   }
 </script>
+
 <script>
   import Container from "$lib/components/layout/Container.svelte";
   import BiggerTitle from "$lib/components/typography/BiggerTitle.svelte";
@@ -462,6 +463,15 @@
           <strong>Rechtsgrundlage:</strong> Vertragserfüllung und vorvertragliche
           Anfragen, Art. 6 Abs. 1 lit. b DSGVO, berechtigtes Interesse, Art. 6 Abs.
           1 lit. f DSGVO
+        </p>
+        <h3>Angaben zu dem von uns genutzten Drittanbieter:</h3>
+        <p>
+          Das Kontaktformular übermittelt Daten an Google Formular (Google
+          Forms). Die erhaltenen Nachrichten werden nach Bearbeitung umgehend
+          gelöscht. Die Datenschutzerklärung von Google kann hier augerufen
+          werden: <a href="https://policies.google.com/privacy?hl=de"
+            >https://policies.google.com/privacy?hl=de</a
+          >.
         </p>
       </div>
     </div>
