@@ -34,16 +34,16 @@
   import { SliceZone } from "@prismicio/svelte";
   import RichText from "$lib/components/prismic/RichText.svelte";
   import Gallery from "$lib/components/prismic/Gallery.svelte";
+  import PrismicImage from "$lib/components/prismic/PrismicImage.svelte"
   import { getDesc } from "$lib/util/text-helpers";
   import website from "$lib/util/website";
   export let researchItem;
-
   const components = {
     text: RichText,
     galerie: Gallery,
+    image: PrismicImage
   };
 </script>
-
 <Container padding class="my-12 relative">
   <div class="flex flex-col">
     <BiggerTitle>{ph.asText(researchItem.data.title)}</BiggerTitle>
