@@ -20,14 +20,13 @@
   import Hr from "$lib/components/deco/HR.svelte";
   import Rect from "$lib/components/deco/Rect.svelte";
   import Container from "$lib/components/layout/Container.svelte";
-  import BiggerTitle from "$lib/components/typography/BiggerTitle.svelte";
+  import LargeTitle from "$lib/components/typography/LargeTitle.svelte";
   export let posts;
 </script>
 
 <Rect />
 <Container padding class="mt-12">
-  <BiggerTitle>Was gibt's Neues?</BiggerTitle>
-
+  <LargeTitle>Was gibt's Neues?</LargeTitle>
   <div class="flex flex-wrap justify-between">
     <FirstBlog post={posts.results[0]} />
     {#each posts.results.slice(1, 5) as post}

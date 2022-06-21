@@ -13,7 +13,6 @@
   }
 </script>
 
-
 <script>
   import Badge from "$lib/components/typography/Badge.svelte";
   import Container from "$lib/components/layout/Container.svelte";
@@ -22,10 +21,9 @@
   import * as ph from "@prismicio/helpers";
   import dayjs from "dayjs";
   export let publications;
-
 </script>
 
-<Container padding>
+<Container padding class="mt-12">
   <LargeTitle>Fachzeitschriften</LargeTitle>
   {#each publications.papers.results as paper}
     <div class="flex md:space-x-8 my-16 md:flex-row flex-col">
