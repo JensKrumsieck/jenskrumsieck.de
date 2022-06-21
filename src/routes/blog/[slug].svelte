@@ -22,6 +22,7 @@
 <script>
   import Gallery from "$lib/components/prismic/Gallery.svelte";
   import RichText from "$lib/components/prismic/RichText.svelte";
+  import PrismicImage from "$lib/components/prismic/PrismicImage.svelte";
   import Title from "$lib/components/typography/Title.svelte";
   import LargeTitle from "$lib/components/typography/LargeTitle.svelte";
   import Subtitle from "$lib/components/typography/Subtitle.svelte";
@@ -38,6 +39,7 @@
   const components = {
     text: RichText,
     galerie: Gallery,
+    image: PrismicImage,
   };
   const hero_image = ph.asImageSrc(post.data.hero_image);
 </script>
@@ -62,11 +64,20 @@
 
 <section>
   <Container class="p-6 bg-white relative shadow-lg">
-    <img
-      src={hero_image}
-      class="float-right w-96 ml-8 mb-8"
-      alt={post.data.hero_image.alt ? post.data.hero_image.alt : "Hero Image"}
-    />
+    <div class="float-right w-95 ml-8 mb-8 relative">
+      <img
+        src={hero_image}
+        class="float-right w-96 ml-8 mb-8"
+        alt={post.data.hero_image.alt ? post.data.hero_image.alt : "Hero Image"}
+      />
+      {#if post.data.hero_image.copyright != undefined}
+        <div class="absolute right-2 bottom-10">
+          <div class="bg-white rounded p-1 text-xs my-1 opacity-50">
+            &copy; {post.data.hero_image.copyright}
+          </div>
+        </div>
+      {/if}
+    </div>
     <Title>{ph.asText(post.data.title)}</Title>
     <SliceZone slices={post.data.body} {components} />
     <ShareButtons title={ph.asText(post.data.title)} image={hero_image} />
