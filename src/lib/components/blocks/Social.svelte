@@ -5,7 +5,7 @@
   export { clazz as class };
 </script>
 
-<div class={clazz}>
+<div class={clazz + "md:space-y-0 space-y-2"}>
     <RoundIconButton href="https://instagram.com/jens.ation/" icon={faInstagram} />
     <RoundIconButton href="https://twitter.com/jens_ation/" icon={faTwitter} />
     <RoundIconButton href="https://github.com/JensKrumsieck" icon={faGithub} />
