@@ -31,8 +31,7 @@
 
   import * as ph from "@prismicio/helpers";
   import { SliceZone } from "@prismicio/svelte";
-  import { getDesc, getExcerpt } from "$lib/util/text-helpers";
-  import { faSitemap } from "@fortawesome/free-solid-svg-icons";
+  import { getDesc } from "$lib/util/text-helpers";
   import website from "$lib/util/website";
   export let post;
 
@@ -75,16 +74,14 @@
 </section>
 
 <section>
-  <Container class="my-8 p-6 flex md:flex-row flex-col">
+  <Container class="my-8 p-6 flex md:flex-row flex-col md:space-x-12">
     <div>
       <Subtitle>Über {ph.asText(post.data.author.data.name)}</Subtitle>
-      <p>
-        {@html ph.asHTML(post.data.author.data.about)}
-      </p>
+      {@html ph.asHTML(post.data.author.data.about)}
     </div>
-    <div class="ml-6">
+    <div class="max-w-[12rem] mx-auto">
       <img
-        class="rounded-full md:w-[48rem] w-36 m-auto"
+        class="rounded-full"
         src={ph.asImageSrc(post.data.author.data.avatar)}
         alt={post.data.author.data.avatar
           ? post.data.author.data.avatar

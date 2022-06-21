@@ -182,9 +182,9 @@
   <BiggerTitle>Mitgliedschaften</BiggerTitle>
   <div class="my-6">
     <ul>
-      <li>Gesellschaft Deutscher Chemiker (<em>seit 2018</em>)</li>
+      <li>Gesellschaft Deutscher Chemiker (GDCh) (<em>seit 2018</em>)</li>
       <li>Bündnis 90/Die GRÜNEN (<em>seit 2021</em>)</li>
-      <li>ADFC (<em>seit 2022</em>)</li>
+      <li>Allgemeiner Deutscher Fahrrad Club (ADFC) (<em>seit 2022</em>)</li>
     </ul>
   </div>
 </Container>
