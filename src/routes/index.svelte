@@ -63,14 +63,10 @@
       image="https://porphystruct.org/_app/assets/screenshot_hero-1a3d8352.webp"
     >
       <p>
-        PorphyStruct, a new digital tool for the analysis of non-planar
-        distortion modes of different porphyrinoids - The program makes use of
-        the normal-coordinate structure decomposition technique (NSD) and
-        employs sets of normal modes equivalent to those established for
-        porphyrins in order to describe the out-of-plane dislocation pattern of
-        perimeter atoms from corroles, norcorroles, porphycenes and other
-        porphyrinoids quantitatively and in analogy to the established
-        terminology.
+        PorphyStruct, ein neues digitales Werkzeug zur Analyse der
+        nicht-planaren Auslenkungen verschiedener Porphyrinoide. Das Programm
+        nutzt die <em>normal-coordinate structure decomposition</em> (NSD) Methode
+        und erweitert sie auf Corrole, Norcorrole, Porphycene und Corrphycene.
       </p>
       <div class="flex md:flex-row flex-col flex-wrap md:space-x-5 my-8">
         <IconLink
@@ -83,7 +79,7 @@
           icon={faDownload}
           href="https://github.com/JensKrumsieck/PorphyStruct/releases/latest"
         >
-          Download for Windows
+          Download für Windows
         </IconLink>
         <IconLink icon={faEarthEurope} href="https://app.porphystruct.org">
           Webversion
@@ -98,11 +94,12 @@
     <div class="md:grid md:grid-cols-2 md:gap-4 mt-8">
       <Projects title="CHN-Tool" icon="chn_logo.svg">
         <p>
-          The CHN-Tool recalculates the composition of elemental analysis (CHN)
-          by taking possible impurities or solvents into account. Organic
-          solvents are often found in the unit cell after crystallization. These
-          can be easily included in the molecular formula with this tool and
-          adjusted to the experimental elemental analysis data.
+          Das CHN-Tool berechnet die Zusammensetzung von Elementaranalysen (CHN)
+          neu, indem es mögliche Verunreinigungen oder Lösungsmittel
+          berücksichtigt. Organische Lösungsmittel befinden sich nach der
+          Kristallisation oft in der Elementarzelle. Diese können mit diesem
+          Tool einfach in die Summenformel aufgenommen und an die
+          experimentellen Elementaranalysedaten angepasst werden.
         </p>
         <div class="flex flex-wrap md:space-x-5 my-8">
           <IconLink
@@ -121,9 +118,11 @@
       </Projects>
       <Projects title="ChemSharp" icon="chemsharp_logo.svg">
         <p>
-          A Library for processing of chemistry related files (aiming at
-          spectroscopy and structural files) - To give multiple projects a
-          single codebase
+          ChemSharp ist eine .NET-Softwarebibliothek, die vor allem auf das
+          prozessieren chemischer Dateiformate ausgelegt ist. Sowohl
+          Strukturdaten als auch spektroskopische Dateien können geladen werden.
+          Das Projekt wurde gestartet um meinen Projekten einen gemeinsame
+          Code-Basis zu geben und wird z.B. von <em>PorphyStruct</em> benutzt.
         </p>
         <div class="flex flex-wrap md:space-x-5 my-8">
           <IconLink
