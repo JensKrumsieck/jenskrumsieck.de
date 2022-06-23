@@ -26,8 +26,7 @@
       </p>
     </div>
     <img
-      src={ph.asImageSrc(post.data.hero_image)}
-      srcset={ph.asImageWidthSrcSet(post.data.hero_image).srcset}
+      src={ph.asImageSrc(post.data.hero_image) + "&w=650"}
       alt={ph.asText(post.data.title)}
       loading="lazy"
       class="md:max-w-[33%] w-full max-h-[30rem] ml-auto h-auto object-cover"

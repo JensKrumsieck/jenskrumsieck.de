@@ -12,8 +12,7 @@
   class="flex flex-col md:w-auto w-full lg:max-w-[25%] md:max-w-[50%]  mt-6 self-stretch"
 >
   <img
-    src={ph.asImageSrc(post.data.hero_image)}
-    srcset={ph.asImageWidthSrcSet(post.data.hero_image).srcset}
+    src={ph.asImageSrc(post.data.hero_image) + "&w=450"}
     alt={ph.asText(post.data.title)}
     loading="lazy"
     class="w-full max-h-[15rem] ml-auto h-auto object-cover"
