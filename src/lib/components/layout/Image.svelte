@@ -11,7 +11,7 @@
   export {clazz as class}
   function click() {
     openModal(Modal, {
-      content: `<img src="${src}" class="max-h-[80vh] max-w-[90vw]" loading="lazy"/>`,
+      content: `<img src="${src}" class="max-h-[80vh] max-w-[80vw]" loading="lazy"/>`,
     });
   }
 </script>
