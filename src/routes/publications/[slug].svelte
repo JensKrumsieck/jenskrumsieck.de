@@ -32,18 +32,20 @@
   import { faDownload } from "@fortawesome/free-solid-svg-icons";
   import Hex from "$lib/components/deco/Hex.svelte";
   import { SliceZone } from "@prismicio/svelte";
-  import RichText from "$lib/components/prismic/RichText.svelte";
-  import Gallery from "$lib/components/prismic/Gallery.svelte";
-  import PrismicImage from "$lib/components/prismic/PrismicImage.svelte"
+  import RichText from "$lib/components/prismic/slices/RichText.svelte";
+  import Gallery from "$lib/components/prismic/slices/Gallery.svelte";
+  import PrismicSliceImage from "$lib/components/prismic/slices/PrismicImage.svelte";
+  import PrismicImage from "$lib/components/prismic/PrismicImage.svelte";
   import { getDesc } from "$lib/util/text-helpers";
   import website from "$lib/util/website";
   export let researchItem;
   const components = {
     text: RichText,
     galerie: Gallery,
-    image: PrismicImage
+    image: PrismicSliceImage,
   };
 </script>
+
 <Container padding class="my-12 relative">
   <div class="flex flex-col">
     <BiggerTitle>{ph.asText(researchItem.data.title)}</BiggerTitle>
@@ -68,10 +70,7 @@
   <div class="flex md:space-x-24 my-12 md:flex-row flex-col">
     {#if ph.isFilled.image(researchItem.data.hero_image)}
       <figure class="md:max-w-[30rem]">
-        <img
-          src={ph.asImageSrc(researchItem.data.hero_image)}
-          alt={researchItem.data.hero_image.alt ?? "cover image"}
-        />
+        <PrismicImage image={researchItem.data.hero_image} />
       </figure>
     {/if}
     <div class="flex flex-col md:mt-0 mt-6">

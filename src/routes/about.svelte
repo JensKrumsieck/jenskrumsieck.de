@@ -99,7 +99,7 @@
       </div>
     </div>
     <figure class="w-full h-auto my-auto">
-      <img src="lowersax.svg" alt="Ein Bild von Jens" />
+      <img src="lowersax.svg" alt="Ein Bild von Jens" loading="lazy" />
     </figure>
   </div>
 </Container>

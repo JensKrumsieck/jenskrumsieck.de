@@ -20,6 +20,7 @@
   import Title from "$lib/components/typography/Title.svelte";
   import * as ph from "@prismicio/helpers";
   import dayjs from "dayjs";
+  import PrismicImage from "$lib/components/prismic/PrismicImage.svelte";
   export let publications;
 </script>
 
@@ -29,10 +30,7 @@
     <div class="flex md:space-x-8 my-16 md:flex-row flex-col">
       {#if ph.isFilled.image(paper.data.cover_image)}
         <figure class="md:max-w-[10rem]">
-          <img
-            src={ph.asImageSrc(paper.data.cover_image)}
-            alt={paper.data.cover_image.alt}
-          />
+          <PrismicImage image={paper.data.cover_image} />
         </figure>
       {/if}
       <div class="flex flex-col space-y-4">
@@ -71,10 +69,7 @@
     <div class="flex md:space-x-8 my-16 md:flex-row flex-col">
       {#if ph.isFilled.image(poster.data.hero_image)}
         <figure class="md:max-w-[10rem]">
-          <img
-            src={ph.asImageSrc(poster.data.hero_image)}
-            alt={poster.data.hero_image.alt ?? "cover image"}
-          />
+          <PrismicImage image={poster.data.hero_image} />
         </figure>
       {/if}
       <div class="flex flex-col space-y-2 text-lg">
@@ -86,7 +81,9 @@
           </Title>
           <Badge>{poster.data.type}</Badge>
         </div>
-
+        <p class="italic mt-8 text-md">
+          {poster.data.authors}
+        </p>
         {#each poster.data.presentations as presentation}
           <p>
             <span class="italic">{presentation.conference}</span>,

@@ -33,7 +33,7 @@
     <h1 class="font-black md:text-7xl text-4xl tracking-tighter">
       Wissenschaft, Softwareentwicklung und Politik.
     </h1>
-    <div class="mt-12 md:space-y-0 space-y-2">
+    <div class="my-12 md:space-y-0 space-y-2">
       <Button href="/blog">Beiträge lesen</Button>
       <Button outlined href="/publications">Meine Veröffentlichungen</Button>
     </div>

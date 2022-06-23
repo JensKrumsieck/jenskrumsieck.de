@@ -10,6 +10,7 @@
 
 <div class="bg-dark my-8 relative text-white w-full">
   <a
+    sveltekit:prefetch
     href={"/blog/" + post.uid}
     class="flex md:flex-row flex-col-reverse relative z-10"
   >
@@ -28,6 +29,7 @@
       src={ph.asImageSrc(post.data.hero_image)}
       srcset={ph.asImageWidthSrcSet(post.data.hero_image).srcset}
       alt={ph.asText(post.data.title)}
+      loading="lazy"
       class="md:max-w-[33%] w-full max-h-[30rem] ml-auto h-auto object-cover"
     />
   </a>

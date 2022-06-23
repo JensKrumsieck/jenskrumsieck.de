@@ -1,21 +1,22 @@
 <script>
   import * as ph from "@prismicio/helpers";
-  export let slice;
+  import Image from "$lib/components/layout/Image.svelte";
+  export let image;
+  let clazz = ""
+  export {clazz as class}
+  let width = 1000;
 </script>
 
-<section class="my-10 flex justify-center relative">
-  <a href={ph.asImageSrc(slice.primary.content)}>
-    <img
-      src={ph.asImageSrc(slice.primary.content)}
-      alt={slice.primary.content.alt ? slice.primary.content.alt : "Galerie"}
-      class="max-h-96 mx-auto w-auto"
-    />
-  </a>
-  {#if slice.primary.content.copyright != undefined}
-    <div class="absolute right-2 bottom-0">
-      <div class="bg-white rounded p-1 text-xs my-1 opacity-50">
-        &copy; {slice.primary.content.copyright}
-      </div>
+<Image
+  src={ph.asImageSrc(image)}
+  thumbSrc={ph.asImageSrc(image) + "&w=" + width}
+  alt={image.alt ? image.alt : "Ein Bild"}
+  class={clazz}
+/>
+{#if image.copyright != undefined}
+  <div class="absolute right-2 bottom-0">
+    <div class="bg-white rounded p-1 text-xs my-1 opacity-50">
+      &copy; {image.copyright}
     </div>
-  {/if}
-</section>
+  </div>
+{/if}
