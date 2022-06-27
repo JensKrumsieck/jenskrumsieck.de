@@ -42,7 +42,7 @@ export async function get({ fetch, params }) {
                     <loc>${website.siteUrl}/blog/${post.uid}</loc>
                     <changefreq>daily</changefreq>
                     <priority>0.7</priority>
-                    <lastmod>${dayjs(post.last_publication_date).format("YYYY-MM-DDThh:mmTZ")}</lastmod>
+                    <lastmod>${dayjs(post.last_publication_date).format("YYYY-MM-DD")}</lastmod>
                 </url>`
         ).join("")}
         ${researchItems.map(researchItem =>
@@ -50,7 +50,7 @@ export async function get({ fetch, params }) {
                     <loc>${website.siteUrl}/publications/${researchItem.uid}</loc>
                     <changefreq>daily</changefreq>
                     <priority>0.7</priority>
-                    <lastmod>${dayjs(researchItem.last_publication_date).format("YYYY-MM-DDThh:mmTZ")}</lastmod>
+                    <lastmod>${dayjs(researchItem.last_publication_date).format("YYYY-MM-DD")}</lastmod>
                 </url>`
         ).join("")}
         </urlset > `,
