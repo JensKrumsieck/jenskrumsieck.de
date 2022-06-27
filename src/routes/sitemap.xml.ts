@@ -1,5 +1,6 @@
 import createClient from "$lib/content/prismic";
 import website from "$lib/util/website";
+import dayjs from "dayjs";
 
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
@@ -41,7 +42,7 @@ export async function get({ fetch, params }) {
                     <loc>${website.siteUrl}/blog/${post.uid}</loc>
                     <changefreq>daily</changefreq>
                     <priority>0.7</priority>
-                    <lastmod>${post.last_publication_date}</lastmod>
+                    <lastmod>${dayjs(post.last_publication_date).format("YYYY-MM-DDThh:mmTZ")}</lastmod>
                 </url>`
         ).join("")}
         ${researchItems.map(researchItem =>
@@ -49,7 +50,7 @@ export async function get({ fetch, params }) {
                     <loc>${website.siteUrl}/publications/${researchItem.uid}</loc>
                     <changefreq>daily</changefreq>
                     <priority>0.7</priority>
-                    <lastmod>${researchItem.last_publication_date}</lastmod>
+                    <lastmod>${dayjs(researchItem.last_publication_date).format("YYYY-MM-DDThh:mmTZ")}</lastmod>
                 </url>`
         ).join("")}
         </urlset > `,
