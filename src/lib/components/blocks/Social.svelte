@@ -13,5 +13,5 @@
     <RoundIconButton href="https://www.researchgate.net/profile/Jens-Krumsieck" icon={faResearchgate} />
     <RoundIconButton href="https://orcid.org/0000-0001-6242-5846" icon={faOrcid} />
     <RoundIconButton href="https://www.xing.com/profile/Jens_Krumsieck" icon={faXing} />
-    <RoundIconButton href="'https://www.linkedin.com/in/jens-krumsieck-849445211" icon={faLinkedin} />
+    <RoundIconButton href="https://www.linkedin.com/in/jens-krumsieck-849445211" icon={faLinkedin} />
 </div>
