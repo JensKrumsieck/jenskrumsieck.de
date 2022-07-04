@@ -35,6 +35,7 @@
   import RichText from "$lib/components/prismic/slices/RichText.svelte";
   import Gallery from "$lib/components/prismic/slices/Gallery.svelte";
   import PrismicSliceImage from "$lib/components/prismic/slices/PrismicImage.svelte";
+  import HTML from '$lib/components/prismic/slices/HTML.svelte';
   import PrismicImage from "$lib/components/prismic/PrismicImage.svelte";
   import { getDesc } from "$lib/util/text-helpers";
   import website from "$lib/util/website";
@@ -43,6 +44,7 @@
     text: RichText,
     galerie: Gallery,
     image: PrismicSliceImage,
+    html: HTML
   };
 </script>
 
