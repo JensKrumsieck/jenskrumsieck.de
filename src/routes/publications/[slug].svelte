@@ -71,7 +71,7 @@
   </div>
   <div class="flex md:space-x-24 my-12 md:flex-row flex-col">
     {#if ph.isFilled.image(researchItem.data.hero_image)}
-      <figure class="md:max-w-[30rem]">
+      <figure class="md:min-w-[20rem] md:max-w-[30rem]">
         <PrismicImage image={researchItem.data.hero_image} />
       </figure>
     {/if}
