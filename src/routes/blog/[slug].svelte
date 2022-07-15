@@ -24,6 +24,7 @@
   import RichText from "$lib/components/prismic/slices/RichText.svelte";
   import PrismicSliceImage from "$lib/components/prismic/slices/PrismicImage.svelte";
   import PrismicImage from "$lib/components/prismic/PrismicImage.svelte";
+  import Link from "$lib/components/prismic/slices/Link.svelte";
   import Title from "$lib/components/typography/Title.svelte";
   import LargeTitle from "$lib/components/typography/LargeTitle.svelte";
   import Subtitle from "$lib/components/typography/Subtitle.svelte";
@@ -41,6 +42,7 @@
     text: RichText,
     galerie: Gallery,
     image: PrismicSliceImage,
+    linker: Link,
   };
   const hero_image = ph.asImageSrc(post.data.hero_image);
 </script>
@@ -66,7 +68,10 @@
 <section>
   <Container class="p-6 bg-white relative shadow-lg">
     <div class="float-right w-95 ml-8 mb-8 relative">
-      <PrismicImage image={post.data.hero_image} class="float-right w-96 ml-8 mb-8"/>
+      <PrismicImage
+        image={post.data.hero_image}
+        class="float-right w-96 ml-8 mb-8"
+      />
       {#if post.data.hero_image.copyright != undefined}
         <div class="absolute right-2 bottom-10">
           <div class="bg-white rounded p-1 text-xs my-1 opacity-50">
