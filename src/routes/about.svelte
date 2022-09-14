@@ -87,8 +87,7 @@
         Taschenrechner bekommen habe.
       </p>
       <p class="my-6">
-        Mein starkes Interesse an Politik ist vergleichsweise neu und hat sich
-        während der Lockdowns entwickelt - Seit 2021 bin ich nun Mitglied bei
+        Seit 2021 bin ich Mitglied bei
         <strong>Bündnis 90/Die GRÜNEN</strong> und bin besonders an Themen wie Digitalisierung,
         Mobilität, Klimaschutz und Energiewende interessiert.
       </p>
