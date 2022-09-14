@@ -144,10 +144,6 @@
         <p>
           <strong>Bündnis 90/Die GRÜNEN Braunschweig (seit 2021)</strong>
         </p>
-        <p>
-          Aktiv in Aktionsgruppe, Social Media Taskforce, AG Digitales, AG
-          Mobilität, AG Energie
-        </p>
       </div>
     </div>
     <div class="my-12">
