@@ -29,7 +29,8 @@
         <FooterLink href="https://chn.jenskrumsieck.de">CHN Tool</FooterLink>
         <FooterLink href="https://github.com/jenskrumsieck/chemsharp/"
           >ChemSharp</FooterLink
-        >
+        >        
+        <FooterLink href="https://profilbegruenung.jenskrumsieck.de">Profilbegrünung</FooterLink>
         <p class="flex text-lg pt-4 font-bold">Links</p>
         <FooterLink href="https://tu-braunschweig.de">
           TU Braunschweig
