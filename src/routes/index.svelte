@@ -133,6 +133,37 @@
           </IconLink>
         </div>
       </Projects>
+      <Projects
+        title="Profilbegrünung"
+        icon="https://profilbegruenung.jenskrumsieck.de/logo.png"
+      >
+        <p>
+          Profilbegrünung ist ein Wahlkampf-Tool, das zur <em
+            >Landtagswahl 2022 in Niedersachsen</em
+          >
+          am 9. Oktober insbesondere für den KV Braunschweig von
+          <strong>Bündnis 90/Die GRÜNEN</strong>
+          erstellt wurde, aber problemlos anpassbar auf weitere Wahlen ist. Mit der
+          Profilbegrünung ist es kinderleicht möglich das eigene Profilbild mit Parteilogo,
+          Claim und Wahlhinweis zu versetzen. Es ist möglich zwischen verschiedenen
+          Logos und Optionen zu wählen.
+        </p>
+
+        <div class="flex flex-wrap md:space-x-5 my-8">
+          <IconLink
+            icon={faGithub}
+            href="https://github.com/JensKrumsieck/profile-frame"
+          >
+            GitHub Repository
+          </IconLink>
+        </div>
+
+        <div class="flex">
+          <Button href="https://profilbegruenung.jenskrumsieck.de" external>
+            profilbegruenung.jenskrumsieck.de
+          </Button>
+        </div>
+      </Projects>
     </div>
   </div>
   <div><Hex opaque right /></div>
