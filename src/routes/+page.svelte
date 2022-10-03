@@ -13,7 +13,8 @@
   import { faGithub } from "@fortawesome/free-brands-svg-icons";
   import { faDownload, faEarthEurope } from "@fortawesome/free-solid-svg-icons";
 
-  export let posts;
+  export let data;
+  let { posts } = data;
 </script>
 
 <Rect class="flex flex-col">
