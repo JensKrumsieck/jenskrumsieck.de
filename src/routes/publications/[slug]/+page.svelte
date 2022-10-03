@@ -1,25 +1,3 @@
-<script context="module">
-  import { base } from "$app/paths";
-
-  export async function load({ params, fetch, session, stuff }) {
-    const data = await fetch(`${base}/publications/${params.slug}.json`);
-    const post = await data.json();
-    if (!post.researchItem) return {};
-    return {
-      props: post,
-      stuff: {
-        title: ph.asText(post.researchItem.data.title),
-        description: getDesc(
-          ph.asText(post.researchItem.data.body[0].primary.content),
-          250
-        ),
-        keywords: post.researchItem.tags.join(", ") + ", " + website.keywords,
-        image: ph.asImageSrc(post.researchItem.data.hero_image),
-      },
-    };
-  }
-</script>
-
 <script>
   import ShareButtons from "$lib/components/blocks/ShareButtons.svelte";
   import Container from "$lib/components/layout/Container.svelte";
@@ -35,16 +13,15 @@
   import RichText from "$lib/components/prismic/slices/RichText.svelte";
   import Gallery from "$lib/components/prismic/slices/Gallery.svelte";
   import PrismicSliceImage from "$lib/components/prismic/slices/PrismicImage.svelte";
-  import HTML from '$lib/components/prismic/slices/HTML.svelte';
+  import HTML from "$lib/components/prismic/slices/HTML.svelte";
   import PrismicImage from "$lib/components/prismic/PrismicImage.svelte";
-  import { getDesc } from "$lib/util/text-helpers";
-  import website from "$lib/util/website";
-  export let researchItem;
+  export let data;
+  let { researchItem } = data;
   const components = {
     text: RichText,
     galerie: Gallery,
     image: PrismicSliceImage,
-    html: HTML
+    html: HTML,
   };
 </script>
 

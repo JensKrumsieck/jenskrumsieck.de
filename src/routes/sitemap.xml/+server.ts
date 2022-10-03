@@ -4,7 +4,7 @@ import dayjs from "dayjs";
 
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
-export async function get({ fetch, params }) {
+export async function GET({ fetch, params }) {
     const headers = {
         'Cache-Control': 'max-age=0, s-maxage=3600',
         'Content-Type': 'application/xml',
@@ -14,9 +14,7 @@ export async function get({ fetch, params }) {
     const client = createClient(fetch)
     const posts = await client.getAllByType('article', { orderings: { field: 'my.article.publish_date', direction: 'desc' } })
     const researchItems = await client.getAllByType('research_item', { orderings: { field: 'my.research_item.presentations.start_date', direction: 'desc' } })
-    return {
-        headers,
-        body: `<?xml version="1.0" encoding="UTF-8" ?>
+    return new Response(`<?xml version="1.0" encoding="UTF-8" ?>
         <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
             <url>
                 <loc>${website.siteUrl}</loc>
@@ -53,6 +51,5 @@ export async function get({ fetch, params }) {
                     <lastmod>${dayjs(researchItem.last_publication_date).format("YYYY-MM-DD")}</lastmod>
                 </url>`
         ).join("")}
-        </urlset > `,
-    }
+        </urlset > `, { headers: headers })
 }

@@ -8,16 +8,10 @@ const config = {
 	preprocess: preprocess({
 		postcss: true,
 	}),
-
 	kit: {
-		adapter: adapter(),
-		vite: {
-			ssr: {
-				noExternal: ['@fortawesome/free-brands-svg-icons', '@fortawesome/free-solid-svg-icons']
-			}
-		}
-	},
-	experimental: { prebundleSvelteLibraries: true }
+		adapter: adapter()
+	}
+	
 };
 
 export default config;

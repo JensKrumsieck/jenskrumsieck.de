@@ -1,18 +1,3 @@
-<script context="module">
-  import { base } from "$app/paths";
-
-  export async function load({ params, fetch, session, stuff }) {
-    const data = await fetch(`${base}/blog.json`);
-    const posts = await data.json();
-    return {
-      props: posts,
-      stuff: {
-        title: "Blog",
-      },
-    };
-  }
-</script>
-
 <script>
   import FirstBlog from "$lib/components/blocks/FirstBlog.svelte";
   import ListBlog from "$lib/components/blocks/ListBlog.svelte";
@@ -21,7 +6,8 @@
   import Rect from "$lib/components/deco/Rect.svelte";
   import Container from "$lib/components/layout/Container.svelte";
   import LargeTitle from "$lib/components/typography/LargeTitle.svelte";
-  export let posts;
+  export let data;
+  let { posts } = data;
 </script>
 
 <Rect />

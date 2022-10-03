@@ -1,16 +1,13 @@
+import { json } from '@sveltejs/kit';
 import createClient from "$lib/content/prismic";
 
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
-export async function get({ fetch, params }) {
+export async function GET({ fetch, params }) {
     const client = createClient(fetch)
     const posts = await client.getByType('article', { fetchLinks: ['author.name'], orderings: { field: 'my.article.publish_date', direction: 'desc' } })
     if (posts) {
-        return {
-            body: { posts }
-        }
+        return json({ posts })
     }
-    return {
-        status: 404
-    }
+    return new Response(undefined, { status: 404 })
 }

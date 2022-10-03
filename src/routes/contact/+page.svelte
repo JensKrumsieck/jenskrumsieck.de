@@ -1,19 +1,9 @@
-<script context="module">
+<script>
   import Social from "$lib/components/blocks/Social.svelte";
   import Container from "$lib/components/layout/Container.svelte";
-
   import LargeTitle from "$lib/components/typography/LargeTitle.svelte";
 
-  export async function load({ params, fetch, session, stuff }) {
-    return {
-      stuff: {
-        title: "Kontakt",
-      },
-    };
-  }
-</script>
 
-<script>
   let response;
   let status;
   let submitting = false;
