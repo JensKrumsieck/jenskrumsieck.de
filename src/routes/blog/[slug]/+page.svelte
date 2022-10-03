@@ -14,15 +14,16 @@
 
   import * as ph from "@prismicio/helpers";
   import { SliceZone } from "@prismicio/svelte";
+  import Embed from "$lib/components/prismic/slices/Embed.svelte";
   export let data;
   let { post } = data;
-
   const components = {
     text: RichText,
     galerie: Gallery,
     image: PrismicSliceImage,
     linker: Link,
     html: HTML,
+    embed: Embed
   };
   const hero_image = ph.asImageSrc(post.data.hero_image);
 </script>
