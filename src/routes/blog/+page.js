@@ -7,8 +7,6 @@ export async function load({ params, fetch, data }) {
   const posts = await res.json();
   return {
     posts: posts.posts,
-    data: {
-      title: "Blog",
-    },
+    title: "Blog",
   };
 }

@@ -10,14 +10,13 @@ export async function load({ params, fetch, data }) {
   const post = await res.json();
   return {
     post: post.post,
-    data: {
-      title: ph.asText(post.post.data.title),
-      description: getDesc(
-        ph.asText(post.post.data.body[0].primary.content),
-        250
-      ),
-      keywords: post.post.tags.join(", ") + ", " + website.keywords,
-      image: ph.asImageSrc(post.post.data.hero_image),
-    },
+    title: ph.asText(post.post.data.title),
+    description: getDesc(
+      ph.asText(post.post.data.body[0].primary.content),
+      250
+    ),
+    keywords: post.post.tags.join(", ") + ", " + website.keywords,
+    image: ph.asImageSrc(post.post.data.hero_image),
+
   };
 }

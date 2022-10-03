@@ -10,14 +10,12 @@ export async function load({ params, fetch, data }) {
   if (!post.researchItem) return {};
   return {
     researchItem: post.researchItem,
-    data: {
-      title: ph.asText(post.researchItem.data.title),
-      description: getDesc(
-        ph.asText(post.researchItem.data.body[0].primary.content),
-        250
-      ),
-      keywords: post.researchItem.tags.join(", ") + ", " + website.keywords,
-      image: ph.asImageSrc(post.researchItem.data.hero_image),
-    },
+    title: ph.asText(post.researchItem.data.title),
+    description: getDesc(
+      ph.asText(post.researchItem.data.body[0].primary.content),
+      250
+    ),
+    keywords: post.researchItem.tags.join(", ") + ", " + website.keywords,
+    image: ph.asImageSrc(post.researchItem.data.hero_image),
   };
 }
