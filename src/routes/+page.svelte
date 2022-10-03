@@ -12,11 +12,12 @@
   import IconLink from "$lib/components/button/IconLink.svelte";
   import { faGithub } from "@fortawesome/free-brands-svg-icons";
   import { faDownload, faEarthEurope } from "@fortawesome/free-solid-svg-icons";
-
+  import Calendar from "$lib/components/blocks/Calendar.svelte";
   export let data;
-  let { posts } = data;
+  let { posts, dates } = data;
 </script>
 
+<Calendar {dates} />
 <Rect class="flex flex-col">
   <img
     src="hero.webp"
