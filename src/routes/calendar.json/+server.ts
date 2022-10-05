@@ -5,8 +5,8 @@ import { CALENDAR } from '$env/static/private'
 /** @type {import('@sveltejs/kit').RequestHandler} */
 export async function GET(event) {
     let data = await fetch(CALENDAR);
-    console.log(CALENDAR)
     let content = await data.text()
+    console.log(content)
     let cal = ical.parseICS(content);
     let events = sort(cal);
     let dates = [];
