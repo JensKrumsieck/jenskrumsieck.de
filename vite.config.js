@@ -8,7 +8,7 @@ const config = {
         })
     ],
     ssr: {
-        noExternal: ['@fortawesome/free-brands-svg-icons', '@fortawesome/free-solid-svg-icons']
+        noExternal: ['@fortawesome/free-brands-svg-icons', '@fortawesome/free-solid-svg-icons']        
     }
 };
 
