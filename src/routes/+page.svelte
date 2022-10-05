@@ -13,11 +13,12 @@
   import { faGithub } from "@fortawesome/free-brands-svg-icons";
   import { faDownload, faEarthEurope } from "@fortawesome/free-solid-svg-icons";
   import Calendar from "$lib/components/blocks/Calendar.svelte";
+  import Title from "$lib/components/typography/Title.svelte";
+  import BiggerTitle from "$lib/components/typography/BiggerTitle.svelte";
   export let data;
   let { posts, dates } = data;
 </script>
 
-<Calendar {dates} />
 <Rect class="flex flex-col">
   <img
     src="hero.webp"
@@ -169,4 +170,10 @@
     </div>
   </div>
   <div><Hex opaque right /></div>
+</Container>
+<Container padding fullHeight class="flex flex-col md:justify-center">
+  <LargeTitle>Termine</LargeTitle>
+  <div class="py-8">
+    <Calendar {dates} />
+  </div>
 </Container>
