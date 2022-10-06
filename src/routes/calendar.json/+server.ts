@@ -1,5 +1,5 @@
 import dayjs from "dayjs";
-import * as ical from "node-ical";
+import ical from "node-ical";
 import { CALENDAR } from '$env/static/private'
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
