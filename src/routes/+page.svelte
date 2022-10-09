@@ -13,8 +13,6 @@
   import { faGithub } from "@fortawesome/free-brands-svg-icons";
   import { faDownload, faEarthEurope } from "@fortawesome/free-solid-svg-icons";
   import Calendar from "$lib/components/blocks/Calendar.svelte";
-  import Title from "$lib/components/typography/Title.svelte";
-  import BiggerTitle from "$lib/components/typography/BiggerTitle.svelte";
   export let data;
   let { posts, dates } = data;
 </script>
