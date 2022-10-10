@@ -11,7 +11,7 @@
   import timezone from "dayjs/plugin/timezone";
   dayjs.extend(timezone);
   dayjs.extend(utc);
-  dayjs.tz.setDefault("Europe/Berlin");
+
   const months = [
     "Jan",
     "Feb",

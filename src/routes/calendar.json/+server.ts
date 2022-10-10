@@ -5,7 +5,6 @@ import utc from 'dayjs/plugin/utc'
 import timezone from "dayjs/plugin/timezone"
 dayjs.extend(timezone)
 dayjs.extend(utc)
-dayjs.tz.setDefault("Europe/Berlin")
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
 export async function GET(event) {
