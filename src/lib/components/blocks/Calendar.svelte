@@ -7,6 +7,11 @@
   import "dayjs/locale/de.js";
   import Subtitle from "../typography/Subtitle.svelte";
   dayjs.extend(relativeTime);
+  import utc from "dayjs/plugin/utc";
+  import timezone from "dayjs/plugin/timezone";
+  dayjs.extend(timezone);
+  dayjs.extend(utc);
+  dayjs.tz.setDefault("Europe/Berlin");
   const months = [
     "Jan",
     "Feb",
@@ -56,8 +61,10 @@
           <div class="flex flex-row items-center">
             <Fa icon={faClock} size="xs" />
             <div class="text-dark font-medium text-xs px-2">
-              {dayjs(event.start).tz('Europe/Berlin').format("DD.MM.YYYY HH:mm")}, Dauer: ca.
-              {dayjs(event.end).tz('Europe/Berlin').from(event.start, true)}
+              {dayjs(event.start)
+                .tz("Europe/Berlin")
+                .format("DD.MM.YYYY HH:mm")}, Dauer: ca.
+              {dayjs(event.end).tz("Europe/Berlin").from(event.start, true)}
             </div>
           </div>
           {#if event.location != ""}
