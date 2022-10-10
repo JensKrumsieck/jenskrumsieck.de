@@ -2,12 +2,11 @@
   import { faClock, faLocationDot } from "@fortawesome/free-solid-svg-icons";
   import Fa from "svelte-fa/src/fa.svelte";
   import type * as ical from "node-ical";
-  import dayjs from "dayjs";
+  import dayjs, { tz } from "dayjs";
   import relativeTime from "dayjs/plugin/relativeTime.js";
   import "dayjs/locale/de.js";
   import Subtitle from "../typography/Subtitle.svelte";
   dayjs.extend(relativeTime);
-
   const months = [
     "Jan",
     "Feb",
@@ -57,8 +56,8 @@
           <div class="flex flex-row items-center">
             <Fa icon={faClock} size="xs" />
             <div class="text-dark font-medium text-xs px-2">
-              {dayjs(event.start).format("DD.MM.YYYY HH:mm")}, Dauer: ca.
-              {dayjs(event.end).from(event.start, true)}
+              {dayjs(event.start).tz('Europe/Berlin').format("DD.MM.YYYY HH:mm")}, Dauer: ca.
+              {dayjs(event.end).tz('Europe/Berlin').from(event.start, true)}
             </div>
           </div>
           {#if event.location != ""}
