@@ -58,7 +58,8 @@ function calculateRecurring(event: ical.VEvent): ical.VEvent[] {
         let start = date
         let offset = (event.start.getTimezoneOffset() - date.getTimezoneOffset())
         start.setHours(date.getHours() - offset / 60)
-        start = dayjs(start).tz("Europe/Berlin").toDate()
+        start = dayjs(start).utc().toDate()
+        console.log(start)
         return {
             type: 'VEVENT',
             start: start,
