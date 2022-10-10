@@ -1,6 +1,10 @@
 import dayjs from "dayjs";
+import timezone from "dayjs/plugin/timezone"
 import ical from "node-ical";
 import { CALENDAR } from '$env/static/private'
+import utc from 'dayjs/plugin/utc'
+dayjs.extend(timezone)
+dayjs.extend(utc)
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
 export async function GET(event) {
@@ -40,19 +44,22 @@ function sort(data: ical.CalendarResponse) {
     ));
 }
 
-function calculateRecurring(event: ical.VEvent): ical.VEvent[] {
+function calculateRecurring(event: ical.VEvent): ical.VEvent[] {    
     const now = new Date();
     const nextY = new Date();
-    nextY.setFullYear(now.getFullYear() + 1);
+    nextY.setFullYear(now.getFullYear() + 1);   
     let dates = event.rrule.between(now, nextY);
     let duration = dayjs(event.start).diff(event.end)
     if (event.exdate) {
         dates = dates.filter(date => (!event.exdate[dayjs(date).format("YYYY-MM-DD")]));
     }
+    let eventTz = event.rrule.origOptions.tzid ?? "Europe/Berlin"
+    let localTz = dayjs.tz.guess()
+    let tz = eventTz == localTz ? eventTz : localTz;
     let newEvents = dates.map(date => {
         return {
             type: 'VEVENT',
-            start: date as ical.DateWithTimeZone,
+            start: dayjs.tz(date).tz(tz).toDate() as ical.DateWithTimeZone,
             summary: event.summary,
             description: event.description,
             location: event.location,
