@@ -6,13 +6,7 @@
   import relativeTime from "dayjs/plugin/relativeTime.js";
   import "dayjs/locale/de.js";
   import Subtitle from "../typography/Subtitle.svelte";
-  import utc from "dayjs/plugin/utc";
-  import timezone from "dayjs/plugin/timezone";
-  dayjs.extend(timezone);
-  dayjs.extend(utc);
   dayjs.extend(relativeTime);
-  dayjs.locale("de");
-  dayjs.tz.setDefault("Europe/Berlin")
 
   const months = [
     "Jan",

@@ -5,7 +5,6 @@ import utc from 'dayjs/plugin/utc'
 import timezone from "dayjs/plugin/timezone"
 dayjs.extend(timezone)
 dayjs.extend(utc)
-dayjs.tz.setDefault("Europe/Berlin")
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
 export async function GET(event) {
@@ -56,7 +55,9 @@ function calculateRecurring(event: ical.VEvent): ical.VEvent[] {
         dates = dates.filter(date => (!event.exdate[dayjs(date).format("YYYY-MM-DD")]));
     }
     let newEvents = dates.map(date => {
-        let start = date as DateWithTimeZone   
+        let start = date as DateWithTimeZone
+        let offset = (event.start.getTimezoneOffset() - date.getTimezoneOffset())
+        start.setHours(date.getHours() - offset / 60)
         return {
             type: 'VEVENT',
             start: start,
