@@ -62,7 +62,7 @@
             <Fa icon={faClock} size="xs" />
             <div class="text-dark font-medium text-xs px-2">
               {dayjs(event.start)
-                .tz("Europe/Berlin", true)
+                .tz("Europe/Berlin")
                 .format("DD.MM.YYYY HH:mm")}, Dauer: ca.
               {dayjs(event.end).tz("Europe/Berlin").from(event.start, true)}
             </div>
