@@ -14,7 +14,7 @@ export async function GET(event) {
     let events = sort(cal);
     events = events.filter((value, index, self) => self.findIndex(t => t.summary == value.summary && dayjs(t.start).format("YYYY-MM-DD") == dayjs(value.start).format("YYYY-MM-DD")) === index)
     let dates = [];
-    for (var i = 0; i < 20; i++) {
+    for (var i = 0; i < 10; i++) {
         if (events[i])
             dates.push(events[i])
     }
