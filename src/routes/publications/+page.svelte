@@ -34,6 +34,7 @@
             <a
               href={"https://doi.org/" + paper.data.doi}
               class="font-bold underline text-dark-green hover:text-black"
+              aria-label="Digital Object Identifier"
             >
               {paper.data.doi}.
             </a>
