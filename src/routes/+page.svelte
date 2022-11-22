@@ -14,7 +14,7 @@
   import { faDownload, faEarthEurope } from "@fortawesome/free-solid-svg-icons";
   //import Calendar from "$lib/components/blocks/Calendar.svelte";
   export let data;
-  let { posts }//, dates } = data;
+  let { posts } = data; //, dates } = data;
 </script>
 
 <Rect class="flex flex-col">
