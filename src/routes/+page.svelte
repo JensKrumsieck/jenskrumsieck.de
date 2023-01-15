@@ -64,10 +64,14 @@
       image="https://porphystruct.org/_app/assets/screenshot_hero-1a3d8352.webp"
     >
       <p>
-        PorphyStruct, ein neues digitales Werkzeug zur Analyse der
-        nicht-planaren Auslenkungen verschiedener Porphyrinoide. Das Programm
-        nutzt die <em>normal-coordinate structure decomposition</em> (NSD) Methode
-        und erweitert sie auf Corrole, Norcorrole, Porphycene und Corrphycene.
+        PorphyStruct ist ein innovatives digitales Werkzeug, das
+        Wissenschaftlern die Möglichkeit gibt, die nicht-planaren Auslenkungen
+        verschiedener Porphyrinoide zu analysieren. Durch die Verwendung der <em
+          >normal-coordinate structure decomposition</em
+        > (NSD) Methode nd ihrer Erweiterung auf Corrole, Norcorrole, Porphycene
+        und Corrphycene, ermöglicht PorphyStruct eine präzise und effiziente Analyse
+        von Porphyrinoidstrukturen. PorphyStruct ist ein unverzichtbares Werkzeug
+        für jeden, der in der Porphyrinforschung tätig ist.
       </p>
       <div class="flex md:flex-row flex-col flex-wrap md:space-x-5 my-8">
         <IconLink
@@ -95,12 +99,12 @@
     <div class="md:grid md:grid-cols-2 md:gap-4 mt-8">
       <Projects title="CHN-Tool" icon="chn_logo.svg">
         <p>
-          Das CHN-Tool berechnet die Zusammensetzung von Elementaranalysen (CHN)
-          neu, indem es mögliche Verunreinigungen oder Lösungsmittel
-          berücksichtigt. Organische Lösungsmittel befinden sich nach der
-          Kristallisation oft in der Elementarzelle. Diese können mit diesem
-          Tool einfach in die Summenformel aufgenommen und an die
-          experimentellen Elementaranalysedaten angepasst werden.
+          Das CHN-Tool ist ein digitales Werkzeug, das für die schnelle
+          Berechnung der Zusammensetzung von Elementaranalysen (CHN) entwickelt
+          wurde. Es berücksichtigt mögliche Verunreinigungen oder Lösungsmittel,
+          die oft nach der Kristallisation in der Elementarzelle vorhanden sind,
+          und ermöglicht es, diese einfach in die Summenformel aufzunehmen und
+          an die experimentellen Elementaranalysedaten anzupassen.
         </p>
         <div class="flex flex-wrap md:space-x-5 my-8">
           <IconLink
