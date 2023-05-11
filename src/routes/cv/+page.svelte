@@ -22,13 +22,14 @@
           Anorganische Synthese, UV/Vis-Spektroskopie, Massenspektrometrie,
           EPR-Spektroskopie, Quantenchemische Berechnungen,
           Software-Entwicklung, Cyclovoltammetrie und Spektroelektrochemie,
-          NMR-Spektroskopie, Präsentation von Ergebnissen als Vortrag oder
+          NMR-Spektroskopie, <br/>
+          Präsentation von Ergebnissen als Vortrag oder
           Poster, Teilnahme an zahlreichen Konferenzen
         </p>
         <br />
         <strong>Führungsverantwortung und Laborleitung</strong>
         <p>
-          Betreuung von 2 Bachelorarbeiten und einem Forschungspraktikanten.
+          Betreuung von 2 Bachelorarbeiten und einem Forschungspraktikanten.<br/>
           Betreuung zahlreicher 1. und 2. Semesterlaborpraktika
         </p>
       </div>
@@ -43,7 +44,9 @@
         <strong>Mitarbeit in Lehre und Forschung</strong>
         <p>
           Tutor für Allgemeine und Anorganische Chemie und Chemie für Biologen
-          (während den Vorlesungszeiten) Anorganische Synthese und
+          (während den Vorlesungszeiten) 
+          <br/>
+          Anorganische Synthese und
           Charakterisierung
         </p>
       </div>
@@ -78,7 +81,7 @@
         <strong>
           Abschluss mit Auszeichung (1.3) - Kobaltkomplexe von
           Isoporphyrin-Liganden
-        </strong>
+        </strong><br/>
         <strong> Belegte Wahlpflichtfächer: </strong>
         <p>
           Elektrochemie, Fortgeschrittene Anorganische Chemie und Spektroskopie
@@ -98,7 +101,7 @@
         <strong>
           Abschluss (2.1) - Effiziente Eintopfsynthese neuer
           Metalloisoporphyrine
-        </strong>
+        </strong><br/>
         <strong> Belegte Wahlpflichtfächer: </strong>
         <p>Stochastik/Statistik</p>
         <p>
@@ -144,7 +147,7 @@
       </h2>
       <p class="my-6">
         <strong>Programmierung in C#</strong> (10+ Jahre, seit 2018 intensiv),
-        Python & Jupyter Notebooks (~1 Jahr), Typescript/Javascript (~1 Jahr),
+        Python & Jupyter Notebooks (~2 Jahre), Typescript/Javascript (~1 Jahr),
         HTML/(S)CSS/XML
         <br /><strong>Arbeit mit Softwarebibliotheken und Frameworks</strong>:
         .NET(-Framework), Blazor, WPF, SvelteKit, scikit-learn, pandas, numpy,
@@ -153,7 +156,7 @@
         (bereits 2008 durch ECDL Zertifikat nachgewiesen)
         <br /><strong>Nutzererfahrung mit vielen Softwares</strong>: ChemDraw,
         MatLab, OriginPro, Citavi, Affinity Designer/Publisher/Photo, Visual
-        Studio (Code), JetBrains Rider, git, Blender, Adobe XD, Unity
+        Studio (Code), JetBrains Rider, git, Blender, Unity
       </p>
     </div>
     <div class="my-12">
@@ -173,6 +176,7 @@
       <li>Gesellschaft Deutscher Chemiker (GDCh) (<em>seit 2018</em>)</li>
       <li>Bündnis 90/Die GRÜNEN (<em>seit 2021</em>)</li>
       <li>Allgemeiner Deutscher Fahrrad Club (ADFC) (<em>seit 2022</em>)</li>
+      <li>ver.di (<em>seit 2023</em>)</li>
     </ul>
   </div>
 </Container>
