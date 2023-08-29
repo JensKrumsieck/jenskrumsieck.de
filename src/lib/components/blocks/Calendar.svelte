@@ -53,7 +53,7 @@
           <Subtitle dense>
             {event.summary}
           </Subtitle>
-          {#if event.description != "" && event.description != undefined}
+          {#if event.description != "" && event.description != "undefined" && event.description != undefined}
             <p>{event.description}</p>
           {/if}
         </div>
