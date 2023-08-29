@@ -6,7 +6,7 @@
   export let post;
 </script>
 
-<a href={"/blog/" + post.uid} sveltekit:prefetch class="flex md:w-auto w-full md:w-[49%] my-4">
+<a href={"/blog/" + post.uid} sveltekit:prefetch class="flex w-full md:w-[49%] my-4">
   <div>
     <div class="bg-white px-2">
       <Subtitle dense>{ph.asText(post.data.title)}</Subtitle>

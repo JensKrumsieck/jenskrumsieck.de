@@ -40,10 +40,6 @@
     content={website.siteUrl + "/" + $page.url.pathname}
   />
   <meta
-    property="og:type"
-    content={$page.data.isArticle ? "article" : "website"}
-  />
-  <meta
     property="og:title"
     content={$page.data.title
       ? $page.data.title + " - " + website.siteTitle
