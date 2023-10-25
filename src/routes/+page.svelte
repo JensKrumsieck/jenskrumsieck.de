@@ -12,9 +12,8 @@
   import IconLink from "$lib/components/button/IconLink.svelte";
   import { faGithub } from "@fortawesome/free-brands-svg-icons";
   import { faDownload, faEarthEurope } from "@fortawesome/free-solid-svg-icons";
-  //import Calendar from "$lib/components/blocks/Calendar.svelte";
   export let data;
-  let { posts } = data; //, dates } = data;
+  let { posts } = data;
 </script>
 
 <Rect class="flex flex-col">
@@ -173,9 +172,3 @@
   </div>
   <div><Hex opaque right /></div>
 </Container>
-<!--<Container padding fullHeight class="flex flex-col md:justify-center">
-  <LargeTitle>Termine</LargeTitle>
-  <div class="py-8">
-    <Calendar {dates} />
-  </div>
-</Container>-->
