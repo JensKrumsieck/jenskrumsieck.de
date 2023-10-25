@@ -1,12 +1,8 @@
 <script>
-  import Calendar from "$lib/components/blocks/Calendar.svelte";
   import Social from "$lib/components/blocks/Social.svelte";
   import Button from "$lib/components/button/Button.svelte";
   import Container from "$lib/components/layout/Container.svelte";
-  import BiggerTitle from "$lib/components/typography/BiggerTitle.svelte";
-  import LargeTitle from "$lib/components/typography/LargeTitle.svelte";
-  export let data;
-  let { dates } = data;
+  import LargeTitle from "$lib/components/typography/LargeTitle.svelte";  
 </script>
 
 <div
@@ -96,12 +92,5 @@
     <figure class="w-full h-auto my-auto">
       <img src="lowersax.svg" alt="Ein Bild von Jens" loading="lazy" />
     </figure>
-  </div>
-</Container>
-
-<Container padding class="flex flex-col md:justify-center">
-  <BiggerTitle>Termine</BiggerTitle>
-  <div class="py-8">
-    <Calendar {dates} />
   </div>
 </Container>
