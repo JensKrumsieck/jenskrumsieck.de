@@ -12,43 +12,43 @@
   <div class="my-12">
     <CvItem
       title="Wissenschaftlicher Mitarbeiter"
-      institution="Technische Universität Braunschweig"
+      institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
       times="seit Juni 2018"
       image="tubs.svg"
     >
       <div>
-        <strong>Mitarbeit in Lehre und Forschung</strong>
-        <p>
-          Anorganische Synthese, UV/Vis-Spektroskopie, Massenspektrometrie,
-          EPR-Spektroskopie, Quantenchemische Berechnungen,
-          Software-Entwicklung, Cyclovoltammetrie und Spektroelektrochemie,
-          NMR-Spektroskopie, <br/>
-          Präsentation von Ergebnissen als Vortrag oder
-          Poster, Teilnahme an zahlreichen Konferenzen
-        </p>
-        <br />
-        <strong>Führungsverantwortung und Laborleitung</strong>
-        <p>
-          Betreuung von 2 Bachelorarbeiten und einem Forschungspraktikanten.<br/>
-          Betreuung zahlreicher 1. und 2. Semesterlaborpraktika
-        </p>
+        <ul class="list-disc">
+          <li>Synthese und Charakterisierung anorganischer Molekülverbindungen unter Verwendung der etablierten Methoden.</li>
+          <li>Anfertigung und Auswertung quantenchemischer Berechnungen.</li>
+          <li>Entwicklung von Software zur Struktur- und Datenanalyse.</li>
+          <li>Publikation der Ergebnisse in einschlägigen wissenschaftlichen Fachzeitschriften sowie Präsentation auf Fachtagungen in Form von Posterbeiträgen oder Vorträgen.</li>
+          <li>Betreuung von Abschlussarbeiten, Forschungspraktika sowie Saalpraktika.</li>
+        </ul>
       </div>
     </CvItem>
     <CvItem
       title="Studentische Hilfskraft"
-      institution="Technische Universität Braunschweig"
-      times="Nov. 2014 - Feb. 2016 & Aug. 2017 - Mai 2018"
+      institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
+      times="Aug. 2017 - Mai 2018"
       image="tubs.svg"
     >
       <div>
-        <strong>Mitarbeit in Lehre und Forschung</strong>
-        <p>
-          Tutor für Allgemeine und Anorganische Chemie und Chemie für Biologen
-          (während den Vorlesungszeiten) 
-          <br/>
-          Anorganische Synthese und
-          Charakterisierung
-        </p>
+        <ul class="list-disc">
+          <li>Synthese und Charakterisierung anorganischer Molekülverbindungen</li>
+        </ul>
+      </div>
+    </CvItem>
+    <CvItem
+      title="Studentische Hilfskraft"
+      institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
+      times="November 2015 – Februar 2016 & November 2014 – Februar 2015
+      "
+      image="tubs.svg"
+    >
+      <div>
+        <ul class="list-disc">
+          <li>Tutorien für Allgemeine und Anorganische Chemie für Chemiker, Lebensmittelchemiker, Lehramtsstudierende, Biotechnologen und Biologen.</li>
+        </ul>
       </div>
     </CvItem>
   </div>
@@ -58,16 +58,14 @@
   <BiggerTitle>Ausbildung</BiggerTitle>
   <div class="my-12">
     <CvItem
-      title="Promotion im Fachbereich Bioanorganische Chemie"
-      institution="Technische Universität Braunschweig"
+      title="Promotion im Fachbereich Anorganische Chemie"
+      institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
       times="seit Oktober 2018"
       image="tubs.svg"
     >
       <div>
-        <strong>Weiterbildungen im Rahmen des Graduiertenprogramms:</strong>
         <p>
-          Machine Learning in Python, Machine Learning - Grenzen und
-          Möglichkeiten, Social Media Kurs
+          <strong>PorphyStruct: Entwicklung einer Software zur quantitativen Bestimmung nicht-planarer Auslenkungen von porphyrinoiden Makrozyklen & Synthese neuer Metallkomplexe von Isoporphyrin-Liganden</strong>; abgegeben Juli 2023.
         </p>
       </div>
     </CvItem>
@@ -125,38 +123,16 @@
 
 <Container padding class="my-12">
   <BiggerTitle>Weitere Kompetenzen</BiggerTitle>
-  <div class="my-12">
-    <div class="flex space-x-12">
-      <img
-        src="gruenebs.png"
-        alt="logo"
-        class="object-cover md:w-36 md:h-36 w-24 h-24 rounded-full"
-      />
-      <div class="flex flex-col space-y-2">
-        <h2 class="text-3xl font-black italic tracking-tightest">
-          Ehrenamtliches Engagement
-        </h2>
-        <p>
-          <strong>Bündnis 90/Die GRÜNEN Braunschweig (seit 2021)</strong>
-        </p>
-      </div>
-    </div>
+  <div class="my-12">    
     <div class="my-12">
       <h2 class=" text-3xl font-black italic tracking-tightest">
         IT-Fähigkeiten
       </h2>
       <p class="my-6">
-        <strong>Programmierung in C#</strong> (10+ Jahre, seit 2018 intensiv),
-        Python & Jupyter Notebooks (~2 Jahre), Typescript/Javascript (~1 Jahr),
-        HTML/(S)CSS/XML
+        <strong>Programmierung in C#</strong> (sehr gut, 7+ Jahre),Python (fortgeschritten), TypeScript/JavaScript (fortgeschritten), GlSL (Grundkenntnisse), PHP (Grundkenntnisse), HTML/CSS
         <br /><strong>Arbeit mit Softwarebibliotheken und Frameworks</strong>:
-        .NET(-Framework), Blazor, WPF, SvelteKit, scikit-learn, pandas, numpy,
-        NextJS
-        <br /><strong>Langjährige Erfahrung mit MS-Office und Windows</strong>
-        (bereits 2008 durch ECDL Zertifikat nachgewiesen)
-        <br /><strong>Nutzererfahrung mit vielen Softwares</strong>: ChemDraw,
-        MatLab, OriginPro, Citavi, Affinity Designer/Publisher/Photo, Visual
-        Studio (Code), JetBrains Rider, git, Blender, Unity
+        .NET, WPF, Blazor, SvelteKit, Jupyter Notebooks, pandas, scikit-learn, numpy, Vulkan
+        <br /><strong>Softwarekenntnisse</strong>: Word (sehr gut), Excel (sehr gut), Powerpoint (sehr gut), ChemDraw (sehr gut), OriginPro (fortgeschritten), Affinity Designer (fortgeschritten), Affinity Publisher (fortgeschritten), Blender (Grundkenntnisse), Matlab (Grundkenntnisse)
       </p>
     </div>
     <div class="my-12">
@@ -166,17 +142,17 @@
         (fließend), <strong>Latein</strong> (Latinum in der Schule)
       </p>
     </div>
-  </div>
-</Container>
-
-<Container padding class="my-12">
-  <BiggerTitle>Mitgliedschaften</BiggerTitle>
-  <div class="my-6">
-    <ul>
-      <li>Gesellschaft Deutscher Chemiker (GDCh) (<em>seit 2018</em>)</li>
-      <li>Bündnis 90/Die GRÜNEN (<em>seit 2021</em>)</li>
-      <li>Allgemeiner Deutscher Fahrrad Club (ADFC) (<em>seit 2022</em>)</li>
-      <li>ver.di (<em>seit 2023</em>)</li>
-    </ul>
+    <div class="my-12">
+      <h2 class=" text-3xl font-black italic tracking-tightest">Zertifikate</h2>
+       <ul class="list-disc">
+        <li>Machine Learning (Python) – Graduiertenakademie „GradTUBS“ – 2022</li>
+        <li>Künstliche Intelligenz: Möglichkeiten und Grenzen (Einführungsworkshop) – Graduiertenakademie „GradTUBS“ – 2021</li>
+        <li>Masterclass: Instagram und Twitter von A bis Z – Graduiertenakademie „GradTUBS“ – 2020</li>
+       </ul>
+    </div>
+    <div class="my-12">
+      <h2 class=" text-3xl font-black italic tracking-tightest">Persönliche Interessen</h2>
+       <p>Softwareentwicklung, Engagement in demokratischer Partei, Fahrrad fahren</p>
+    </div>
   </div>
 </Container>
