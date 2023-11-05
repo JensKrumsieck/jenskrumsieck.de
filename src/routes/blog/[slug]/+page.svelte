@@ -6,6 +6,7 @@
   import Link from "$lib/components/prismic/slices/Link.svelte";
   import HTML from "$lib/components/prismic/slices/HTML.svelte";
   import Title from "$lib/components/typography/Title.svelte";
+  import Code from "$lib/components/prismic/slices/Code.svelte";
   import LargeTitle from "$lib/components/typography/LargeTitle.svelte";
   import Subtitle from "$lib/components/typography/Subtitle.svelte";
   import Container from "$lib/components/layout/Container.svelte";
@@ -23,7 +24,8 @@
     image: PrismicSliceImage,
     linker: Link,
     html: HTML,
-    embed: Embed
+    embed: Embed,
+    code: Code
   };
   const hero_image = ph.asImageSrc(post.data.hero_image);
 </script>
