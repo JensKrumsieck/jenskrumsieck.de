@@ -8,4 +8,6 @@
 <svelte:head>
   {@html githubDarkDimmed}
 </svelte:head>
-<HighlightAuto code={ph.asText(slice.primary.content)} />
+<div class="mt-4">
+  <HighlightAuto code={ph.asText(slice.primary.content)} />
+</div>
