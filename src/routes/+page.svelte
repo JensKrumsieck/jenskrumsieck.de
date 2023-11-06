@@ -7,7 +7,6 @@
   import Hr from "$lib/components/deco/HR.svelte";
   import ListBlog from "$lib/components/blocks/ListBlog.svelte";
   import LargeTitle from "$lib/components/typography/LargeTitle.svelte";
-  import Hex from "$lib/components/deco/Hex.svelte";
   import Projects from "$lib/components/blocks/Projects.svelte";
   import IconLink from "$lib/components/button/IconLink.svelte";
   import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -25,13 +24,13 @@
 </Rect>
 <Container class="flex" padding fullHeight nav>
   <div class="flex flex-col md:max-w-[70%] justify-center">
-    <span class="font-light md:text-xl text-lg">Hallo ich bin</span>
+    <span class="font-light md:text-xl text-lg">Entdecken, Entwickeln, Gestalten.</span>
     <h1 class="font-bold md:text-5xl text-3xl tracking-tighter">
-      Jens Krumsieck.
+      Jens Krumsieck
     </h1>
-    <span class="font-light md:text-xl text-lg mt-6">Meine Themen sind</span>
-    <h1 class="font-black md:text-7xl text-4xl tracking-tighter">
-      Wissenschaft, Softwareentwicklung und Politik.
+    <span class="font-light md:text-xl text-lg mt-6"> an der Schnittstelle von </span>
+    <h1 class="font-black md:text-6xl text-4xl tracking-tighter">
+      Wissenschaft, Softwareinnovation und politischer Veränderung.
     </h1>
     <div class="my-12 md:space-y-0 space-y-2">
       <Button href="/blog">Beiträge lesen</Button>

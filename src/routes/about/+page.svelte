@@ -34,7 +34,7 @@
           Erkenntnisse voranzutreiben.
         </p>
         <p class="my-6">
-          Als aktives Mitglied von <strong>Bündnis 90/Die GRÜNEN</strong> seit 2021,
+          Als aktives Mitglied von <strong>BÜNDNIS 90/DIE GRÜNEN</strong> seit 2021,
           bin ich zutiefst interessiert an Themen rund um Digitalisierung, Mobilität,
           Klimaschutz und die Energiewende.
         </p>
