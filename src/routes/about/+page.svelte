@@ -14,8 +14,8 @@
   <Container class="flex md:flex-row flex-col" padding fullHeight nav>
     <div class="flex flex-col md:max-w-[40%] justify-end">
       <LargeTitle>Über Mich</LargeTitle>
-      <div class="bg-white mt-12 px-12 py-24 text-lg">
-        <p class="mt-12 font-bold text-xl">Hi, ich bin Jens!</p>
+      <div class="bg-white px-12 py-12 text-lg">
+        <p class="font-bold text-xl">Hi, ich bin Jens!</p>
         <p class="my-6">
           Willkommen auf meiner Seite, wo Wissenschaft auf politisches
           Engagement trifft. Als Doktorand in <strong>Bioanorganischer Chemie</strong> an der
