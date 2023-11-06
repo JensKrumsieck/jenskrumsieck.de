@@ -170,5 +170,4 @@
       </Projects>
     </div>
   </div>
-  <div><Hex opaque right /></div>
 </Container>

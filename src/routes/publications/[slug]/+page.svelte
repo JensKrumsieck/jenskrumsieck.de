@@ -80,5 +80,4 @@
     title={ph.asText(researchItem.data.title)}
     image={ph.asImageSrc(researchItem.data.hero_image)}
   />
-  <Hex right class="z-[-1] right-0" />
 </Container>
