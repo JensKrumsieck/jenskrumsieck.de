@@ -18,7 +18,6 @@
         <FooterLink bold href="/blog">Blog</FooterLink>
         <FooterLink bold href="/publications">Veröffentlichungen</FooterLink>
         <FooterLink bold href="/about">Über Mich</FooterLink>
-        <FooterLink href="/cv">Lebenslauf</FooterLink>
         <p class="flex text-lg pt-4 font-bold">Rechtliches</p>
         <FooterLink href="/impressum">Impressum</FooterLink>
         <FooterLink href="/privacy">Datenschutzerklärung</FooterLink>
