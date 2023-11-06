@@ -26,9 +26,9 @@
   <div class="flex flex-col md:max-w-[70%] justify-center">
     <span class="font-light md:text-xl text-lg">Entdecken, Entwickeln, Gestalten.</span>
     <h1 class="font-bold md:text-5xl text-3xl tracking-tighter">
-      Jens Krumsieck
+      Jens Krumsieck.
     </h1>
-    <span class="font-light md:text-xl text-lg mt-6"> an der Schnittstelle von </span>
+    <span class="font-light md:text-xl text-lg mt-6">An der Schnittstelle von </span>
     <h1 class="font-black md:text-6xl text-4xl tracking-tighter">
       Wissenschaft, Softwareinnovation und politischer Veränderung.
     </h1>
