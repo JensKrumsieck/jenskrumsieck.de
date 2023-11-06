@@ -9,7 +9,7 @@
 
 <div
   class="wrapper bg-cover bg-no-repeat bg-top"
-  style="background-image: url(lastenrad.jpg);"
+  style="background-image: url(csd.jpg);"
 >
   <Container class="flex md:flex-row flex-col" padding fullHeight nav>
     <div class="flex flex-col md:max-w-[40%] justify-end">
@@ -41,12 +41,6 @@
         <div class="my-12">
           <Social />
         </div>
-      </div>
-    </div>
-
-    <div class="flex self-end ml-auto">
-      <div class="bg-white rounded p-1 text-xs my-1 opacity-50">
-        &copy; Leonore Köhler
       </div>
     </div>
   </Container>
