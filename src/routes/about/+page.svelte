@@ -231,7 +231,7 @@
         Persönliche Interessen
       </h2>
       <p>
-        Softwareentwicklung, Engagement in demokratischer Partei, Fahrrad fahren
+        Softwareentwicklung, Webdesign, Grafikdesign, Engagement in demokratischer Partei, Fahrrad fahren
       </p>
     </div>
   </div>
