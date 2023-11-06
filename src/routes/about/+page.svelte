@@ -17,8 +17,7 @@
       <div class="bg-white px-12 py-12 text-lg">
         <p class="font-bold text-xl">Hi, ich bin Jens!</p>
         <p class="my-6">
-          Willkommen auf meiner Seite, wo Wissenschaft auf politisches
-          Engagement trifft. Als Doktorand in <strong>Bioanorganischer Chemie</strong> an der
+          Als Doktorand in <strong>Bioanorganischer Chemie</strong> an der
           renommierten Technischen Universität Braunschweig erforsche ich unter
           der Anleitung von <strong>Prof. Dr. Martin Bröring</strong> die faszinierende Welt der
           Porphyrinoide. Diese Strukturen, inspiriert von der Natur, stehen
@@ -38,6 +37,9 @@
           bin ich zutiefst interessiert an Themen rund um Digitalisierung, Mobilität,
           Klimaschutz und die Energiewende.
         </p>
+        <p class="my-6">
+          Wo Wissenschaft auf Softwareentwicklung und politisches
+          Engagement trifft.</p>
         <div class="my-12">
           <Social />
         </div>

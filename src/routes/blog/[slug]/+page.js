@@ -15,7 +15,7 @@ export async function load({ params, fetch, data }) {
       ph.asText(post.post.data.body[0].primary.content),
       250
     ),
-    keywords: post.post.tags.join(", ") + ", " + website.keywords,
+    keywords: post.post.tags.join(", "),
     image: ph.asImageSrc(post.post.data.hero_image),
 
   };

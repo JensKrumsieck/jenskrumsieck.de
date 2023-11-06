@@ -65,8 +65,11 @@
     </div>
     <Title>{ph.asText(post.data.title)}</Title>
     <SliceZone slices={post.data.body} {components} />
-    <ShareButtons title={ph.asText(post.data.title)} image={hero_image} />
-  </Container>
+    {#each post.tags as tag}
+      <span class="inline-flex items-center justify-center px-2 py-1 mr-1 text-xs font-bold leading-none text-white bg-dark-green rounded-full">{tag}</span>
+    {/each}
+    <ShareButtons title={ph.asText(post.data.title)} image={hero_image} />  
+</Container>
 </section>
 
 <section>
