@@ -26,7 +26,7 @@
         </p>
         <p class="my-6">
           Neben der Wissenschaft gehört die <strong>Softwareentwicklung</strong>
-          zu meinen Interessen. Meine akademische Reise begann mit einer frühen Faszination
+          zu meinen Interessen. Meine Reise begann mit einer frühen Faszination
           für die Softwareentwicklung, die in der 7. Klasse mit meinem ersten programmierbaren
           Taschenrechner geweckt wurde. In meiner Zeit als Doktorand kombinierte
           ich meine Forschung mit der Entwicklung von Software, um wissenschaftliche
