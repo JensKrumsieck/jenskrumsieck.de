@@ -116,7 +116,7 @@
     <CvItem
       title="Promotion im Fachbereich Anorganische Chemie"
       institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
-      times="seit Oktober 2018"
+      times="seit Juni 2018"
       image="tubs.svg"
     >
       <div>
@@ -133,7 +133,7 @@
     <CvItem
       title="Masterstudium in Chemie"
       institution="Technische Universität Braunschweig"
-      times="April 2016 - Mai 2018"
+      times="April 2016 - April 2018"
       image="tubs.svg"
     >
       <div>
