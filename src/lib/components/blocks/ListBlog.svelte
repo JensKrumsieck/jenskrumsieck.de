@@ -6,23 +6,26 @@
   export let post;
 </script>
 
-<a href={"/blog/" + post.uid} sveltekit:prefetch class="flex w-full md:w-[49%] my-4">
-  <div>
-    <div class="bg-white px-2">
+<a
+  href={"/blog/" + post.uid}
+  class="flex w-full md:w-[48%] my-4 hover:text-dark-green"
+>
+  <img
+    loading="lazy"
+    src={ph.asImageSrc(post.data.hero_image) + "&w=300"}
+    alt={ph.asText(post.data.title)}
+    class="w-[150px] h-[150px] shrink-0 rounded-lg object-cover"
+  />
+  <div class="pl-4">
+    <div>
       <Subtitle dense>{ph.asText(post.data.title)}</Subtitle>
       <p>
-        {@html getExcerpt(ph.asHTML(post.data.body[0].primary.content), 100)}
+        {@html getExcerpt(ph.asHTML(post.data.body[0].primary.content), 250)}
       </p>
     </div>
-    <p class="uppercase italic text-xs mt-auto pt-2 bg-white px-2">
-      von {ph.asText(post.data.author.data.name)} -
+    <p class="uppercase text-xs mt-2 items-end">
+      {ph.asText(post.data.author.data.name)} -
       <Date date={ph.asDate(post.data.publish_date)} />
     </p>
   </div>
-  <img
-    loading="lazy"
-    src={ph.asImageSrc(post.data.hero_image) + "&w=150"}
-    alt={ph.asText(post.data.title)}
-    class="w-auto max-h-[6rem] ml-auto h-auto object-cover"
-  />
 </a>

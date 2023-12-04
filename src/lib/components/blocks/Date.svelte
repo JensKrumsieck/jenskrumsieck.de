@@ -7,9 +7,9 @@
   export let date
 </script>
 
-<span
+<time
   class="cursor-pointer"
   title={dayjs(date).format("DD.MM.YYYY")}
 >
   {dayjs(date).fromNow()}
-</span>
+</time>

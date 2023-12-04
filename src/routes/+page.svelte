@@ -50,7 +50,7 @@
   </div>
   <Hr />
   <a href="/blog" class="justify-end self-end mt-4 font-bold text-xl">
-    Mehr davon! &rArr;
+    Weitere Artikel lesen! &rArr;
   </a>
 </Container>
 <Container padding fullHeight class="md:justify-center flex flex-col relative">
