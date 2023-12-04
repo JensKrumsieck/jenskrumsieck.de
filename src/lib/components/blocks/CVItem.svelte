@@ -1,27 +1,38 @@
 <script>
-  import Subtitle from "../typography/Subtitle.svelte";
-
   export let title;
   export let institution;
   export let times;
   export let image;
+  export let tags = undefined;
 </script>
 
-<div class="py-12 relative">
-  <div class="absolute bg-dark-green w-2 h-full md:ml-1 md:left-16 left-11 top-0 z-[-1]" />
-  <div class="flex space-x-12">
-    <img
-      src={image}
-      alt="logo"
-      class="object-cover md:w-36 md:h-36 w-24 h-24 rounded-full"
-    />
-    <div class="flex flex-col space-y-2">
-      <h2 class="md:text-5xl text-3xl font-black italic tracking-tightest">
-        {title}
-      </h2>
-      <h3 class="italic md:text-3xl text-2xl">{institution}</h3>
-      <h4 class="font-light">{times}</h4>
-      <slot />
+<div class="flex items-start my-6">
+  <img
+    src={image}
+    alt="logo"
+    class="object-cover rounded-xl w-16 h-16 shrink-0"
+  />
+  <div class="w-full ml-10">
+    <div class="flex justify-between">
+      <div>
+        <h2 class="text-2xl font-black italic tracking-tightest space-y-2">
+          {title}
+        </h2>
+        <h3 class="italic text-xl">{institution}</h3>
+        <h4 class="text-dark-green font-semibold text-md">{times}</h4>
+        <div class="my-2 text-lg">
+          <slot />
+        </div>
+        <div class="flex flex-row flex-wrap">
+          {#if tags}
+            {#each tags as tag}
+              <div class="text-sm text-dark rounded-lg bg-gray py-1 px-1 mr-2 mb-1">
+                {tag}
+              </div>
+            {/each}
+          {/if}
+        </div>
+      </div>
     </div>
   </div>
 </div>
