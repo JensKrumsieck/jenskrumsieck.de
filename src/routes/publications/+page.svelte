@@ -51,7 +51,7 @@
 </Container>
 
 <Container padding>
-  <LargeTitle>Poster & Vorträge</LargeTitle>
+  <LargeTitle>Tagungsbeiträge</LargeTitle>
   {#each publications.posters.results as poster}
     <div class="flex md:space-x-8 my-16 md:flex-row flex-col">
       {#if ph.isFilled.image(poster.data.hero_image)}
