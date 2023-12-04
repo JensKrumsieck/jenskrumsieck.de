@@ -6,20 +6,21 @@
   import * as ph from "@prismicio/helpers";
   import dayjs from "dayjs";
   import PrismicImage from "$lib/components/prismic/PrismicImage.svelte";
+  import BiggerTitle from "$lib/components/typography/BiggerTitle.svelte";
   export let data;
   let { publications } = data;
 </script>
-
 <Container padding class="mt-12">
-  <LargeTitle>Fachzeitschriften</LargeTitle>
+  <LargeTitle>Veröffentlichungen</LargeTitle>
+  <BiggerTitle>Fachzeitschriften</BiggerTitle>
   {#each publications.papers.results as paper}
-    <div class="flex md:space-x-8 my-16 md:flex-row flex-col">
+    <div class="flex md:space-x-3 my-8 md:flex-row flex-col">
       {#if ph.isFilled.image(paper.data.cover_image)}
-        <figure class="md:max-w-[10rem]">
+        <figure class="md:max-w-[8rem]">
           <PrismicImage image={paper.data.cover_image} />
         </figure>
       {/if}
-      <div class="flex flex-col space-y-4">
+      <div class="flex flex-col space-y-0 prose-a:text-dark-green hover:text-black">
         <Title class="md:my-0">{ph.asText(paper.data.title)}</Title>
         <p class="text-lg">
           <span>{paper.data.authors}</span>,
@@ -39,27 +40,23 @@
               {paper.data.doi}.
             </a>
           </span>
-        </p>
-        <div
-          class="prose prose-lg prose-a:text-dark-green hover:prose-a:text-black"
-        >
           {@html ph.asHTML(paper.data.content)}
-        </div>
+        </p>
       </div>
     </div>
   {/each}
 </Container>
 
 <Container padding>
-  <LargeTitle>Tagungsbeiträge</LargeTitle>
+  <BiggerTitle>Tagungsbeiträge</BiggerTitle>
   {#each publications.posters.results as poster}
-    <div class="flex md:space-x-8 my-16 md:flex-row flex-col">
+    <div class="flex md:space-x-3 my-8 md:flex-row flex-col">
       {#if ph.isFilled.image(poster.data.hero_image)}
-        <figure class="md:max-w-[10rem]">
+        <figure class="md:max-w-[8rem]">
           <PrismicImage image={poster.data.hero_image} />
         </figure>
       {/if}
-      <div class="flex flex-col space-y-2 text-lg">
+      <div class="flex flex-col space-y-1 text-lg">
         <div class="flex">
           <Title class="md:my-0 hover:text-dark-green">
             <a href={"/publications/" + poster.uid}>
@@ -68,7 +65,7 @@
           </Title>
           <Badge>{poster.data.type}</Badge>
         </div>
-        <p class="italic mt-8 text-md">
+        <p class="italic">
           {poster.data.authors}
         </p>
         {#each poster.data.presentations as presentation}
