@@ -53,6 +53,7 @@
         "NMR-Spektroskopie",
         "ESI-Massenspektrometrie",
         "Säulenchromatographie",
+        "Cyclovoltammetrie",
         "Softwareentwicklung",
         "C#/.NET",
         "Data Science",
