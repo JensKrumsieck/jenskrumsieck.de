@@ -54,6 +54,7 @@
         "ESI-Massenspektrometrie",
         "Säulenchromatographie",
         "Cyclovoltammetrie",
+        "Spektroelektrochemie",
         "Softwareentwicklung",
         "C#/.NET",
         "Data Science",
