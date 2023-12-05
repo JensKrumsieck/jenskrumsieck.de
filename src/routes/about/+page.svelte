@@ -280,7 +280,7 @@
         Mitgliedschaften
       </h2>
       <p>
-        Gesellschaft Deutscher Chemiker (GdCh; seit 2018), BÜNDNIS '90/DIE
+        Gesellschaft Deutscher Chemiker (GdCh; seit 2018), BÜNDNIS 90/DIE
         GRÜNEN (seit 2021), Allgemeiner Deutscher Fahrradclub (ADFC; seit 2022),
         ver.di (seit 2023)
       </p>
