@@ -101,26 +101,9 @@
     <CvItem
       title="Studentische Hilfskraft"
       institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
-      times="November 2015 – Februar 2016"
+      times="November 2015 – Februar 2016\nApril 2015 – Juli 2016\nNovember 2014 – Februar 2015\n"
       image="tubs.svg"
       tags={["Lehre", "Vermittlung von Inhalten", "Studierendenbetreuung"]}
-    >
-      <div>
-        <ul class="list-disc">
-          <li>
-            Tutorien für Allgemeine und Anorganische Chemie für Chemiker,
-            Lebensmittelchemiker, Lehramtsstudierende, Biotechnologen und
-            Biologen.
-          </li>
-        </ul>
-      </div>
-    </CvItem>
-    <CvItem
-      title="Studentische Hilfskraft"
-      institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
-      times="November 2014 – Februar 2015
-      "
-      image="tubs.svg"
     >
       <div>
         <ul class="list-disc">
