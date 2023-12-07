@@ -101,7 +101,7 @@
     <CvItem
       title="Studentische Hilfskraft"
       institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
-      times="November 2015 – Februar 2016\nApril 2015 – Juli 2016\nNovember 2014 – Februar 2015\n"
+      times="November 2015 - Februar 2016<br/>April 2015 - Juli 2016<br/>November 2014 - Februar 2015"
       image="tubs.svg"
       tags={["Lehre", "Vermittlung von Inhalten", "Studierendenbetreuung"]}
     >

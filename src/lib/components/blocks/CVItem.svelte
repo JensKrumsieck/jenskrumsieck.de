@@ -19,7 +19,7 @@
           {title}
         </h2>
         <h3 class="italic text-xl">{institution}</h3>
-        <h4 class="text-dark-green font-semibold text-md">{times}</h4>
+        <h4 class="text-dark-green font-semibold text-md">{@html times}</h4>
         <div class="my-2 text-lg">
           <slot />
         </div>
