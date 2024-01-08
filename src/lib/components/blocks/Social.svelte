@@ -1,5 +1,5 @@
 <script>
-  import { faGithub, faTwitter, faInstagram, faResearchgate, faOrcid, faYoutube, faXing, faLinkedin, faTiktok} from "@fortawesome/free-brands-svg-icons";
+  import { faGithub, faInstagram, faResearchgate, faOrcid, faYoutube, faXing, faLinkedin, faTiktok} from "@fortawesome/free-brands-svg-icons";
   import RoundIconButton from "../button/RoundIconButton.svelte";
   let clazz = "";
   export { clazz as class };
@@ -11,6 +11,5 @@
     <RoundIconButton href="https://github.com/JensKrumsieck" icon={faGithub} />
     <RoundIconButton href="https://www.researchgate.net/profile/Jens-Krumsieck" icon={faResearchgate} />
     <RoundIconButton href="https://orcid.org/0000-0001-6242-5846" icon={faOrcid} />
-    <RoundIconButton href="https://twitter.com/jens_ation/" icon={faTwitter} />
     <RoundIconButton href="https://instagram.com/jens.ation/" icon={faInstagram} />
 </div>
