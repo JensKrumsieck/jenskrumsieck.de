@@ -30,7 +30,7 @@
     </h1>
     <span class="font-light md:text-xl text-lg mt-6">An der Schnittstelle von </span>
     <h1 class="font-black md:text-6xl text-4xl tracking-tighter">
-      Wissenschaft, Softwareinnovation und politischer Veränderung.
+      Wissenschaft & Softwareinnovation.
     </h1>
     <div class="my-12 md:space-y-0 space-y-2">
       <Button href="/blog">Beiträge lesen</Button>
