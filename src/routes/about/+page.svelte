@@ -18,7 +18,7 @@
         <p class="font-bold text-xl">Hi, ich bin Jens!</p>
         <p class="my-3">
           Als Doktorand in <strong>Bioanorganischer Chemie</strong> an der
-          Technischen Universität Braunschweig erforsche ich unter der Anleitung
+          Technischen Universität Braunschweig erforsche ich in der Arbeitsgruppe
           von <strong>Prof. Dr. Martin Bröring</strong> die faszinierende Welt der
           Porphyrinoide. Diese Strukturen, inspiriert von der Natur, stehen hinter
           lebenswichtigen Molekülen wie Häm, dem roten Blutfarbstoff, und Chlorophyll,
