@@ -85,7 +85,7 @@
       </div>
     </CvItem>
     <CvItem
-      title="Studentische Hilfskraft"
+      title="Wissenschaftliche Hilfskraft"
       institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
       times="Aug. 2017 - Mai 2018"
       image="tubs.svg"
