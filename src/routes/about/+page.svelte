@@ -40,10 +40,10 @@
 </div>
 <Container padding class="my-12">
   <BiggerTitle>Lebenslauf</BiggerTitle>
-  <Title>Praxiserfahrung</Title>
+  <Title>Praktische Erfahrung</Title>
   <div class="my-12">
     <CvItem
-      title="Wissenschaftlicher Mitarbeiter"
+      title="Wissenschaftlicher Mitarbeiter (Doktorand)"
       institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
       times="Juni 2018 - März 2024"
       image="tubs.svg"
