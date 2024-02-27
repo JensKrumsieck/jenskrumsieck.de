@@ -83,38 +83,7 @@
           </li>
         </ul>
       </div>
-    </CvItem>
-    <CvItem
-      title="Wissenschaftliche Hilfskraft"
-      institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
-      times="August 2017 - Mai 2018"
-      image="tubs.svg"
-    >
-      <div>
-        <ul class="list-disc">
-          <li>
-            Synthese und Charakterisierung anorganischer Molekülverbindungen
-          </li>
-        </ul>
-      </div>
-    </CvItem>
-    <CvItem
-      title="Studentische Hilfskraft"
-      institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
-      times="November 2015 - Februar 2016<br/>April 2015 - Juli 2016<br/>November 2014 - Februar 2015"
-      image="tubs.svg"
-      tags={["Lehre", "Vermittlung von Inhalten", "Studierendenbetreuung"]}
-    >
-      <div>
-        <ul class="list-disc">
-          <li>
-            Tutorien für Allgemeine und Anorganische Chemie für Chemiker,
-            Lebensmittelchemiker, Lehramtsstudierende, Biotechnologen und
-            Biologen.
-          </li>
-        </ul>
-      </div>
-    </CvItem>
+    </CvItem>   
   </div>
 </Container>
 
@@ -203,6 +172,43 @@
         <strong> Abschluss (2.4) </strong>
       </div>
     </CvItem>
+  </div>
+</Container>
+
+<Container padding class="my-12">
+  <Title>Tätigkeiten während des Studiums</Title>
+  <div class="my-12">
+   <CvItem
+        title="Wissenschaftliche Hilfskraft"
+        institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
+        times="August 2017 - Mai 2018"
+        image="tubs.svg"
+      >
+        <div>
+          <ul class="list-disc">
+            <li>
+              Synthese und Charakterisierung anorganischer Molekülverbindungen
+            </li>
+          </ul>
+        </div>
+      </CvItem>
+      <CvItem
+        title="Studentische Hilfskraft"
+        institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
+        times="November 2015 - Februar 2016<br/>April 2015 - Juli 2016<br/>November 2014 - Februar 2015"
+        image="tubs.svg"
+        tags={["Lehre", "Vermittlung von Inhalten", "Studierendenbetreuung"]}
+      >
+        <div>
+          <ul class="list-disc">
+            <li>
+              Tutorien für Allgemeine und Anorganische Chemie für Chemiker,
+              Lebensmittelchemiker, Lehramtsstudierende, Biotechnologen und
+              Biologen.
+            </li>
+          </ul>
+        </div>
+      </CvItem>
   </div>
 </Container>
 
