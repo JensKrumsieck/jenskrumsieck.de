@@ -237,7 +237,7 @@
       <h2 class="text-xl font-black italic tracking-tightest">Sprachen</h2>
       <p class="my-2">
         <strong>Deutsch</strong> (Muttersprache), <strong>Englisch</strong>
-        (B2), <strong>Latein</strong> (Latinum in der Schule)
+        (B2 bis C1), <strong>Latein</strong> (Latinum in der Schule)
       </p>
     </div>
     <div class="my-6">
