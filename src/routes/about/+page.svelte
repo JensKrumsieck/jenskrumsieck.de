@@ -40,12 +40,12 @@
 </div>
 <Container padding class="my-12">
   <BiggerTitle>Lebenslauf</BiggerTitle>
-  <Title>Berufs- und Projekterfahrung</Title>
+  <Title>Praxiserfahrung</Title>
   <div class="my-12">
     <CvItem
       title="Wissenschaftlicher Mitarbeiter"
       institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
-      times="seit Juni 2018"
+      times="Juni 2018 - März 2024"
       image="tubs.svg"
       tags={[
         "Anorganische Synthese",
@@ -119,22 +119,23 @@
 </Container>
 
 <Container padding class="my-12">
-  <Title>Ausbildung</Title>
+  <Title>Akademischer Werdegang</Title>
   <div class="my-12">
     <CvItem
       title="Promotion im Fachbereich Anorganische Chemie"
       institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
-      times="seit Juni 2018"
+      times="Juni 2018 - Januar 2024"
       image="tubs.svg"
     >
       <div>
         <p>
           <strong
-            >PorphyStruct: Entwicklung einer Software zur quantitativen
+            >Abschluss: summa cum laude (Mit Auszeichnung)
+            PorphyStruct: Entwicklung einer Software zur quantitativen
             Bestimmung nicht-planarer Auslenkungen von porphyrinoiden
             Makrozyklen & Synthese neuer Metallkomplexe von
             Isoporphyrin-Liganden</strong
-          >; abgegeben Juli 2023.
+          >
         </p>
       </div>
     </CvItem>
