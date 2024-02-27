@@ -130,7 +130,7 @@
       <div>
         <p>
           <strong
-            >Abschluss: summa cum laude (Mit Auszeichnung)
+            >Abschluss: summa cum laude (Mit Auszeichnung) - 
             PorphyStruct: Entwicklung einer Software zur quantitativen
             Bestimmung nicht-planarer Auslenkungen von porphyrinoiden
             Makrozyklen & Synthese neuer Metallkomplexe von
