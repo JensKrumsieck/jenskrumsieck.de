@@ -163,7 +163,7 @@
       </div>
     </CvItem>
     <CvItem
-      title="Allgemeine Hochschulreife"
+      title="Allgemeine Hochschulreife (Abitur)"
       institution="Gymnasium Uslar"
       times="Juni 2011"
       image="gymUs.png"
