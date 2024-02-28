@@ -163,9 +163,9 @@
       </div>
     </CvItem>
     <CvItem
-      title="Schulische Ausbildung mit Abitur"
+      title="Allgemeine Hochschulreife"
       institution="Gymnasium Uslar, Orientierungsstufe Uslar, Grundschule Uslar"
-      times="August 1998 - Juni 2011"
+      times="Juni 2011"
       image="gymUs.png"
     >
       <div>
@@ -179,7 +179,7 @@
   <Title>Tätigkeiten während des Studiums</Title>
   <div class="my-12">
    <CvItem
-        title="Wissenschaftliche Hilfskraft"
+        title="Wissenschaftliche Hilfskraft in der Forschung"
         institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
         times="August 2017 - Mai 2018"
         image="tubs.svg"
@@ -193,7 +193,7 @@
         </div>
       </CvItem>
       <CvItem
-        title="Studentische Hilfskraft"
+        title="Studentische Hilfskraft in der Hochschullehre"
         institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
         times="November 2015 - Februar 2016<br/>April 2015 - Juli 2016<br/>November 2014 - Februar 2015"
         image="tubs.svg"
@@ -225,9 +225,9 @@
         (Grundkenntnisse), PHP (Grundkenntnisse), HTML/CSS
         <br /><strong>Arbeit mit Softwarebibliotheken und Frameworks</strong>:
         .NET, WPF, Blazor, SvelteKit, Jupyter Notebooks, pandas, scikit-learn,
-        numpy, Vulkan
+        numpy, Vulkan (via Silk.NET bindings)
         <br /><strong>Softwarekenntnisse</strong>: Word (sehr gut), Excel (sehr
-        gut), Powerpoint (sehr gut), ChemDraw (sehr gut), OriginPro
+        gut), PowerPoint (sehr gut), Outlook (sehr gut), ChemDraw (sehr gut), OriginPro
         (fortgeschritten), Affinity Designer (fortgeschritten), Affinity
         Publisher (fortgeschritten), Blender (Grundkenntnisse), Matlab
         (Grundkenntnisse)
@@ -254,16 +254,10 @@
           Masterclass: Instagram und Twitter von A bis Z – Graduiertenakademie
           „GradTUBS“ – 2020
         </li>
+        <li>
+          Sachkundenachweis §11 ChemVerbotsV - TU Braunschweig - 2015
+        </li>
       </ul>
-    </div>
-    <div class="my-6">
-      <h2 class=" text-xl font-black italic tracking-tightest">
-        Persönliche Interessen
-      </h2>
-      <p>
-        Softwareentwicklung, Webdesign, Grafikdesign, Engagement in
-        demokratischer Partei, Fahrrad fahren
-      </p>
     </div>
     <div class="my-6">
       <h2 class=" text-xl font-black italic tracking-tightest">
