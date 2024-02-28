@@ -164,7 +164,7 @@
     </CvItem>
     <CvItem
       title="Allgemeine Hochschulreife"
-      institution="Gymnasium Uslar, Orientierungsstufe Uslar, Grundschule Uslar"
+      institution="Gymnasium Uslar"
       times="Juni 2011"
       image="gymUs.png"
     >
