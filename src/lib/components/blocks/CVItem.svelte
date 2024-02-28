@@ -8,7 +8,7 @@
 
 <div class="flex items-start my-6">
   <img
-    src={image}
+    src="/{image}"
     alt="logo"
     class="object-cover rounded-xl w-16 h-16 shrink-0"
   />
