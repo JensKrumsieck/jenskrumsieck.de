@@ -44,7 +44,7 @@
   <div class="my-12">
     <CvItem
       title="Wissenschaftlicher Mitarbeiter (Doktorand)"
-      institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
+      institution="Technische Universität Braunschweig, Institut für Anorganische und Analytische Chemie"
       times="Juni 2018 - März 2024"
       image="tubs.svg"
       tags={[
@@ -91,8 +91,8 @@
   <Title>Akademischer Werdegang</Title>
   <div class="my-12">
     <CvItem
-      title="Promotion im Fachbereich Anorganische Chemie"
-      institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
+      title="Promotion in Anorganischer Chemie"
+      institution="Technische Universität Braunschweig, Institut für Anorganische und Analytische Chemie"
       times="Juni 2018 - Januar 2024"
       image="tubs.svg"
     >
@@ -180,7 +180,7 @@
   <div class="my-12">
    <CvItem
         title="Wissenschaftliche Hilfskraft in der Forschung"
-        institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
+        institution="Technische Universität Braunschweig, Institut für Anorganische und Analytische Chemie"
         times="August 2017 - Mai 2018"
         image="tubs.svg"
       >
@@ -194,7 +194,7 @@
       </CvItem>
       <CvItem
         title="Studentische Hilfskraft in der Hochschullehre"
-        institution="Institut für Anorganische und Analytische Chemie der Technischen Universität Braunschweig"
+        institution="Technische Universität Braunschweig, Institut für Anorganische und Analytische Chemie"
         times="November 2015 - Februar 2016<br/>April 2015 - Juli 2016<br/>November 2014 - Februar 2015"
         image="tubs.svg"
         tags={["Lehre", "Vermittlung von Inhalten", "Studierendenbetreuung"]}
