@@ -9,7 +9,7 @@
 
 <div
   class="w-full bg-cover bg-no-repeat bg-top"
-  style="background-image: url(lap.jpg);"
+  style="background-image: url(/lap.jpg);"
 >
   <Container class="flex md:flex-row flex-col" padding nav>
     <div class="flex flex-col md:max-w-[50%] justify-end">

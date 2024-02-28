@@ -17,7 +17,7 @@
 
 <Rect class="flex flex-col">
   <img
-    src="hero.webp"
+    src="/hero.webp"
     alt="Jens in seinem Labor"
     class="mix-blend-multiply max-h-full w-auto align-bottom mt-auto"
   />

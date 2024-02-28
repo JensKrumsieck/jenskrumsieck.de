@@ -13,7 +13,7 @@
   async function submitForm(data) {
     submitting = true;
     const formData = new FormData(data.currentTarget);
-    const res = await fetch("contact.json", {
+    const res = await fetch("/contact.json", {
       method: "POST",
       body: formData,
     });
