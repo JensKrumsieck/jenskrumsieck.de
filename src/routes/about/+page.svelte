@@ -18,7 +18,7 @@
         <p class="font-bold text-xl">Hi, ich bin Jens!</p>
         <p class="my-3">
           Als Doktorand in <strong>Anorganischer Chemie</strong> an der
-          Technischen Universität Braunschweig erforsche ich in der Arbeitsgruppe
+          Technischen Universität Braunschweig erforschte ich in der Arbeitsgruppe
           von <strong>Prof. Dr. Martin Bröring</strong> die faszinierende Welt der
           Porphyrinoide. Diese Strukturen, inspiriert von der Natur, stehen hinter
           lebenswichtigen Molekülen wie Häm, dem roten Blutfarbstoff, und Chlorophyll,
@@ -211,7 +211,18 @@
       </CvItem>
   </div>
 </Container>
-
+<Container padding class="my-12">
+  <Title>Ehrenamt</Title>
+  <div class="my-12">
+    <CvItem
+      title="Mitglied des Kreisvorstands"
+      institution="Bündnis 90/DIE GRÜNEN Braunschweig"
+      times="seit März 2024"
+      image="gruenebs.png"
+    >
+    </CvItem>
+  </div>
+</Container>
 <Container padding class="my-12">
   <Title>Weitere Kompetenzen</Title>
   <div class="my-6">
