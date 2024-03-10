@@ -1,5 +1,5 @@
 <script>
-  import Title from "$lib/components/typography/Title.svelte";
+  import BiggerTitle from "$lib/components/typography/BiggerTitle.svelte";
   export let title;
   export let icon;
   export let image = "";
@@ -9,7 +9,7 @@
   <div class="flex flex-col">
     <div class="flex">
       <img src={icon} alt={"Logo " + title} class="w-12 h-12 my-auto" />
-      <Title class="ml-4">{title}</Title>
+      <BiggerTitle class="ml-4">{title}</BiggerTitle>
     </div>
    <slot/>
   </div>

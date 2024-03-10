@@ -41,7 +41,7 @@
 <Container padding class="my-12">
   <BiggerTitle>Lebenslauf</BiggerTitle>
   <Title>Praktische Erfahrung</Title>
-  <div class="my-12">
+  <div class="my-6">
     <CvItem
       title="Wissenschaftlicher Mitarbeiter (Doktorand)"
       institution="Technische Universität Braunschweig, Institut für Anorganische und Analytische Chemie"
@@ -89,7 +89,7 @@
 
 <Container padding class="my-12">
   <Title>Akademischer Werdegang</Title>
-  <div class="my-12">
+  <div class="my-6">
     <CvItem
       title="Promotion in Anorganischer Chemie"
       institution="Technische Universität Braunschweig, Institut für Anorganische und Analytische Chemie"
@@ -175,9 +175,9 @@
   </div>
 </Container>
 
-<Container padding class="my-12">
+<Container padding class="my-6">
   <Title>Tätigkeiten während des Studiums</Title>
-  <div class="my-12">
+  <div class="my-6">
    <CvItem
         title="Wissenschaftliche Hilfskraft in der Forschung"
         institution="Technische Universität Braunschweig, Institut für Anorganische und Analytische Chemie"
@@ -211,9 +211,9 @@
       </CvItem>
   </div>
 </Container>
-<Container padding class="my-12">
+<Container padding class="my-">
   <Title>Ehrenamt</Title>
-  <div class="my-12">
+  <div class="my-6">
     <CvItem
       title="Mitglied des Kreisvorstands"
       institution="Bündnis 90/DIE GRÜNEN Braunschweig"
@@ -223,7 +223,7 @@
     </CvItem>
   </div>
 </Container>
-<Container padding class="my-12">
+<Container padding class="my-6">
   <Title>Weitere Kompetenzen</Title>
   <div class="my-6">
     <div class="mt-3">

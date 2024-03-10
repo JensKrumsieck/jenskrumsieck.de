@@ -3,6 +3,7 @@
   import Date from "../blocks/Date.svelte";
   import * as ph from "@prismicio/helpers";
   import { getExcerpt } from "$lib/util/text-helpers";
+  import BiggerTitle from "../typography/BiggerTitle.svelte";
   export let post;
 </script>
 
@@ -15,7 +16,7 @@
       class="md:w-[40%] w-full max-h-[90rem] ml-auto h-auto object-cover rounded-md"
     />
     <div class="pl-8">
-      <Title>{ph.asText(post.data.title)}</Title>
+      <BiggerTitle>{ph.asText(post.data.title)}</BiggerTitle>
       <p>
         {@html getExcerpt(ph.asHTML(post.data.body[0].primary.content), 1000)}
       </p>

@@ -3,7 +3,7 @@
 </script>
 
 <h1
-  class={`text-5xl md:text-8xl font-black italic tracking-tightest text-shadow-copy my-5 ${
+  class={`text-5xl md:text-6xl font-black italic tracking-tightest text-shadow-copy my-5 ${
     white ? "text-white" : ""
   }`}
 >

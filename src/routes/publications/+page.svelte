@@ -12,7 +12,23 @@
 </script>
 <Container padding class="mt-12">
   <LargeTitle>Veröffentlichungen</LargeTitle>
-  <BiggerTitle>Fachzeitschriften</BiggerTitle>
+  <!--<BiggerTitle>Bücher</BiggerTitle>
+  <div class="flex md:space-x-3 my-8 md:flex-row flex-col">
+    <figure class="md:max-w-[8rem]">
+      ...
+    </figure>
+    <div class="flex flex-col space-y-0 prose-a:text-dark-green hover:text-black">
+        <Title class="md:my-0">PorphyStruct: Entwicklung einer Software zur quantitativen Bestimmung nicht-planarer Auslenkungen von porphyrinoiden Makrozyklen & Synthese neuer Metallkomplexe von Isoporphyrin-Liganden</Title>
+         <p class="text-lg">Jens Krumsieck, Dissertation an der TU Braunschweig, Verlag Dr. Hut, München, 2024, ISBN: <a
+              href=""
+              class="font-bold underline text-dark-green hover:text-black"
+              aria-label="International Standard Book Number"
+            >
+              978-3-8439-5446-4
+            </a><p>
+      </div>
+  </div>-->
+  <BiggerTitle>Beiträge in Publikationsorganen mit wissenschaftlicher Qualitätsprüfung</BiggerTitle>
   {#each publications.papers.results as paper}
     <div class="flex md:space-x-3 my-8 md:flex-row flex-col">
       {#if ph.isFilled.image(paper.data.cover_image)}
