@@ -99,11 +99,11 @@
       <div>
         <p>
           <strong
-            >Abschluss: summa cum laude (Mit Auszeichnung) - 
-            PorphyStruct: Entwicklung einer Software zur quantitativen
+            >Abschluss mit Auszeichnung (summa cum laude) - 
+            <em>PorphyStruct: Entwicklung einer Software zur quantitativen
             Bestimmung nicht-planarer Auslenkungen von porphyrinoiden
             Makrozyklen & Synthese neuer Metallkomplexe von
-            Isoporphyrin-Liganden</strong
+            Isoporphyrin-Liganden</em></strong
           >
         </p>
       </div>
@@ -125,8 +125,8 @@
     >
       <div>
         <strong>
-          Abschluss mit Auszeichung (1.3) - Kobaltkomplexe von
-          Isoporphyrin-Liganden
+          Abschluss mit Auszeichung (1.3) - <em>Kobaltkomplexe von
+          Isoporphyrin-Liganden</em>
         </strong><br />
       </div>
     </CvItem>
@@ -153,8 +153,8 @@
     >
       <div>
         <strong>
-          Abschluss (2.1) - Effiziente Eintopfsynthese neuer
-          Metalloisoporphyrine
+          Abschluss (2.1) - <em>Effiziente Eintopfsynthese neuer
+          Metalloisoporphyrine</em>
         </strong><br />
         <p>
           Belegung der Voraussetzungen zur Zulassung in den Masterstudiengang
