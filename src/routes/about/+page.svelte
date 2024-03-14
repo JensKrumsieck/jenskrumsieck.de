@@ -218,7 +218,7 @@
       title="Mitglied des Kreisvorstands"
       institution="BÜNDNIS 90/DIE GRÜNEN Braunschweig"
       times="seit März 2024"
-      image="gruenebs.png"
+      image="gruene.svg"
     >
     </CvItem>
   </div>
