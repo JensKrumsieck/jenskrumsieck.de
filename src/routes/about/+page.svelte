@@ -231,9 +231,8 @@
         IT-Fähigkeiten
       </h2>
       <p class="mt-2">
-        <strong>Programmierung</strong> in C# (sehr gut, 7+ Jahre), Python
-        (fortgeschritten), TypeScript/JavaScript (fortgeschritten), GlSL
-        (Grundkenntnisse), PHP (Grundkenntnisse), HTML/CSS
+        <strong>Programmierung</strong> in C# (sehr gut, 5+ Jahre), Python
+        (solide Grundkenntnisse), TypeScript/JavaScript (solide Grundkenntnisse).
         <br /><strong>Arbeit mit Softwarebibliotheken und Frameworks</strong>:
         .NET, WPF, Blazor, SvelteKit, Jupyter Notebooks, pandas, scikit-learn,
         numpy, Vulkan (via Silk.NET bindings)
