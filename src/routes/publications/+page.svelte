@@ -1,6 +1,7 @@
 <script>
   import Badge from "$lib/components/typography/Badge.svelte";
   import Container from "$lib/components/layout/Container.svelte";
+  import Image from "$lib/components/layout/Image.svelte";
   import LargeTitle from "$lib/components/typography/LargeTitle.svelte";
   import Title from "$lib/components/typography/Title.svelte";
   import * as ph from "@prismicio/helpers";
@@ -12,22 +13,27 @@
 </script>
 <Container padding class="mt-12">
   <LargeTitle>Veröffentlichungen</LargeTitle>
-  <!--<BiggerTitle>Bücher</BiggerTitle>
+  <BiggerTitle>Bücher</BiggerTitle>
   <div class="flex md:space-x-3 my-8 md:flex-row flex-col">
     <figure class="md:max-w-[8rem]">
-      ...
+      <Image
+        src="buch.png"
+        thumbSrc="buch_thumb.png"
+        alt="Dissertation Jens Krumsieck"
+      />
     </figure>
     <div class="flex flex-col space-y-0 prose-a:text-dark-green hover:text-black">
         <Title class="md:my-0">PorphyStruct: Entwicklung einer Software zur quantitativen Bestimmung nicht-planarer Auslenkungen von porphyrinoiden Makrozyklen & Synthese neuer Metallkomplexe von Isoporphyrin-Liganden</Title>
          <p class="text-lg">Jens Krumsieck, Dissertation an der TU Braunschweig, Verlag Dr. Hut, München, 2024, ISBN: <a
-              href=""
+              href="https://www.dr.hut-verlag.de/9783843954464.html"
               class="font-bold underline text-dark-green hover:text-black"
+              target="_blank"
               aria-label="International Standard Book Number"
             >
               978-3-8439-5446-4
             </a><p>
       </div>
-  </div>-->
+  </div>
   <BiggerTitle>Beiträge in Publikationsorganen mit wissenschaftlicher Qualitätsprüfung</BiggerTitle>
   {#each publications.papers.results as paper}
     <div class="flex md:space-x-3 my-8 md:flex-row flex-col">
@@ -51,7 +57,8 @@
             <a
               href={"https://doi.org/" + paper.data.doi}
               class="font-bold underline text-dark-green hover:text-black"
-              aria-label="Digital Object Identifier"
+              aria-label="Digital Object Identifier"              
+              target="_blank"
             >
               {paper.data.doi}.
             </a>
