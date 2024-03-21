@@ -8,6 +8,6 @@ export async function load({ params, fetch, data }) {
   return {
     posts: posts.posts,
     title: "Blog",
-    description: "Hier erfahrt ihr was aktuell in meinem Leben los ist. Beiträge rund um Chemie, Softwareentwicklung oder Politik werden in unregelmäßigen Abständen veröffentlicht."
+    description: "Hier veröffentlicht Jens Krumsieck Aktuelles aus seinem Leben. Beiträge rund um Chemie, Softwareentwicklung oder Politik werden in unregelmäßigen Abständen veröffentlicht."
   };
 }
