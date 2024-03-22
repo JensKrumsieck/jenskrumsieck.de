@@ -17,8 +17,8 @@
   <div class="flex md:space-x-3 my-8 md:flex-row flex-col">
     <figure class="md:max-w-[8rem]">
       <Image
-        src="buch.png"
-        thumbSrc="buch_thumb.png"
+        src="/buch.png"
+        thumbSrc="/buch_thumb.png"
         alt="Dissertation Jens Krumsieck"
       />
     </figure>
