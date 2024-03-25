@@ -30,8 +30,6 @@
   <meta name="keywords" content={$page.data.keywords ?? website.keywords} />
   <meta name="author" content={website.author} />
   <meta name="canonical" content={website.siteUrl + "/" + $page.url.pathname} />
-  <meta name="twitter:creator" content="@jens_ation" />
-  <meta name="twitter:site" content="@jens_ation" />
   <meta name="twitter:image" content={$page.data.image ?? website.image} />
   <meta property="og:site_name" content={website.siteTitle} />
   <meta property="og:locale" content="de_DE" />
