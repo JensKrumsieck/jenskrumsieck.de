@@ -38,7 +38,7 @@
   class="tint absolute min-h-full -z-50 w-full bg-green mix-blend-multiply"
 />
 <section class="hero px-2 lg:px-0">
-  <Container class="min-h-[50vh] py-20" padding>
+  <Container class="py-20" padding>
     <LargeTitle white>{ph.asText(post.data.title)}</LargeTitle>
     <p class="text-white uppercase my-10">
       von {ph.asText(post.data.author.data.name)}
