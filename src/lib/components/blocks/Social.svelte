@@ -6,7 +6,7 @@
 </script>
 
 <div class={clazz + "md:space-y-0 space-y-2"}>
-    <RoundIconButton href="https://www.linkedin.com/in/jens-krumsieck-849445211" icon={faLinkedin} />
+    <RoundIconButton href="https://www.linkedin.com/in/jenskrumsieck" icon={faLinkedin} />
     <RoundIconButton href="https://www.xing.com/profile/Jens_Krumsieck" icon={faXing} />
     <RoundIconButton href="https://github.com/JensKrumsieck" icon={faGithub} />
     <RoundIconButton href="https://www.researchgate.net/profile/Jens-Krumsieck" icon={faResearchgate} />
