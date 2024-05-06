@@ -155,7 +155,7 @@
         <div class="flex flex-wrap md:space-x-5 my-8">
           <IconLink
             icon={faGithub}
-            href="https://github.com/JensKrumsieck/profile-frame"
+            href="https://github.com/JensKrumsieck/Profilbegruenung"
           >
             GitHub Repository
           </IconLink>
