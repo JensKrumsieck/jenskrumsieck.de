@@ -43,6 +43,20 @@
   <Title>Praktische Erfahrung</Title>
   <div class="my-6">
     <CvItem
+      title="Research Software Engineer"
+      institution="Johann Heinrich von Thünen-Institut, Zentrum für Informationsmanagement"
+      times="seit Mai 2024"
+      image="thuenen.svg"
+    >
+      <div>
+        <ul class="list-disc">
+          <li>
+            Mitarbeit im NFDI Konsortium "FAIRagro"
+          </li>          
+        </ul>
+      </div>
+    </CvItem>
+    <CvItem
       title="Wissenschaftlicher Mitarbeiter (Doktorand)"
       institution="Technische Universität Braunschweig, Institut für Anorganische und Analytische Chemie"
       times="Juni 2018 - März 2024"
@@ -218,6 +232,13 @@
       title="Mitglied des Kreisvorstands"
       institution="BÜNDNIS 90/DIE GRÜNEN Braunschweig"
       times="seit März 2024"
+      image="gruene.svg"
+    >
+    </CvItem>
+    <CvItem
+      title="Wahlkampfkoordination"
+      institution="BÜNDNIS 90/DIE GRÜNEN Braunschweig"
+      times="Februar 2024 - Juni 2024"
       image="gruene.svg"
     >
     </CvItem>
