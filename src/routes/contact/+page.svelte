@@ -96,17 +96,6 @@
   </div>
   <div>
     <h2 class="font-bold  text-2xl">Per E-Mail:</h2>
-    Beruflich: j.krumsieck@tu-braunschweig.de<br />
     Privat: mail@jenskrumsieck.de
-  </div>
-  <div>
-    <h2 class="font-bold  text-2xl">Berufliche Adresse:</h2>
-    <p>
-      Jens Krumsieck<br />
-      Institut für Anorganische und Analytische Chemie<br />
-      TU Braunschweig<br />
-      Hagenring 30 <br />
-      D-38106 Braunschweig
-    </p>
   </div>
 </Container>
