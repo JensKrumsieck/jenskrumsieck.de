@@ -233,6 +233,7 @@
       institution="BÜNDNIS 90/DIE GRÜNEN Braunschweig"
       times="seit März 2024"
       image="gruene.svg"
+      tags={["Moderation", "Projektmanagement"]}
     >
     </CvItem>
     <CvItem
@@ -240,7 +241,16 @@
       institution="BÜNDNIS 90/DIE GRÜNEN Braunschweig"
       times="Februar 2024 - Juni 2024"
       image="gruene.svg"
+      tags={["Wahlkampfplanung", "Wahlanalyse"]}
     >
+       <div>
+          <ul class="list-disc">
+            <li>Planen und Durchführen von Wahlkampfaktionen (Plakatieren, Stände, Haustürwahlkampf)</li>
+            <li>Aktivierung von (Neu-)Mitgliedern</li>
+            <li>Planung des Wahlkampfverlaufs</li>
+            <li>Wahlanalyse und Bericht</li>
+          </ul>
+        </div>
     </CvItem>
   </div>
 </Container>
