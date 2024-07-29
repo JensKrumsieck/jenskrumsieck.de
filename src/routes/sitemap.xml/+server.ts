@@ -9,7 +9,7 @@ export async function GET({ fetch, params }) {
         'Cache-Control': 'max-age=0, s-maxage=3600',
         'Content-Type': 'application/xml',
     }
-    const pages = ['blog', 'publications', 'about', 'cv', 'contact']
+    const pages = ['blog', 'publications', 'about', 'contact']
     const statics = ['impressum', 'privacy']
     const client = createClient(fetch)
     const posts = await client.getAllByType('article', { orderings: { field: 'my.article.publish_date', direction: 'desc' } })
