@@ -263,7 +263,7 @@
       </h2>
       <p class="mt-2">
         <strong>Programmierung</strong> in C# (sehr gut, 5+ Jahre), Python
-        (solide Grundkenntnisse), TypeScript/JavaScript (solide Grundkenntnisse).
+        (solide Grundkenntnisse), TypeScript/JavaScript (solide Grundkenntnisse), Rust.
         <br /><strong>Arbeit mit Softwarebibliotheken und Frameworks</strong>:
         .NET, WPF, Blazor, SvelteKit, Jupyter Notebooks, pandas, scikit-learn,
         numpy, Vulkan (via Silk.NET bindings)
@@ -307,7 +307,7 @@
       <p>
         Gesellschaft Deutscher Chemiker (GdCh; seit 2018), BÜNDNIS 90/DIE
         GRÜNEN (seit 2021), Allgemeiner Deutscher Fahrradclub (ADFC; seit 2022),
-        ver.di (seit 2023)
+        ver.di (seit 2023), Verkehrsclub Deutschland (VCD; seit 2024)
       </p>
     </div>
   </div>
