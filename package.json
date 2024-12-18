@@ -22,7 +22,6 @@
 		"@tailwindcss/typography": "^0.5.2",
 		"autoprefixer": "^10.4.7",
 		"dayjs": "^1.11.3",
-		"node-sass": "^9.0.0",
 		"postcss": "^8.4.14",
 		"sass": "^1.52.3",
 		"svelte": "^3.44.0",
