@@ -4,6 +4,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
+		"build:node": "SVELTEKIT_ADAPTER=node npm run build",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
@@ -17,6 +18,7 @@
 		"@prismicio/helpers": "^2.3.1",
 		"@prismicio/svelte": "^0.0.4",
 		"@sveltejs/adapter-auto": "^2.1.0",
+		"@sveltejs/adapter-node": "^1.0.0",
 		"@sveltejs/kit": "^1.24.0",
 		"@tailwindcss/forms": "^0.5.2",
 		"@tailwindcss/typography": "^0.5.2",

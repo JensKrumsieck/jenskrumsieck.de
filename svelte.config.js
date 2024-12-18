@@ -1,4 +1,5 @@
 import adapter from '@sveltejs/adapter-auto';
+import adapterNode from '@sveltejs/adapter-node';
 import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -9,9 +10,11 @@ const config = {
 		postcss: true,
 	}),
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+			fallback: adapterNode(),
+		})
 	}
-	
+
 };
 
 export default config;
