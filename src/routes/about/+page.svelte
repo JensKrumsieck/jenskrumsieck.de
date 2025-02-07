@@ -47,12 +47,25 @@
       institution="Johann Heinrich von Thünen-Institut, Zentrum für Informationsmanagement"
       times="seit Mai 2024"
       image="thuenen.svg"
+      tags={[
+        "Softwareentwicklung",
+        "Forschungsdatenmanagement",
+        "Rust",
+        "CI/CD"
+      ]]
     >
       <div>
         <ul class="list-disc">
           <li>
+            Entwicklung der "Scientific Workflow Infrastructure" (SciWIn)
+          </li>
+          <li>
+            Implementierung des SciWIn Clients in Rust
+          </li>
+          <li>Requirements Engineering und Erstellung von User Stories</li>
+          <li>
             Mitarbeit im NFDI Konsortium "FAIRagro"
-          </li>          
+          </li>
         </ul>
       </div>
     </CvItem>
@@ -235,6 +248,23 @@
       image="gruene.svg"
       tags={["Moderation", "Projektmanagement"]}
     >
+    <CvItem
+      title="Wahlkampfmanager"
+      institution="BÜNDNIS 90/DIE GRÜNEN Braunschweig"
+      times="Oktober 2024 - März 2025"
+      image="gruene.svg"
+      tags={["Wahlkampfplanung", "Wahlanalyse"]}
+    >
+       <div>
+          <ul class="list-disc">        
+            <li>Material- und Kostenplanung</li>
+            <li>Planen und Durchführen von Wahlkampfaktionen (Plakatieren, Stände, Haustürwahlkampf)</li>
+            <li>Aktivierung von (Neu-)Mitgliedern</li>
+            <li>Planung des Wahlkampfverlaufs</li>
+            <li>Wahlanalyse und Bericht</li>
+          </ul>
+        </div>
+    </CvItem>
     </CvItem>
     <CvItem
       title="Wahlkampfkoordination"
