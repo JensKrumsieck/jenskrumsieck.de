@@ -248,6 +248,7 @@
       image="gruene.svg"
       tags={["Moderation", "Projektmanagement"]}
     >
+    </CvItem>
     <CvItem
       title="Wahlkampfmanager"
       institution="BÜNDNIS 90/DIE GRÜNEN Braunschweig"
@@ -264,7 +265,6 @@
             <li>Wahlanalyse und Bericht</li>
           </ul>
         </div>
-    </CvItem>
     </CvItem>
     <CvItem
       title="Wahlkampfkoordination"
@@ -292,8 +292,8 @@
         IT-Fähigkeiten
       </h2>
       <p class="mt-2">
-        <strong>Programmierung</strong> in C# (sehr gut, 5+ Jahre), Python
-        (solide Grundkenntnisse), TypeScript/JavaScript (solide Grundkenntnisse), Rust.
+        <strong>Programmierung</strong> in C# (sehr gut, 5+ Jahre), Rust (solide Grundkenntnisse), Python
+        (solide Grundkenntnisse), TypeScript/JavaScript (solide Grundkenntnisse).
         <br /><strong>Arbeit mit Softwarebibliotheken und Frameworks</strong>:
         .NET, WPF, Blazor, SvelteKit, Jupyter Notebooks, pandas, scikit-learn,
         numpy, Vulkan (via Silk.NET bindings)
