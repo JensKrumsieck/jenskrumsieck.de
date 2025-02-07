@@ -52,7 +52,7 @@
         "Forschungsdatenmanagement",
         "Rust",
         "CI/CD"
-      ]]
+      }]
     >
       <div>
         <ul class="list-disc">
