@@ -226,7 +226,7 @@
       image="gruene.svg"
       tags={["Moderation", "Projektmanagement"]}
     >
-    <ul class="list-disc>
+    <ul class="list-disc">
     <li>Wahlkampfmanager für die Europawahl 2024 und Bundestagswahl 2025
       <ul class="list-disc">        
         <li>Material- und Kostenplanung</li>
