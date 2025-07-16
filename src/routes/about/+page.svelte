@@ -51,21 +51,23 @@
         "Softwareentwicklung",
         "Forschungsdatenmanagement",
         "Rust",
+        "Python",
         "CI/CD"
       ]}
     >
       <div>
         <ul class="list-disc">
           <li>
-            Entwicklung der "Scientific Workflow Infrastructure" (SciWIn)
+            Entwicklung eines Rust-basierten CLI-Tools für die Verwaltung reproduzierbarer Workflows (<a href="https://fairagro.github.io/m4.4_sciwin_client/">SciWIn Client</a>).
           </li>
           <li>
-            Implementierung des SciWIn Clients in Rust
+            Umsetzung von DevOps-Praktiken: Aufbau automatisierter CI/CD-Pipelines (GitHub Actions CI, Docker), Nutzung von Git für Versionskontrolle.
           </li>
-          <li>Requirements Engineering und Erstellung von User Stories</li>
-          <li>
-            Mitarbeit im NFDI Konsortium "FAIRagro"
-          </li>
+          <li>Qualitätssicherung: Einführung automatisierter Tests und Durchführung von Code Reviews.</li>
+          <li>Erstellung von technischen Dokumentationen.</li>    
+          <li>Entwicklung eines Notfallkanal-Systems basierend auf der Webex API in Python.</li>
+          <li>Requirements Engineering und Erstellung von User Stories.</li>
+          <li>Mitarbeit im NFDI-Konsortium <a href="https://fairagro.net">FAIRagro</a>.</li>
         </ul>
       </div>
     </CvItem>
@@ -76,38 +78,29 @@
       image="tubs.svg"
       tags={[
         "Anorganische Synthese",
-        "UV/Vis-Spektroskopie",
-        "NMR-Spektroskopie",
-        "ESI-Massenspektrometrie",
-        "Säulenchromatographie",
-        "Cyclovoltammetrie",
-        "Spektroelektrochemie",
+        "Spektroskopie",
         "Softwareentwicklung",
         "C#/.NET",
         "Data Science",
         "Python",
-        "Dichtefunktionaltheorie (DFT)",
-        "Quantenchemische Rechnungen",
-        "Führungsverantwortung",
+        "Quantenchemische Rechnungen"
       ]}
     >
       <div>
-        <ul class="list-disc">
+        <ul class="list-disc">          
+          <li>Entwicklung einer Software (<a href="https://porphystruct.org">PorphyStruct</a>) zur Analyse komplexer 3D-Strukturdaten für Windows-Desktop und Web (C#, .NET, WPF, Blazor).</li>
+          <li>Implementierung von Algorithmen zur strukturellen Analyse (inkl. "hardwarenaher" Optimierung mittels Spans)</li>
+          <li>Entwicklung von Integrationtest und kontinuierlicher Integration (GitHub Actions CI).</li>
+          <li>Anfertigung und Auswertung quantenchemischer Berechnungen auf einem SLURM System.</li>
+          <li>Erstellen eines Tools zur Analyse von Verunreinigungen in Elementaranalysen (<a href="https://chn.jenskrumsieck.de/">CHN-Tool</a>) in C#/Blazor.
           <li>
-            Synthese und Charakterisierung anorganischer Molekülverbindungen
-            unter Verwendung der etablierten Methoden.
-          </li>
-          <li>Anfertigung und Auswertung quantenchemischer Berechnungen.</li>
-          <li>Entwicklung von Software zur Struktur- und Datenanalyse.</li>
+            Synthese und Charakterisierung anorganischer Molekülverbindungen unter Verwendung der etablierten Methoden.
+          </li>          
+          <li>Analyse erhobener Forschungsdaten (z.B. spektroskopische Daten und PorphyStruct-Analysen) mit Python.</li>
           <li>
-            Publikation der Ergebnisse in einschlägigen wissenschaftlichen
-            Fachzeitschriften sowie Präsentation auf Fachtagungen in Form von
-            Posterbeiträgen oder Vorträgen.
+            Publikation der Ergebnisse in einschlägigen wissenschaftlichen Fachzeitschriften sowie Präsentation auf Fachtagungen in Form von Posterbeiträgen oder Vorträgen.
           </li>
-          <li>
-            Betreuung von Abschlussarbeiten, Forschungspraktika sowie
-            Saalpraktika.
-          </li>
+          <li>Betreuung von Abschlussarbeiten, Forschungspraktika sowie Saalpraktika.</li>
         </ul>
       </div>
     </CvItem>   
@@ -141,13 +134,13 @@
       times="April 2016 - April 2018"
       image="tubs.svg"
       tags={[
+        "Theoretische Spektroskopie",
+        "Biomolekulare Modellierungen",
+        "Spektroskopie an Paramagneten",
+        "Molekülspektroskopie",
         "Elektrochemie",
         "Fortgeschrittene Anorganische Chemie",
         "Organometallchemie",
-        "Spektroskopie an Paramagneten",
-        "Theoretische Spektroskopie",
-        "Biomolekulare Modellierungen",
-        "Molekülspektroskopie",
       ]}
     >
       <div>
@@ -162,22 +155,7 @@
       title="Bachelorstudium Lehramt Chemie und Mathematik"
       institution="Technische Universität Braunschweig"
       times="Oktober 2011 - April 2016"
-      image="tubs.svg"
-      tags={[
-        "Sachkundenachweis",
-        "Pädagogik",
-        "Allgemeine Chemie",
-        "Anorganische Chemie",
-        "Organische Chemie",
-        "Physikalische Chemie",
-        "Computerchemie",
-        "Physik",
-        "Lineare Algebra",
-        "Analysis",
-        "Stochastik",
-        "Statistik",
-      ]}
-    >
+      image="tubs.svg">
       <div>
         <strong>
           Abschluss (2.1) - <em>Effiziente Eintopfsynthese neuer
@@ -185,7 +163,7 @@
         </strong><br />
         <p>
           Belegung der Voraussetzungen zur Zulassung in den Masterstudiengang
-          Chemie (Studiengangswechsel) <br />Sachkundenachweis §11 ChemVerbotsV
+          Chemie <br />Sachkundenachweis §11 ChemVerbotsV
         </p>
       </div>
     </CvItem>
@@ -248,39 +226,24 @@
       image="gruene.svg"
       tags={["Moderation", "Projektmanagement"]}
     >
-    </CvItem>
-    <CvItem
-      title="Wahlkampfmanager"
-      institution="BÜNDNIS 90/DIE GRÜNEN Braunschweig"
-      times="Oktober 2024 - März 2025"
-      image="gruene.svg"
-      tags={["Wahlkampfplanung", "Wahlanalyse"]}
-    >
-       <div>
-          <ul class="list-disc">        
-            <li>Material- und Kostenplanung</li>
-            <li>Planen und Durchführen von Wahlkampfaktionen (Plakatieren, Stände, Haustürwahlkampf)</li>
-            <li>Aktivierung von (Neu-)Mitgliedern</li>
-            <li>Planung des Wahlkampfverlaufs</li>
-            <li>Wahlanalyse und Bericht</li>
-          </ul>
-        </div>
-    </CvItem>
-    <CvItem
-      title="Wahlkampfkoordination"
-      institution="BÜNDNIS 90/DIE GRÜNEN Braunschweig"
-      times="Februar 2024 - Juni 2024"
-      image="gruene.svg"
-      tags={["Wahlkampfplanung", "Wahlanalyse"]}
-    >
-       <div>
-          <ul class="list-disc">
-            <li>Planen und Durchführen von Wahlkampfaktionen (Plakatieren, Stände, Haustürwahlkampf)</li>
-            <li>Aktivierung von (Neu-)Mitgliedern</li>
-            <li>Planung des Wahlkampfverlaufs</li>
-            <li>Wahlanalyse und Bericht</li>
-          </ul>
-        </div>
+    <ul class="list-disc>
+    <li>Wahlkampfmanager für die Europawahl 2024 und Bundestagswahl 2025
+      <ul class="list-disc">        
+        <li>Material- und Kostenplanung</li>
+        <li>Planen und Durchführen von Wahlkampfaktionen (Plakatieren, Stände, Haustürwahlkampf)</li>
+        <li>Aktivierung von (Neu-)Mitgliedern</li>
+        <li>Planung des Wahlkampfverlaufs</li>
+        <li>Wahlanalyse und Bericht</li>
+      </ul>    
+    </li>Mitgliederbeauftragter
+      <ul class="list-disc">  
+        <li>Onboarding von Neumitgliedern</li>
+        <li>Erstellung von Schulungsmaterial</li>
+        <li>Organisation regelmäßiger Treffen/Veranstaltungen</li>
+      </ul>
+    </li>
+    <li>
+    </ul>
     </CvItem>
   </div>
 </Container>
