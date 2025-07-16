@@ -254,54 +254,31 @@
       <h2 class=" text-xl font-black italic tracking-tightest">
         IT-Fähigkeiten
       </h2>
-      <p class="mt-2">
-        <strong>Programmierung</strong> in C# (sehr gut, 5+ Jahre), Rust (solide Grundkenntnisse), Python
-        (solide Grundkenntnisse), TypeScript/JavaScript (solide Grundkenntnisse).
-        <br /><strong>Arbeit mit Softwarebibliotheken und Frameworks</strong>:
-        .NET, WPF, Blazor, SvelteKit, Jupyter Notebooks, pandas, scikit-learn,
-        numpy, Vulkan (via Silk.NET bindings)
-        <br /><strong>Softwarekenntnisse</strong>: Word (sehr gut), Excel (sehr
-        gut), PowerPoint (sehr gut), Outlook (sehr gut), ChemDraw (sehr gut), OriginPro
-        (fortgeschritten), Affinity Designer (fortgeschritten), Affinity
-        Publisher (fortgeschritten), Blender (Grundkenntnisse), Matlab
-        (Grundkenntnisse)
-      </p>
+      <ul class="mt-2">
+        <li><strong>Programmierung</strong>: C#, Rust, Python, TypeScript/JavaScript (private Projekte).</li>
+        <li><strong>Markup/Datenformate</strong>: HTML, CSS, XML/XAML, YAML, JSON, SQL, ...</li>
+        <li><strong>DevOps</strong>: Git, GitHub Actions CI, Docker</li>
+        <li><strong>Betriebssysteme</strong>: Windows, Linux (Ubuntu)</li>
+      </ul>
     </div>
     <div class="my-3">
       <h2 class="text-xl font-black italic tracking-tightest">Sprachen</h2>
       <p class="my-2">
         <strong>Deutsch</strong> (Muttersprache), <strong>Englisch</strong>
-        (B2), <strong>Latein</strong> (Latinum in der Schule)
+        (B2/C1)
       </p>
-    </div>
-    <div class="my-6">
-      <h2 class="text-xl font-black italic tracking-tightest">Zertifikate</h2>
-      <ul class="list-disc">
-        <li>
-          Machine Learning (Python) – Graduiertenakademie „GradTUBS“ – 2022
-        </li>
-        <li>
-          Künstliche Intelligenz: Möglichkeiten und Grenzen
-          (Einführungsworkshop) – Graduiertenakademie „GradTUBS“ – 2021
-        </li>
-        <li>
-          Masterclass: Instagram und Twitter von A bis Z – Graduiertenakademie
-          „GradTUBS“ – 2020
-        </li>
-        <li>
-          Sachkundenachweis §11 ChemVerbotsV - TU Braunschweig - 2015
-        </li>
-      </ul>
     </div>
     <div class="my-6">
       <h2 class=" text-xl font-black italic tracking-tightest">
         Mitgliedschaften
       </h2>
-      <p>
-        Gesellschaft Deutscher Chemiker (GdCh; seit 2018), BÜNDNIS 90/DIE
-        GRÜNEN (seit 2021), Allgemeiner Deutscher Fahrradclub (ADFC; seit 2022),
-        ver.di (seit 2023), Verkehrsclub Deutschland (VCD; seit 2024)
-      </p>
+      <ul>
+        <li> Gesellschaft Deutscher Chemiker (GdCh; seit 2018)</li>
+        <li> BÜNDNIS 90/DIE GRÜNEN (seit 2021)</li>
+        <li>Allgemeiner Deutscher Fahrradclub (ADFC; seit 2022)</li>
+        <li>ver.di (seit 2023)</li>
+        <li>Verkehrsclub Deutschland (VCD; seit 2024)</li>
+      </ul>
     </div>
   </div>
 </Container>
