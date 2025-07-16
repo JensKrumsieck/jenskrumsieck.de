@@ -235,14 +235,14 @@
         <li>Planung des Wahlkampfverlaufs</li>
         <li>Wahlanalyse und Bericht</li>
       </ul>    
-    </li>Mitgliederbeauftragter
+    </li>
+    <li>Mitgliederbeauftragter
       <ul class="list-disc">  
         <li>Onboarding von Neumitgliedern</li>
         <li>Erstellung von Schulungsmaterial</li>
         <li>Organisation regelmäßiger Treffen/Veranstaltungen</li>
       </ul>
     </li>
-    <li>
     </ul>
     </CvItem>
   </div>
