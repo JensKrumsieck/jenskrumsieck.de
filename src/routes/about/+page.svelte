@@ -228,7 +228,7 @@
     >
     <ul class="list-disc">
     <li>Wahlkampfmanager für die Europawahl 2024 und Bundestagswahl 2025
-      <ul class="list-disc ml-4">        
+      <ul class="list-disc ml-6">        
         <li>Material- und Kostenplanung</li>
         <li>Planen und Durchführen von Wahlkampfaktionen (Plakatieren, Stände, Haustürwahlkampf)</li>
         <li>Aktivierung von (Neu-)Mitgliedern</li>
@@ -237,7 +237,7 @@
       </ul>    
     </li>
     <li>Mitgliederbeauftragter
-      <ul class="list-disc ml-4">  
+      <ul class="list-disc ml-6">  
         <li>Onboarding von Neumitgliedern</li>
         <li>Erstellung von Schulungsmaterial</li>
         <li>Organisation regelmäßiger Treffen/Veranstaltungen</li>
