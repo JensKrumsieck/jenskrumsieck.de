@@ -224,7 +224,7 @@
       institution="BÜNDNIS 90/DIE GRÜNEN Braunschweig"
       times="seit März 2024"
       image="gruene.svg"
-      tags={["Moderation", "Projektmanagement"]}
+      tags={["Moderation", "Projektmanagement", "Wahlanalyse", "Wahlkampfplanung"]}
     >
     <ul class="list-disc">
     <li>Wahlkampfmanager für die Europawahl 2024 und Bundestagswahl 2025
