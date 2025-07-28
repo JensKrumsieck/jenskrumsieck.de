@@ -17,19 +17,20 @@
       <div class="bg-white px-12 py-12 text-lg">
         <p class="font-bold text-xl">Hi, ich bin Jens!</p>
         <p class="my-3">
-          Als Doktorand in <strong>Anorganischer Chemie</strong> an der
-          Technischen Universität Braunschweig erforschte ich in der Arbeitsgruppe
-          von <strong>Prof. Dr. Martin Bröring</strong> die faszinierende Welt der
-          Porphyrinoide. Diese Strukturen, inspiriert von der Natur, stehen hinter
-          lebenswichtigen Molekülen wie Häm, dem roten Blutfarbstoff, und Chlorophyll,
-          dem grünen Pflanzenfarbstoff.
+          Ich bin promovierter Chemiker mit einer Leidenschaft für <strong>Softwareentwicklung</strong> und <strong>nachhaltiger Mobilität</strong>. 
+          Während meiner Promotion in Anorganischer Chemie an der Technischen Universität Braunschweig habe ich in der Arbeitsgruppe von 
+          Prof. Dr. Martin Bröring die Struktur-Eigenschafts-Beziehungen von Porphyrinoiden untersucht – Molekülen, die als Vorbilder für Häm und Chlorophyll fungieren.
+          Während der Forschung habe ich gezielte Sofzwarelösungen für wissenschaftliche Fragestellungen entwickelt - so entstand <strong>PorphyStruct</strong>, ein Open-Source-Tool
+          zur quantitativen Analyse nicht-planarer Verzerrungen in Porphyrinoiden.
         </p>
         <p class="my-3">
-          Neben der Wissenschaft gehört die <strong>Softwareentwicklung</strong>
-          zu meinen Interessen. Meine Reise begann mit einer frühen Faszination für
-          die Softwareentwicklung, die in der Schule mit dem programmierbaren Taschenrechner
-          geweckt wurde. In meiner Zeit als Doktorand kombinierte ich meine Forschung
-          mit der Entwicklung von Software, um wissenschaftliche Erkenntnisse voranzutreiben.
+          Aktuell entwickle ich im NFDI-Konsortium <a href="https://fairagro.net">FAIRagro<a> maßgeblich die <em>Scientific Workflow Infrastructure</em> (kurz: SciWIn). Der SciWIn-Client ist
+          eine Kommandozeilenapplikation zur Erstellung reproduzierbarer Workflows auf Basis des CWL-Standards. Ziel ist es damit, wissenschaftliche Software benutzerfreundlicher, nachvollziehbarer 
+          und langfristig nutzbar zu gestalten.
+        </p>
+        <p class="my-3">
+        Neben der Wissenschaft engagiere ich mich für nachhaltige Mobilität – sowohl privat als überzeugter Radfahrer als auch politisch als Mitglied der Grünen in Braunschweig, wo ich aktuell
+        Mitglied des Vorstands bin.
         </p>
         <div class="my-6">
           <Social />
@@ -43,7 +44,7 @@
   <Title>Praktische Erfahrung</Title>
   <div class="my-6">
     <CvItem
-      title="Research Software Engineer"
+      title="Research Software Engineer / Wissenschaftlicher Mitarbeiter"
       institution="Johann Heinrich von Thünen-Institut, Zentrum für Informationsmanagement"
       times="seit Mai 2024"
       image="thuenen.svg"
@@ -52,21 +53,24 @@
         "Forschungsdatenmanagement",
         "Rust",
         "Python",
-        "CI/CD"
+        "CI/CD",
+        "Common Workflow Language",
+        "Linux"
       ]}
     >
       <div>
         <ul class="list-disc">
           <li>
-            Entwicklung eines Rust-basierten CLI-Tools für die Verwaltung reproduzierbarer Workflows (<a href="https://fairagro.github.io/m4.4_sciwin_client/">SciWIn Client</a>).
+            Planung und Entwicklung einer Software zur automatisierten Erstellung von Datenpipelines/Workflows (<a href="https://fairagro.github.io/m4.4_sciwin_client/">SciWIn Client</a>) als Kommandozeilenapplikation in <strong>Rust</strong>.
           </li>
           <li>
-            Umsetzung von DevOps-Praktiken: Aufbau automatisierter CI/CD-Pipelines (GitHub Actions CI, Docker), Nutzung von Git für Versionskontrolle.
+             Aufbau automatisierter CI/CD-Pipelines (<strong>GitHub Actions</strong>, <strong>Docker</strong>), Nutzung von Git für Versionskontrolle.
           </li>
-          <li>Qualitätssicherung: Einführung automatisierter Tests und Durchführung von Code Reviews.</li>
-          <li>Erstellung von technischen Dokumentationen.</li>    
-          <li>Entwicklung eines Notfallkanal-Systems basierend auf der Webex API in Python.</li>
-          <li>Requirements Engineering und Erstellung von User Stories.</li>
+          <li>Erstellung von Unit- und Integration-Tests und Durchführung von Code Reviews.</li>
+          <li>Projektmanagement in GitHub Projects und erstellung von technischen Dokumentationen.</li>    
+          <li>Anforderungsmanagement und Erstellung von User Stories.</li>
+          <li>Entwicklung eines Notfallkanal-Systems basierend auf der Webex API in <strong>Python</strong>.</li>
+          <li>Administration von virtuellen Maschinen (Linux/Ubuntu) zur Remote-Entwicklung via SSH</li>
           <li>Mitarbeit im NFDI-Konsortium <a href="https://fairagro.net">FAIRagro</a>.</li>
         </ul>
       </div>
@@ -77,26 +81,27 @@
       times="Juni 2018 - März 2024"
       image="tubs.svg"
       tags={[
-        "Anorganische Synthese",
-        "Spektroskopie",
         "Softwareentwicklung",
-        "C#/.NET",
+        "C#", ".NET"
         "Data Science",
         "Python",
-        "Quantenchemische Rechnungen"
+        "CI/CD",
+        "Quantenchemische Rechnungen",
+        "Anorganische Synthese",
+        "Spektroskopie",
       ]}
     >
       <div>
         <ul class="list-disc">          
-          <li>Entwicklung einer Software (<a href="https://porphystruct.org">PorphyStruct</a>) zur Analyse komplexer 3D-Strukturdaten für Windows-Desktop und Web (C#, .NET, WPF, Blazor).</li>
+          <li>Entwicklung einer Software (<a href="https://porphystruct.org">PorphyStruct</a>) zur Analyse komplexer 3D-Molekülstrukturdaten für Windows-Desktop und Web (<strong>C#</strong>, <strong>.NET</strong>, <strong>WPF</strong>, <strong>Blazor</strong>).</li>
           <li>Implementierung von Algorithmen zur strukturellen Analyse (inkl. "hardwarenaher" Optimierung mittels Spans)</li>
-          <li>Entwicklung von Integrationtest und kontinuierlicher Integration (GitHub Actions CI).</li>
-          <li>Anfertigung und Auswertung quantenchemischer Berechnungen auf einem SLURM System.</li>
+          <li>Entwicklung von Integration-Tests und Continuous Integration (GitHub Actions).</li>
           <li>Erstellen eines Tools zur Analyse von Verunreinigungen in Elementaranalysen (<a href="https://chn.jenskrumsieck.de/">CHN-Tool</a>) in C#/Blazor.
+          <li>Anfertigung und Auswertung quantenchemischer Berechnungen auf einem SLURM System.</li>
+          <li>Analyse erhobener Forschungsdaten (z.B. spektroskopische Daten) mit Data Science Methoden in <strong>Python</strong>.</li>
           <li>
             Synthese und Charakterisierung anorganischer Molekülverbindungen unter Verwendung der etablierten Methoden.
           </li>          
-          <li>Analyse erhobener Forschungsdaten (z.B. spektroskopische Daten und PorphyStruct-Analysen) mit Python.</li>
           <li>
             Publikation der Ergebnisse in einschlägigen wissenschaftlichen Fachzeitschriften sowie Präsentation auf Fachtagungen in Form von Posterbeiträgen oder Vorträgen.
           </li>
@@ -255,7 +260,7 @@
         IT-Fähigkeiten
       </h2>
       <ul class="mt-2">
-        <li><strong>Programmierung</strong>: C#, Rust, Python, TypeScript/JavaScript (private Projekte).</li>
+        <li><strong>Programmierung</strong>: C#, Rust, Python, (etwas TypeScript/JavaScript für private Projekte).</li>
         <li><strong>Markup/Datenformate</strong>: HTML, CSS, XML/XAML, YAML, JSON, SQL, ...</li>
         <li><strong>DevOps</strong>: Git, GitHub Actions CI, Docker</li>
         <li><strong>Betriebssysteme</strong>: Windows, Linux (Ubuntu)</li>
