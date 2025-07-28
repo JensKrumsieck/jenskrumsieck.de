@@ -18,13 +18,15 @@
         <p class="font-bold text-xl">Hi, ich bin Jens!</p>
         <p class="my-3">
           Ich bin promovierter Chemiker mit einer Leidenschaft für <strong>Softwareentwicklung</strong> und <strong>nachhaltiger Mobilität</strong>. 
+        </p>
+        <p class="my-3">
           Während meiner Promotion in Anorganischer Chemie an der Technischen Universität Braunschweig habe ich in der Arbeitsgruppe von 
           Prof. Dr. Martin Bröring die Struktur-Eigenschafts-Beziehungen von Porphyrinoiden untersucht – Molekülen, die als Vorbilder für Häm und Chlorophyll fungieren.
-          Während der Forschung habe ich gezielte Sofzwarelösungen für wissenschaftliche Fragestellungen entwickelt - so entstand <strong>PorphyStruct</strong>, ein Open-Source-Tool
+          Während der Forschung habe ich gezielte Softwarelösungen für wissenschaftliche Fragestellungen entwickelt - so entstand <strong>PorphyStruct</strong>, ein Open-Source-Tool
           zur quantitativen Analyse nicht-planarer Verzerrungen in Porphyrinoiden.
         </p>
         <p class="my-3">
-          Aktuell entwickle ich im NFDI-Konsortium <a href="https://fairagro.net">FAIRagro<a> maßgeblich die <em>Scientific Workflow Infrastructure</em> (kurz: SciWIn). Der SciWIn-Client ist
+          Aktuell entwickle ich im NFDI-Konsortium <a href="https://fairagro.net">FAIRagro</a> maßgeblich die <em>Scientific Workflow Infrastructure</em> (kurz: SciWIn). Der SciWIn-Client ist
           eine Kommandozeilenapplikation zur Erstellung reproduzierbarer Workflows auf Basis des CWL-Standards. Ziel ist es damit, wissenschaftliche Software benutzerfreundlicher, nachvollziehbarer 
           und langfristig nutzbar zu gestalten.
         </p>
