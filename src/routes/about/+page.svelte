@@ -82,7 +82,7 @@
       image="tubs.svg"
       tags={[
         "Softwareentwicklung",
-        "C#", ".NET"
+        "C#", ".NET",
         "Data Science",
         "Python",
         "CI/CD",
