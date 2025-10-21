@@ -1,6 +1,5 @@
 <script>
   import dayjs from "dayjs";
-  import { now } from "svelte/internal";
 
   import Social from "../blocks/Social.svelte";
   import Hr from "../deco/HR.svelte";
