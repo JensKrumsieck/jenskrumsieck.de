@@ -12,11 +12,11 @@
 
 <style>
   .text-shadow-copy {
-    text-shadow: 0.5rem 0.5rem 0px theme("colors.green");
+    text-shadow: 0.5rem 0.5rem 0px var(--green);
   }
   @screen md {
     .text-shadow-copy {
-      text-shadow: 1rem 1rem 0px theme("colors.green");
+      text-shadow: 1rem 1rem 0px var(--green);
     }
   }
 </style>

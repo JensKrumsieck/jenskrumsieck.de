@@ -1,5 +1,5 @@
 <script>
-  import * as ph from "@prismicio/helpers";
+  import * as prismic from "@prismicio/client";
   import Image from "$lib/components/layout/Image.svelte";
   export let image;
   let clazz = ""
@@ -8,8 +8,8 @@
 </script>
 
 <Image
-  src={ph.asImageSrc(image)}
-  thumbSrc={ph.asImageSrc(image) + "&w=" + width}
+  src={prismic.asImageSrc(image)}
+  thumbSrc={prismic.asImageSrc(image) + "&w=" + width}
   alt={image.alt ? image.alt : "Ein Bild"}
   class={clazz}
 />

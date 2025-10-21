@@ -4,14 +4,14 @@ import dayjs from "dayjs";
 
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
-export async function GET({ fetch, params }) {
+export async function GET({ }) {
     const headers = {
         'Cache-Control': 'max-age=0, s-maxage=3600',
         'Content-Type': 'application/xml',
     }
     const pages = ['blog', 'publications', 'about', 'contact']
     const statics = ['impressum', 'privacy']
-    const client = createClient(fetch)
+    const client = createClient()
     const posts = await client.getAllByType('article', { orderings: { field: 'my.article.publish_date', direction: 'desc' } })
     const researchItems = await client.getAllByType('research_item', { orderings: { field: 'my.research_item.presentations.start_date', direction: 'desc' } })
     return new Response(`<?xml version="1.0" encoding="UTF-8" ?>
@@ -22,34 +22,34 @@ export async function GET({ fetch, params }) {
                 <priority>1.0</priority>
             </url>
             ${pages.map(page =>
-            `<url>
+        `<url>
                 <loc>${website.siteUrl}/${page}</loc>
                 <changefreq>daily</changefreq>
                 <priority>0.7</priority>
             </url>`
-        ).join("")}
+    ).join("")}
         ${statics.map(page =>
-            `<url>
+        `<url>
                 <loc>${website.siteUrl}/${page}</loc>
                 <changefreq>daily</changefreq>
                 <priority>0.4</priority>
             </url>`
-        ).join("")}
+    ).join("")}
             ${posts.map(post =>
-            `<url>
+        `<url>
                     <loc>${website.siteUrl}/blog/${post.uid}</loc>
                     <changefreq>daily</changefreq>
                     <priority>0.7</priority>
                     <lastmod>${dayjs(post.last_publication_date).format("YYYY-MM-DD")}</lastmod>
                 </url>`
-        ).join("")}
+    ).join("")}
         ${researchItems.map(researchItem =>
-            `<url>
+        `<url>
                     <loc>${website.siteUrl}/publications/${researchItem.uid}</loc>
                     <changefreq>daily</changefreq>
                     <priority>0.7</priority>
                     <lastmod>${dayjs(researchItem.last_publication_date).format("YYYY-MM-DD")}</lastmod>
                 </url>`
-        ).join("")}
+    ).join("")}
         </urlset > `, { headers: headers })
 }

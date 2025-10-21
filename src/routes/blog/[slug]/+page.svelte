@@ -13,7 +13,7 @@
   import Date from "$lib/components/blocks/Date.svelte";
   import ShareButtons from "$lib/components/blocks/ShareButtons.svelte";
 
-  import * as ph from "@prismicio/helpers";
+  import * as prismic from "@prismicio/client";
   import { SliceZone } from "@prismicio/svelte";
   import Embed from "$lib/components/prismic/slices/Embed.svelte";
   export let data;
@@ -27,7 +27,7 @@
     embed: Embed,
     code: Code
   };
-  const hero_image = ph.asImageSrc(post.data.hero_image);
+  const hero_image = prismic.asImageSrc(post.data.hero_image);
 </script>
 
 <div
@@ -39,11 +39,11 @@
 />
 <section class="hero px-2 lg:px-0">
   <Container class="py-20" padding>
-    <LargeTitle white>{ph.asText(post.data.title)}</LargeTitle>
+    <LargeTitle white>{prismic.asText(post.data.title)}</LargeTitle>
     <p class="text-white uppercase my-10">
-      von {ph.asText(post.data.author.data.name)}
+      von {prismic.asText(post.data.author.data.name)}
       -
-      <Date date={ph.asDate(post.data.publish_date)} />
+      <Date date={prismic.asDate(post.data.publish_date)} />
     </p>
   </Container>
 </section>
@@ -63,26 +63,26 @@
         </div>
       {/if}
     </div>
-    <Title>{ph.asText(post.data.title)}</Title>
+    <Title>{prismic.asText(post.data.title)}</Title>
     <SliceZone slices={post.data.body} {components} />
     {#each post.tags as tag}
       <span class="inline-flex items-center justify-center px-2 py-1 mr-1 text-xs font-bold leading-none text-white bg-dark-green rounded-full">{tag}</span>
     {/each}
-    <ShareButtons title={ph.asText(post.data.title)} image={hero_image} />  
+    <ShareButtons title={prismic.asText(post.data.title)} image={hero_image} />  
 </Container>
 </section>
 
 <section>
   <Container class="my-8 p-6 flex md:flex-row flex-col md:space-x-12">
     <div>
-      <Subtitle>Über {ph.asText(post.data.author.data.name)}</Subtitle>
-      {@html ph.asHTML(post.data.author.data.about)}
+      <Subtitle>Über {prismic.asText(post.data.author.data.name)}</Subtitle>
+      {@html prismic.asHTML(post.data.author.data.about)}
     </div>
     <div class="max-w-[12rem] mx-auto">
       <img
         loading="lazy"
         class="rounded-full"
-        src={ph.asImageSrc(post.data.author.data.avatar)}
+        src={prismic.asImageSrc(post.data.author.data.avatar)}
         alt={post.data.author.data.avatar
           ? post.data.author.data.avatar
           : "Avatar"}

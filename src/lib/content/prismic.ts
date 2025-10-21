@@ -1,21 +1,25 @@
-import * as prismic from '@prismicio/client'
+import * as prismic from "@prismicio/client";
+import {
+    createClient as baseCreateClient,
+    type Route,
+} from "@prismicio/client";
+import {
+    enableAutoPreviews,
+    type CreateClientConfig,
+} from "@prismicio/svelte/kit";
 
 const repositoryName = "jenskrumsieck"
 
-const routes = [
-    {
-        type: 'article',
-        path: '/blog/:uid',
-    },
+const routes: Route[] = [
+    { type: 'article', path: '/blog/:uid' },
 ]
 
-const createClient = (fetch: prismic.FetchLike) => {
-    const clientOptions = {
-        fetch,
-        routes
-    }
-    const client = prismic.createClient(repositoryName, clientOptions)
-    return client
-}
+export default function createClient({ cookies, ...config }: CreateClientConfig = {}) {
+    const client = prismic.createClient(repositoryName, {
+        routes,
+        ...config,
+    });
+    enableAutoPreviews({ client, cookies });
 
-export default createClient
+    return client;
+}

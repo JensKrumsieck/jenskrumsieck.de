@@ -1,6 +1,28 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@theme {
+  /* Colors */
+  --color-green: #9CD919;
+  --color-dark-green: #52A62D;
+  --color-light-green: #B7D969;
+  --color-lighter-green: #ECF5D6;
+  --color-dark: #333333;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-gray: #F1F1F1;
+  --color-red: #DA0037;
+
+  /* Font families */
+  --font-sans: 'Source Sans Pro', 'sans-serif';
+
+  /* Letter spacing */
+  --tracking-tightest: -0.065em;
+}
 
 html {
     scroll-behavior: smooth;

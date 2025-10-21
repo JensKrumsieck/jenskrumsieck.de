@@ -59,7 +59,7 @@
     <Projects
       title="PorphyStruct"
       icon="/ps_logo.svg"
-      image="https://porphystruct.org/_app/assets/screenshot_hero-b21ef103.webp"
+      image="https://porphystruct.org/_astro/screenshot_hero.odwWJrsE_2f64sO.webp"
     >
       <p>
         PorphyStruct ist ein innovatives digitales Werkzeug, das

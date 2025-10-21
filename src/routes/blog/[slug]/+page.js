@@ -1,8 +1,7 @@
 
 import { base } from "$app/paths";
 import { getDesc } from "$lib/util/text-helpers";
-import website from "$lib/util/website";
-import * as ph from '@prismicio/helpers'
+import * as prismic from '@prismicio/client'
 
 /** @type {import('./$types').PageLoad} */
 export async function load({ params, fetch, data }) {
@@ -10,13 +9,13 @@ export async function load({ params, fetch, data }) {
   const post = await res.json();
   return {
     post: post.post,
-    title: ph.asText(post.post.data.title),
+    title: prismic.asText(post.post.data.title),
     description: getDesc(
-      ph.asText(post.post.data.body[0].primary.content),
+      prismic.asText(post.post.data.body[0].primary.content),
       250
     ),
     keywords: post.post.tags.join(", "),
-    image: ph.asImageSrc(post.post.data.hero_image),
+    image: prismic.asImageSrc(post.post.data.hero_image),
 
   };
 }

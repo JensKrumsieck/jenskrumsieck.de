@@ -17,7 +17,7 @@
 
 <li class="nav-link" class:active>
   {#if prefetch}
-    <a {href} sveltekit:prefetch class={linkCSS}>
+    <a {href} class={linkCSS}>
       <slot />
       {#if !button}<div class="w-5 h-1 underliner lg:self-end" />{/if}
     </a>
@@ -38,7 +38,7 @@
   }
   a:hover {
     .underliner {
-      background: theme("colors.green");
+      background: var(--green);
     }
   }
 </style>

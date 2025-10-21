@@ -1,5 +1,5 @@
 <script>
-  import Fa from "svelte-fa/src/fa.svelte";
+  import Fa from "svelte-fa";
   export let href;
   export let title;
   export let platform;
