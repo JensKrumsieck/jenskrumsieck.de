@@ -2,9 +2,8 @@
 	"name": "jenskrumsieck.de",
 	"version": "1.0.0",
 	"engines": {
-		"node": ">= 22.11"
+		"node": "^20.19 || ^22.12 || >=24"
 	},
-	"packageManager": "npm@10.9.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
