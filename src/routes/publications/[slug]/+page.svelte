@@ -5,10 +5,9 @@
   import Button from "$lib/components/button/Button.svelte";
   import Badge from "$lib/components/typography/Badge.svelte";
   import * as ph from "@prismicio/helpers";
-  import Fa from "svelte-fa/src/fa.svelte";
+  import Fa from "svelte-fa";
   import dayjs from "dayjs";
   import { faDownload } from "@fortawesome/free-solid-svg-icons";
-  import Hex from "$lib/components/deco/Hex.svelte";
   import { SliceZone } from "@prismicio/svelte";
   import RichText from "$lib/components/prismic/slices/RichText.svelte";
   import Gallery from "$lib/components/prismic/slices/Gallery.svelte";
@@ -64,20 +63,12 @@
       </div>
       <span class="text-xs italic mt-2">
         This File is licensed under
-        <a
-          href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode"
-          class="underline hover:text-green hover:font-bold"
-        >
-          Creative Commons CC BY-NC-ND!
-        </a>
+        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode" class="underline hover:text-green hover:font-bold"> Creative Commons CC BY-NC-ND! </a>
       </span>
       <span class="text-xs italic">
         Violation <strong>WILL</strong> be punished!
       </span>
     </div>
   </div>
-  <ShareButtons
-    title={ph.asText(researchItem.data.title)}
-    image={ph.asImageSrc(researchItem.data.hero_image)}
-  />
+  <ShareButtons title={ph.asText(researchItem.data.title)} image={ph.asImageSrc(researchItem.data.hero_image)} />
 </Container>
