@@ -1,5 +1,5 @@
 <script>
-  import * as ph from "@prismicio/helpers";
+  import * as prismic from "@prismicio/client";
   export let slice;
   let item = slice.primary.content;
   const linkResolver = (doc) => {
@@ -22,6 +22,6 @@
 }
 </script>
 <section class="prose max-w-none prose-lg prose-a:text-dark-green hover:prose-a:text-dark">
-    <a href="{ph.asLink(item, linkResolver)}">{makeTitle(item.slug)}</a>
+    <a href="{prismic.asLink(item, linkResolver)}">{makeTitle(item.slug)}</a>
 </section>
 

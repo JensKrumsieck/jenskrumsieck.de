@@ -1,5 +1,5 @@
 <script>
-  import * as ph from "@prismicio/helpers";
+  import * as prismic from "@prismicio/client";
   import Image from "$lib/components/layout/Image.svelte";
   export let slice;
   let width = 550;
@@ -9,8 +9,8 @@
 
 <section class="my-10 flex justify-center relative">
   <Image
-    src={ph.asImageSrc(slice.primary.content)}
-    thumbSrc={ph.asImageSrc(slice.primary.content) + "&w=" + width}
+    src={prismic.asImageSrc(slice.primary.content)}
+    thumbSrc={prismic.asImageSrc(slice.primary.content) + "&w=" + width}
     {width}
     alt={slice.primary.content.alt ? slice.primary.content.alt : "Ein Bild"}
     {height}
