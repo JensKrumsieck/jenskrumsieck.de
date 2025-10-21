@@ -1,6 +1,10 @@
 {
 	"name": "jenskrumsieck.de",
 	"version": "1.0.0",
+	"engines": {
+		"node": ">= 22.16"
+	},
+	"packageManager": "npm@10.9.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
