@@ -1,13 +1,12 @@
 import tailwindcss from '@tailwindcss/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
+import { defineConfig } from 'vite';
 
 /** @type {import('vite').UserConfig} */
-const config = {
+export default defineConfig({
     plugins: [
         tailwindcss(),
-        sveltekit({
-            experimental: { prebundleSvelteLibraries: true }
-        })
+        sveltekit()
     ],
     ssr: {
         noExternal: [
@@ -15,6 +14,4 @@ const config = {
             '@fortawesome/free-solid-svg-icons'
         ]
     }
-};
-
-export default config;
+});
