@@ -46,7 +46,7 @@
 <Container padding fullHeight class="md:justify-center flex flex-col relative">
   <div class="flex flex-col z-10">
     <LargeTitle>Projekte</LargeTitle>
-    <Projects title="PorphyStruct" icon="/ps_logo.svg" image="https://porphystruct.org/_astro/screenshot_hero.odwWJrsE_2f64sO.webp">
+    <Projects title="PorphyStruct" icon="ps_logo.svg" image="https://porphystruct.org/_astro/screenshot_hero.odwWJrsE_2f64sO.webp">
       <p>
         PorphyStruct ist ein innovatives digitales Werkzeug, das Wissenschaftlern die Möglichkeit gibt, die nicht-planaren Auslenkungen verschiedener Porphyrinoide zu analysieren. Durch die Verwendung der <em
           >normal-coordinate structure decomposition</em
