@@ -90,7 +90,7 @@
           <Button href="https://chn.jenskrumsieck.de" external>chn.jenskrumsieck.de</Button>
         </div>
       </Projects>
-      <Projects title="Wahlanalyse" icon="logo.svg">
+      <Projects title="Wahlanalyse für Braunschweig" icon="logo.svg">
         <p>
           Wahlauswertung für Braunschweig, das war das Ziel dieses Projekts. Mit dem Wahlanalyse-Portal können nicht nur alte Wahlergebnisse der Stadt Braunschweig grafisch aufbereitet eingesehen werden, es wird auch eine Prognose für die kommende
           Wahl auf Basis des aktuellen Bundestrends berechnet.
