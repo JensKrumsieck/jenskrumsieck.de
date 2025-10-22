@@ -62,7 +62,7 @@
         <Button href="https://porphystruct.org" external>porphystruct.org</Button>
       </div>
     </Projects>
-    <Projects title="SciWIn-Client" icon="/ps_logo.svg">
+    <Projects title="SciWIn-Client" icon="fairagro.png">
       <p>
         SciWIn-Client unterstützr Forschende, komplexe und mehrstufige Verfahren für die automatisierte Verarbeitung von Daten zu beschreiben. Dabei wird der Standard "Common Workflow Language" (CWL) verwendet, um die Workflows plattformunabhängig
         und reproduzierbar zu gestalten. Der SciWIn-Client bietet eine benutzerfreundliches Commandline Interfae zur Erstellung, Verwaltung und Ausführung von CWL-Workflows, wodurch die Effizienz und Genauigkeit in der wissenschaftlichen
@@ -71,6 +71,9 @@
       <div class="flex md:flex-row flex-col flex-wrap md:space-x-5 my-8">
         <IconLink icon={faGithub} href="https://github.com/FAIRagro/m4.4_sciwin_client">GitHub Repository</IconLink>
         <IconLink icon={faDownload} href="https://fairagro.github.io/m4.4_sciwin_client/getting-started/installation/">Download</IconLink>
+      </div>
+      <div class="flex">
+        <Button href="https://fairagro.github.io/m4.4_sciwin_client" external>Dokumentation</Button>
       </div>
     </Projects>
     <div class="md:grid md:grid-cols-2 md:gap-4 mt-8">
