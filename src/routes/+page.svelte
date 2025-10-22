@@ -90,6 +90,19 @@
           <Button href="https://chn.jenskrumsieck.de" external>chn.jenskrumsieck.de</Button>
         </div>
       </Projects>
+      <Projects title="Wahlanalyse" icon="logo.svg">
+        <p>
+          Wahlauswertung für Braunschweig, das war das Ziel dieses Projekts. Mit dem Wahlanalyse-Portal können nicht nur alte Wahlergebnisse der Stadt Braunschweig grafisch aufbereitet eingesehen werden, es wird auch eine Prognose für die kommende
+          Wahl auf Basis des aktuellen Bundestrends berechnet.
+        </p>
+        <div class="flex flex-wrap md:space-x-5 my-8">
+          <IconLink icon={faGithub} href="https://github.com/JensKrumsieck/wahlen_bs">GitHub Repository</IconLink>
+        </div>
+
+        <div class="flex">
+          <Button href="https://wahl.jenskrumsieck.de" external>wahl.jenskrumsieck.de</Button>
+        </div>
+      </Projects>
       <Projects title="ChemSharp" icon="chemsharp_logo.svg">
         <p>
           ChemSharp ist eine .NET-Softwarebibliothek, die vor allem auf das prozessieren chemischer Dateiformate ausgelegt ist. Sowohl Strukturdaten als auch spektroskopische Dateien können geladen werden. Das Projekt wurde gestartet um meinen
