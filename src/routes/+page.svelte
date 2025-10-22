@@ -64,7 +64,7 @@
     </Projects>
     <Projects title="SciWIn-Client" icon="fairagro.png">
       <p>
-        SciWIn-Client unterstützr Forschende, komplexe und mehrstufige Verfahren für die automatisierte Verarbeitung von Daten zu beschreiben. Dabei wird der Standard "Common Workflow Language" (CWL) verwendet, um die Workflows plattformunabhängig
+        SciWIn-Client unterstützt Forschende, komplexe und mehrstufige Verfahren für die automatisierte Verarbeitung von Daten zu beschreiben. Dabei wird der Standard "Common Workflow Language" (CWL) verwendet, um die Workflows plattformunabhängig
         und reproduzierbar zu gestalten. Der SciWIn-Client bietet eine benutzerfreundliches Commandline Interfae zur Erstellung, Verwaltung und Ausführung von CWL-Workflows, wodurch die Effizienz und Genauigkeit in der wissenschaftlichen
         Datenverarbeitung erheblich verbessert wird.
       </p>
