@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Button from "$lib/components/button/Button.svelte";
   import Container from "$lib/components/layout/Container.svelte";
   import Rect from "$lib/components/deco/Rect.svelte";
@@ -11,12 +11,15 @@
   import IconLink from "$lib/components/button/IconLink.svelte";
   import { faGithub } from "@fortawesome/free-brands-svg-icons";
   import { faDownload, faEarthEurope } from "@fortawesome/free-solid-svg-icons";
+
+  import hero from "$lib/assets/hero.webp";
+
   export let data;
   let { posts } = data;
 </script>
 
 <Rect class="flex flex-col">
-  <img src="/hero.webp" alt="Jens in seinem Labor" class="mix-blend-multiply max-h-full w-auto align-bottom mt-auto" />
+  <img src={hero} alt="Jens in seinem Labor" class="mix-blend-multiply max-h-full w-auto align-bottom mt-auto" />
 </Rect>
 <Container class="flex" padding fullHeight nav>
   <div class="flex flex-col md:max-w-[70%] justify-center">
