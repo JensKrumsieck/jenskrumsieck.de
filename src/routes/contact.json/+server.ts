@@ -10,7 +10,7 @@ export async function POST({ request }) {
     if (name == "") return json({ error: "name" }, {
         status: 500
     })
-    if (email == "" || !emailReg.test(email)) return json({ error: "email" }, {
+    if (!email || email == "" || !emailReg.test(email.toString())) return json({ error: "email" }, {
         status: 500
     })
     if (message == "") return json({ error: "message" }, {
