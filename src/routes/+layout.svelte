@@ -24,11 +24,11 @@
   <meta name="description" content={page.data.description ?? website.description} />
   <meta name="keywords" content={page.data.keywords ?? website.keywords} />
   <meta name="author" content={website.author} />
-  <meta name="canonical" content={website.siteUrl + "/" + page.url.pathname} />
+  <link rel="canonical" href={website.siteUrl + page.url.pathname} />
   <meta name="twitter:image" content={page.data.image ?? website.image} />
   <meta property="og:site_name" content={website.siteTitle} />
   <meta property="og:locale" content="de_DE" />
-  <meta property="og:url" content={website.siteUrl + "/" + page.url.pathname} />
+  <meta property="og:url" content={website.siteUrl + page.url.pathname} />
   <meta property="og:title" content={page.data.title ? page.data.title + " - " + website.siteTitle : website.siteTitle} />
   <meta property="og:description" content={page.data.description ?? website.description} />
   <meta property="og:image" content={page.data.image ?? website.image} />
@@ -37,7 +37,7 @@
 
 <Modals>
   {#snippet backdrop({ close })}
-    <div class="fixed top-0 left-0 right-0 bottom-0 z-[90] bg-dark opacity-70 cursor-pointer" onclick={() => close()} ></div>
+    <div class="fixed top-0 left-0 right-0 bottom-0 z-[90] bg-dark opacity-70 cursor-pointer" onclick={() => close()}></div>
   {/snippet}
 </Modals>
 

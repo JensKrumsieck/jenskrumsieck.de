@@ -1,7 +1,7 @@
-import { base } from '$app/paths';
+export const ssr = true;
 
 /** @type {import('./$types').PageLoad} */
-export async function load({ params, fetch, data }) {
+export async function load({ }) {
   return {
     title: "Über Mich",
   };

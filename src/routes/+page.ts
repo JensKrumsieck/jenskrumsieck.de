@@ -1,5 +1,5 @@
 import createClient from "$lib/content/prismic";
-
+export const ssr = true;
 
 /** @type {import('./$types').PageLoad} */
 export async function load({ }) {
