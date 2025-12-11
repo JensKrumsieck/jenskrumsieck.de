@@ -72,11 +72,11 @@
         Datenverarbeitung erheblich verbessert wird.
       </p>
       <div class="flex md:flex-row flex-col flex-wrap md:space-x-5 my-8">
-        <IconLink icon={faGithub} href="https://github.com/FAIRagro/m4.4_sciwin_client">GitHub Repository</IconLink>
-        <IconLink icon={faDownload} href="https://fairagro.github.io/m4.4_sciwin_client/getting-started/installation/">Download</IconLink>
+        <IconLink icon={faGithub} href="https://github.com/FAIRagro/sciwin">GitHub Repository</IconLink>
+        <IconLink icon={faDownload} href="https://fairagro.github.io/sciwin/getting-started/installation/">Download</IconLink>
       </div>
       <div class="flex">
-        <Button href="https://fairagro.github.io/m4.4_sciwin_client" external>Dokumentation</Button>
+        <Button href="https://fairagro.github.io/sciwin" external>Dokumentation</Button>
       </div>
     </Projects>
     <div class="md:grid md:grid-cols-2 md:gap-4 mt-8">
