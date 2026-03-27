@@ -1,20 +1,13 @@
 <script lang="ts">
-  import "@fontsource/source-sans-pro/200.css";
-  import "@fontsource/source-sans-pro/200-italic.css";
-  import "@fontsource/source-sans-pro/400.css";
-  import "@fontsource/source-sans-pro/400-italic.css";
-  import "@fontsource/source-sans-pro/600.css";
-  import "@fontsource/source-sans-pro/600-italic.css";
-  import "@fontsource/source-sans-pro/700.css";
-  import "@fontsource/source-sans-pro/700-italic.css";
-  import "@fontsource/source-sans-pro/900.css";
-  import "@fontsource/source-sans-pro/900-italic.css";
+  import "@fontsource/pt-sans/400"
+  import "@fontsource/pt-sans/400-italic"
+  import "@fontsource/pt-sans/700"
+  import "@fontsource/pt-sans/700-italic"
   import "../app.css";
   import Nav from "$lib/components/layout/Nav.svelte";
   import Footer from "$lib/components/layout/Footer.svelte";
   import { page } from "$app/state";
   import website from "$lib/util/website";
-  import { Modals } from "svelte-modals";
 
   let { children } = $props();
 </script>
@@ -34,12 +27,6 @@
   <meta property="og:image" content={page.data.image ?? website.image} />
   <meta property="og:image:alt" content={page.data.title ? page.data.title + " - " + website.siteTitle : website.siteTitle} />
 </svelte:head>
-
-<Modals>
-  {#snippet backdrop({ close })}
-    <div class="fixed top-0 left-0 right-0 bottom-0 z-[90] bg-dark opacity-70 cursor-pointer" onclick={() => close()}></div>
-  {/snippet}
-</Modals>
 
 <header>
   <Nav />

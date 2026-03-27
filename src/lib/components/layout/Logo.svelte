@@ -3,12 +3,12 @@
 </script>
 
 <div class="logo">
-  <a href="/" class="flex block">
+  <a href="/" class="flex">
     {#if dark}<img src="/logo_dark.svg" alt="Logo" />
     {:else}<img src="/logo.svg" alt="Logo" />
     {/if}
     <span
-      class="text-5xl font-black italic mx-3 tracking-tightest sm:flex hidden"
+      class="text-5xl font-gruene mx-3 tracking-tightest sm:flex hidden"
       >Jens Krumsieck</span
     >
   </a>
