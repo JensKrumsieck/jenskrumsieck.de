@@ -15,7 +15,7 @@
   }
 </script>
 
-<nav class="lg:bg-transparent bg-white z-20">
+<nav class="bg-neutral-600 z-20">
   <Container padding class="flex flex-wrap justify-between py-5">
     <Logo />
     <button
@@ -35,10 +35,10 @@
       id="mainMenu"
     >
       <ul class="flex navbar lg:flex-row flex-col">
-        <NavLink href="/">Home</NavLink>
-        <NavLink href="/blog">Blog</NavLink>
-        <NavLink href="/publications">Veröffentlichungen</NavLink>
+        <NavLink href="/">Start</NavLink>
+        <NavLink href="/blog">Beiträge</NavLink>
         <NavLink href="/about">Über Mich</NavLink>
+        <NavLink href="/publications">Veröffentlichungen</NavLink>
         <NavLink button href="/contact"><Button span>Kontakt</Button></NavLink>
       </ul>
     </div>

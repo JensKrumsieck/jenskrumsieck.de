@@ -12,21 +12,19 @@
   import { faGithub } from "@fortawesome/free-brands-svg-icons";
   import { faDownload, faEarthEurope } from "@fortawesome/free-solid-svg-icons";
 
-  import hero from "$lib/assets/hero.webp";
-
   export let data;
   let { posts } = data;
 </script>
+ 
+<img src="/hero.jpg" alt="Ein Foto von Dr. Jens Krumsieck" class="z-[-1] absolute md:left-24 top-0 h-dvh w-screen object-cover md:object-top-left"/>
+<div class="absolute top-0 z-[-1] h-dvh w-screen bg-secondary-600/50 md:bg-transparent md:bg-linear-to-r from-secondary-600 from-25% to-secondary-600/20 to-50%"></div>
 
-<Rect class="flex flex-col">
-  <img src={hero} alt="Jens in seinem Labor" class="mix-blend-multiply max-h-full w-auto align-bottom mt-auto" />
-</Rect>
 <Container class="flex" padding fullHeight nav>
-  <div class="flex flex-col md:max-w-[70%] justify-center">
-    <span class="font-light md:text-xl text-lg">Entdecken, Entwickeln, Gestalten.</span>
-    <h1 class="font-bold md:text-5xl text-3xl tracking-tighter">Dr. Jens Krumsieck.</h1>
-    <span class="font-light md:text-xl text-lg mt-6">An der Schnittstelle von </span>
-    <h1 class="font-black md:text-6xl text-4xl tracking-tighter">Wissenschaft & Softwareinnovation.</h1>
+  <div class="flex flex-col md:max-w-[70%] justify-center text-neutral-600">
+  <img src="/Sonnenblume_RGB_gelb.svg" alt="Sonnenblumen Logo von BÜNDNIS 90/DIE GRÜNEN" class="w-48 mb-12"/>
+    <h1 class="font-gruene text-6xl">Dr. Jens Krumsieck</h1>
+    <p class="text-3xl pt-2  font-bold">Mobilität | Gerechtigkeit | Zukunft</p>
+    <p class="text-2xl pt-4">Kandidat für den Stadtrat in Braunschweig-Südwest</p>
     <div class="my-12 md:space-y-0 space-y-2">
       <Button href="/blog">Beiträge lesen</Button>
       <Button outlined href="/publications">Meine Veröffentlichungen</Button>
