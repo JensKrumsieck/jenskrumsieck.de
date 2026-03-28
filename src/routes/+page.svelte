@@ -1,7 +1,6 @@
 <script lang="ts">
   import Button from "$lib/components/button/Button.svelte";
   import Container from "$lib/components/layout/Container.svelte";
-  import Rect from "$lib/components/deco/Rect.svelte";
   import Social from "$lib/components/blocks/Social.svelte";
   import FirstBlog from "$lib/components/blocks/FirstBlog.svelte";
   import Hr from "$lib/components/deco/HR.svelte";
@@ -47,10 +46,8 @@
 </div>
 
 <Container padding fullHeight class="md:justify-center flex flex-col">
-  <FirstBlog post={posts.results[0]} />
-  <Hr />
   <div class="flex my-12 flex-wrap">
-    {#each posts.results.slice(1) as post}
+    {#each posts.results as post}
       <ListBlog {post} />
     {/each}
   </div>

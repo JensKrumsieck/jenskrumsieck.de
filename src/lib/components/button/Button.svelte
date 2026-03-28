@@ -4,8 +4,8 @@
   export let outlined = false;
   export let span = false;
   let classNames = outlined
-    ? "border-black border-4 py-1 hover:border-dark-green"
-    : "bg-black hover:bg-dark-green text-white py-2 ";
+    ? "border-primary-600 border-4 py-1 hover:border-primary-900"
+    : "bg-primary-600 hover:bg-primary-900 text-white py-2 ";
 </script>
 
 {#if span}
