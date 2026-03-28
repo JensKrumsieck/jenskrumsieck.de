@@ -7,8 +7,6 @@
   import HTML from "$lib/components/prismic/slices/HTML.svelte";
   import Title from "$lib/components/typography/Title.svelte";
   import Code from "$lib/components/prismic/slices/Code.svelte";
-  import LargeTitle from "$lib/components/typography/LargeTitle.svelte";
-  import Subtitle from "$lib/components/typography/Subtitle.svelte";
   import Container from "$lib/components/layout/Container.svelte";
   import Date from "$lib/components/blocks/Date.svelte";
   import ShareButtons from "$lib/components/blocks/ShareButtons.svelte";
@@ -30,11 +28,16 @@
   const hero_image = prismic.asImageSrc(post.data.hero_image);
 </script>
 
-<div class="background absolute min-h-full -z-50 w-full bg-cover bg-center bg-no-repeat" style="background-image: url({hero_image})"></div>
-<div class="tint absolute min-h-full -z-50 w-full bg-green mix-blend-multiply"></div>
+<div
+  class="background absolute min-h-full -z-50 w-full bg-cover bg-center bg-no-repeat"
+  style="background-image: url({hero_image})"
+></div>
+<div
+  class="tint absolute min-h-full -z-50 w-full bg-green mix-blend-multiply"
+></div>
 <section class="hero px-2 lg:px-0">
   <Container class="py-20" padding>
-    <LargeTitle white>{prismic.asText(post.data.title)}</LargeTitle>
+    <Title white>{prismic.asText(post.data.title)}</Title>
     <p class="text-white uppercase my-10">
       von {prismic.asText(post.data.author.data.name)}
       -
@@ -46,32 +49,19 @@
 <section>
   <Container class="p-6 bg-white relative shadow-lg">
     <div class="float-right w-95 ml-8 mb-8 relative">
-      <PrismicImage image={post.data.hero_image} class="float-right w-96 ml-8 mb-8" />
-      {#if post.data.hero_image.copyright != undefined}
-        <div class="absolute right-2 bottom-10">
-          <div class="bg-white rounded p-1 text-xs my-1 opacity-50">
-            &copy; {post.data.hero_image.copyright}
-          </div>
-        </div>
-      {/if}
+      <PrismicImage
+        image={post.data.hero_image}
+        class="float-right w-96 ml-8 mb-8"
+      />
     </div>
     <Title>{prismic.asText(post.data.title)}</Title>
     <SliceZone slices={post.data.body} {components} />
     {#each post.tags as tag}
-      <span class="inline-flex items-center justify-center px-2 py-1 mr-1 text-xs font-bold leading-none text-white bg-dark-green rounded-full">{tag}</span>
+      <span
+        class="inline-flex items-center justify-center px-2 py-1 mr-1 text-xs font-bold leading-none text-white bg-dark-green rounded-full"
+        >{tag}</span
+      >
     {/each}
     <ShareButtons title={prismic.asText(post.data.title)} image={hero_image} />
-  </Container>
-</section>
-
-<section>
-  <Container class="my-8 p-6 flex md:flex-row flex-col md:space-x-12">
-    <div>
-      <Subtitle>Über {prismic.asText(post.data.author.data.name)}</Subtitle>
-      {@html prismic.asHTML(post.data.author.data.about)}
-    </div>
-    <div class="max-w-[12rem] mx-auto">
-      <img loading="lazy" class="rounded-full" src={prismic.asImageSrc(post.data.author.data.avatar)} alt={post.data.author.data.avatar ? post.data.author.data.avatar : "Avatar"} />
-    </div>
   </Container>
 </section>

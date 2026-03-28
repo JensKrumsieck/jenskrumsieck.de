@@ -2,7 +2,6 @@
   import Button from "$lib/components/button/Button.svelte";
   import Container from "$lib/components/layout/Container.svelte";
   import ListBlog from "$lib/components/blocks/ListBlog.svelte";
-  import LargeTitle from "$lib/components/typography/LargeTitle.svelte";
   import Projects from "$lib/components/blocks/Projects.svelte";
   import IconLink from "$lib/components/button/IconLink.svelte";
   import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -42,7 +41,7 @@
   </Container>
 </div>
 
-<Container padding fullHeight class="md:justify-center flex flex-col">
+<Container padding fullHeight class="md:justify-center flex flex-col mt-12">
   <Title tag="h2">Aktuelles</Title>
   <div class="grid md:grid-cols-2 my-12 flex-wrap gap-4">
     {#each posts.results as post}
@@ -54,9 +53,11 @@
   </a>
 </Container>
 
+
+
 <Container padding fullHeight class="md:justify-center flex flex-col relative">
   <div class="flex flex-col z-10">
-    <LargeTitle>Projekte</LargeTitle>
+    <Title>Projekte</Title>
     <Projects
       title="PorphyStruct"
       icon="ps_logo.svg"

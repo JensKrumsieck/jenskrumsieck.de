@@ -9,13 +9,13 @@
     WhatsAppShare,
     XingShare,
   } from "../button/share";
-  import Subtitle from "../typography/Subtitle.svelte";
+  import Title from "../typography/Title.svelte";
   export let title;
   export let image;
 </script>
 
 <div class="my-6 flex items-end flex-col">
-  <Subtitle>Diesen Beitrag Teilen</Subtitle>
+  <Title>Diesen Beitrag Teilen</Title>
   <div class="flex space-x-4">
     <FacebookShare url={$page.url} {title} />
     <TwitterShare url={$page.url} {title} />
