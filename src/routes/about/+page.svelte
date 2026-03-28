@@ -2,15 +2,13 @@
   import Social from "$lib/components/blocks/Social.svelte";
   import Container from "$lib/components/layout/Container.svelte";
   import CvItem from "$lib/components/blocks/CVItem.svelte";
-  import BiggerTitle from "$lib/components/typography/BiggerTitle.svelte";
-  import LargeTitle from "$lib/components/typography/LargeTitle.svelte";
   import Title from "$lib/components/typography/Title.svelte";
 </script>
 
 <div class="w-full bg-cover bg-no-repeat bg-top" style="background-image: url(/lap.jpg);">
   <Container class="flex md:flex-row flex-col" padding nav>
     <div class="flex flex-col md:max-w-[50%] justify-end">
-      <LargeTitle>Über Mich</LargeTitle>
+      <Title>Über Mich</Title>
       <div class="bg-white px-12 py-12 text-lg">
         <p class="font-bold text-xl">Hi, ich bin Jens!</p>
         <p class="my-3">
@@ -34,7 +32,7 @@
   </Container>
 </div>
 <Container padding class="my-12">
-  <BiggerTitle>Lebenslauf</BiggerTitle>
+  <Title>Lebenslauf</Title>
   <Title>Praktische Erfahrung</Title>
   <div class="my-6">
     <CvItem

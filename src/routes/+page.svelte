@@ -43,7 +43,7 @@
 </div>
 
 <Container padding fullHeight class="md:justify-center flex flex-col">
-  <Title>Aktuelles</Title>
+  <Title tag="h2">Aktuelles</Title>
   <div class="grid md:grid-cols-2 my-12 flex-wrap gap-4">
     {#each posts.results as post}
       <ListBlog {post} />
