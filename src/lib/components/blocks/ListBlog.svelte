@@ -2,29 +2,25 @@
   import Date from "../blocks/Date.svelte";
   import * as prismic from "@prismicio/client";
   import { getExcerpt } from "$lib/util/text-helpers";
-  import Subtitle from "../typography/Subtitle.svelte";
   export let post;
 </script>
 
 <a
   href={"/blog/" + post.uid}
-  class="flex w-full md:w-[48%] my-4 hover:text-dark-green"
+  class="flex flex-col w-full hover:text-secondary-600 gap-4 bg-white rounded-lg shadow-md hover-bg-neutral-500"
 >
   <img
     loading="lazy"
-    src={prismic.asImageSrc(post.data.hero_image) + "&w=300"}
+    src={prismic.asImageSrc(post.data.hero_image) + "&w=800"}
     alt={prismic.asText(post.data.title)}
-    class="w-[150px] h-[150px] shrink-0 rounded-lg object-cover"
+    class="h-72 shrink-0 rounded-t-lg object-cover"
   />
-  <div class="pl-4">
-    <div>
-      <Subtitle dense>{prismic.asText(post.data.title)}</Subtitle>
-      <p>
-        {@html getExcerpt(prismic.asHTML(post.data.body[0].primary.content), 250)}
-      </p>
-    </div>
-    <p class="uppercase text-xs mt-2 items-end">
-      {prismic.asText(post.data.author.data.name)} -
+  <div class="px-2 pb-2 flex flex-col gap-2">
+    <h3 class="text-2xl font-gruene">{prismic.asText(post.data.title)}</h3>
+    <p>
+      {@html getExcerpt(prismic.asHTML(post.data.body[0].primary.content), 250)}
+    </p>
+    <p class="uppercase text-xs items-end text-secondary-500">
       <Date date={prismic.asDate(post.data.publish_date)} />
     </p>
   </div>

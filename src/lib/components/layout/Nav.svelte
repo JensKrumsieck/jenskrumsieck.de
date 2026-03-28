@@ -6,7 +6,8 @@
 
   import { page } from "$app/stores";
   import OpenClose from "../button/OpenClose.svelte";
-  import Button from "../button/Button.svelte";
+  import Social from "../blocks/Social.svelte";
+
   let open = false;
 
   $: {
@@ -15,8 +16,14 @@
   }
 </script>
 
+<nav class="bg-secondary-200">
+  <Container class="flex justify-end ">
+    <Social />
+  </Container>
+</nav>
+
 <nav class="bg-neutral-600 z-20">
-  <Container padding class="flex flex-wrap justify-between py-5">
+  <Container padding class="flex flex-wrap justify-between items-center py-5">
     <Logo />
     <button
       data-collapse-toggle="main-menu"
@@ -31,15 +38,13 @@
     </button>
     <div
       class:hidden={!open}
-      class="font-semibold w-full items-center lg:w-auto text-xl lg:flex lg:relative absolute lg:bg-transparent bg-white left-0 lg:top-0 top-20 z-20 lg:py-0 py-4"
+      class="font-semibold w-full items-center lg:w-auto text-xl lg:flex lg:relative absolute lg:bg-transparent bg-neutral-600 left-0 lg:top-0 top-20 z-20 lg:py-0 py-4"
       id="mainMenu"
     >
       <ul class="flex navbar lg:flex-row flex-col">
         <NavLink href="/">Start</NavLink>
         <NavLink href="/blog">Beiträge</NavLink>
         <NavLink href="/about">Über Mich</NavLink>
-        <NavLink href="/publications">Veröffentlichungen</NavLink>
-        <NavLink button href="/contact"><Button span>Kontakt</Button></NavLink>
       </ul>
     </div>
   </Container>

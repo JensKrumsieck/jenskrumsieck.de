@@ -1,15 +1,13 @@
 <script lang="ts">
   import Button from "$lib/components/button/Button.svelte";
   import Container from "$lib/components/layout/Container.svelte";
-  import Social from "$lib/components/blocks/Social.svelte";
-  import FirstBlog from "$lib/components/blocks/FirstBlog.svelte";
-  import Hr from "$lib/components/deco/HR.svelte";
   import ListBlog from "$lib/components/blocks/ListBlog.svelte";
   import LargeTitle from "$lib/components/typography/LargeTitle.svelte";
   import Projects from "$lib/components/blocks/Projects.svelte";
   import IconLink from "$lib/components/button/IconLink.svelte";
   import { faGithub } from "@fortawesome/free-brands-svg-icons";
   import { faDownload, faEarthEurope } from "@fortawesome/free-solid-svg-icons";
+  import Title from "$lib/components/typography/Title.svelte";
 
   export let data;
   let { posts } = data;
@@ -19,13 +17,13 @@
   <img
     src="/hero.jpg"
     alt="Ein Foto von Dr. Jens Krumsieck"
-    class="z-[-1] absolute md:left-24 top-0 h-full w-full object-cover xl:object-top-left"
+    class="z-0 absolute md:left-24 top-0 h-full w-full object-cover xl:object-top-left"
   />
   <div
-    class="absolute top-0 z-[-1] h-full w-full bg-secondary-600/50 md:bg-transparent md:bg-linear-to-r from-secondary-600 from-25% to-secondary-600/20 to-50%"
+    class="absolute top-0 z-0 h-full w-full bg-secondary-600/50 md:bg-transparent md:bg-linear-to-r from-secondary-600 from-25% to-secondary-600/20 to-50%"
   ></div>
-  <Container class="flex" padding fullHeight nav>
-    <div class="flex flex-col md:max-w-[70%] justify-center text-neutral-600">
+  <Container class="flex z-1" padding fullHeight nav>
+    <div class="flex flex-col md:max-w-[70%] justify-center text-neutral-600 z-2">
       <img
         src="/Sonnenblume_RGB_gelb.svg"
         alt="Sonnenblumen Logo von BÜNDNIS 90/DIE GRÜNEN"
@@ -40,22 +38,22 @@
         <Button href="/blog">Beiträge lesen</Button>
         <Button outlined href="/publications">Meine Veröffentlichungen</Button>
       </div>
-      <Social class="mt-12" />
     </div>
   </Container>
 </div>
 
 <Container padding fullHeight class="md:justify-center flex flex-col">
-  <div class="flex my-12 flex-wrap">
+  <Title>Aktuelles</Title>
+  <div class="grid md:grid-cols-2 my-12 flex-wrap gap-4">
     {#each posts.results as post}
       <ListBlog {post} />
     {/each}
   </div>
-  <Hr />
-  <a href="/blog" class="justify-end self-end mt-4 font-bold text-xl">
+  <a href="/blog" class="justify-end self-end mt-4 font-bold text-xl hover:text-secondary-500">
     Weitere Artikel lesen! &rArr;
   </a>
 </Container>
+
 <Container padding fullHeight class="md:justify-center flex flex-col relative">
   <div class="flex flex-col z-10">
     <LargeTitle>Projekte</LargeTitle>

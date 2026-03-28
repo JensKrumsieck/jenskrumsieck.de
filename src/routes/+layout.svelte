@@ -32,7 +32,7 @@
   <Nav />
 </header>
 
-<main>
+<main class="bg-neutral-500">
   {@render children?.()}
 </main>
 
