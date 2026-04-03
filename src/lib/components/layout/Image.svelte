@@ -7,11 +7,26 @@
 
   let clazz = "";
   export { clazz as class };
- 
 </script>
 
-{#if width == 0 || height == 0}
-  <img loading="lazy" src={thumbSrc} {alt} {...$$restProps} class={clazz + " cursor-pointer"} />
-{:else}
-  <img loading="lazy" src={thumbSrc} {width} {height} {alt} {...$$restProps} class={clazz + " cursor-pointer"} />
-{/if}
+<a href={src} target="_blank" rel="noopener noreferrer">
+  {#if width == 0 || height == 0}
+    <img
+      loading="lazy"
+      src={thumbSrc}
+      {alt}
+      {...$$restProps}
+      class={clazz + " cursor-pointer"}
+    />
+  {:else}
+    <img
+      loading="lazy"
+      src={thumbSrc}
+      {width}
+      {height}
+      {alt}
+      {...$$restProps}
+      class={clazz + " cursor-pointer"}
+    />
+  {/if}
+</a>

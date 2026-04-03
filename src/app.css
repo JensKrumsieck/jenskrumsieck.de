@@ -73,6 +73,18 @@
     --font-gruene: "GrueneTypeNeue", sans-serif;
 }
 
+.prose a {
+    color: var(--color-primary-800);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.prose a:hover {
+    background: linear-gradient(to bottom,
+            transparent 60%,
+            var(--color-sun-600) 60%);
+}
+
 html {
     scroll-behavior: smooth;
 }
