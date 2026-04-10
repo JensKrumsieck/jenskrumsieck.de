@@ -2,11 +2,11 @@
 
 <script>
   import Container from "$lib/components/layout/Container.svelte";
-  import BiggerTitle from "$lib/components/typography/BiggerTitle.svelte";
+    import Title from "$lib/components/typography/Title.svelte";
 </script>
 
 <Container padding class="my-12">
-  <BiggerTitle>Datenschutzerklärung</BiggerTitle>
+  <Title>Datenschutzerklärung</Title>
 
   <article
     class="mt-12 prose max-w-none prose-lg prose-a:text-dark-green hover:prose-a:text-dark"
@@ -345,14 +345,13 @@
     </div>
     <div class="ce_text block">
       <div class="text">
-        <p><strong>Vercel Inc.</strong></p>
+        <p><strong>IONOS SE</strong></p>
         <p>
-          Dienstanbieter: Vercel Inc.<br />Internetseite: 340 S Lemon Ave #4133
-          Walnut, CA 91789<br />Datenschutzerklärung:
+          Dienstanbieter: IONOS SE<br />Internetseite: https://www.ionos.de/<br/>Elgendorfer Str. 57 56410 Montabaur<br />Datenschutzerklärung:
           <a
-            href="https://vercel.com/legal/privacy-policy"
+            href="https://www.ionos.de/datenschutzerklaerung"
             target="_blank"
-            class="externalLink">https://vercel.com</a
+            class="externalLink">https://www.ionos.de</a
           >
         </p>
       </div>
@@ -426,8 +425,8 @@
       <div class="text">
         <h2>Kontaktaufnahme</h2>
         <p>
-          Soweit Sie uns über E-Mail, Soziale Medien, Telefon, Fax, Post, unser
-          Kontaktformular oder sonstwie ansprechen und uns hierbei
+          Soweit Sie uns über E-Mail, Soziale Medien, Telefon, Fax, Post, 
+          oder sonstwie ansprechen und uns hierbei
           personenbezogene Daten wie Ihren Namen, Ihre Telefonnummer oder Ihre
           E-Mail-Adresse zur Verfügung stellen oder weitere Angaben zur Ihrer
           Person oder Ihrem Anliegen machen, verarbeiten wir diese Daten zur
@@ -456,15 +455,7 @@
           Anfragen, Art. 6 Abs. 1 lit. b DSGVO, berechtigtes Interesse, Art. 6 Abs.
           1 lit. f DSGVO
         </p>
-        <h3>Angaben zu dem von uns genutzten Drittanbieter:</h3>
-        <p>
-          Das Kontaktformular übermittelt Daten an Google Formular (Google
-          Forms). Die erhaltenen Nachrichten werden nach Bearbeitung umgehend
-          gelöscht. Die Datenschutzerklärung von Google kann hier augerufen
-          werden: <a href="https://policies.google.com/privacy?hl=de"
-            >https://policies.google.com/privacy?hl=de</a
-          >.
-        </p>
+        
       </div>
     </div>
     <div class="ce_text block">
@@ -532,7 +523,7 @@
         <p><strong>Wir nutzen folgende Webanalyse-Dienste:</strong></p>
       </div>
     </div>
-    <div class="ce_text privacy_item googleanalytics block">
+    <!--<div class="ce_text privacy_item googleanalytics block">
       <div class="text">
         <p><strong>Google Analytics</strong></p>
         <p>
@@ -562,7 +553,7 @@
           >
         </p>
       </div>
-    </div>
+    </div>-->
     <div class="ce_text block">
       <div class="text">
         <h2>Unsere Onlinepräsenzen bei sozialen Netzwerken</h2>
@@ -706,21 +697,7 @@
         </p>
       </div>
     </div>
-    <div class="ce_text privacy_item sp_twitter block">
-      <div class="text">
-        <p><strong>Twitter</strong></p>
-        <p>
-          Dienstanbieter: Twitter Inc., 1355 Market Street, Suite 900, San
-          Francisco, CA 94103, USA<br />Internetseite:
-          <a href="https://twitter.com/?lang=de" class="externalLink"
-            >https://twitter.com/?lang=de</a
-          ><br />Datenschutzerklärung:
-          <a href="https://twitter.com/de/privacy" class="externalLink"
-            >https://twitter.com/de/privacy</a
-          >
-        </p>
-      </div>
-    </div>
+    
     <div class="ce_text privacy_item sp_xing block">
       <div class="text">
         <p><strong>XING</strong></p>
