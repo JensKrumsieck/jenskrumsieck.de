@@ -5,10 +5,8 @@
 
 <a
   {href}
-  class="flex hover:text-dark-green"
+  class="flex hover:text-secondary-600 mt-4 text-lg"
   class:font-bold={bold}
-  class:mt-4={bold}
-  class:text-lg={bold}
 >
   <slot />
 </a>
