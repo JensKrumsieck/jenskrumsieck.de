@@ -7,32 +7,21 @@
   import { faGithub } from "@fortawesome/free-brands-svg-icons";
   import { faDownload, faEarthEurope } from "@fortawesome/free-solid-svg-icons";
   import Title from "$lib/components/typography/Title.svelte";
+  import Masonry from "$lib/components/layout/Masonry.svelte";
 
   export let data;
-  let { posts } = data;
+  let { posts = { results: [] }, instagram = { posts: [] } } = data;
 </script>
 
 <div class="relative w-full min-h-dvh overflow-hidden">
-  <img
-    src="/hero.jpg"
-    alt="Ein Foto von Dr. Jens Krumsieck"
-    class="z-0 absolute md:left-24 top-0 h-full w-full object-cover xl:object-top-left"
-  />
-  <div
-    class="absolute top-0 z-0 h-full w-full bg-secondary-600/50 md:bg-transparent md:bg-linear-to-r from-secondary-600 from-25% to-secondary-600/20 to-50%"
-  ></div>
+  <img src="/hero.jpg" alt="Ein Foto von Dr. Jens Krumsieck" class="z-0 absolute md:left-24 top-0 h-full w-full object-cover xl:object-top-left" />
+  <div class="absolute top-0 z-0 h-full w-full bg-secondary-600/50 md:bg-transparent md:bg-linear-to-r from-secondary-600 from-25% to-secondary-600/20 to-50%"></div>
   <Container class="flex z-1" padding fullHeight nav>
     <div class="flex flex-col md:max-w-[70%] justify-center text-neutral-600 z-2">
-      <img
-        src="/Sonnenblume_RGB_gelb.svg"
-        alt="Sonnenblumen Logo von BÜNDNIS 90/DIE GRÜNEN"
-        class="w-48 mb-12"
-      />
+      <img src="/Sonnenblume_RGB_gelb.svg" alt="Sonnenblumen Logo von BÜNDNIS 90/DIE GRÜNEN" class="w-48 mb-12" />
       <h1 class="font-gruene text-6xl">Dr. Jens Krumsieck</h1>
       <p class="text-3xl pt-2 font-bold">Mobilität | Gerechtigkeit | Zukunft</p>
-      <p class="text-2xl pt-4">
-        Kandidat für den Stadtrat in Braunschweig-Südwest
-      </p>
+      <p class="text-2xl pt-4">Kandidat für den Stadtrat in Braunschweig-Südwest</p>
       <div class="my-12 md:space-y-0 space-y-2">
         <Button href="/blog">Beiträge lesen</Button>
         <Button outlined href="/publications">Meine Veröffentlichungen</Button>
@@ -41,176 +30,113 @@
   </Container>
 </div>
 
-<Container padding fullHeight class="md:justify-center flex flex-col mt-12">
+<Container padding class="md:justify-center flex flex-col mt-12">
   <Title tag="h2">Aktuelles</Title>
   <div class="grid md:grid-cols-2 my-12 flex-wrap gap-4">
     {#each posts.results as post}
       <ListBlog {post} />
     {/each}
   </div>
-  <a href="/blog" class="justify-end self-end mt-4 font-bold text-xl hover:text-secondary-500">
-    Weitere Artikel lesen! &rArr;
-  </a>
+  <a href="/blog" class="justify-end self-end mt-4 font-bold text-xl hover:text-secondary-500"> Weitere Artikel lesen! &rArr; </a>
 </Container>
 
+<Container padding class="md:justify-center flex flex-col">
+  <Title tag="h2">Instagram</Title>
+  <Masonry gridGap="1rem">
+    {#each instagram.posts as post}
+      <a href={post.permalink} target="_blank" class="block break-inside-avoid hover:opacity-80 transition-opacity">
+        <img class="w-full rounded-lg shadow-lg" src={post.sizes.medium.mediaUrl} alt={post.prunedCaption} />
+      </a>
+    {/each}
+  </Masonry>
 
+  <a href="https://instagram.com/jens.ation" class="justify-end self-end mt-4 font-bold text-xl hover:text-secondary-500"> Zum Instagram Profil &rArr; </a>
+</Container>
 
 <Container padding fullHeight class="md:justify-center flex flex-col relative">
   <div class="flex flex-col z-10">
     <Title>Projekte</Title>
-    <Projects
-      title="PorphyStruct"
-      icon="ps_logo.svg"
-      image="https://porphystruct.org/_astro/screenshot_hero.odwWJrsE_2f64sO.webp"
-    >
+    <Projects title="PorphyStruct" icon="ps_logo.svg" image="https://porphystruct.org/_astro/screenshot_hero.odwWJrsE_2f64sO.webp">
       <p>
-        PorphyStruct ist ein innovatives digitales Werkzeug, das
-        Wissenschaftlern die Möglichkeit gibt, die nicht-planaren Auslenkungen
-        verschiedener Porphyrinoide zu analysieren. Durch die Verwendung der <em
+        PorphyStruct ist ein innovatives digitales Werkzeug, das Wissenschaftlern die Möglichkeit gibt, die nicht-planaren Auslenkungen verschiedener Porphyrinoide zu analysieren. Durch die Verwendung der <em
           >normal-coordinate structure decomposition</em
-        > (NSD) Methode nd ihrer Erweiterung auf Corrole, Norcorrole, Porphycene
-        und Corrphycene, ermöglicht PorphyStruct eine präzise und effiziente Analyse
-        von Porphyrinoidstrukturen. PorphyStruct ist ein unverzichtbares Werkzeug
-        für jeden, der in der Porphyrinforschung tätig ist.
+        > (NSD) Methode nd ihrer Erweiterung auf Corrole, Norcorrole, Porphycene und Corrphycene, ermöglicht PorphyStruct eine präzise und effiziente Analyse von Porphyrinoidstrukturen. PorphyStruct ist ein unverzichtbares Werkzeug für jeden, der in der
+        Porphyrinforschung tätig ist.
       </p>
       <div class="flex md:flex-row flex-col flex-wrap md:space-x-5 my-8">
-        <IconLink
-          icon={faGithub}
-          href="https://github.com/JensKrumsieck/PorphyStruct"
-          >GitHub Repository</IconLink
-        >
-        <IconLink
-          icon={faDownload}
-          href="https://github.com/JensKrumsieck/PorphyStruct/releases/latest"
-          >Download für Windows</IconLink
-        >
-        <IconLink icon={faEarthEurope} href="https://app.porphystruct.org"
-          >Webversion</IconLink
-        >
+        <IconLink icon={faGithub} href="https://github.com/JensKrumsieck/PorphyStruct">GitHub Repository</IconLink>
+        <IconLink icon={faDownload} href="https://github.com/JensKrumsieck/PorphyStruct/releases/latest">Download für Windows</IconLink>
+        <IconLink icon={faEarthEurope} href="https://app.porphystruct.org">Webversion</IconLink>
       </div>
       <div class="flex">
-        <Button href="https://porphystruct.org" external
-          >porphystruct.org</Button
-        >
+        <Button href="https://porphystruct.org" external>porphystruct.org</Button>
       </div>
     </Projects>
     <Projects title="SciWIn-Client" icon="fairagro.png">
       <p>
-        SciWIn-Client unterstützt Forschende, komplexe und mehrstufige Verfahren
-        für die automatisierte Verarbeitung von Daten zu beschreiben. Dabei wird
-        der Standard "Common Workflow Language" (CWL) verwendet, um die
-        Workflows plattformunabhängig und reproduzierbar zu gestalten. Der
-        SciWIn-Client bietet eine benutzerfreundliches Commandline Interfae zur
-        Erstellung, Verwaltung und Ausführung von CWL-Workflows, wodurch die
-        Effizienz und Genauigkeit in der wissenschaftlichen Datenverarbeitung
-        erheblich verbessert wird.
+        SciWIn-Client unterstützt Forschende, komplexe und mehrstufige Verfahren für die automatisierte Verarbeitung von Daten zu beschreiben. Dabei wird der Standard "Common Workflow Language" (CWL) verwendet, um die Workflows plattformunabhängig
+        und reproduzierbar zu gestalten. Der SciWIn-Client bietet eine benutzerfreundliches Commandline Interfae zur Erstellung, Verwaltung und Ausführung von CWL-Workflows, wodurch die Effizienz und Genauigkeit in der wissenschaftlichen
+        Datenverarbeitung erheblich verbessert wird.
       </p>
       <div class="flex md:flex-row flex-col flex-wrap md:space-x-5 my-8">
-        <IconLink icon={faGithub} href="https://github.com/FAIRagro/sciwin"
-          >GitHub Repository</IconLink
-        >
-        <IconLink
-          icon={faDownload}
-          href="https://fairagro.github.io/sciwin/getting-started/installation/"
-          >Download</IconLink
-        >
+        <IconLink icon={faGithub} href="https://github.com/FAIRagro/sciwin">GitHub Repository</IconLink>
+        <IconLink icon={faDownload} href="https://fairagro.github.io/sciwin/getting-started/installation/">Download</IconLink>
       </div>
       <div class="flex">
-        <Button href="https://fairagro.github.io/sciwin" external
-          >Dokumentation</Button
-        >
+        <Button href="https://fairagro.github.io/sciwin" external>Dokumentation</Button>
       </div>
     </Projects>
     <div class="md:grid md:grid-cols-2 md:gap-4 mt-8">
       <Projects title="CHN-Tool" icon="chn_logo.svg">
         <p>
-          Das CHN-Tool ist ein digitales Werkzeug, das für die schnelle
-          Berechnung der Zusammensetzung von Elementaranalysen (CHN) entwickelt
-          wurde. Es berücksichtigt mögliche Verunreinigungen oder Lösungsmittel,
-          die oft nach der Kristallisation in der Elementarzelle vorhanden sind,
-          und ermöglicht es, diese einfach in die Summenformel aufzunehmen und
-          an die experimentellen Elementaranalysedaten anzupassen.
+          Das CHN-Tool ist ein digitales Werkzeug, das für die schnelle Berechnung der Zusammensetzung von Elementaranalysen (CHN) entwickelt wurde. Es berücksichtigt mögliche Verunreinigungen oder Lösungsmittel, die oft nach der Kristallisation in
+          der Elementarzelle vorhanden sind, und ermöglicht es, diese einfach in die Summenformel aufzunehmen und an die experimentellen Elementaranalysedaten anzupassen.
         </p>
         <div class="flex flex-wrap md:space-x-5 my-8">
-          <IconLink
-            icon={faGithub}
-            href="https://github.com/JensKrumsieck/CHN-Tool"
-            >GitHub Repository</IconLink
-          >
+          <IconLink icon={faGithub} href="https://github.com/JensKrumsieck/CHN-Tool">GitHub Repository</IconLink>
         </div>
 
         <div class="flex">
-          <Button href="https://chn.jenskrumsieck.de" external
-            >chn.jenskrumsieck.de</Button
-          >
+          <Button href="https://chn.jenskrumsieck.de" external>chn.jenskrumsieck.de</Button>
         </div>
       </Projects>
       <Projects title="Wahlanalyse für Braunschweig" icon="logo.svg">
         <p>
-          Wahlauswertung für Braunschweig, das war das Ziel dieses Projekts. Mit
-          dem Wahlanalyse-Portal können nicht nur alte Wahlergebnisse der Stadt
-          Braunschweig grafisch aufbereitet eingesehen werden, es wird auch eine
-          Prognose für die kommende Wahl auf Basis des aktuellen Bundestrends
-          berechnet.
+          Wahlauswertung für Braunschweig, das war das Ziel dieses Projekts. Mit dem Wahlanalyse-Portal können nicht nur alte Wahlergebnisse der Stadt Braunschweig grafisch aufbereitet eingesehen werden, es wird auch eine Prognose für die kommende
+          Wahl auf Basis des aktuellen Bundestrends berechnet.
         </p>
         <div class="flex flex-wrap md:space-x-5 my-8">
-          <IconLink
-            icon={faGithub}
-            href="https://github.com/JensKrumsieck/wahlen_bs"
-            >GitHub Repository</IconLink
-          >
+          <IconLink icon={faGithub} href="https://github.com/JensKrumsieck/wahlen_bs">GitHub Repository</IconLink>
         </div>
 
         <div class="flex">
-          <Button href="https://wahl.jenskrumsieck.de" external
-            >wahl.jenskrumsieck.de</Button
-          >
+          <Button href="https://wahl.jenskrumsieck.de" external>wahl.jenskrumsieck.de</Button>
         </div>
       </Projects>
       <Projects title="ChemSharp" icon="chemsharp_logo.svg">
         <p>
-          ChemSharp ist eine .NET-Softwarebibliothek, die vor allem auf das
-          prozessieren chemischer Dateiformate ausgelegt ist. Sowohl
-          Strukturdaten als auch spektroskopische Dateien können geladen werden.
-          Das Projekt wurde gestartet um meinen Projekten einen gemeinsame
-          Code-Basis zu geben und wird z.B. von <em>PorphyStruct</em> benutzt.
+          ChemSharp ist eine .NET-Softwarebibliothek, die vor allem auf das prozessieren chemischer Dateiformate ausgelegt ist. Sowohl Strukturdaten als auch spektroskopische Dateien können geladen werden. Das Projekt wurde gestartet um meinen
+          Projekten einen gemeinsame Code-Basis zu geben und wird z.B. von <em>PorphyStruct</em> benutzt.
         </p>
         <div class="flex flex-wrap md:space-x-5 my-8">
-          <IconLink
-            icon={faGithub}
-            href="https://github.com/JensKrumsieck/ChemSharp"
-            >GitHub Repository</IconLink
-          >
+          <IconLink icon={faGithub} href="https://github.com/JensKrumsieck/ChemSharp">GitHub Repository</IconLink>
         </div>
       </Projects>
-      <Projects
-        title="Profilbegrünung"
-        icon="https://profilbegruenung.jenskrumsieck.de/logo.png"
-      >
+      <Projects title="Profilbegrünung" icon="https://profilbegruenung.jenskrumsieck.de/logo.png">
         <p>
-          Profilbegrünung ist ein Wahlkampf-Tool, das zur <em
-            >Landtagswahl 2022 in Niedersachsen</em
-          >
+          Profilbegrünung ist ein Wahlkampf-Tool, das zur <em>Landtagswahl 2022 in Niedersachsen</em>
           am 9. Oktober insbesondere für den KV Braunschweig von
           <strong>Bündnis 90/Die GRÜNEN</strong>
-          erstellt wurde, aber problemlos anpassbar auf weitere Wahlen ist. Mit der
-          Profilbegrünung ist es kinderleicht möglich das eigene Profilbild mit Parteilogo,
-          Claim und Wahlhinweis zu versetzen. Es ist möglich zwischen verschiedenen
-          Logos und Optionen zu wählen.
+          erstellt wurde, aber problemlos anpassbar auf weitere Wahlen ist. Mit der Profilbegrünung ist es kinderleicht möglich das eigene Profilbild mit Parteilogo, Claim und Wahlhinweis zu versetzen. Es ist möglich zwischen verschiedenen Logos und Optionen
+          zu wählen.
         </p>
 
         <div class="flex flex-wrap md:space-x-5 my-8">
-          <IconLink
-            icon={faGithub}
-            href="https://github.com/JensKrumsieck/Profilbegruenung"
-            >GitHub Repository</IconLink
-          >
+          <IconLink icon={faGithub} href="https://github.com/JensKrumsieck/Profilbegruenung">GitHub Repository</IconLink>
         </div>
 
         <div class="flex">
-          <Button href="https://profilbegruenung.jenskrumsieck.de" external
-            >profilbegruenung.jenskrumsieck.de</Button
-          >
+          <Button href="https://profilbegruenung.jenskrumsieck.de" external>profilbegruenung.jenskrumsieck.de</Button>
         </div>
       </Projects>
     </div>
