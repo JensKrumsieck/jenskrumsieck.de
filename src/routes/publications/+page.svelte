@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Container from "$lib/components/layout/Container.svelte";
   import Title from "$lib/components/typography/Title.svelte";
   import PubItem from "$lib/components/blocks/PubItem.svelte";

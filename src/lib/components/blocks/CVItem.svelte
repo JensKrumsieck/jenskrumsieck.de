@@ -1,9 +1,16 @@
 <script lang="ts">
-  export let title;
-  export let institution;
-  export let times;
-  export let image;
-  export let tags: undefined | any[] = undefined;
+  import type { Snippet } from "svelte";
+
+  type Props = {
+    title: string;
+    institution: string;
+    times: string;
+    image: string;
+    tags?: string[];
+    children?: Snippet;
+  };
+
+  let { title, institution, times, image, tags = undefined, children }: Props = $props();
 </script>
 
 <div class="my-4 bg-white px-4 py-2 rounded-lg shadow-lg">
@@ -19,7 +26,7 @@
       <h5 class="italic text-md">{institution}</h5>
 
       <div class="my-1">
-        <slot />
+        {@render children?.()}
       </div>
       <div class="flex flex-row flex-wrap mt-2">
         {#if tags}
