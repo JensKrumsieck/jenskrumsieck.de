@@ -1,16 +1,7 @@
 <script>
-  // @ts-nocheck
-
-  import Badge from "$lib/components/typography/Badge.svelte";
   import Container from "$lib/components/layout/Container.svelte";
-  import Image from "$lib/components/layout/Image.svelte";
   import Title from "$lib/components/typography/Title.svelte";
-  import * as prismic from "@prismicio/client";
-  import dayjs from "dayjs";
-  import PrismicImage from "$lib/components/prismic/PrismicImage.svelte";
   import PubItem from "$lib/components/blocks/PubItem.svelte";
-  export let data;
-  let { publications } = data;
 </script>
 
 <Container padding class="my-12">
