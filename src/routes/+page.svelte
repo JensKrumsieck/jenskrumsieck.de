@@ -41,6 +41,13 @@
 </Container>
 
 <Container padding class="md:justify-center flex flex-col">
+  <Title tag="h2">Meine Themen</Title>
+  <div class="grid md:grid-cols-2 my-12 flex-wrap gap-4">
+    Mobilität
+  </div>
+</Container>
+
+<Container padding class="md:justify-center flex flex-col">
   <Title tag="h2">Instagram</Title>
   <Masonry gridGap="1rem">
     {#each instagram.posts as post}

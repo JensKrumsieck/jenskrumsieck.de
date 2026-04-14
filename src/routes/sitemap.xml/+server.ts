@@ -9,11 +9,10 @@ export async function GET({ }) {
         'Cache-Control': 'max-age=0, s-maxage=3600',
         'Content-Type': 'application/xml',
     }
-    const pages = ['blog', 'publications', 'about', 'contact']
+    const pages = ['blog', 'publications', 'about', 'projects']
     const statics = ['impressum', 'privacy']
     const client = createClient()
     const posts = await client.getAllByType('article', { orderings: { field: 'my.article.publish_date', direction: 'desc' } })
-    const researchItems = await client.getAllByType('research_item', { orderings: { field: 'my.research_item.presentations.start_date', direction: 'desc' } })
     return new Response(`<?xml version="1.0" encoding="UTF-8" ?>
         <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
             <url>
@@ -41,14 +40,6 @@ export async function GET({ }) {
                     <changefreq>daily</changefreq>
                     <priority>0.7</priority>
                     <lastmod>${dayjs(post.last_publication_date).format("YYYY-MM-DD")}</lastmod>
-                </url>`
-    ).join("")}
-        ${researchItems.map(researchItem =>
-        `<url>
-                    <loc>${website.siteUrl}/publications/${researchItem.uid}</loc>
-                    <changefreq>daily</changefreq>
-                    <priority>0.7</priority>
-                    <lastmod>${dayjs(researchItem.last_publication_date).format("YYYY-MM-DD")}</lastmod>
                 </url>`
     ).join("")}
         </urlset > `, { headers: headers })

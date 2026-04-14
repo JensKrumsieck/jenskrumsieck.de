@@ -40,19 +40,15 @@
   <section>
     <Container class="p-6 bg-white relative shadow-lg">
       <div class="float-right w-95 ml-8 mb-8 relative">
-        <PrismicImage
-          image={post.data.hero_image}
-          class="float-right w-96 ml-8 mb-8"
-        />
+        <PrismicImage image={post.data.hero_image} class="float-right w-96 ml-8 mb-8" />
       </div>
       <Title>{prismic.asText(post.data.title)}</Title>
       <SliceZone slices={post.data.body} {components} />
-      {#each post.tags as tag}
-        <span
-          class="inline-flex items-center justify-center px-2 py-1 mr-1 text-xs font-bold leading-none text-white bg-dark-green rounded-full"
-          >{tag}</span
-        >
-      {/each}
+      <div class="flex flex-wrap gap-2 mt-4">
+        {#each post.tags as tag}
+          <span class="text-sm md:rounded-full md:bg-primary-50 border-primary-500 text-black md:border-1 md:px-1.5 md:py-0.5">{tag}</span>
+        {/each}
+      </div>
     </Container>
   </section>
 </div>
