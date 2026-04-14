@@ -96,7 +96,8 @@
       </Projects>
     </div>
   </div>
-
+<div class="my-6">
   <Button outlined href="/about">Über Mich</Button>
   <Button outlined href="/publications">Publikationsliste</Button>
+</div>
 </Container>

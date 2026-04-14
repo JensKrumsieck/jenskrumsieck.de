@@ -141,7 +141,8 @@
     location="International Conference on Porphyrins and Phtalocyanines (ICPP-10) in München"
     date="01.07.2018 - 06.07.2018"
   />
-
-  <Button outlined href="/about">Über Mich</Button>
-  <Button outlined href="/projects">Projekte</Button>
+  <div class="my-6">
+    <Button outlined href="/about">Über Mich</Button>
+    <Button outlined href="/projects">Projekte</Button>
+  </div>
 </Container>
