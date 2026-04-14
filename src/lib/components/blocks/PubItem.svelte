@@ -1,14 +1,18 @@
 <script lang="ts">
-  export let title;
-  export let names: string[] | undefined = [];
-  export let location;
-  export let date;
-  export let kind: string | undefined = undefined;
-  export let edition: string | undefined = undefined;
-  export let pages: string | undefined = undefined;
-  export let doi: string | undefined = undefined;
-  export let isbn: string | undefined = undefined;
-  export let image: string | undefined = undefined;
+  type Props = {
+    title: string;
+    names?: string[];
+    location: string;
+    date: string;
+    kind?: string;
+    edition?: string;
+    pages?: string;
+    doi?: string;
+    isbn?: string;
+    image?: string;
+  };
+
+  let { title, names, location, date, kind, edition, pages, doi, isbn, image }: Props = $props();
 </script>
 
 <div class="my-4 bg-white px-4 py-2 rounded-lg shadow-lg">
@@ -22,7 +26,7 @@
       </div>
       {#each names as name}{name},&nbsp;{/each}
       {#if kind}{kind},{/if}
-      <em>{location}</em>, 
+      <em>{location}</em>,
       <strong>{date}</strong>,
       {#if edition}<em>{edition}</em>,{/if}
       {#if pages}{pages},{/if}

@@ -159,4 +159,5 @@
     </ul>
   </div>
   <Button outlined href="/publications">Publikationsliste</Button>
+  <Button outlined href="/projects">Projekte</Button>
 </Container>

@@ -2,6 +2,7 @@
   import Container from "$lib/components/layout/Container.svelte";
   import Title from "$lib/components/typography/Title.svelte";
   import PubItem from "$lib/components/blocks/PubItem.svelte";
+  import Button from "$lib/components/button/Button.svelte";
 </script>
 
 <Container padding class="my-12">
@@ -140,4 +141,7 @@
     location="International Conference on Porphyrins and Phtalocyanines (ICPP-10) in München"
     date="01.07.2018 - 06.07.2018"
   />
+
+  <Button outlined href="/about">Über Mich</Button>
+  <Button outlined href="/projects">Projekte</Button>
 </Container>
