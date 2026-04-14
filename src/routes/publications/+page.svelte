@@ -58,6 +58,7 @@
 
   <h2 class="py-4 text-2xl font-gruene">Tagungsbeiträge</h2>
   <PubItem
+    image="/sciwin6.png"
     title="SciWIn-Client and SciWIn-Studio: Simplifying FAIR Computational Workflows"
     names={["J. Krumsieck", "A. Leidel", "P. König", "H. von Waldow"]}
     kind="Vortrag"
@@ -66,6 +67,7 @@
     doi="10.5281/zenodo.19060805"
   />
   <PubItem
+    image="/sciwin5.png"
     title="FAIR, fast, and frictionless – computational workflows with SciWIn"
     names={["J. Krumsieck", "A. Leidel", "X. Stiensmeier", "H. von Waldow"]}
     kind="Poster"
@@ -74,6 +76,7 @@
     doi="10.5281/zenodo.17651648"
   />
   <PubItem
+    image="/sciwin4.png"
     title="Easy creation of reproducible computational workflows with SciWIn-Client"
     names={["J. Krumsieck", "A. Leidel", "P. König", "H. von Waldow"]}
     kind="Vortrag"
@@ -82,6 +85,7 @@
     doi="10.5281/zenodo.17119086"
   />
   <PubItem
+    image="/sciwin3.png"
     title="SciWIn Client: Reproducible computational workflows made easy"
     names={["J. Krumsieck", "A. Leidel", "P. König", "H. von Waldow"]}
     kind="Poster"
@@ -90,6 +94,7 @@
     doi="10.5281/zenodo.14098277"
   />
   <PubItem
+    image="/sciwin2.png"
     title="Boosting Scientific Reusability: A Concept for a FAIR Scientific Workflow Infrastructure"
     names={["J. Krumsieck", "A. Leidel", "P. König", "H. von Waldow", "F. Hoedt"]}
     kind="Vortrag"
@@ -98,6 +103,7 @@
     doi="10.5281/zenodo.12743569"
   />
   <PubItem
+    image="/sciwin1.png"
     title="Boosting Scientific Reusability: A Concept for a FAIR Scientific Workflow Infrastructure"
     names={["A. Leidel", "J. Krumsieck", "P. König", "H. von Waldow", "F. Hoedt"]}
     kind="Poster"
@@ -105,8 +111,9 @@
     date="17.06.2024 - 18.06.2024"
     doi="10.5281/zenodo.11619214"
   />
-  <PubItem title="PorphyStruct - Structural Analysis of Porphyrinoids" names={["J. Krumsieck", "M. Bröring"]} kind="Poster" location="JCF JungChemikerTagung in Braunschweig" date="20.04.2023" doi="10.5281/zenodo.17657642" />
+  <PubItem image="/porphy1.avif" title="PorphyStruct - Structural Analysis of Porphyrinoids" names={["J. Krumsieck", "M. Bröring"]} kind="Poster" location="JCF JungChemikerTagung in Braunschweig" date="20.04.2023" doi="10.5281/zenodo.17657642" />
   <PubItem
+    image="/porphy1.avif"
     title="PorphyStruct - Structural Analysis of Porphyrinoids"
     names={["J. Krumsieck", "M. Bröring"]}
     kind="Poster"
@@ -115,6 +122,7 @@
     doi="10.5281/zenodo.17657642"
   />
   <PubItem
+    image="/iso_icpp.avif"
     title="Metalloisoporphyrins"
     names={["J. Krumsieck", "Ç. Baş", "J. Rusche", "C. Knaus", "W.-D. Möller", "N. Schulze", "D. Körner", "M. Bröring"]}
     kind="Poster"
@@ -122,15 +130,23 @@
     date="07.09.2022 - 09.09.2022"
   />
   <PubItem
+    image="/iso_icpp.avif"
     title="Metalloisoporphyrins"
     names={["J. Krumsieck", "Ç. Baş", "J. Rusche", "C. Knaus", "W.-D. Möller", "N. Schulze", "D. Körner", "M. Bröring"]}
     kind="Poster"
     location="International Conference on Porphyrins and Phtalocyanines (ICPP-12) in Madrid"
     date="10.07.2022 - 15.07.2022"
   />
-  <PubItem title="Isoporphyrin – Ein neues Sternbild am Porphyrin-Himmel" names={["J. Krumsieck"]} kind="Vortrag" location="Tag der Chemie in Braunschweig" date="29.06.2022" />
-  <PubItem title="Metallkomplexe von Isoporphyrin-Liganden" names={["J. Krumsieck", "Ç. Baş", "M. Bröring"]} kind="Poster" location="JCF JungChemikerTagung in Braunschweig" date="10.10.2019" />
-  <PubItem title="Isoporphyrine - Von der Natur inspirierte NIR-Farbstoffe" names={["J. Krumsieck"]} kind="Vortrag" location="Absolventenfeier TU Braunschweig" date="23.11.2018" />
-  <PubItem title="Cobalt Isoporphyrins" names={["J. Krumsieck", "Ç. Baş", "P. Schweyen", "M. Bröring"]} kind="Poster" location="Norddeutsches Doktoranden Kolloquuium (NDDK) in Braunschweig" date="03.09.2018 - 04.09.2018" />
-  <PubItem title="Cobalt Isoporphyrins" names={["J. Krumsieck", "Ç. Baş", "P. Schweyen", "M. Bröring"]} kind="Poster" location="International Conference on Porphyrins and Phtalocyanines (ICPP-10) in München" date="01.07.2018 - 06.07.2018" />
+  <PubItem image="/tdc.avif" title="Isoporphyrin – Ein neues Sternbild am Porphyrin-Himmel" names={["J. Krumsieck"]} kind="Vortrag" location="Tag der Chemie in Braunschweig" date="29.06.2022" />
+  <PubItem image="/jct19.avif" title="Metallkomplexe von Isoporphyrin-Liganden" names={["J. Krumsieck", "Ç. Baş", "M. Bröring"]} kind="Poster" location="JCF JungChemikerTagung in Braunschweig" date="10.10.2019" />
+  <PubItem image="/absfeier.jpg" title="Isoporphyrine - Von der Natur inspirierte NIR-Farbstoffe" names={["J. Krumsieck"]} kind="Vortrag" location="Absolventenfeier TU Braunschweig" date="23.11.2018" />
+  <PubItem image="/cobalt_ip.avif" title="Cobalt Isoporphyrins" names={["J. Krumsieck", "Ç. Baş", "P. Schweyen", "M. Bröring"]} kind="Poster" location="Norddeutsches Doktoranden Kolloquuium (NDDK) in Braunschweig" date="03.09.2018 - 04.09.2018" />
+  <PubItem
+    image="/cobalt_ip.avif"
+    title="Cobalt Isoporphyrins"
+    names={["J. Krumsieck", "Ç. Baş", "P. Schweyen", "M. Bröring"]}
+    kind="Poster"
+    location="International Conference on Porphyrins and Phtalocyanines (ICPP-10) in München"
+    date="01.07.2018 - 06.07.2018"
+  />
 </Container>
