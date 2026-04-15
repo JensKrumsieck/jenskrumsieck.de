@@ -2,10 +2,6 @@
   import Button from "$lib/components/button/Button.svelte";
   import Container from "$lib/components/layout/Container.svelte";
   import ListBlog from "$lib/components/blocks/ListBlog.svelte";
-  import Projects from "$lib/components/blocks/Projects.svelte";
-  import IconLink from "$lib/components/button/IconLink.svelte";
-  import { faGithub } from "@fortawesome/free-brands-svg-icons";
-  import { faDownload, faEarthEurope } from "@fortawesome/free-solid-svg-icons";
   import Title from "$lib/components/typography/Title.svelte";
   import Masonry from "$lib/components/layout/Masonry.svelte";
 
