@@ -10,7 +10,6 @@ export async function load({ }) {
             filter.at("document.tags", ['Mobilität'])
         ]
     })
-
     if (posts) {
         return { posts }
     }
