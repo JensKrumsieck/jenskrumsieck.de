@@ -2,10 +2,11 @@
   import Container from "$lib/components/layout/Container.svelte";
   import CvItem from "$lib/components/blocks/CVItem.svelte";
   import Button from "$lib/components/button/Button.svelte";
+    import SubTitle from "$lib/components/typography/SubTitle.svelte";
 </script>
 
 <Container padding class="my-12">
-  <h2 class="text-4xl font-gruene">Lebenslauf</h2>
+  <SubTitle>Lebenslauf</SubTitle>
   <h3 class="text-2xl font-gruene mt-3 text-primary-600">Berufserfahrung</h3>
   <CvItem
     title="Wissenschaftlicher Mitarbeiter (FAIRagro)"

@@ -45,6 +45,8 @@
 
 <Container padding class="md:justify-center flex flex-col">
   <Title tag="h2">Instagram</Title>
+</Container>
+<Container class="md:justify-center flex flex-col">
   <Masonry gridGap="1rem">
     {#each instagram.posts as post}
       <a href={post.permalink} target="_blank" class="block break-inside-avoid hover:opacity-80 transition-opacity">
