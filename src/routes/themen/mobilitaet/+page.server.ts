@@ -2,7 +2,7 @@ import createClient from "$lib/content/prismic";
 import { filter } from "@prismicio/client";
 export const ssr = true;
 
-/** @type {import('./$types').PageLoad} */
+/** @type {import('./$types').PageServerLoad} */
 export async function load() {
     const client = createClient()
     const posts = await client.getByType('article', {

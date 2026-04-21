@@ -1,4 +1,5 @@
 <script lang="ts">
+  import hero from "$lib/assets/hero.jpg";
   import Button from "$lib/components/button/Button.svelte";
   import Container from "$lib/components/layout/Container.svelte";
   import ListBlog from "$lib/components/blocks/ListBlog.svelte";
@@ -12,7 +13,7 @@
 </script>
 
 <div class="relative w-full min-h-dvh overflow-hidden">
-  <img src="/hero.jpg" alt="Ein Foto von Dr. Jens Krumsieck" class="z-0 absolute md:left-24 top-0 h-full w-full object-cover xl:object-top-left" />
+  <img src={hero} alt="Ein Foto von Dr. Jens Krumsieck" class="z-0 absolute md:left-24 top-0 h-full w-full object-cover xl:object-top-left" />
   <div class="absolute top-0 z-0 h-full w-full bg-secondary-600/50 md:bg-transparent md:bg-linear-to-r from-secondary-600 from-25% to-secondary-600/20 to-50%"></div>
   <Container class="flex z-1" padding fullHeight nav>
     <div class="flex flex-col md:max-w-[70%] justify-center text-neutral-600 z-2">

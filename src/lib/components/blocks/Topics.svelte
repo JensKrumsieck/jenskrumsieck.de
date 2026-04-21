@@ -1,11 +1,12 @@
 <script lang="ts">
-    import mobi from "$lib/assets/mobi.jpg";
-    import demo from "$lib/assets/demo.jpg";
+    import mobi from "$lib/assets/mobi.jpg?enhanced";
+    import demo from "$lib/assets/demo.jpg?enhanced";
+    import type { Picture } from "@sveltejs/enhanced-img";
 
     type Topic = {
         title: string;
         description: string;
-        image: string;
+        image: Picture;
         link?: string;
     };
 
@@ -37,7 +38,9 @@
 <div class="flex flex-col gap-4 w-full">
     {#each topics as topic}
         <a class="bg-white shadow-lg rounded-md p-4 md:flex-row flex-col flex gap-4" href={topic.link}>
-            <enhanced:img src={topic.image} class="w-full md:w-48 h-48 shrink-0 object-cover rounded-sm" alt={topic.title} />
+            <div class="w-full md:w-48 h-48 shrink-0">
+                <enhanced:img src={topic.image} alt={topic.title} class="object-cover rounded-sm w-full md:w-48 h-48" />
+            </div>
             <div>
                 <h3 class="font-gruene text-2xl">{topic.title}</h3>
                 <p>{@html topic.description}</p>

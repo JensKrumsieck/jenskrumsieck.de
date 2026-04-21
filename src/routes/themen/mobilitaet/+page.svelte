@@ -1,21 +1,20 @@
 <script lang="ts">
-    import mobi from '$lib/assets/mobi.jpg';
-    import type { PageProps } from "./$types";
+    import mobi from "$lib/assets/mobi.jpg?enhanced";
     import ListBlog from "$lib/components/blocks/ListBlog.svelte";
     import Container from "$lib/components/layout/Container.svelte";
     import Masonry from "$lib/components/layout/Masonry.svelte";
     import Title from "$lib/components/typography/Title.svelte";
     import SubTitle from "$lib/components/typography/SubTitle.svelte";
 
-    let { data }: PageProps = $props();
-    let posts = $derived(data.posts);
+    export let data;
+    let { posts = { results: [] } } = data;
 </script>
 
 <Container padding>
     <Title>Mobilität & Verkehr</Title>
     <div class="prose prose-lg max-w-none">
         <h3>Die Verkehrswende ist eine Gerechtigkeitsfrage.</h3>
-        <enhanced:img src="{mobi}" alt="Mobilität und Verkehr" class="float-right w-64 m-4" />
+        <enhanced:img src={mobi} alt="Mobilität und Verkehr" class="float-right w-64 m-4" />
         <p>
             Ich kandidiere für den Rat der Stadt Braunschweig, weil ich überzeugt bin: Mobilität ist die Grundstruktur unserer Stadt. Sie entscheidet darüber, wer Zugang zu Chancen hat und wer nicht. Wer gesund lebt und wer unter Lärm und Abgasen
             leidet. Ob Kinder sicher zur Schule kommmen, ob ältere Menschen selbstständig bleiben können und wer sich frei bewegem lamm und wer ausgeschlossen ist.
