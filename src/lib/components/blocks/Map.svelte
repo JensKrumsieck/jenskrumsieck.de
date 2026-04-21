@@ -20,7 +20,15 @@
         map = L.map(mapEl, {
             zoomSnap: 0.1,
             maxBoundsViscosity: 1.0,
+            scrollWheelZoom: false,
         });
+        map.on("focus", function () {
+            map.scrollWheelZoom.enable();
+        });
+        map.on("blur", function () {
+            map.scrollWheelZoom.disable();
+        });
+
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
             attribution: "© OpenStreetMap contributors",
         }).addTo(map);

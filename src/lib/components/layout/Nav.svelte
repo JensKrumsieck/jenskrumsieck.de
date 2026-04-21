@@ -27,7 +27,7 @@
       <span class="sr-only">Open main menu</span>
       <OpenClose {open} />
     </button>
-    <div class:hidden={!open} class="font-semibold w-full items-center lg:w-auto text-xl lg:flex lg:relative absolute lg:bg-transparent bg-neutral-600 left-0 lg:top-0 top-20 z-20 lg:py-0 py-4" id="mainMenu">
+    <div class:hidden={!open} class="font-semibold w-full items-center lg:w-auto text-xl lg:flex lg:relative absolute lg:bg-transparent bg-neutral-600 left-0 lg:top-0 top-30 z-20 lg:py-0 py-4" id="mainMenu">
       <ul class="flex navbar lg:flex-row flex-col">
         <NavLink href="/">Start</NavLink>
         <NavLink href="/blog">Beiträge</NavLink>

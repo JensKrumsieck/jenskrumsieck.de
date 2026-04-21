@@ -43,12 +43,17 @@
   <Topics />
 </Container>
 
-<Container padding>
+<Container padding class="mt-12">
   <Title tag="h2">Mein Wahlbereich</Title>
+  <h3 class="font-gruene text-lg">Wahlbereich 22 - Braunschweig-Südwest</h3>
+  <p class="mt-2 mb-6">
+    Wahlbereich 22 umfasst die Stadtbezirke <em>221 Weststadt</em> und <em>222 Braunschweig-Südwest</em>. Damit fallen die Weststadt, Broitzem, Timmerlah, Geitelde, Stiddien und Rüningen in meinen Wahlbereich. Das heißt, wenn Sie in einem der
+    genannten Teile von Braunschweig wohnen, können Sie mir bzw. der Liste von BÜNDNIS 90/DIE GRÜNEN bei der Kommunalwahl am 13.09.2026 bis zu drei Stimmen geben.
+  </p>
   <Map />
 </Container>
 
-<Container padding class="md:justify-center flex flex-col">
+<Container padding class="md:justify-center flex flex-col mt-12">
   <Title tag="h2">Instagram</Title>
 </Container>
 <Container class="md:justify-center flex flex-col">
