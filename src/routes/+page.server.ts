@@ -7,7 +7,13 @@ export async function load() {
     const client = createClient()
     const posts = await client.getByType('article', { fetchLinks: ['author.name'], orderings: { field: 'my.article.publish_date', direction: 'desc' }, pageSize: 4 })
     const response = await fetch(INSTAGRAM_FEED_URL);
-    const instagram = await response.json();
+    let instagram = {}
+    try {
+        instagram = await response.json();
+    }
+    catch {
+        console.log("Not valid json")
+    }
 
     if (posts) {
         return { posts, instagram }
