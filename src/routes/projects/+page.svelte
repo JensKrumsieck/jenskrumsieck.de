@@ -8,7 +8,7 @@
   import { faDownload, faEarthEurope } from "@fortawesome/free-solid-svg-icons";
 </script>
 
-<Container>
+<Container padding>
   <div class="flex flex-col z-10">
     <Title>Projekte</Title>
     <Projects title="PorphyStruct" icon="ps_logo.svg" image="https://porphystruct.org/_astro/screenshot_hero.odwWJrsE_2f64sO.webp">
