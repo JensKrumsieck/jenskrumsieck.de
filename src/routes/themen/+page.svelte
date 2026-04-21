@@ -4,7 +4,7 @@
     import Title from "$lib/components/typography/Title.svelte";
 </script>
 
-<Container>
+<Container padding>
     <Title>Meine Themen</Title>
     <Topics />
 </Container>
