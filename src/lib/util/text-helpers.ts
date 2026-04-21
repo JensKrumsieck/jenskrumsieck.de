@@ -22,4 +22,5 @@ export function getDesc(str: string, n: number): string {
     if (tagFree.length < n) return tagFree;
 
     const sub = tagFree.substring(0, n - 1);
-    return sub.substring(0, sub.lastIndexOf(" "))}
+    return sub.substring(0, sub.lastIndexOf(" "))
+}

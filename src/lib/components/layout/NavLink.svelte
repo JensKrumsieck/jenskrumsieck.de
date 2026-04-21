@@ -7,7 +7,9 @@
   export let button = false;
   let padding = button ? "pt-1" : "pt-3";
 
-  let linkCSS = "block lg:pl-12 lg:px-0 px-4 pb-0 flex flex-col hover:font-bold " + padding;
+  let linkCSS =
+    "block px-4 pb-0 flex flex-col hover:bg-linear-to-b from-transparent to-sun-600 from-60% to-60% items-center" +
+    padding;
 
   $: active =
     $page.url.href == href ||
@@ -19,26 +21,10 @@
   {#if prefetch}
     <a {href} class={linkCSS}>
       <slot />
-      {#if !button}<div class="w-5 h-1 underliner lg:self-end" />{/if}
     </a>
   {:else}
     <a {href} class={linkCSS}>
       <slot />
-      {#if !button}<div class="w-5 h-1 underliner lg:self-end" />{/if}
     </a>
   {/if}
 </li>
-
-<style lang="scss">
-  .active {
-    font-weight: bold;
-    .underliner {
-      background: black;
-    }
-  }
-  a:hover {
-    .underliner {
-      background: var(--green);
-    }
-  }
-</style>

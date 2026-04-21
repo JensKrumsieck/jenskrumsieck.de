@@ -1,8 +1,9 @@
 <script>
-    let clazz = ""
-    export {clazz as class}
+  export let tag = "h1";
+  let clazz = "";
+  export { clazz as class };
 </script>
 
-<h1 class={`text-2xl font-bold italic tracking-tightest my-5 ${clazz}`} >
-    <slot/>
-</h1>
+<svelte:element this={tag} class={`text-5xl font-gruene my-5 ${clazz}`}>
+  <slot/>
+</svelte:element>
