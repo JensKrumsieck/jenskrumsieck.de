@@ -4,6 +4,7 @@
   import ListBlog from "$lib/components/blocks/ListBlog.svelte";
   import Title from "$lib/components/typography/Title.svelte";
   import Masonry from "$lib/components/layout/Masonry.svelte";
+  import Topics from "$lib/components/blocks/Topics.svelte";
 
   export let data;
   let { posts = { results: [] }, instagram = { posts: [] } } = data;
@@ -38,9 +39,7 @@
 
 <Container padding class="md:justify-center flex flex-col">
   <Title tag="h2">Meine Themen</Title>
-  <div class="grid md:grid-cols-2 my-12 flex-wrap gap-4">
-    Mobilität
-  </div>
+  <Topics />
 </Container>
 
 <Container padding class="md:justify-center flex flex-col">

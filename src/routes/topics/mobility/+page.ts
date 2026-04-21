@@ -11,7 +11,7 @@ export async function load({ }) {
         ]
     })
     if (posts) {
-        return { posts }
+        return { posts, title: "Mobilität & Verkehr", }
     }
     return {
         status: 404
