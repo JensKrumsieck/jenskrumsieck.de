@@ -22,7 +22,7 @@
       <p class="text-2xl pt-4">Kandidat für den Stadtrat in Braunschweig-Südwest</p>
       <div class="my-12 md:space-y-0 space-y-2">
         <Button href="/blog">Beiträge lesen</Button>
-        <Button outlined href="/publications">Meine Veröffentlichungen</Button>
+        <Button outlined href="/themen">Meine Themen</Button>
       </div>
     </div>
   </Container>

@@ -31,7 +31,7 @@
       <ul class="flex navbar lg:flex-row flex-col">
         <NavLink href="/">Start</NavLink>
         <NavLink href="/blog">Beiträge</NavLink>
-        <NavLink href="/topics">Meine Themen</NavLink>
+        <NavLink href="/themen">Meine Themen</NavLink>
         <NavLink href="/about">Über Mich</NavLink>
       </ul>
     </div>
