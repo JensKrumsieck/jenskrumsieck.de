@@ -25,8 +25,8 @@
 
 <div class="flex flex-col gap-4 w-full">
     {#each topics as topic}
-        <a class="bg-white shadow-lg rounded-md p-4 flex gap-4" href={topic.link}>
-            <enhanced:img src={topic.image} class="w-48 h-48 shrink-0 object-cover rounded-sm" alt={topic.title} />
+        <a class="bg-white shadow-lg rounded-md p-4 md:flex-row flex-col flex gap-4" href={topic.link}>
+            <enhanced:img src={topic.image} class="w-full md:w-48 h-48 shrink-0 object-cover rounded-sm" alt={topic.title} />
             <div>
                 <h3 class="font-gruene text-2xl">{topic.title}</h3>
                 <p>{topic.description}</p>

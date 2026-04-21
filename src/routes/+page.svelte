@@ -5,6 +5,7 @@
   import Title from "$lib/components/typography/Title.svelte";
   import Masonry from "$lib/components/layout/Masonry.svelte";
   import Topics from "$lib/components/blocks/Topics.svelte";
+  import Map from "$lib/components/blocks/Map.svelte";
 
   export let data;
   let { posts = { results: [] }, instagram = { posts: [] } } = data;
@@ -40,6 +41,11 @@
 <Container padding class="md:justify-center flex flex-col">
   <Title tag="h2">Meine Themen</Title>
   <Topics />
+</Container>
+
+<Container padding>
+  <Title tag="h2">Mein Wahlbereich</Title>
+  <Map />
 </Container>
 
 <Container padding class="md:justify-center flex flex-col">
