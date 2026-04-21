@@ -9,7 +9,7 @@ export async function GET({ }) {
         'Cache-Control': 'max-age=0, s-maxage=3600',
         'Content-Type': 'application/xml',
     }
-    const pages = ['blog', 'publications', 'about', 'projects']
+    const pages = ['blog', 'publications', 'about', 'projects', "topics", "topics/mobility"]
     const statics = ['impressum', 'privacy']
     const client = createClient()
     const posts = await client.getAllByType('article', { orderings: { field: 'my.article.publish_date', direction: 'desc' } })
@@ -30,7 +30,7 @@ export async function GET({ }) {
         ${statics.map(page =>
         `<url>
                 <loc>${website.siteUrl}/${page}</loc>
-                <changefreq>daily</changefreq>
+                <changefreq>monthly</changefreq>
                 <priority>0.4</priority>
             </url>`
     ).join("")}

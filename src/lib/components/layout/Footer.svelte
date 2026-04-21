@@ -14,6 +14,7 @@
       <div class="flex flex-col md:flex-row flex-wrap gap-x-4">
         <FooterLink bold href="/">Start</FooterLink>
         <FooterLink bold href="/blog">Beiträge</FooterLink>
+        <FooterLink bold href="/topics">Meine Themen</FooterLink>
         <FooterLink bold href="/about">Über Mich</FooterLink>
         <FooterLink href="/impressum">Impressum</FooterLink>
         <FooterLink href="/privacy">Datenschutzerklärung</FooterLink>
