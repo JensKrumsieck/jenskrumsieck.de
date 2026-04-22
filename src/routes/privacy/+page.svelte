@@ -451,10 +451,7 @@
           <strong>Rechtsgrundlage:</strong> Einwilligung über Cookie-Consent-Banner, Art. 6 Abs. 1 lit. a DSGVO, berechtigte Interessen, Art. 6 Abs. 1 lit. f DSGVO
         </p>
         <p><strong>Wir nutzen folgende Content-Dienste:</strong></p>
-        <p>
-          Auf einigen unserer Webseiten betten wir Karten der Plattform „Openstreetmap“ des Anbieters Openstreetmap Foundation, 132 Maney Hill Road, Sutton Coldfield, West Midlands, B72 1JU, United Kingdom ein. Datenschutzerklärung:
-          https://wiki.osmfoundation.org/wiki/Privacy_Policy
-        </p>
+        <p>Auf einigen unserer Webseiten betten wir Karten der Plattform „Openstreetmap.de“ des Anbieters FOSSGIS e.V. Bundesallee 23 10717 Berlin ein. Datenschutzerklärung: https://www.fossgis.de/datenschutzerkl%c3%a4rung/</p>
       </div>
     </div>
     <div class="ce_text privacy_item gettyimages block">
