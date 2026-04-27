@@ -1,4 +1,5 @@
 <script lang="ts">
+  import type { PageData } from "./$types";
   import hero from "$lib/assets/hero.jpg?enhanced";
   import Button from "$lib/components/button/Button.svelte";
   import Container from "$lib/components/layout/Container.svelte";
@@ -8,8 +9,8 @@
   import Topics from "$lib/components/blocks/Topics.svelte";
   import Map from "$lib/components/blocks/Map.svelte";
 
-  export let data;
-  let { posts = { results: [] }, instagram = { posts: [] } } = data;
+  export let data: PageData;
+  let { posts = { results: [] }, instagram = [] } = data;
 </script>
 
 <div class="relative w-full min-h-dvh overflow-hidden">
@@ -59,9 +60,9 @@
 </Container>
 <Container class="md:justify-center flex flex-col">
   <Masonry gridGap="1rem">
-    {#each instagram.posts as post}
+    {#each instagram as post}
       <a href={post.permalink} target="_blank" class="block break-inside-avoid hover:opacity-80 transition-opacity">
-        <img class="w-full rounded-lg shadow-lg" src={post.sizes.medium.mediaUrl} alt={post.prunedCaption} />
+        <img class="w-full rounded-lg shadow-lg" src={post.image_url} alt={post.alt_text} />
       </a>
     {/each}
   </Masonry>
