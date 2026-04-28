@@ -3,9 +3,9 @@ import { getDesc } from "$lib/util/text-helpers";
 import * as prismic from '@prismicio/client'
 
 /** @type {import('./$types').PageLoad} */
-export async function load({ params }) {
+export async function load({ fetch, params }) {
 
-  const client = createClient()
+  const client = createClient({ fetch })
   const { slug } = params
   const post = await client.getByUID('article', slug, { fetchLinks: ['author.name', 'author.about', 'author.avatar'] })
 

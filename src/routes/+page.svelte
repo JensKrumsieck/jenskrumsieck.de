@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { PageData } from "./$types";
-  import hero from "$lib/assets/hero.jpg?enhanced";
+  //@ts-ignore
+  import hero from "$lib/assets/hero.jpg?enhanced&w=2160;1920;1080";
   import Button from "$lib/components/button/Button.svelte";
   import Container from "$lib/components/layout/Container.svelte";
   import ListBlog from "$lib/components/blocks/ListBlog.svelte";
@@ -14,11 +15,17 @@
 </script>
 
 <div class="relative w-full min-h-dvh overflow-hidden">
-  <enhanced:img src={hero} alt="Ein Foto von Dr. Jens Krumsieck" class="z-0 absolute md:left-24 top-0 h-full w-full object-cover xl:object-top-left" />
+  <enhanced:img
+    src={hero}
+    fetchpriority="high"
+    alt="Ein Foto von Dr. Jens Krumsieck"
+    class="z-0 absolute md:left-24 top-0 h-full w-full object-cover xl:object-top-left"
+    sizes="(min-width:1920px) 2160px, (min-width:1080px) 1920px, (min-width:768px) 1080px"
+  />
   <div class="absolute top-0 z-0 h-full w-full bg-secondary-600/50 md:bg-transparent md:bg-linear-to-r from-secondary-600 from-25% to-secondary-600/20 to-50%"></div>
   <Container class="flex z-1" padding fullHeight nav>
     <div class="flex flex-col md:max-w-[70%] justify-center text-neutral-600 z-2">
-      <img src="/Sonnenblume_RGB_gelb.svg" alt="Sonnenblumen Logo von BÜNDNIS 90/DIE GRÜNEN" class="w-48 mb-12" />
+      <img src="/Sonnenblume_RGB_gelb.svg" fetchpriority="high" alt="Sonnenblumen Logo von BÜNDNIS 90/DIE GRÜNEN" class="w-48 mb-12" />
       <h1 class="font-gruene text-6xl">Dr. Jens Krumsieck</h1>
       <p class="text-3xl pt-2 font-bold">Mobilität | Gerechtigkeit | Zukunft</p>
       <p class="text-2xl pt-4">Kandidat für den Stadtrat in Braunschweig-Südwest</p>

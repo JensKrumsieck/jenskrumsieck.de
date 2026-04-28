@@ -2,8 +2,8 @@ import createClient from "$lib/content/prismic";
 export const ssr = true;
 
 /** @type {import('./$types').PageLoad} */
-export async function load({ }) {
-  const client = createClient()
+export async function load({ fetch }) {
+  const client = createClient({ fetch })
   const posts = await client.getByType('article', { fetchLinks: ['author.name'], orderings: { field: 'my.article.publish_date', direction: 'desc' }, pageSize: 30 })
   return {
     posts: posts,

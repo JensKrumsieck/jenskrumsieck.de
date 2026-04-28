@@ -1,7 +1,10 @@
 <script lang="ts">
-    import mobi from "$lib/assets/mobi.jpg?enhanced";
-    import demo from "$lib/assets/demo.jpg?enhanced";
     import type { Picture } from "@sveltejs/enhanced-img";
+    //@ts-ignore
+    import mobi from "$lib/assets/mobi.jpg?enhanced&w=1280;640;400";
+
+    //@ts-ignore
+    import demo from "$lib/assets/demo.jpg?enhanced&w=1280;640;400";
 
     type Topic = {
         title: string;
@@ -39,7 +42,7 @@
     {#each topics as topic}
         <a class="bg-white shadow-lg rounded-md p-4 md:flex-row flex-col flex gap-4" href={topic.link}>
             <div class="w-full md:w-48 h-48 shrink-0">
-                <enhanced:img src={topic.image} alt={topic.title} class="object-cover rounded-sm w-full md:w-48 h-48" />
+                <enhanced:img src={topic.image} alt={topic.title} class="object-cover rounded-sm w-full md:w-48 h-48" sizes="(min-width:1920px) 1280px, (min-width:1080px) 640px, (min-width:768px) 400px" />
             </div>
             <div>
                 <h3 class="font-gruene text-2xl">{topic.title}</h3>
