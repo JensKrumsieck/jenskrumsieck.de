@@ -29,7 +29,7 @@
             map.scrollWheelZoom.disable();
         });
 
-        L.tileLayer("https://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png", {
+        L.tileLayer("https://api.jenskrumsieck.de/openstreetmap/{s}/{z}/{x}/{y}.png", {
             attribution: "© OpenStreetMap contributors",
         }).addTo(map);
 
