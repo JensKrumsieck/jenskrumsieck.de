@@ -13,7 +13,7 @@
   import * as Swetrix from "swetrix";
 
   onMount(() => {
-    Swetrix.init("pn1LomvF4poo", {
+    Swetrix.init("lp61TqcIrztc", {
       devMode: dev,
       disabled: dev,
       apiURL: "https://api.analytics.jenskrumsieck.de/log",
