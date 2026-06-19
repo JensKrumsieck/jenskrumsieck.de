@@ -8,7 +8,7 @@
   import Footer from "$lib/components/layout/Footer.svelte";
   import { page } from "$app/state";
   import website from "$lib/util/website";
-
+  import { onMount } from "svelte";
   import { dev } from "$app/environment";
   import * as Swetrix from "swetrix";
 
