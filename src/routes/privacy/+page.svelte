@@ -525,36 +525,40 @@
       <div class="text">
         <p><strong>Swetrix Analytics</strong></p>
         <p>
-          Dienstanbieter: Swetrix wird auf unseren Servern unter https://analytics.jenskrumsieck.de selbst betrieben und verwaltet.<br
+          Dienstanbieter: Swetrix wird auf unseren Servern unter
+          https://analytics.jenskrumsieck.de selbst betrieben und verwaltet.<br
           />Internetseite:
           <a
             href="https://analytics.jenskrumsieck.de"
             target="_blank"
             rel="noopener"
-            class="externalLink"
-            >https://analytics.jenskrumsieck.de/</a
+            class="externalLink">https://analytics.jenskrumsieck.de/</a
           ><br />
-          Diese Website nutzt Swetrix, einen datenschutzfreundlichen Webanalyse-Dienst. Swetrix wird verwendet, um die Nutzung unserer Website zu analysieren und regelmäßig zu verbessern. Über die gewonnenen Statistiken können wir unser Angebot verbessern und für Sie als Nutzer interessanter ausgestalten.
+          Diese Website nutzt Swetrix, einen datenschutzfreundlichen Webanalyse-Dienst.
+          Swetrix wird verwendet, um die Nutzung unserer Website zu analysieren und
+          regelmäßig zu verbessern. Über die gewonnenen Statistiken können wir unser
+          Angebot verbessern und für Sie als Nutzer interessanter ausgestalten.
         </p>
-        <p><strong>Erhobene Daten:</strong>
-          <ul>            
-            <li>Browsertyp und Browserversion</li>
-            <li>Verwendetes Betriebssystem</li>
-            <li>Referrer URL (zuvor besuchte Seite)</li>
-            <li>Hostname des zugreifenden Rechners</li>
-            <li>Zeitpunkt der Serveranfrage</li>
-            <li>Besuchte Seiten</li>
-          </ul>
-        </p>
-        <p><strong>Wichtig:</strong>
-          <ul>      
-            <li>Swetrix verwendet keine Cookies</li>
-            <li>IP-Adressen werden nicht gespeichert (nur temporär gehasht für max. 30 Minuten)</li>
-            <li>Alle Daten werden vollständig anonymisiert</li>
-            <li>Keine Weitergabe an Dritte</li>
-            <li>DSGVO-konform</li>
-          </ul>
-        </p>
+        <p><strong>Erhobene Daten:</strong></p>
+        <ul>
+          <li>Browsertyp und Browserversion</li>
+          <li>Verwendetes Betriebssystem</li>
+          <li>Referrer URL (zuvor besuchte Seite)</li>
+          <li>Hostname des zugreifenden Rechners</li>
+          <li>Zeitpunkt der Serveranfrage</li>
+          <li>Besuchte Seiten</li>
+        </ul>
+        <p><strong>Wichtig:</strong></p>
+        <ul>
+          <li>Swetrix verwendet keine Cookies</li>
+          <li>
+            IP-Adressen werden nicht gespeichert (nur temporär gehasht für max.
+            30 Minuten)
+          </li>
+          <li>Alle Daten werden vollständig anonymisiert</li>
+          <li>Keine Weitergabe an Dritte</li>
+          <li>DSGVO-konform</li>
+        </ul>
       </div>
     </div>
     <div class="ce_text block">
