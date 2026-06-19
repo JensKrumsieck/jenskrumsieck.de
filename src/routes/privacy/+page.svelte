@@ -521,7 +521,7 @@
         <p><strong>Wir nutzen folgende Webanalyse-Dienste:</strong></p>
       </div>
     </div>
-    <!--<div class="ce_text privacy_item analytics block">
+    <div class="ce_text privacy_item analytics block">
       <div class="text">
         <p><strong>Swetrix Analytics</strong></p>
         <p>
@@ -556,7 +556,7 @@
           </ul>
         </p>
       </div>
-    </div>-->
+    </div>
     <div class="ce_text block">
       <div class="text">
         <h2>Unsere Onlinepräsenzen bei sozialen Netzwerken</h2>
