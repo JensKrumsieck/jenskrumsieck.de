@@ -9,6 +9,14 @@
   import { page } from "$app/state";
   import website from "$lib/util/website";
 
+  import { dev } from "$app/environment";
+  import * as Swetrix from "swetrix";
+
+  onMount(() => {
+    Swetrix.init("pn1LomvF4poo", { devMode: dev, disabled: dev, apiURL: "https://api.analytics.jenskrumsieck.de/log", });
+    Swetrix.trackViews();
+  });
+
   let { children } = $props();
 </script>
 
