@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   export let tag = "h1";
   let clazz = "";
   export { clazz as class };

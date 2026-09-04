@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   export let padding = false;
   export let fullHeight = false;
   export let nav = false;

@@ -1,8 +1,8 @@
 <script lang="ts">
-  import "@fontsource/pt-sans/400";
-  import "@fontsource/pt-sans/400-italic";
-  import "@fontsource/pt-sans/700";
-  import "@fontsource/pt-sans/700-italic";
+  import "@fontsource/pt-sans/400.css";
+  import "@fontsource/pt-sans/400-italic.css";
+  import "@fontsource/pt-sans/700.css";
+  import "@fontsource/pt-sans/700-italic.css";
   import "../app.css";
   import Nav from "$lib/components/layout/Nav.svelte";
   import Footer from "$lib/components/layout/Footer.svelte";

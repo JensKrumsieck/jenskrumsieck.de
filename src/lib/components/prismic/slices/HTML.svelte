@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import * as prismic from "@prismicio/client";
   export let slice;
 </script>

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import * as prismic from "@prismicio/client";
   import Image from "$lib/components/layout/Image.svelte";
   export let image;

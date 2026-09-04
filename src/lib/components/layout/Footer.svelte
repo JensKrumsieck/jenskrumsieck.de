@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import dayjs from "dayjs";
 
   import Social from "../blocks/Social.svelte";

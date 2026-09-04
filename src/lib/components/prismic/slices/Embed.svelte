@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   export let slice;
   let html = slice.primary.data.html
     .replace(/width="\d+"/, `class="w-full aspect-video mb-8"`)
