@@ -13,8 +13,9 @@
   import * as prismic from "@prismicio/client";
   import { SliceZone } from "@prismicio/svelte";
   import Embed from "$lib/components/prismic/slices/Embed.svelte";
+  import website from "$lib/util/website";
   export let data;
-  let { post } = data;
+  let { post, title, description, image } = data;
   const components = {
     text: RichText,
     galerie: Gallery,
@@ -25,7 +26,29 @@
     code: Code,
   };
   const hero_image = prismic.asImageSrc(post.data.hero_image);
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: title,
+    description: description,
+    image: image ?? website.image,
+    datePublished: post.first_publication_date,
+    dateModified: post.last_publication_date,
+    url: website.siteUrl + "/blog/" + post.uid,
+    author: {
+      "@type": "Person",
+      name: post.data.author?.data?.name ?? website.author,
+    },
+    publisher: {
+      "@type": "Person",
+      name: website.author,
+    },
+  };
 </script>
+
+<svelte:head>
+  {@html `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, "\\u003c")}</script>`}
+</svelte:head>
 
 <div class=" bg-secondary-600">
   <section class="hero px-2 lg:px-0">
@@ -40,13 +63,19 @@
   <section>
     <Container class="p-6 bg-white relative shadow-lg">
       <div class="float-right w-95 ml-8 mb-8 relative">
-        <PrismicImage image={post.data.hero_image} class="float-right w-96 ml-8 mb-8" />
+        <PrismicImage
+          image={post.data.hero_image}
+          class="float-right w-96 ml-8 mb-8"
+        />
       </div>
       <Title>{prismic.asText(post.data.title)}</Title>
       <SliceZone slices={post.data.body} {components} />
       <div class="flex flex-wrap gap-2 mt-4">
         {#each post.tags as tag}
-          <span class="text-sm md:rounded-full md:bg-primary-50 border-primary-500 text-black md:border-1 md:px-1.5 md:py-0.5">{tag}</span>
+          <span
+            class="text-sm md:rounded-full md:bg-primary-50 border-primary-500 text-black md:border md:px-1.5 md:py-0.5"
+            >{tag}</span
+          >
         {/each}
       </div>
     </Container>

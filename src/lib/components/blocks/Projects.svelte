@@ -21,6 +21,6 @@
     {@render children?.()}
   </div>
   {#if image}
-    <img class="md:max-w-[50%] h-fit md:ml-8" src={image} loading="lazy" alt=" Screenshot" />
+    <img class="md:max-w-[50%] h-fit md:ml-8" src={image} loading="lazy" alt={"Screenshot " + title} />
   {/if}
 </div>

@@ -58,6 +58,20 @@
       ? page.data.title + " - " + website.siteTitle
       : website.siteTitle}
   />
+  {@html `<script type="application/ld+json">${JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: website.author,
+    url: website.siteUrl,
+    image: website.image,
+    jobTitle: "Wissenschaftler",
+    sameAs: [
+      "https://instagram.com/jens.ation",
+      "https://www.linkedin.com/in/jenskrumsieck",
+      "https://github.com/JensKrumsieck",
+      "https://www.facebook.com/jens.krumsieck/",
+    ],
+  })}</script>`}
 </svelte:head>
 
 <header>
