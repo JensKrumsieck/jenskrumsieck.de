@@ -10,6 +10,8 @@ type IgPost = {
     alt_text: string;
     caption: string;
     timestamp: string;
+    comments_count: number;
+    like_count: number;
 };
 
 /** @type {import('./$types').PageServerLoad} */
