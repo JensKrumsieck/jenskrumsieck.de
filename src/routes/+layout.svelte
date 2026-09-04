@@ -26,10 +26,13 @@
 
 <svelte:head>
   <title
-    >{page.data.title
-      ? page.data.title + " - " + website.siteTitle
-      : website.siteTitle}</title
+    >{page.status >= 400
+      ? "Fehler " + page.status + " - " + website.siteTitle
+      : page.data.title
+        ? page.data.title + " - " + website.siteTitle
+        : website.siteTitle}</title
   >
+  <meta name="robots" content={page.status >= 400 ? "noindex,follow" : (page.data.robots ?? "index,follow")} />
   <meta
     name="description"
     content={page.data.description ?? website.description}
@@ -60,16 +63,26 @@
   />
   {@html `<script type="application/ld+json">${JSON.stringify({
     "@context": "https://schema.org",
-    "@type": "Person",
-    name: website.author,
-    url: website.siteUrl,
-    image: website.image,
-    jobTitle: "Wissenschaftler",
-    sameAs: [
-      "https://instagram.com/jens.ation",
-      "https://www.linkedin.com/in/jenskrumsieck",
-      "https://github.com/JensKrumsieck",
-      "https://www.facebook.com/jens.krumsieck/",
+    "@graph": [
+      {
+        "@type": "Person",
+        name: website.author,
+        url: website.siteUrl,
+        image: website.image,
+        jobTitle: "Wissenschaftler",
+        sameAs: [
+          "https://instagram.com/jens.ation",
+          "https://www.linkedin.com/in/jenskrumsieck",
+          "https://github.com/JensKrumsieck",
+          "https://www.facebook.com/jens.krumsieck/",
+        ],
+      },
+      {
+        "@type": "WebSite",
+        name: website.siteTitle,
+        url: website.siteUrl,
+        inLanguage: "de-DE",
+      },
     ],
   })}</script>`}
 </svelte:head>

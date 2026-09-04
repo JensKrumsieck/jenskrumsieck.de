@@ -9,8 +9,9 @@ export async function GET({ }) {
         'Cache-Control': 'max-age=0, s-maxage=3600',
         'Content-Type': 'application/xml',
     }
-    const pages = ['blog', 'publications', 'about', 'projects', "topics", "topics/mobility"]
+    const pages = ['blog', 'publications', 'about', 'projects', "themen", "themen/mobilitaet"]
     const statics = ['impressum', 'privacy']
+    const today = dayjs().format("YYYY-MM-DD")
     const client = createClient()
     const posts = await client.getAllByType('article', { orderings: { field: 'my.article.publish_date', direction: 'desc' } })
     return new Response(`<?xml version="1.0" encoding="UTF-8" ?>
@@ -19,12 +20,14 @@ export async function GET({ }) {
                 <loc>${website.siteUrl}</loc>
                 <changefreq>daily</changefreq>
                 <priority>1.0</priority>
+                <lastmod>${today}</lastmod>
             </url>
             ${pages.map(page =>
         `<url>
                 <loc>${website.siteUrl}/${page}</loc>
                 <changefreq>daily</changefreq>
                 <priority>0.7</priority>
+                <lastmod>${today}</lastmod>
             </url>`
     ).join("")}
         ${statics.map(page =>
@@ -32,6 +35,7 @@ export async function GET({ }) {
                 <loc>${website.siteUrl}/${page}</loc>
                 <changefreq>monthly</changefreq>
                 <priority>0.4</priority>
+                <lastmod>${today}</lastmod>
             </url>`
     ).join("")}
             ${posts.map(post =>

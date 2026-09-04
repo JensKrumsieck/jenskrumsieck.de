@@ -33,7 +33,7 @@
           {title}
         </h4>
         <p
-          class="text-sm md:rounded-full md:bg-primary-50 border-primary-500 text-black md:bord er md:px-1.5 md:py-0.5"
+          class="text-sm md:rounded-full md:bg-primary-50 border-primary-500 text-black md:border md:px-1.5 md:py-0.5"
         >
           {@html times}
         </p>

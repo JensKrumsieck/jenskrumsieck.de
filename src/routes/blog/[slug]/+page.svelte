@@ -28,21 +28,33 @@
   const hero_image = prismic.asImageSrc(post.data.hero_image);
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: title,
-    description: description,
-    image: image ?? website.image,
-    datePublished: post.first_publication_date,
-    dateModified: post.last_publication_date,
-    url: website.siteUrl + "/blog/" + post.uid,
-    author: {
-      "@type": "Person",
-      name: post.data.author?.data?.name ?? website.author,
-    },
-    publisher: {
-      "@type": "Person",
-      name: website.author,
-    },
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        headline: title,
+        description: description,
+        image: image ?? website.image,
+        datePublished: post.first_publication_date,
+        dateModified: post.last_publication_date,
+        url: website.siteUrl + "/blog/" + post.uid,
+        author: {
+          "@type": "Person",
+          name: post.data.author?.data?.name ?? website.author,
+        },
+        publisher: {
+          "@type": "Person",
+          name: website.author,
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Start", item: website.siteUrl },
+          { "@type": "ListItem", position: 2, name: "Blog", item: website.siteUrl + "/blog" },
+          { "@type": "ListItem", position: 3, name: title, item: website.siteUrl + "/blog/" + post.uid },
+        ],
+      },
+    ],
   };
 </script>
 
