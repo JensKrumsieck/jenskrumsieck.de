@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount, onDestroy, getContext, setContext, tick } from "svelte";
+  import { onMount, onDestroy, tick } from "svelte";
   export let stretchFirst = false,
     gridGap = "0.5em",
     colWidth = "minmax(Min(20em, 100%), 1fr)",
@@ -65,7 +65,7 @@
       grids = _masonryArr.map((grid) => {
         return {
           _el: grid,
-          gap: parseFloat(getComputedStyle(grid).gridRowGap),
+          gap: parseFloat(getComputedStyle(grid).rowGap),
           items: [...grid.childNodes].filter(
             (c) =>
               c.nodeType === 1 &&
