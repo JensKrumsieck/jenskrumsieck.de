@@ -15,20 +15,20 @@ type IgPost = {
 /** @type {import('./$types').PageServerLoad} */
 export async function load() {
     const client = createClient()
-    const posts = await client.getByType('article', { fetchLinks: ['author.name'], orderings: { field: 'my.article.publish_date', direction: 'desc' }, pageSize: 4 })
-    const response = await fetch(INSTAGRAM_FEED_URL);
-    let instagram: IgPost[] = []
-    try {
-        instagram = await response.json();
-    }
-    catch {
-        console.log("Not valid json")
-    }
+    const [posts, instagram] = await Promise.all([
+        client.getByType('article', { fetchLinks: ['author.name'], orderings: { field: 'my.article.publish_date', direction: 'desc' }, pageSize: 4 }),
+        fetchInstagram()
+    ])
 
-    if (posts) {
-        return { posts, instagram }
-    }
-    return {
-        status: 404
+    return { posts, instagram }
+}
+
+async function fetchInstagram(): Promise<IgPost[]> {
+    try {
+        const response = await fetch(INSTAGRAM_FEED_URL);
+        return await response.json();
+    } catch (error) {
+        console.error("Failed to load Instagram feed", error)
+        return []
     }
 }

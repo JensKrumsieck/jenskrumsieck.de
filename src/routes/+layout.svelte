@@ -69,7 +69,7 @@
         name: website.author,
         url: website.siteUrl,
         image: website.image,
-        jobTitle: "Wissenschaftler",
+        jobTitle: "Wissenschaftler und Kandidat für den Stadtrat Braunschweig",
         sameAs: [
           "https://instagram.com/jens.ation",
           "https://www.linkedin.com/in/jenskrumsieck",

@@ -8,11 +8,9 @@
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(/fonts/GrueneTypeNeue-Regular.woff) format('woff2');
+        src: url(/fonts/GrueneTypeNeue-Regular.woff) format('woff');
     }
 }
-
-@import "tailwindcss";
 
 @theme {
     /* Colors */

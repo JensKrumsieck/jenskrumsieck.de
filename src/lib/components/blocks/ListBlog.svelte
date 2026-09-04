@@ -15,7 +15,7 @@
   <div class="px-2 pb-2 flex flex-col gap-2">
     <h3 class="text-2xl font-gruene">{prismic.asText(post.data.title)}</h3>
     <p>
-      {@html getExcerpt(prismic.asHTML(post.data.body[0].primary.content) ?? "", 250)}
+      {@html getExcerpt(prismic.asHTML(post.data.body[0]?.primary.content) ?? "", 250)}
     </p>
     <p class="uppercase text-xs items-end text-secondary-500">
       <Date date={prismic.asDate(post.data.publish_date)} />

@@ -1,7 +1,6 @@
 <script lang="ts">
-  import { page } from "$app/stores";
+  import { page } from "$app/state";
 
-  export let prefetch = false;
   export let href = "";
   export let active = false;
   export let button = false;
@@ -12,19 +11,13 @@
     padding;
 
   $: active =
-    $page.url.href == href ||
-    ($page.url.pathname.includes(href) && href != "/") ||
-    ($page.url.pathname == "/" && href == "/");
+    page.url.href == href ||
+    (page.url.pathname.includes(href) && href != "/") ||
+    (page.url.pathname == "/" && href == "/");
 </script>
 
 <li class="nav-link" class:active>
-  {#if prefetch}
-    <a {href} class={linkCSS}>
-      <slot />
-    </a>
-  {:else}
-    <a {href} class={linkCSS}>
-      <slot />
-    </a>
-  {/if}
+  <a {href} class={linkCSS}>
+    <slot />
+  </a>
 </li>

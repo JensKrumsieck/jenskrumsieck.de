@@ -25,7 +25,7 @@
   <div class="absolute top-0 z-0 h-full w-full bg-secondary-600/50 md:bg-transparent md:bg-linear-to-r from-secondary-600 from-25% to-secondary-600/20 to-50%"></div>
   <Container class="flex z-1" padding fullHeight nav>
     <div class="flex flex-col md:max-w-[70%] justify-center text-neutral-600 z-2">
-      <img src="/Sonnenblume_RGB_gelb.svg" fetchpriority="high" alt="Sonnenblumen Logo von BÜNDNIS 90/DIE GRÜNEN" class="w-48 mb-12" />
+      <img src="/Sonnenblume_RGB_gelb.svg" alt="Sonnenblumen Logo von BÜNDNIS 90/DIE GRÜNEN" class="w-48 mb-12" />
       <h1 class="font-gruene text-6xl">Dr. Jens Krumsieck</h1>
       <p class="text-3xl pt-2 font-bold">Mobilität | Gerechtigkeit | Zukunft</p>
       <p class="text-2xl pt-4">Kandidat für den Stadtrat in Braunschweig-Südwest</p>
@@ -68,8 +68,8 @@
 <Container class="md:justify-center flex flex-col">
   <Masonry gridGap="1rem">
     {#each instagram as post}
-      <a href={post.permalink} target="_blank" class="block break-inside-avoid hover:opacity-80 transition-opacity">
-        <img class="w-full rounded-lg shadow-lg" src={post.image_url} alt={post.alt_text} />
+      <a href={post.permalink} target="_blank" rel="noopener noreferrer" class="block break-inside-avoid hover:opacity-80 transition-opacity">
+        <img class="w-full rounded-lg shadow-lg" src={post.image_url} alt={post.alt_text} loading="lazy" decoding="async" />
       </a>
     {/each}
   </Masonry>
