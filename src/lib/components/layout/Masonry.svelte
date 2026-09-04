@@ -64,10 +64,16 @@
   onMount(() => {
     _window = window;
     _window.addEventListener("resize", refreshLayout, false); /* on resize */
+    /* image load events don't bubble, so listen on capture phase to catch
+       images inside grid items finishing after the initial layout pass */
+    masonryElement.addEventListener("load", refreshLayout, true);
   });
   onDestroy(() => {
     if (_window) {
       _window.removeEventListener("resize", refreshLayout, false); /* on resize */
+    }
+    if (masonryElement) {
+      masonryElement.removeEventListener("load", refreshLayout, true);
     }
   });
 
