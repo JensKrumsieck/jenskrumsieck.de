@@ -2,9 +2,10 @@ import createClient from "$lib/content/prismic";
 export const ssr = true;
 
 /** @type {import('./$types').PageLoad} */
-export async function load({ fetch }) {
+export async function load({ fetch, url }) {
   const client = createClient({ fetch })
-  const posts = await client.getByType('article', { fetchLinks: ['author.name'], orderings: { field: 'my.article.publish_date', direction: 'desc' }, pageSize: 30 })
+  const page = Number(url.searchParams.get('page')) || 1
+  const posts = await client.getByType('article', { fetchLinks: ['author.name'], orderings: { field: 'my.article.publish_date', direction: 'desc' }, pageSize: 10, page })
   return {
     posts: posts,
     title: "Blog",
