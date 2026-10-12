@@ -37,9 +37,9 @@
       <ul class="list-disc">
         <li>Entwicklung von Software zur Analyse komplexer dreidimensionaler Molekülstrukturen (Desktop & Web)</li>
         <li>Implementierung numerischer und geometrischer Analyseverfahren für wissenschaftliche Datensätze</li>
-        <li>Durchführung und Auswertung quantenchemischer Simulationen auf Hochleistungsrechnern (SLURM)</li>
+        <li>Durchführung und Auswertung quantenchemischer Simulationen (DFT) auf Hochleistungsrechnern (SLURM)</li>
         <li>Statistische Analyse experimenteller Daten (u. a. spektroskopische Datensätze) mit Python.</li>
-        <li>Synthese und Charakterisierung anorganischer Molekülverbindungen unter Verwendung der etablierten Methoden.</li>
+        <li>Synthese und Charakterisierung anorganischer Molekülverbindungen unter Verwendung der etablierten Methoden (z.B. ESI-MS, UV/Vis, NMR, EPR)</li>
         <li>Publikation wissenschaftlicher Ergebnisse sowie Präsentation auf Konferenzen</li>
         <li>Betreuung von Studierenden und Anleitung wissenschaftlicher Arbeiten</li>
       </ul>
