@@ -6,8 +6,8 @@
 </script>
 
 <Container padding class="my-12">
-  <SubTitle>Lebenslauf</SubTitle>
-  <h3 class="text-2xl font-gruene mt-3 text-primary-600">Berufserfahrung</h3>
+  <SubTitle tag="h1">Lebenslauf</SubTitle>
+  <h2 class="text-2xl font-gruene mt-3 text-primary-600">Berufserfahrung</h2>
   <CvItem
     title="Wissenschaftlicher Mitarbeiter (FAIRagro)"
     institution="Johann Heinrich von Thünen-Institut, Team Forschungs- und Geodaten"
@@ -60,7 +60,7 @@
     </div>
   </CvItem>
 
-  <h3 class="text-2xl font-gruene mt-3 text-primary-600">Ausbildung</h3>
+  <h2 class="text-2xl font-gruene mt-3 text-primary-600">Ausbildung</h2>
   <CvItem title="Promotion in Anorganischer Chemie" institution="Technische Universität Braunschweig, Institut für Anorganische und Analytische Chemie" times="Juni 2018 - Januar 2024" image="tubs.svg">
     <div>
       <p><strong>Abschluss mit Auszeichnung (summa cum laude)</strong></p>
@@ -92,7 +92,7 @@
     </div>
   </CvItem>
 
-  <h3 class="text-2xl font-gruene mt-3 text-primary-600">Ehrenamt</h3>
+  <h2 class="text-2xl font-gruene mt-3 text-primary-600">Ehrenamt</h2>
   <CvItem title="Mitglied des Kreisvorstands" institution="BÜNDNIS 90/DIE GRÜNEN Braunschweig" times="seit März 2024" image="gruene.svg" tags={["Moderation", "Projektmanagement", "Wahlanalyse", "Wahlkampfplanung"]}>
     <ul class="list-disc">
       <li>
@@ -115,7 +115,7 @@
       </li>
     </ul>
   </CvItem>
-  <h3 class="text-2xl font-gruene mt-3 text-primary-600">Fortbildungen</h3>
+  <h2 class="text-2xl font-gruene mt-3 text-primary-600">Fortbildungen</h2>
   <div class="mt-3">
     <ul>
       <li>Kommunizieren & Kooperieren – Bundesakademie für öffentliche Verwaltung (BAköV), 2026</li>
@@ -126,7 +126,7 @@
     </ul>
   </div>
 
-  <h3 class="text-2xl font-gruene mt-3 text-primary-600">Kompetenzen</h3>
+  <h2 class="text-2xl font-gruene mt-3 text-primary-600">Kompetenzen</h2>
   <div class="mt-3">
     <h4 class=" text-xl font-black italic">IT-Fähigkeiten</h4>
     <ul>
@@ -143,7 +143,7 @@
     </p>
   </div>
 
-  <h3 class="text-2xl font-gruene mt-3 text-primary-600">Mitgliedschaften</h3>
+  <h2 class="text-2xl font-gruene mt-3 text-primary-600">Mitgliedschaften</h2>
   <ul class="mt-3">
     <li>Gesellschaft Deutscher Chemiker (GdCh; seit 2018)</li>
     <li>BÜNDNIS 90/DIE GRÜNEN (seit 2021)</li>

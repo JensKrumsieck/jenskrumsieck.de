@@ -29,16 +29,16 @@
     />
     <div class="w-full">
       <div class="md:flex justify-between items-center">
-        <h4 class="text-xl font-black text-secondary-600">
+        <h3 class="text-xl font-black text-secondary-600">
           {title}
-        </h4>
+        </h3>
         <p
           class="text-sm md:rounded-full md:bg-primary-50 border-primary-500 text-black md:border md:px-1.5 md:py-0.5"
         >
           {@html times}
         </p>
       </div>
-      <h5 class="italic text-md">{institution}</h5>
+      <h4 class="italic text-md">{institution}</h4>
 
       <div class="my-1">
         {@render children?.()}

@@ -4,7 +4,7 @@
   export let slice;
   let width = 550;
   const img = slice.primary.content;
-  let height = img.dimensions.height / (img.dimensions.width / width);
+  let height = Math.round(img.dimensions.height / (img.dimensions.width / width));
 </script>
 
 <section class="my-10 flex justify-center relative">

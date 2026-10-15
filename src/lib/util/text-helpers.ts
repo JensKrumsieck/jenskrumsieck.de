@@ -10,7 +10,7 @@ export function stripTags(str: string): string {
 }
 
 export function getExcerpt(str: string, n: number): string {
-    str = str.replace(/<br\s*\/?>/gi, "\n")
+    str = str.replace(/<br\s*\/?>/gi, "\n").replace(/<\/(p|li|h[1-6]|div)>/gi, " ")
     let tagFree = stripTags(str)
     tagFree = tagFree.replace(/(?:\r\n|\r|\n)/g, '<br />');
     tagFree = tagFree.replace(/(<br \/>*)+/g, "<br/>");

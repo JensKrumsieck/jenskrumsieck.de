@@ -17,6 +17,19 @@
     const thumbs = import.meta.glob<{ default: any }>("/src/lib/assets/publications/*.{png,jpg,avif}", { eager: true, query: "?enhanced&w=112;56" });
   const originals = import.meta.glob<string>("/src/lib/assets/publications/*.{png,jpg,avif}", { eager: true, query: "?url", import: "default" });
   const thumb = $derived(image ? thumbs[`/src/lib/assets/publications/${image}`]?.default : undefined);
+  type Part = { type: "text" | "em" | "strong" | "doi"; value: string };
+  const parts = $derived(
+    [
+      names?.length ? { type: "text", value: names.join(", ") } : null,
+      kind ? { type: "text", value: kind } : null,
+      { type: "em", value: location },
+      { type: "strong", value: date },
+      edition ? { type: "em", value: edition } : null,
+      pages ? { type: "text", value: pages } : null,
+      isbn ? { type: "text", value: `ISBN: ${isbn}` } : null,
+      doi ? { type: "doi", value: doi } : null,
+    ].filter((part): part is Part => part !== null),
+  );
   const original = $derived(image ? originals[`/src/lib/assets/publications/${image}`] : undefined);
 </script>
 
@@ -31,14 +44,7 @@
           {title}
         </h3>
       </div>
-      {#each names as name}{name},&nbsp;{/each}
-      {#if kind}{kind},{/if}
-      <em>{location}</em>,
-      <strong>{date}</strong>,
-      {#if edition}<em>{edition}</em>,{/if}
-      {#if pages}{pages},{/if}
-      {#if isbn}ISBN: {isbn}{/if}
-      {#if doi}DOI: <a class="font-secondary-600" href="https://doi.org/{doi}">{doi}</a>{/if}.
+      {#each parts as part, i}{#if i > 0}, {/if}{#if part.type === "em"}<em>{part.value}</em>{:else if part.type === "strong"}<strong>{part.value}</strong>{:else if part.type === "doi"}DOI: <a class="font-secondary-600" href="https://doi.org/{part.value}">{part.value}</a>{:else}{part.value}{/if}{/each}.
     </div>
   </div>
 </div>
