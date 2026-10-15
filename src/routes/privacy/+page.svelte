@@ -6,838 +6,111 @@
 <Container padding class="my-12">
   <Title>Datenschutzerklärung</Title>
 
-  <article
-    class="mt-12 prose max-w-none prose-lg prose-a:text-dark-green hover:prose-a:text-dark"
-  >
-    <div class="ce_text privacy_item general_part1 block">
-      <h1>Datenschutzerklärung</h1>
-      <div class="text">
-        <p>
-          Mit dieser Datenschutzerklärung möchten wir Sie über Art, Umfang und
-          Zweck der Verarbeitung von personenbezogenen Daten (im Folgenden auch
-          nur als "Daten" bezeichnet) aufklären. Personenbezogene Daten sind
-          alle Daten, die einen persönlichen Bezug zu Ihnen aufweisen, z. B.
-          Name, Adresse, E-Mail-Adresse oder Ihr Nutzerverhalten. Die
-          Datenschutzerklärung gilt für alle von uns vorgenommene
-          Daten-Verarbeitungsvorgänge sowohl im Rahmen unserer Kerntätigkeit als
-          auch für die von uns vorgehaltenen Online-Medien.
-        </p>
-      </div>
-    </div>
-    <div class="ce_text privacy_item contact_responsible block">
-      <div class="text">
-        <h2>Wer bei uns für die Datenverarbeitung verantwortlich ist</h2>
-        <p>Verantwortlich für die Datenverarbeitung ist:</p>
-      </div>
-    </div>
+  <article class="mt-12 prose max-w-none prose-lg prose-a:text-dark-green hover:prose-a:text-dark">
     <p>
-      Jens Krumsieck<br />Celler Str. 108<br />38114 Braunschweig<br
-      />Deutschland<br />017630629281<br />mail@jenskrumsieck.de<br
-      />https://jenskrumsieck.de/impressum
+      Mit dieser Datenschutzerklärung informiere ich Sie darüber, welche personenbezogenen Daten (z. B. IP-Adresse, Name, E-Mail-Adresse) beim Besuch dieser Website und bei der Kontaktaufnahme mit mir verarbeitet werden und welche Rechte Sie haben.
     </p>
-    <div class="ce_text privacy_item contact_dataprotectioncommissioner block">
-      <div class="text">
-        <h2>Kontaktdaten unseres Datenschutzbeauftragten</h2>
-        <p>
-          Unseren Datenschutzbeauftragten können Sie per E-Mail unter
-          mail@jenskrumsieck.de oder unter unserer Postadresse mit dem Zusatz
-          „an den Datenschutzbeauftragten“ erreichen.
-        </p>
-      </div>
-    </div>
-    <div class="ce_text privacy_item general_part3 block">
-      <div class="text">
-        <h2>Ihre Rechte nach der DSGVO</h2>
-        <p>
-          Nach der DSGVO stehen Ihnen die nachfolgend aufgeführten Rechte zu,
-          die Sie jederzeit bei dem in Ziffer 1. dieser Datenschutzerklärung
-          genannten Verantwortlichen geltend machen können:
-        </p>
-        <ul>
-          <li>
-            <strong>Recht auf Auskunft:</strong> Sie haben das Recht, von uns Auskunft
-            darüber zu verlangen, ob und welche Daten wir von Ihnen verarbeiten.
-          </li>
-          <li>
-            <strong>Recht auf Berichtigung:</strong> Sie haben das Recht, die Berichtigung
-            unrichtiger oder Vervollständigung unvollständiger Daten zu verlangen.
-          </li>
-          <li>
-            <strong>Recht auf Löschung:</strong> Sie haben das Recht, die Löschung
-            Ihrer Daten zu verlangen.
-          </li>
-          <li>
-            <strong>Recht auf Einschränkung:</strong> Sie haben in bestimmten Fällen
-            das Recht zu verlangen, dass wir Ihre Daten nur noch eingeschränkt bearbeiten.
-          </li>
-          <li>
-            <strong>Recht auf Datenübertragbarkeit:</strong> Sie haben das Recht
-            zu verlangen, dass wir Ihnen oder einem anderen Verantwortlichen Ihre
-            Daten in einem strukturierten, gängigen und maschinenlesebaren Format
-            übermitteln.
-          </li>
-          <li>
-            <strong>Beschwerderecht</strong>: Sie haben das Recht, sich bei
-            einer Aufsichtsbehörde zu beschweren. Zuständig ist die
-            Aufsichtsbehörde Ihres üblichen Aufenthaltsortes, Ihres
-            Arbeitsplatzes oder unseres Firmensitzes.
-          </li>
-        </ul>
-        <h3>Widerrufsrecht</h3>
-        <p>
-          Sie haben das Recht, die von Ihnen erteilte Einwilligung zur
-          Datenverarbeitung jederzeit zu widerrufen.
-        </p>
-        <h3>Widerspruchsrecht</h3>
-        <p>
-          Sie haben das Recht, jederzeit gegen die Verarbeitung Ihrer Daten, die
-          wir auf unser berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO
-          stützen, Widerspruch einzulegen. Sofern Sie von Ihrem
-          Widerspruchsrecht Gebrauch machen, bitten wir Sie um die Darlegung der
-          Gründe. Wir werden Ihre personenbezogenen Daten dann nicht mehr
-          verarbeiten, es sei denn, wir können Ihnen gegenüber nachweisen, dass
-          zwingende schutzwürdige Gründe an der Datenverarbeitung Ihre
-          Interessen und Rechte überwiegen.
-        </p>
-        <p>
-          <span style="text-decoration: underline;"
-            ><strong
-              >Unabhängig vom vorstehend Gesagten, haben Sie das jederzeitige
-              Recht, der Verarbeitung Ihrer personenbezogenen Daten für Zwecke
-              der Werbung und Datenanalyse zu widersprechen.</strong
-            ></span
-          >
-        </p>
-        <p>
-          Ihren Widerspruch richten Sie bitte an die oben angegebene
-          Kontaktadresse des Verantwortlichen.
-        </p>
-        <h2>Wann löschen wir Ihre Daten?</h2>
-        <p>
-          Wir löschen Ihre Daten dann, wenn wir diese nicht mehr brauchen oder
-          Sie uns dies vorgeben. Das bedeutet, dass - sofern sich aus den
-          einzelnen Datenschutzhinweisen dieser Datenschutzerklärung nichts
-          anderes ergibt - wir Ihre Daten löschen,
-        </p>
-        <ul>
-          <li>
-            wenn der Zweck der Datenverarbeitung weggefallen ist und damit die
-            jeweilige in den einzelnen Datenschutzhinweisen genannte
-            Rechtsgrundlage nicht mehr besteht, also bspw.
-            <ul>
-              <li>
-                nach Beendigung der zwischen uns bestehenden vertraglichen oder
-                mitgliedschaftlichen Beziehungen (Art. 6 Abs. 1 lit. a DSGVO)
-                oder
-              </li>
-              <li>
-                nach Wegfall unseres berechtigten Interesses an der weiteren
-                Verarbeitung oder Speicherung Ihrer Daten (Art. 6 Abs. 1 lit. f
-                DSGVO),
-              </li>
-            </ul>
-          </li>
-          <li>
-            wenn Sie von Ihrem Widerrufsrecht Gebrauch machen und keine
-            anderweitige gesetzliche Rechtsgrundlage für die Verarbeitung im
-            Sinne von Art. 6 Abs. 1 lit. b-f DSGVO eingreift,
-          </li>
-          <li>
-            wenn Sie vom Ihrem Widerspruchsrecht Gebrauch machen und der
-            Löschung keine zwingenden schutzwürdigen Gründe entgegenstehen.
-          </li>
-        </ul>
-        <p>
-          Sofern wir (bestimmte Teile) Ihre(r) Daten jedoch noch für andere
-          Zwecke vorhalten müssen, weil dies etwa steuerliche
-          Aufbewahrungsfristen (in der Regel 6 Jahre für Geschäftskorrespondenz
-          bzw. 10 Jahre für Buchungsbelege) oder die Geltendmachung, Ausübung
-          oder Verteidigung von Rechtsansprüchen aus vertraglichen Beziehungen
-          (bis zu vier Jahren) erforderlich machen oder die Daten zum Schutz der
-          Rechte einer anderen natürlichen oder juristischen Person gebraucht
-          werden, löschen wir (den Teil) Ihre(r) Daten erst nach Ablauf dieser
-          Fristen. Bis zum Ablauf dieser Fristen beschränken wir die
-          Verarbeitung dieser Daten jedoch auf diese Zwecke (Erfüllung der
-          Aufbewahrungspflichten).
-        </p>
-      </div>
-    </div>
-    <div class="ce_text privacy_item general_part2 block">
-      <div class="text">
-        <h2>Cookies</h2>
-        <p>
-          Unsere Internetseite nutzt Cookies. Bei Cookies handelt es sich um
-          kleine Textdateien, bestehend aus einer Reihe von Zahlen und
-          Buchstaben, die auf dem von Ihnen genutzten Endgerät abgelegt und
-          gespeichert werden. Cookies dienen vorrangig dazu, Informationen
-          zwischen dem von Ihnen genutzten Endgerät und unserer Webseite
-          auszutauschen. Hierzu gehören u. a. die Spracheinstellungen auf einer
-          Webseite, der Login-Status oder die Stelle, an der ein Video geschaut
-          wurde.
-        </p>
-        <p>
-          Beim Besuch unserer Webseiten werden zwei Typen von Cookies
-          eingesetzt:
-        </p>
-        <ul>
-          <li>
-            <strong>Temporäre Cookies (Session Cookies):</strong> Diese speichern
-            eine sogenannte Session-ID, mit welcher sich verschiedene Anfragen Ihres
-            Browsers der gemeinsamen Sitzung zuordnen lassen. Die Session-Cookies
-            werden gelöscht, wenn Sie sich ausloggen oder Ihren Browser schließen.
-          </li>
-          <li>
-            <strong>Permanente Cookies: </strong>Permanente Cookies bleiben auch
-            nach dem Schließen des Browsers gespeichert. Dadurch erkennt unsere
-            Webseite Ihren Rechner wieder, wenn Sie auf unsere Webseite
-            zurückkehren. In diesen Cookies werden beispielsweise Informationen
-            zu Spracheinstellungen oder Log-In-Informationen gespeichert.
-            Außerdem kann mit diesen Cookies Ihr Surfverhalten dokumentiert und
-            gespeichert werden. Diese Daten können zu Statistik-, Marketing- und
-            Personalisierungs-Zwecken verwendet werden.
-          </li>
-        </ul>
-        <p>
-          Neben der vorstehenden Einteilung können Cookies auch im Hinblick auf
-          ihren Einsatzzweck unterschieden werden:
-        </p>
-        <ul>
-          <li>
-            <strong>Notwendige Cookies:</strong> Dies sind Cookies, die für den Betrieb
-            unserer Webseite unbedingt erforderlich sind, um Logins oder Warenkörbe
-            für die Dauer Ihrer Sitzung zu speichern oder Cookies, die aus Sicherheitsgründen
-            gesetzt werden.
-          </li>
-          <li>
-            <strong
-              >Statistik-, Marketing- und Personalisierungs-Cookies:</strong
-            > Dies sind Cookies, die für Analysezwecke oder die Reichweitenmessung
-            eingesetzt werden. Über solche "Tracking"-Cookies können insbesondere
-            Informationen zu eingegebenen Suchbegriffen oder die Häufigkeit von Seitenaufrufen
-            gespeichert sein. Daneben kann aber auch das Surfverhalten eines einzelnen
-            Nutzers (z. B. Betrachten bestimmter Inhalte, Nutzen von Funktionen etc.)
-            in einem Nutzerprofil gespeichert werden. Solche Profile werden genutzt,
-            um Nutzern Inhalte anzuzeigen, die deren potentiellen Interessen entsprechen.
-            Soweit wir Dienste nutzen, über die Cookies zu Statistik-, Marketing-
-            und Personalisierungs-Zwecken auf Ihrem Endgerät gespeichert werden,
-            informieren wir Sie hierzu gesondert in den nachfolgenden Abschnitten
-            unserer Datenschutzerklärung oder im Rahmen der Einholung Ihrer Einwilligung.
-          </li>
-        </ul>
-        <p><strong>Betroffene Daten:</strong></p>
-        <ul>
-          <li>Nutzungsdaten (bspw. Zugriffszeiten, angeklickte Webseiten)</li>
-          <li>
-            Kommunikationsdaten (bspw. Informationen über das genutzte Gerät,
-            IP-Adresse).
-          </li>
-        </ul>
-        <p>
-          <strong>Betroffene Personen: </strong>Nutzer unserer Onlineangebote
-        </p>
-        <p>
-          <strong>Verarbeitungszweck: </strong>Ausspielen unserer
-          Internetseiten, Gewährleistung des Betriebs unserer Internetseiten,
-          Verbesserung unseres Internetangebotes, Kommunikation und Marketig
-        </p>
-        <p>
-          <strong
-            >Rechtsgrundlage:<br />Berechtigtes Interesse, Art. 6 Abs. 1 lit. f
-            DSGVO</strong
-          ><br />Sofern wir von Ihnen keine Einwilligung in das Setzen der
-          Cookies einholen, stützen wir die Verarbeitung Ihrer Daten auf unser
-          berechtigtes Interesse, die Qualität und Benutzerfreundlichkeit
-          unseres Internetauftritts, insbesondere der Inhalte und Funktionen zu
-          verbessern. Sie haben über die Sicherheitseinstellungen Ihres
-          Browsers, dem Einsatz der von uns im Rahmen unseres berechtigten
-          Interesses gesetzten Cookies zu widersprechen. Dort haben Sie die
-          Möglichkeit festzulegen, ob Sie etwa von vornherein keine oder nur auf
-          Nachfrage Cookies akzeptieren oder aber festlegen, dass Cookies nach
-          jedem Schließen Ihres Browsers gelöscht werden. Werden Cookies für
-          unsere Webseite deaktiviert, können möglicherweise nicht mehr alle
-          Funktionen der Webseite vollumfänglich genutzt werden.
-        </p>
-      </div>
-    </div>
-    <div class="ce_text block">
-      <div class="text">
-        <p>
-          <strong>Einwilligung, Art. 6 Abs. 1 lit. a DSGVO</strong><br />Sofern
-          wir Sie vor Ihrem Besuch unserer Internetpräsenz darum bitten,
-          bestimmte Cookies auf Ihr Endgerät setzen zu dürfen, und Sie hierein
-          einwilligen, ist in der von Ihnen erteilten Einwilligung die
-          Rechtsgrundlage zu sehen. Wir informieren Sie im Rahmen der
-          Einwilligung darüber, welche Cookies wir im Einzelnen setzen. Sofern
-          Sie diese Einwilligung nicht erteilen, setzen sich lediglich die
-          sogenannten technisch notwendigen Cookies, die für den ordnungsgemäßen
-          Betrieb unserer Internetseiten sowie deren Darstellung in Ihrem
-          Browser erforderlich sind. Sofern Sie in das Setzen von Cookies
-          eingewilligt haben, haben die jederzeitige Möglichkeit, uns gegenüber
-          der erteilten Einwilligung zu widerrufen.
-        </p>
-      </div>
-    </div>
-    <div class="ce_text privacy_item external_hosting block">
-      <div class="text">
-        <h2>Webhosting</h2>
-        <p>
-          Wir bedienen uns zum Vorhalten unserer Internetseiten eines Anbieters,
-          auf dessen Server unsere Internetseiten gespeichert und für den Abruf
-          im Internet verfügbar gemacht werden (Hosting). Hierbei können von dem
-          Anbieter all diejenigen über den von Ihnen genutzten Browser
-          übertragenen Daten verarbeitet werden, die bei der Nutzung unserer
-          Internetseiten anfallen. Hierzu gehören insbesondere Ihre IP-Adresse,
-          die der Anbieter benötigt, um unser Online-Angebot an den von Ihnen
-          genutzten Browser ausliefern zu können sowie sämtliche von Ihnen über
-          unsere Internetseite getätigten Eingaben. Daneben kann der von uns
-          genutzte Anbieter&nbsp;&nbsp;
-        </p>
-        <ul>
-          <li>
-            das Datum und die Uhrzeit des Zugriffs auf unsere Internetseite
-          </li>
-          <li>Zeitzonendifferenz zur Greenwich Mean Time (GMT)</li>
-          <li>Zugriffsstatus (HTTP-Status)</li>
-          <li>die übertragene Datenmenge</li>
-          <li>der Internet-Service-Provider des zugreifenden Systems</li>
-          <li>der von Ihnen verwendete Browsertyp und dessen Version</li>
-          <li>das von Ihnen verwendete Betriebssystem</li>
-          <li>
-            die Internetseite, von welcher Sie gegebenenfalls auf unsere
-            Internetseite gelangt sind
-          </li>
-          <li>
-            die Seiten bzw. Unterseiten, welche Sie auf unserer Internetseite
-            besuchen.
-          </li>
-        </ul>
-        <p>
-          erheben. Die vorgenannten Daten werden als Logfiles auf den Servern
-          unseres Anbieters gespeichert. Dies ist erforderlich, um die
-          Stabilität und Sicherheit des Betriebs unserer Internetseite zu
-          gewährleisten.
-        </p>
-        <p class="invisible">&nbsp;</p>
-        <p><strong>Betroffene Daten:</strong></p>
-        <ul>
-          <li>Inhaltsdaten (bspw. Posts, Fotos, Videos)</li>
-          <li>Nutzungsdaten (bspw. Zugriffszeiten, angeklickte Webseiten)</li>
-          <li>
-            Kommunikationsdaten (bspw. Informationen über das genutzte Gerät,
-            IP-Adresse)
-          </li>
-        </ul>
-        <p>
-          <strong>Betroffene Personen: </strong>Nutzer unserer Internetpräsenz
-        </p>
-        <p>
-          <strong>Verarbeitungszweck: </strong>Ausspielen unserer
-          Internetseiten, Gewährleistung des Betriebs unserer Internetseiten
-        </p>
-        <p>
-          <strong>Rechtsgrundlage:</strong> Berechtigtes Interesse, Art. 6 Abs. 1
-          lit. f DSGVO
-        </p>
-        <p><strong>Von uns beauftragte(r) Webhoster:</strong></p>
-      </div>
-    </div>
-    <div class="ce_text block">
-      <div class="text">
-        <p><strong>IONOS SE</strong></p>
-        <p>
-          Dienstanbieter: IONOS SE<br />Internetseite: https://www.ionos.de/<br
-          />Elgendorfer Str. 57 56410 Montabaur<br />Datenschutzerklärung:
-          <a
-            href="https://www.ionos.de/datenschutzerklaerung"
-            target="_blank"
-            class="externalLink">https://www.ionos.de</a
-          >
-        </p>
-      </div>
-    </div>
-    <div class="ce_text block">
-      <div class="text">
-        <h2>Content-Delivery-Network</h2>
-        <p>
-          Wir benutzen zum Ausspielen unserer Internetseiten ein
-          Content-Delivery-Network (CDN). Ein CDN ist ein Netz regional
-          verteilter und über das Internet verbundener Server. Über das CDN
-          werden skalierende Speicher- und Auslieferungskapazitäten zur
-          Verfügung gestellt. Hierdurch werden die Ladezeiten unserer
-          Internetseiten optimiert und auch bei großen Lastspitzen ein optimaler
-          Datendurchsatz gewährleistet. Nutzeranfragen auf unseren
-          Internetseiten werden über Server des CDN geleitet. Aus diesen
-          Datenströmen werden Statistiken erstellt. Dies dient zum einen dazu,
-          potentielle Bedrohungen für unsere Internetseiten durch Schadsoftware
-          frühzeitig zu erkennen und zum anderen unser Angebot stetig zu
-          verbessern und unsere Internetseiten für Sie als Nutzer
-          nutzerfreundlicher auszugestalten.
-        </p>
-        <p>
-          Wir möchten Sie darauf hinweisen, dass je nach Sitzland des unten
-          genannten Diensteanbieters die über den Dienst erfassten Daten
-          außerhalb des Raumes der Europäischen Union übertragen und verarbeitet
-          werden können. Es besteht in diesem Fall das Risiko, dass das von der
-          DSGVO vorgeschriebene Datenschutzniveau nicht eingehalten und die
-          Durchsetzung Ihrer Rechte nicht oder nur erschwert erfolgen kann.
-        </p>
-        <p><strong>Betroffene Daten:</strong></p>
-        <ul>
-          <li>Inhaltsdaten (bspw. Posts, Fotos, Videos)</li>
-          <li>Nutzungsdaten (bspw. Zugriffszeiten, angeklickte Webseiten)</li>
-          <li>
-            Kommunikationsdaten (bspw. Informationen über das genutzte Gerät,
-            IP-Adresse)
-          </li>
-        </ul>
-        <p>
-          <strong>Verarbeitungszweck: </strong>Technische Optimierung der
-          Internetpräsenz, Analyse von Fehlern und Nutzerverhalten
-        </p>
-        <p>
-          <strong>Rechtsgrundlage:</strong> Berechtigtes Interesse, Art. 6 Abs. 1
-          lit. f DSGVO
-        </p>
-        <p><strong>Eingesetze CDN-Dienstleister:</strong></p>
-      </div>
-    </div>
-    <div class="ce_text block">
-      <div class="text">
-        <p><strong>Prismic</strong></p>
-        <p>
-          Diensteanbieter: Prismic.io Inc., 185 Alewife Brook Parkway, Suite 210
-          Cambridge Massachusetts 02138, USA<br />Internetseite:
-          <a href="https://prismic.io/" class="externalLink"
-            >https://prismic.io/</a
-          ><br />Datenschutzerklärung:
-          <a href="https://prismic.io/legal/privacy" class="externalLink"
-            >https://prismic.io/legal/privacy</a
-          ><br />
-          Cookie Policy:
-          <a href="https://prismic.io/legal/cookie-policy" class="externalLink"
-            >https://prismic.io/legal/cookie-policy</a
-          >
-        </p>
-      </div>
-    </div>
-    <div class="ce_text block">
-      <div class="text">
-        <h2>Kontaktaufnahme</h2>
-        <p>
-          Soweit Sie uns über E-Mail, Soziale Medien, Telefon, Fax, Post, oder
-          sonstwie ansprechen und uns hierbei personenbezogene Daten wie Ihren
-          Namen, Ihre Telefonnummer oder Ihre E-Mail-Adresse zur Verfügung
-          stellen oder weitere Angaben zur Ihrer Person oder Ihrem Anliegen
-          machen, verarbeiten wir diese Daten zur Beantwortung Ihrer Anfrage im
-          Rahmen des zwischen uns bestehenden vorvertraglichen oder
-          vertraglichen Beziehungen.
-        </p>
-        <p><strong>Betroffene Daten:</strong></p>
-        <ul>
-          <li>Bestandsdaten (bspw. Namen, Adressen)</li>
-          <li>
-            Kontakdaten (bspw. E-Mail-Adresse, Telefonnummer, Postanschrift)
-          </li>
-          <li>Inhaltsdaten (Texte, Fotos, Videos)</li>
-          <li>Vertragsdaten (bspw. Vertragsgegenstand, Vertragsdauer)</li>
-        </ul>
-        <p>
-          <strong>Betroffene Personen: </strong>Interessenten, Kunden,
-          Geschäfts- und Vertragspartner
-        </p>
-        <p>
-          <strong>Verarbeitungszweck: </strong>Kommunikation sowie Beantwortung
-          von Kontaktanfragen, Büro und Organisationsverfahren
-        </p>
-        <p>
-          <strong>Rechtsgrundlage:</strong> Vertragserfüllung und vorvertragliche
-          Anfragen, Art. 6 Abs. 1 lit. b DSGVO, berechtigtes Interesse, Art. 6 Abs.
-          1 lit. f DSGVO
-        </p>
-      </div>
-    </div>
-    <div class="ce_text block">
-      <div class="text">
-        <h2>Webanalyse und Statistik</h2>
-        <p>
-          Um die Besucherströme auf unserer Internetpräsenz zu erfassen und
-          statistisch auszuwerten, setzen wir Webanalyse-Dienste ein. Solche
-          Dienste erfassen unter anderem Daten darüber, von welcher
-          Internetseite Sie auf unsere Internetpräsenz gelangt sind (sogenannte
-          Referrer), auf welche Seiten unserer Internetpräsenz Sie zugegriffen
-          haben, wie lange Sie unsere Seiten besucht und welche Interaktionen
-          Sie dort vorgenommen haben. Daneben werden Daten zu dem von Ihnen
-          verwendeten Browser, Computersystem sowie der Geräteart erhoben.
-          Außerdem können über einen solchen Dienst auch demographische
-          Informationen, wie bspw. das Alter oder das Geschlecht als pseudonyme
-          Werte erfasst werden. Sofern Sie in die Erhebung Ihrer Standortdaten
-          eingewilligt haben, können, je nach Anbieter, auch diese verarbeitet
-          werden.
-        </p>
-        <p>
-          Um diese Daten zu erfassen und zu speichern, setzt der von uns
-          verwendete Webanalyse-Dienst in der Regel einen Cookie auf das von
-          Ihnen genutzte Endgerät, mit dem auch die Ihnen zugeordnete IP-Adresse
-          erhoben wird. Allerdings wird diese über ein sogenanntes
-          IP-Masking-Verfahren gekürzt, so dass die IP-Adresse nicht mehr Ihrem
-          Besuch auf unserer Internetseite zugeordnet werden kann. Auch im
-          Übrigen werden keine Klardaten wie Namen oder E-Mail-Adressen
-          gespeichert. Weder wir noch der von uns eingesetzte Dienst kennt die
-          Identität der Besucher unserer Internetseiten.
-        </p>
-        <p>
-          Wir möchten Sie darauf hinweisen, dass je nach Sitzland des unten
-          genannten Diensteanbieters die über den Dienst erfassten Daten
-          außerhalb des Raumes der Europäischen Union übertragen und verarbeitet
-          werden können. Es besteht in diesem Fall das Risiko, dass das von der
-          DSGVO vorgeschriebene Datenschutzniveau nicht eingehalten und die
-          Durchsetzung Ihrer Rechte nicht oder nur erschwert erfolgen kann.
-        </p>
-        <p><strong>Betroffene Daten:</strong></p>
-        <ul>
-          <li>Nutzungsdaten (bspw. Zugriffszeiten, angeklickte Webseiten)</li>
-          <li>
-            Kommunikationsdaten (bspw. Informationen über das genutzte Gerät,
-            IP-Adresse).
-          </li>
-        </ul>
-        <p>
-          <strong>Betroffene Personen: </strong>Nutzer unserer Onlineangebote
-        </p>
-        <p>
-          <strong>Verarbeitungszweck: </strong>Reichweitenmessung,
-          Erfolgskontrolle von Kampagnen, Remarketing sowie interessen- und
-          verhaltensbedingtes Marketing
-        </p>
-        <p>
-          <strong>Rechtsgrundlage:</strong> Sofern wir Sie vor dem Einsatz des jeweiligen
-          Dienstes um Ihre Einwilligung gebeten haben, liegt hierin die Rechtsgrundlage,
-          Art. 6 Abs. 1 lit. a DSGVO. Im Übrigen setzen wir den jeweiligen Dienst
-          auf Grund unseres berechtigten Interesse ein, die Besucherströme unserer
-          Internetseiten analysieren, um hierüber die Funktionen, Angebote sowie
-          das Nutzungserlebnis fortlaufend verbessern zu können, Art. 6 Abs. 1 lit.
-          f DSGVO.
-        </p>
-        <p><strong>Wir nutzen folgende Webanalyse-Dienste:</strong></p>
-      </div>
-    </div>
-    <div class="ce_text privacy_item analytics block">
-      <div class="text">
-        <p><strong>Swetrix Analytics</strong></p>
-        <p>
-          Dienstanbieter: Swetrix wird auf unseren Servern unter
-          https://analytics.jenskrumsieck.de selbst betrieben und verwaltet.<br
-          />Internetseite:
-          <a
-            href="https://analytics.jenskrumsieck.de"
-            target="_blank"
-            rel="noopener"
-            class="externalLink">https://analytics.jenskrumsieck.de/</a
-          ><br />
-          Diese Website nutzt Swetrix, einen datenschutzfreundlichen Webanalyse-Dienst.
-          Swetrix wird verwendet, um die Nutzung unserer Website zu analysieren und
-          regelmäßig zu verbessern. Über die gewonnenen Statistiken können wir unser
-          Angebot verbessern und für Sie als Nutzer interessanter ausgestalten.
-        </p>
-        <p><strong>Erhobene Daten:</strong></p>
-        <ul>
-          <li>Browsertyp und Browserversion</li>
-          <li>Verwendetes Betriebssystem</li>
-          <li>Referrer URL (zuvor besuchte Seite)</li>
-          <li>Hostname des zugreifenden Rechners</li>
-          <li>Zeitpunkt der Serveranfrage</li>
-          <li>Besuchte Seiten</li>
-        </ul>
-        <p><strong>Wichtig:</strong></p>
-        <ul>
-          <li>Swetrix verwendet keine Cookies</li>
-          <li>
-            IP-Adressen werden nicht gespeichert (nur temporär gehasht für max.
-            30 Minuten)
-          </li>
-          <li>Alle Daten werden vollständig anonymisiert</li>
-          <li>Keine Weitergabe an Dritte</li>
-          <li>DSGVO-konform</li>
-        </ul>
-      </div>
-    </div>
-    <div class="ce_text block">
-      <div class="text">
-        <h2>Unsere Onlinepräsenzen bei sozialen Netzwerken</h2>
-        <p>
-          Wir betreiben Onlinepräsenzen innerhalb der nachfolgend aufgelisteten
-          sozialen Netzwerke. Besuchen Sie eine dieser Präsenzen, werden durch
-          den jeweiligen Anbieter die unten näher aufgeführten Daten erhoben und
-          verarbeitet. In der Regel werden diese Daten zur Werbe- und
-          Marktforschungszwecke erhoben und hiermit Nutzungsprofile angelegt. In
-          den Nutzungsprofilen können Daten unabhängig des von Ihnen verwendeten
-          Gerätes gespeichert werden. Dies ist insbesondere dann der Fall, wenn
-          Sie Mitglied der jeweiligen Plattform und bei dieser eingeloggt sind.
-          Die Nutzungsprofile können von den Anbietern dazu verwendet werden, um
-          Ihnen interessenbezogene Werbung auszuspielen. Gegen die Erstellung
-          von Nutzerprofilen steht Ihnen ein Widerrufsrecht zu. Um dieses
-          auszuüben, müssen Sie sich an den jeweiligen Anbieter wenden.
-        </p>
-        <p>
-          Wenn Sie einen Account bei einem der unten aufgeführten Anbieter
-          besitzen und beim Besuch unserer Webseite dort eingeloggt sind, kann
-          der jeweilige Anbieter Daten über Ihr Nutzungsverhalten auf unserer
-          Webseite erheben. Um eine solche Verknüpfung Ihrer Daten zu
-          verhindern, können Sie sich vor dem Besuch unserer Seite bei dem
-          Dienst des Anbieters ausloggen.
-        </p>
-        <p>
-          Zu welchem Zweck und in welchem Umfang Daten von dem Anbieter erhoben
-          werden, können Sie den jeweiligen, im Folgenden mitgeteilten,
-          Datenschutzerklärungen der Anbieter entnehmen.
-        </p>
-        <p>
-          Wir möchten Sie darauf hinweisen, dass je nach Sitzland des unten
-          genannten Anbieters die über dessen Plattform erfassten Daten
-          außerhalb des Raumes der Europäischen Union übertragen und verarbeitet
-          werden können. Es besteht in diesem Fall das Risiko, dass das von der
-          DSGVO vorgeschriebene Datenschutzniveau nicht eingehalten und die
-          Durchsetzung Ihrer Rechte nicht oder nur erschwert erfolgen kann.
-        </p>
-        <p><strong>Betroffene Daten:</strong></p>
-        <ul>
-          <li>
-            Bestands- und Kontaktdaten (bspw. Name, Adresse, Telefonnummer,
-            E-Mail-Adresse)
-          </li>
-          <li>Inhaltsdaten (bspw. Posts, Fotos, Videos)</li>
-          <li>Nutzungsdaten (bspw. Zugriffszeiten, angeklickte Webseiten)</li>
-          <li>
-            Kommunikationsdaten (bspw. Informationen über das genutzte Gerät,
-            IP-Adresse).
-          </li>
-        </ul>
-        <p>
-          <strong>Verarbeitungszweck: </strong>Kommunikation und Marketing,
-          Verfolgen und Anaylse von Nutzerverhalten
-        </p>
-        <p>
-          <strong>Rechtsgrundlage:</strong> Einwilligung, Art. 6 Abs. 1 lit. a DSGVO,
-          berechtigtes Interessen Art. 6 Abs. 1 lit. f DSGVO
-        </p>
-        <p>
-          <strong>Widerspruchsmöglichkeiten: </strong>Zu den jeweiligen
-          Widerspruchsmöglichkeiten (Opt-Out) verweisen wir auf die nachfolgend
-          verlinkten Angaben der Anbieter.
-        </p>
-        <p>
-          <strong
-            >Wir unterhalten Onlinepräsenzen auf folgenden sozialen Netzwerken:</strong
-          >
-        </p>
-      </div>
-    </div>
-    <div class="ce_text privacy_item sp_facebook block">
-      <div class="text">
-        <p><strong>Facebook</strong></p>
-        <p>
-          Dienstanbieter: Facebook Inc., 1 Hacker Way, Menlo Park, CA 94025, USA<br
-          />Sitz in der EU: Facebook Ireland Ltd., 4 Grand Canal Square, Grand
-          Canal Harbour, Dublin 2, Irland <br />Internetseite:
-          <a href="https://www.facebook.com/" class="externalLink"
-            >https://www.facebook.com/</a
-          ><br />Datenschutzerklärung:
-          <a href="https://www.facebook.com/about/privacy/" class="externalLink"
-            >https://www.facebook.com/about/privacy/</a
-          ><br />Datenschutzerklärung für Facebook-Seiten:
-          <a
-            href="https://www.facebook.com/legal/terms/information_about_page_insights_data"
-            class="externalLink"
-            >https://www.facebook.com/legal/terms/information_about_page_insights_data</a
-          >
-        </p>
-      </div>
-    </div>
-    <div class="ce_text privacy_item sp_instagram block">
-      <div class="text">
-        <p><strong>Instagram</strong></p>
-        <p>
-          Dienstanbieter: Instagram Inc., 1601 Willow Road, Menlo Park CA 94025,
-          USA<br />Mutterunternehmen: Facebook Inc., 1 Hacker Way, Menlo Park,
-          CA 94025, USA<br />Sitz in der EU: Facebook Ireland Limited, 4 Grand
-          Canal Square, Dublin 2, Ireland<br />Internetseite:
-          <a href="https://www.instagram.com/" class="externalLink"
-            >https://www.instagram.com/</a
-          ><br />Datenschutzerklärung:
-          <a
-            href="https://instagram.com/about/legal/privacy"
-            class="externalLink">http://instagram.com/about/legal/privacy</a
-          >
-        </p>
-      </div>
-    </div>
-    <div class="ce_text privacy_item sp_yt block">
-      <div class="text">
-        <p><strong>YouTube</strong></p>
-        <p>
-          Dienstanbieter: YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066,
-          USA<br />Internetseite:
-          <a href="https://www.youtube.com/" class="externalLink"
-            >https://www.youtube.com/</a
-          ><br />Datenschutzerklärung:
-          <a href="https://policies.google.com/privacy" class="externalLink"
-            >https://policies.google.com/privacy</a
-          >
-        </p>
-      </div>
-    </div>
-    <div class="ce_text privacy_item sp_linkedin block">
-      <div class="text">
-        <p><strong>LinkedIn</strong></p>
-        <p>
-          Dienstanbieter: LinkedIn Corporation, 1000 W Maude, Sunnyvale, CA
-          94085, USA<br />Sitz in Deutschland: LinkedIn, Hofstatt 4th Floor,
-          Sendlinger Str. 12, 80331 München<br />Internetseite:
-          <a href="https://www.linkedin.com/?trk=nav_logo" class="externalLink"
-            >https://www.linkedin.com/?trk=nav_logo</a
-          ><br />Datenschutzerklärung:
-          <a
-            href="https://www.linkedin.com/legal/privacy-policy?trk=uno-reg-guest-home-privacy-policy"
-            class="externalLink"
-            >https://www.linkedin.com/legal/privacy-policy?trk=uno-reg-guest-home-privacy-policy</a
-          >
-        </p>
-      </div>
-    </div>
 
-    <div class="ce_text privacy_item sp_xing block">
-      <div class="text">
-        <p><strong>XING</strong></p>
-        <p>
-          Dienstanbieter: New Work SE, Dammtorstraße 30, 20354 Hamburg<br
-          />Internetseite:
-          <a href="https://www.xing.com/" class="externalLink"
-            >https://www.xing.com/</a
-          ><br />Datenschutzerklärung:
-          <a
-            href="https://privacy.xing.com/de/datenschutzerklaerung"
-            class="externalLink"
-            >https://privacy.xing.com/de/datenschutzerklaerung</a
-          >
-        </p>
-      </div>
-    </div>
-    <div class="ce_text block">
-      <div class="text">
-        <h2>Content-Dienste</h2>
-        <p>
-          Wir nutzen bestimmte Dienste, um über unsere Internetpräsenz bestimmte
-          Inhalte oder Grafiken (Videos, Bilder, Musik, Schriftarten,
-          Kartenmaterial) ausspielen zu können. Dabei verarbeiten die von uns
-          eingesetzten Dienste die Ihnen zum Zeitpunkt Ihres Besuchs auf unseren
-          Internetseiten zugeordnete IP-Adresse, da nur so der jeweilige Inhalt
-          in dem von Ihnen verwendeten Browser dargestellt werden kann. Darüber
-          hinaus können die Anbieter dieser Dienste weitere Cookies auf Ihr
-          Endgerät setzen, über die Informationen über Ihr Nutzungsverhalten,
-          Ihre Interessen, das von Ihnen verwendete Gerät und den verwendeten
-          Browser sowie Zeitpunkt und Dauer Ihrer Sitzung erhoben werden. Diese
-          Daten verwenden die Anbieter regelmäßig für Analyse-, Statistik- und
-          Marketingzwecke. Zudem können diese Informationen können auch mit
-          Informationen aus anderen Quellen verbunden werden. Dies gilt
-          insbesondere dann, wenn Sie selbst einen Account bei dem
-          Dienstanbieter unterhalten und zum Zeitpunkt der Sitzung dort
-          eingeloggt sind.
-        </p>
-        <p>
-          Wir weisen darauf hin, dass je nach Sitzland des nachstehend genannten
-          Diensteanbieters die nachfolgend näher benannten Daten auf Server
-          außerhalb des Raumes der Europäischen Union übertragen und verarbeitet
-          werden können. Es besteht in diesem Fall das Risiko, dass das von der
-          DSGVO vorgeschriebene Datenschutzniveau nicht eingehalten und die
-          Durchsetzung Ihrer Rechte nicht oder nur erschwert erfolgen kann.
-        </p>
-        <p><strong>Betroffene Daten:</strong></p>
-        <ul>
-          <li>Nutzungsdaten (bspw. Zugriffszeiten, angeklickte Webseiten)</li>
-          <li>
-            Kommunikationsdaten (bspw. Informationen über das genutzte Gerät,
-            IP-Adresse)
-          </li>
-        </ul>
-        <p>
-          <strong>Betroffene Personen: </strong> Nutzer unserer Internetpräsenz
-        </p>
-        <p>
-          <strong>Verarbeitungszweck: </strong> Ausspielen unserer Internetseiten,
-          Anbieten von Inhalten, Gewährleistung des Betriebs unserer Internetseiten
-        </p>
-        <p>
-          <strong>Rechtsgrundlage:</strong> Einwilligung über Cookie-Consent-Banner,
-          Art. 6 Abs. 1 lit. a DSGVO, berechtigte Interessen, Art. 6 Abs. 1 lit.
-          f DSGVO
-        </p>
-        <p><strong>Wir nutzen folgende Content-Dienste:</strong></p>
-        <p>
-          Auf einigen unserer Webseiten betten wir Karten der Plattform
-          „Openstreetmap.de“ des Anbieters FOSSGIS e.V. Bundesallee 23 10717
-          Berlin ein. Datenschutzerklärung:
-          https://www.fossgis.de/datenschutzerkl%c3%a4rung/
-        </p>
-      </div>
-    </div>
-    <div class="ce_text privacy_item gettyimages block">
-      <div class="text">
-        <p><strong>YouTube</strong></p>
-        <p>
-          Wir nutzen auf dieser Webseite Komponenten von YouTube, um hierüber
-          Videos auf unseren Internetseiten einzubinden, so dass diese über
-          Ihren Internetbrowser abgespielt werden können, wenn Sie unsere
-          Internetseiten besuchen. Während Ihres Besuchs unseren Internetseiten
-          werden sowohl YouTube als auch Google darüber informiert welche Seite
-          bzw. Unterseite Sie aufgerufen haben, indem Ihre IP-Adresse an die
-          externen Server von Google in den USA übermittelt wird. Diese
-          Informationsübermittlung erfolgt unabhängig davon, ob die angezeigten
-          Videos tatsächlich betrachtet oder angeklickt werden oder Sie in Ihrem
-          YouTube oder Google Account eingeloggt sind. Diese Informationen
-          werden gesammelt und Ihrem Google-Account zugeordnet, sofern Sie dort
-          eingeloggt sind, wenn Sie unsere Internetseiten aufrufen.
-        </p>
-        <p>
-          Dienstanbieter: YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066,
-          USA<br />Internetseite:
-          <a href="https://www.youtube.com/" class="externalLink"
-            >https://www.youtube.com/</a
-          ><br />Datenschutzerklärung:
-          <a href="https://policies.google.com/privacy" class="externalLink"
-            >https://policies.google.com/privacy</a
-          ><br /><strong>Opt-Out-Möglichkeit: </strong><a
-            href="https://tools.google.com/dlpage/gaoptout?hl=de"
-            class="externalLink"
-            >https://tools.google.com/dlpage/gaoptout?hl=de</a
-          >
-        </p>
-      </div>
-    </div>
-    <div class="ce_text privacy_item general_part4 block">
-      <div class="text">
-        <h2>Sicherheitsmaßnahmen</h2>
-        <p>
-          Wir treffen im Übrigen technische und organisatorische
-          Sicherheitsmaßnahmen nach dem Stand der Technik, um die Vorschriften
-          der Datenschutzgesetze einzuhalten und Ihre Daten gegen zufällige oder
-          vorsätzliche Manipulationen, teilweisen oder vollständigen Verlust,
-          Zerstörung oder gegen den unbefugten Zugriff Dritter zu schützen.
-        </p>
-        <h2>Aktualität und Änderung dieser Datenschutzerklärung</h2>
-        <p>
-          Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Juni
-          2022. Aufgrund geänderter gesetzlicher bzw. behördlicher Vorgaben kann
-          es notwendig werden, diese Datenschutzerklärung anzupassen.
-        </p>
-        <p>
-          <strong
-            >Diese Datenschutzerklärung wurde mit Hilfe des
-            Datenschutz-Generators von SOS Recht erstellt. SOS Recht ist ein
-            Angebot der Mueller.legal Rechtsanwälte Partnerschaft mit Sitz in
-            Berlin.</strong
-          >
-        </p>
-      </div>
-    </div>
+    <h2>1. Verantwortlicher</h2>
+    <p>
+      Jens Krumsieck<br />
+      Celler Str. 108<br />
+      38114 Braunschweig<br />
+      Deutschland<br />
+      Telefon: 017630629281<br />
+      E-Mail: <a href="mailto:mail@jenskrumsieck.de">mail@jenskrumsieck.de</a>
+    </p>
+    <p>Ich habe keinen Datenschutzbeauftragten bestellt, da hierzu keine gesetzliche Pflicht besteht. Bei Fragen zum Datenschutz erreichen Sie mich unter den obigen Kontaktdaten.</p>
+
+    <h2>2. Hosting und Server-Logfiles</h2>
+    <p>
+      Diese Website wird auf einem Server betrieben, den ich selbst verwalte (Hosting über IONOS SE, Elgendorfer Str. 57, 56410 Montabaur; <a href="https://www.ionos.de/datenschutzerklaerung">Datenschutzerklärung</a>). Beim Aufruf der Website verarbeitet der Server technisch notwendige Daten: IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, übertragene Datenmenge, HTTP-Statuscode, Referrer-URL sowie Browsertyp und Betriebssystem.
+    </p>
+    <p>
+      Zweck ist die Auslieferung der Website sowie die Gewährleistung von Stabilität und Sicherheit. Rechtsgrundlage ist mein berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO. Die Logdaten werden nur so lange gespeichert, wie es für diese Zwecke erforderlich ist.
+    </p>
+
+    <h2>3. Cookies und ähnliche Technologien</h2>
+    <p>
+      Diese Website setzt keine Cookies und speichert keine Informationen auf Ihrem Endgerät, die nicht technisch zwingend erforderlich sind. Eine Einwilligungsabfrage (Cookie-Banner) ist daher nicht nötig.
+    </p>
+
+    <h2>4. Reichweitenmessung mit Swetrix</h2>
+    <p>
+      Ich nutze die Analysesoftware Swetrix, die ich selbst auf meinem eigenen Server (<code>analytics.jenskrumsieck.de</code>) betreibe. Es werden keine Cookies gesetzt und keine Informationen auf Ihrem Endgerät gespeichert. Es erfolgt keine Weitergabe an Dritte.
+    </p>
+    <p>Verarbeitet werden: besuchte Seiten, Referrer-URL, Zeitpunkt des Aufrufs, Browsertyp und -version, Betriebssystem sowie grobe Gerätemerkmale. Ihre IP-Adresse wird nicht dauerhaft gespeichert, sondern nur kurzzeitig zur Erkennung wiederkehrender Besuche in gehashter Form verwendet.</p>
+    <p>Zweck ist die Auswertung der Nutzung, um die Website zu verbessern. Rechtsgrundlage ist mein berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO. Sie können der Verarbeitung jederzeit widersprechen (siehe Abschnitt 11).</p>
+
+    <h2>5. Inhalte aus dem Content-Management-System (Prismic)</h2>
+    <p>
+      Beiträge und Inhalte dieser Website werden mit dem Dienst Prismic (Prismic.io Inc., 185 Alewife Brook Parkway, Suite 210, Cambridge, MA 02138, USA) verwaltet. Beim Abruf der Seiten lädt Ihr Browser Bilder von den Servern von Prismic (<code>images.prismic.io</code>). Dabei wird Ihre IP-Adresse an Prismic übermittelt, was auch eine Übermittlung in die USA bedeuten kann.
+    </p>
+    <p>
+      Rechtsgrundlage ist mein berechtigtes Interesse an einer effizienten und schnellen Bereitstellung der Inhalte, Art. 6 Abs. 1 lit. f DSGVO. Weitere Informationen: <a href="https://prismic.io/legal/privacy">Datenschutzerklärung von Prismic</a>.
+    </p>
+
+    <h2>6. Karte</h2>
+    <p>
+      Im Bereich „Mein Wahlbereich“ zeige ich eine Karte auf Basis von OpenStreetMap-Daten. Die Kartenkacheln werden nicht direkt von Servern Dritter geladen, sondern über meinen eigenen Server (<code>api.jenskrumsieck.de</code>) ausgeliefert. Dabei verarbeitet mein Server Ihre IP-Adresse und die angefragten Kartenausschnitte im Rahmen der oben beschriebenen Logfiles. Es werden keine Cookies gesetzt.
+    </p>
+    <p>Rechtsgrundlage ist mein berechtigtes Interesse an einer ansprechenden Darstellung meines Wahlbereichs, Art. 6 Abs. 1 lit. f DSGVO.</p>
+
+    <h2>7. Instagram-Feed</h2>
+    <p>
+      Auf der Startseite zeige ich aktuelle Beiträge meines Instagram-Profils <em>@jens.ation</em>. Der Abruf der Beiträge erfolgt serverseitig über meinen Server; die Bilder werden von meinem Server ausgeliefert. Ihr Browser baut dafür keine Verbindung zu Instagram oder Meta auf, und es werden keine Daten von Ihnen an Meta übertragen. Erst wenn Sie auf einen Beitrag oder den Link zum Profil klicken, verlassen Sie meine Website und es gelten die Datenschutzbestimmungen von Instagram (siehe Abschnitt 9).
+    </p>
+
+    <h2>8. Kontaktaufnahme</h2>
+    <p>
+      Wenn Sie mich per E-Mail, Telefon, Post oder über Soziale Medien kontaktieren, verarbeite ich die von Ihnen mitgeteilten Daten (z. B. Name, Kontaktdaten, Inhalt Ihrer Nachricht), um Ihre Anfrage zu beantworten. Rechtsgrundlage ist mein berechtigtes Interesse an der Beantwortung von Anfragen, Art. 6 Abs. 1 lit. f DSGVO, soweit die Anfrage mein politisches Engagement oder ein Mandat betrifft ergänzend Art. 6 Abs. 1 lit. e DSGVO, bei vertragsbezogenen Anfragen Art. 6 Abs. 1 lit. b DSGVO.
+    </p>
+    <p>
+      Ich gebe Ihre Daten nicht ohne Ihre Zustimmung weiter, es sei denn, dies ist zur Bearbeitung Ihres Anliegens erforderlich (z. B. Weiterleitung an die Verwaltung oder eine Fraktion) und Sie sind damit einverstanden oder eine gesetzliche Pflicht besteht. Ich lösche die Daten, sobald Ihre Anfrage abschließend bearbeitet ist und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.
+    </p>
+    <p>Bitte beachten Sie, dass Nachrichten, in denen Sie politische Ansichten mitteilen, besonders sensible Daten (Art. 9 DSGVO) enthalten können. Ich gehe damit vertraulich um. Sie entscheiden selbst, welche Angaben Sie mir mitteilen.</p>
+
+    <h2>9. Soziale Netzwerke und externe Links</h2>
+    <p>
+      Ich unterhalte Profile bei Instagram, Facebook, LinkedIn, XING, YouTube, GitHub, ResearchGate und ORCID. Auf dieser Website sind diese Profile nur als einfache Links eingebunden; es werden keine Plugins geladen. Beim Anklicken verlassen Sie meine Website und verarbeiten Daten mit dem jeweiligen Anbieter nach dessen Datenschutzbestimmungen:
+    </p>
+    <ul>
+      <li>Instagram und Facebook: Meta Platforms Ireland Ltd., Merrion Road, Dublin 4, Irland – <a href="https://privacycenter.instagram.com/policy">Instagram</a>, <a href="https://www.facebook.com/privacy/policy/">Facebook</a></li>
+      <li>LinkedIn: LinkedIn Ireland Unlimited Company, Wilton Plaza, Dublin 2, Irland – <a href="https://www.linkedin.com/legal/privacy-policy">Datenschutzerklärung</a></li>
+      <li>XING: New Work SE, Am Strandkai 1, 20457 Hamburg – <a href="https://privacy.xing.com/de/datenschutzerklaerung">Datenschutzerklärung</a></li>
+      <li>YouTube: Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Irland – <a href="https://policies.google.com/privacy">Datenschutzerklärung</a></li>
+      <li>GitHub: GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA – <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung</a></li>
+      <li>ResearchGate: ResearchGate GmbH, Chausseestraße 20, 10115 Berlin – <a href="https://www.researchgate.net/privacy-policy">Datenschutzerklärung</a></li>
+      <li>ORCID: ORCID, Inc., 10825 Rockley Road, Suite 400, Bethesda, MD 20814, USA – <a href="https://info.orcid.org/privacy-policy/">Datenschutzerklärung</a></li>
+    </ul>
+    <p>
+      Für die Verarbeitung auf meinen Profilen selbst (z. B. Reichweitenstatistiken) sind teilweise der jeweilige Anbieter und ich gemeinsam verantwortlich. Auf Umfang und Verwendung der dort erhobenen Daten habe ich nur begrenzten Einfluss. Es kann zu Übermittlungen in Drittländer (insbesondere die USA) kommen.
+    </p>
+
+    <h2>10. Ihre Rechte</h2>
+    <p>Sie haben gegenüber mir folgende Rechte hinsichtlich Ihrer personenbezogenen Daten:</p>
+    <ul>
+      <li>Auskunft (Art. 15 DSGVO)</li>
+      <li>Berichtigung (Art. 16 DSGVO)</li>
+      <li>Löschung (Art. 17 DSGVO)</li>
+      <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+      <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
+      <li>Widerspruch (Art. 21 DSGVO)</li>
+      <li>Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO)</li>
+    </ul>
+    <p>
+      Außerdem haben Sie das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77 DSGVO). Für mich zuständig ist: Die Landesbeauftragte für den Datenschutz Niedersachsen, Prinzenstraße 5, 30159 Hannover, <a href="https://lfd.niedersachsen.de">lfd.niedersachsen.de</a>. Sie können sich auch an die Aufsichtsbehörde an Ihrem Wohn- oder Arbeitsort wenden.
+    </p>
+
+    <h2>11. Widerspruchsrecht</h2>
+    <p>
+      Soweit ich Daten auf Grundlage meines berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO) oder im öffentlichen Interesse (Art. 6 Abs. 1 lit. e DSGVO) verarbeite, können Sie dieser Verarbeitung aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit widersprechen. Richten Sie Ihren Widerspruch bitte an die in Abschnitt 1 genannten Kontaktdaten.
+    </p>
+
+    <h2>12. Datensicherheit</h2>
+    <p>Die Website wird ausschließlich verschlüsselt (HTTPS/TLS) ausgeliefert. Ich treffe angemessene technische und organisatorische Maßnahmen, um Ihre Daten vor Verlust, Missbrauch und unbefugtem Zugriff zu schützen.</p>
+
+    <h2>13. Aktualität dieser Datenschutzerklärung</h2>
+    <p>Stand: Oktober 2026. Ich passe diese Erklärung an, wenn sich die Website, die eingesetzten Dienste oder die Rechtslage ändern.</p>
   </article>
 </Container>

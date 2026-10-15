@@ -30,7 +30,7 @@
         });
 
         L.tileLayer("https://api.jenskrumsieck.de/openstreetmap/{s}/{z}/{x}/{y}.png", {
-            attribution: "© OpenStreetMap contributors",
+            attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> | Datenquelle: Stadt Braunschweig - Open GeoData, 2026, <a href="https://www.govdata.de/dl-de/by-2-0">dl-de/by-2-0</a> (verändert)',
         }).addTo(map);
 
         const layer = L.geoJSON(geoJson_data, {
