@@ -13,12 +13,17 @@
   };
 
   let { title, names, location, date, kind, edition, pages, doi, isbn, image }: Props = $props();
+
+    const thumbs = import.meta.glob<{ default: any }>("/src/lib/assets/publications/*.{png,jpg,avif}", { eager: true, query: "?enhanced&w=112;56" });
+  const originals = import.meta.glob<string>("/src/lib/assets/publications/*.{png,jpg,avif}", { eager: true, query: "?url", import: "default" });
+  const thumb = $derived(image ? thumbs[`/src/lib/assets/publications/${image}`]?.default : undefined);
+  const original = $derived(image ? originals[`/src/lib/assets/publications/${image}`] : undefined);
 </script>
 
 <div class="my-4 bg-white px-4 py-2 rounded-lg shadow-lg">
   <div class="flex items-start gap-4">
-    {#if image}
-      <a href={image} target="_blank" rel="noopener noreferrer" class="w-12 h-12 shrink-0" title="Bild vergrößern"><enhanced:img src={image} alt={title} class="object-contain rounded-md w-14 h-14 shrink-0 grow-0 bg-white" /></a>
+    {#if thumb}
+      <a href={original} target="_blank" rel="noopener noreferrer" class="w-12 h-12 shrink-0" title="Bild vergrößern"><enhanced:img src={thumb} alt={title} sizes="56px" class="object-contain rounded-md w-14 h-14 shrink-0 grow-0 bg-white" /></a>
     {/if}
     <div class="prose max-w-full">
       <div class="md:flex justify-between items-center">

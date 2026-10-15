@@ -40,7 +40,9 @@
   <meta name="keywords" content={page.data.keywords ?? website.keywords} />
   <meta name="author" content={website.author} />
   <link rel="canonical" href={website.siteUrl + page.url.pathname} />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content={page.data.image ?? website.image} />
+  <meta property="og:type" content={page.data.post ? "article" : "website"} />
   <meta property="og:site_name" content={website.siteTitle} />
   <meta property="og:locale" content="de_DE" />
   <meta property="og:url" content={website.siteUrl + page.url.pathname} />
