@@ -7,6 +7,8 @@
   import Projects from "$lib/components/blocks/Projects.svelte";
   // @ts-ignore
   import porphystruct from "$lib/assets/porphystruct.webp?enhanced&w=1200;800;400";
+  // @ts-ignore
+  import sciwinStudio from "$lib/assets/sciwin_studio.png?enhanced&w=1200;800;400";
   import { faDownload, faEarthEurope } from "@fortawesome/free-solid-svg-icons";
 </script>
 
@@ -29,15 +31,24 @@
         <Button href="https://porphystruct.org" external>porphystruct.org</Button>
       </div>
     </Projects>
-    <Projects title="SciWIn-Client" icon="fairagro.png">
+    <Projects title="SciWIn" icon="fairagro.png" image={sciwinStudio}>
       <p>
-        SciWIn-Client unterstützt Forschende, komplexe und mehrstufige Verfahren für die automatisierte Verarbeitung von Daten zu beschreiben. Dabei wird der Standard "Common Workflow Language" (CWL) verwendet, um die Workflows plattformunabhängig
-        und reproduzierbar zu gestalten. Der SciWIn-Client bietet eine benutzerfreundliches Commandline Interfae zur Erstellung, Verwaltung und Ausführung von CWL-Workflows, wodurch die Effizienz und Genauigkeit in der wissenschaftlichen
-        Datenverarbeitung erheblich verbessert wird.
+        SciWIn, die Scientific Workflow Infrastructure von FAIRagro, hilft Forschenden, komplexe Datenverarbeitung als reproduzierbare Workflows zu beschreiben, auszuführen und zu veröffentlichen. Als Standard dient die „Common Workflow Language“ (CWL), damit
+        Workflows plattformunabhängig laufen. SciWIn besteht aus zwei Werkzeugen, die zusammengehören:
+      </p>
+      <p class="mt-4">
+        <strong>SciWIn-Client</strong> ist die Kommandozeile (CLI). Mit ihr werden CWL-Werkzeuge und Workflows erstellt, verwaltet und ausgeführt, und die Arbeitsschritte werden direkt beim Arbeiten aufgezeichnet. Sie eignet sich für Skripte, Server und alle, die
+        gern im Terminal arbeiten.
+      </p>
+      <p class="mt-4">
+        <strong>SciWIn-Studio</strong> ist die grafische Oberfläche (GUI) dazu. Workflows werden per Drag-and-Drop zusammengesetzt, das CWL lässt sich in einem Editor bearbeiten und die Ausführung startet auf Knopfdruck. Studio baut auf dem Client auf, und jedes Projekt
+        ist ein normales SciWIn-Projekt. Deshalb lässt sich dasselbe Projekt abwechselnd in der Oberfläche und auf der Kommandozeile bearbeiten. Studio befindet sich derzeit in der Beta-Phase.
       </p>
       <div class="flex md:flex-row flex-col flex-wrap md:space-x-5 my-8">
-        <IconLink icon={faGithub} href="https://github.com/FAIRagro/sciwin">GitHub Repository</IconLink>
-        <IconLink icon={faDownload} href="https://fairagro.github.io/sciwin/getting-started/installation/">Download</IconLink>
+        <IconLink icon={faGithub} href="https://github.com/FAIRagro/sciwin">GitHub: SciWIn-Client</IconLink>
+        <IconLink icon={faGithub} href="https://github.com/FAIRagro/sciwin_studio">GitHub: SciWIn-Studio</IconLink>
+        <IconLink icon={faDownload} href="https://fairagro.github.io/sciwin/getting-started/installation/">Download Client</IconLink>
+        <IconLink icon={faDownload} href="https://github.com/FAIRagro/sciwin_studio/releases">Download Studio</IconLink>
       </div>
       <div class="flex">
         <Button href="https://fairagro.github.io/sciwin" external>Dokumentation</Button>
