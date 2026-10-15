@@ -9,11 +9,9 @@ export async function load() {
         orderings: { field: 'my.article.publish_date', direction: 'desc' }, pageSize: 8, filters: [
             filter.any("document.tags", ['Umwelt', 'Umweltschutz', 'Nachhaltigkeit', 'Bienensterben', 'Atomkraft', 'Klimaschutz', 'Atom'])
         ]
+    }).catch((e) => {
+        console.error("Failed to load posts", e)
+        return { results: [] }
     })
-    if (posts) {
-        return { posts, title: "Umwelt- & Klimaschutz", }
-    }
-    return {
-        status: 404
-    }
+    return { posts, title: "Umwelt- & Klimaschutz" }
 }

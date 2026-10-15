@@ -1,6 +1,6 @@
 <script lang="ts">
     import geoJson from "$lib/assets/districts.geojson?raw";
-    import { onMount } from "svelte";
+    import { onMount, onDestroy } from "svelte";
     import "leaflet/dist/leaflet.css";
     let geoJson_data = JSON.parse(geoJson);
     let mapEl: HTMLDivElement;
@@ -15,8 +15,16 @@
     let maxWidth = 600;
     let height = 600;
 
-    onMount(async (): Promise<any> => {
+    let destroyed = false;
+    onDestroy(() => {
+        destroyed = true;
+        map?.remove();
+        map = undefined;
+    });
+
+    onMount(async () => {
         const L = (await import("leaflet")).default;
+        if (destroyed) return;
         map = L.map(mapEl, {
             zoomSnap: 0.1,
             maxBoundsViscosity: 1.0,
@@ -51,8 +59,6 @@
 
         map.setMaxBounds(bounds);
         map.setMinZoom(map.getZoom());
-
-        return () => map.remove();
     });
 </script>
 

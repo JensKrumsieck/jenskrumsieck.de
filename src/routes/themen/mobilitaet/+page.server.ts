@@ -9,11 +9,9 @@ export async function load() {
         orderings: { field: 'my.article.publish_date', direction: 'desc' }, pageSize: 6, filters: [
             filter.any("document.tags", ['Mobilität', 'Radfahren', 'Fahrrad', 'Verkehr'])
         ]
+    }).catch((e) => {
+        console.error("Failed to load posts", e)
+        return { results: [] }
     })
-    if (posts) {
-        return { posts, title: "Mobilität & Verkehr", }
-    }
-    return {
-        status: 404
-    }
+    return { posts, title: "Mobilität & Verkehr" }
 }
