@@ -57,10 +57,12 @@
       </Projects>
       <Projects title="Braunschweig Wahlcheck" icon="logo.svg">
         <p>
-          Für die Kommunalwahl in Braunschweig am 13.09.2026 gibt es keinen Wahl-O-Mat, deshalb habe ich den Braunschweig Wahlcheck entwickelt. Die verfügbaren Wahlprogramme wurden mit einer RAG-Pipeline und künstlicher Intelligenz durchsucht, die 40 kommunalpolitische Thesen
-          beantwortet. Wer dieselben Thesen mit Ja, Nein oder Neutral beantwortet, sieht, wie gut die eigenen Positionen zu den einzelnen Parteien passen, inklusive Zitat und Seitenzahl als Beleg. Da KI sich irren kann, ersetzt der Wahlcheck nicht den Blick in die Originalquellen.
+          Für die Kommunalwahl in Braunschweig am 13.09.2026 gibt es keinen Wahl-O-Mat, deshalb habe ich den Braunschweig Wahlcheck entwickelt. Die verfügbaren Wahlprogramme wurden mit künstlicher Intelligenz durchsucht, die 40
+          kommunalpolitische Thesen beantwortet. Wer dieselben Thesen mit Ja, Nein oder Neutral beantwortet, sieht, wie gut die eigenen Positionen zu den einzelnen Parteien passen, inklusive Zitat und Seitenzahl als Beleg.
         </p>
-
+        <div class="flex flex-wrap md:space-x-5 my-8">
+          <IconLink icon={faGithub} href="https://github.com/JensKrumsieck/wahlcheck">GitHub Repository</IconLink>
+        </div>
         <div class="flex">
           <Button href="https://bswahl.de" external>bswahl.de</Button>
         </div>
