@@ -33,7 +33,7 @@
                 "durch eine Veränderung Mikroklimas zu schaffen.<br/>" +
                 "Wir können selbst entscheiden, wie heiß unsere Straßen im Sommer werden und wie sauber unsere Luft ist - packen wir's an!",
             image: demo,
-            link: undefined,
+            link: "/themen/klimaschutz",
         },
     ];
 </script>
