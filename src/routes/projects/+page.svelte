@@ -55,6 +55,16 @@
           <Button href="https://chn.jenskrumsieck.de" external>chn.jenskrumsieck.de</Button>
         </div>
       </Projects>
+      <Projects title="Braunschweig Wahlcheck" icon="logo.svg">
+        <p>
+          Für die Kommunalwahl in Braunschweig am 13.09.2026 gibt es keinen Wahl-O-Mat, deshalb habe ich den Braunschweig Wahlcheck entwickelt. Die verfügbaren Wahlprogramme wurden mit einer RAG-Pipeline und künstlicher Intelligenz durchsucht, die 40 kommunalpolitische Thesen
+          beantwortet. Wer dieselben Thesen mit Ja, Nein oder Neutral beantwortet, sieht, wie gut die eigenen Positionen zu den einzelnen Parteien passen, inklusive Zitat und Seitenzahl als Beleg. Da KI sich irren kann, ersetzt der Wahlcheck nicht den Blick in die Originalquellen.
+        </p>
+
+        <div class="flex">
+          <Button href="https://bswahl.de" external>bswahl.de</Button>
+        </div>
+      </Projects>
       <Projects title="Wahlanalyse für Braunschweig" icon="logo.svg">
         <p>
           Wahlauswertung für Braunschweig, das war das Ziel dieses Projekts. Mit dem Wahlanalyse-Portal können nicht nur alte Wahlergebnisse der Stadt Braunschweig grafisch aufbereitet eingesehen werden, es wird auch eine Prognose für die kommende
@@ -75,23 +85,6 @@
         </p>
         <div class="flex flex-wrap md:space-x-5 my-8">
           <IconLink icon={faGithub} href="https://github.com/JensKrumsieck/ChemSharp">GitHub Repository</IconLink>
-        </div>
-      </Projects>
-      <Projects title="Profilbegrünung" icon="https://profilbegruenung.jenskrumsieck.de/logo.png">
-        <p>
-          Profilbegrünung ist ein Wahlkampf-Tool, das zur <em>Landtagswahl 2022 in Niedersachsen</em>
-          am 9. Oktober insbesondere für den KV Braunschweig von
-          <strong>Bündnis 90/Die GRÜNEN</strong>
-          erstellt wurde, aber problemlos anpassbar auf weitere Wahlen ist. Mit der Profilbegrünung ist es kinderleicht möglich das eigene Profilbild mit Parteilogo, Claim und Wahlhinweis zu versetzen. Es ist möglich zwischen verschiedenen Logos und Optionen
-          zu wählen.
-        </p>
-
-        <div class="flex flex-wrap md:space-x-5 my-8">
-          <IconLink icon={faGithub} href="https://github.com/JensKrumsieck/Profilbegruenung">GitHub Repository</IconLink>
-        </div>
-
-        <div class="flex">
-          <Button href="https://profilbegruenung.jenskrumsieck.de" external>profilbegruenung.jenskrumsieck.de</Button>
         </div>
       </Projects>
     </div>

@@ -74,10 +74,10 @@
         YouTube: Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Irland. Videos werden im erweiterten Datenschutzmodus (<code>youtube-nocookie.com</code>) eingebunden. Auch dabei erhält Google Ihre IP-Adresse, sobald Sie den Inhalt laden. Es kann zu einer Übermittlung in die USA kommen. <a href="https://policies.google.com/privacy">Datenschutzerklärung</a>
       </li>
       <li>
-        komoot: komoot GmbH, Friedrich-Ebert-Straße 33, 14469 Potsdam. Eingebunden sind Tourenkarten. <a href="https://www.komoot.com/privacy">Datenschutzerklärung</a>
+        komoot: komoot GmbH, Kienberger Allee 4, 12529 Schönefeld, Deutschland. Eingebunden sind Tourenkarten. <a href="https://www.komoot.com/privacy">Datenschutzerklärung</a>
       </li>
       <li>
-        STADTRADELN: Klima-Bündnis e. V., Galvanistraße 28, 60486 Frankfurt am Main. Eingebunden sind Ergebnis-Widgets. <a href="https://www.stadtradeln.de/datenschutz">Datenschutzerklärung</a>
+        STADTRADELN: Klima-Bündnis Services (Klima-Bündnis der europäischen Städte mit indigenen Völkern der Regenwälder Services GmbH), Eschborner Landstraße 42–50, 60489 Frankfurt am Main. Eingebunden sind Ergebnis-Widgets. <a href="https://www.stadtradeln.de/datenschutz">Datenschutzerklärung</a>
       </li>
     </ul>
 
