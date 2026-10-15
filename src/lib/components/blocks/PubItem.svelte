@@ -44,7 +44,7 @@
           {title}
         </h3>
       </div>
-      {#each parts as part, i}{#if i > 0}, {/if}{#if part.type === "em"}<em>{part.value}</em>{:else if part.type === "strong"}<strong>{part.value}</strong>{:else if part.type === "doi"}DOI: <a class="font-secondary-600" href="https://doi.org/{part.value}">{part.value}</a>{:else}{part.value}{/if}{/each}.
+      {#each parts as part, i}{#if i > 0}{", "}{/if}{#if part.type === "em"}<em>{part.value}</em>{:else if part.type === "strong"}<strong>{part.value}</strong>{:else if part.type === "doi"}DOI: <a class="font-secondary-600" href="https://doi.org/{part.value}">{part.value}</a>{:else}{part.value}{/if}{/each}.
     </div>
   </div>
 </div>
