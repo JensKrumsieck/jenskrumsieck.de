@@ -24,3 +24,8 @@ export function getDesc(str: string, n: number): string {
     const sub = tagFree.substring(0, n - 1);
     return sub.substring(0, sub.lastIndexOf(" "))
 }
+/** host of the first external src (iframe, img, script...) in an html snippet, if any */
+export function externalHost(html: string): string | null {
+    const match = html.match(/\ssrc\s*=\s*["']?(?:https?:)?\/\/([^/"'\s?#]+)/i)
+    return match ? match[1].replace(/^www\./, "") : null
+}
