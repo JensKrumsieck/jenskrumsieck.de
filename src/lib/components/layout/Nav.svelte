@@ -13,13 +13,13 @@
   $: page.url.pathname, (open = false);
 </script>
 
-<nav class="bg-secondary-200">
+<nav class="bg-secondary-200" aria-label="Soziale Netzwerke">
   <Container class="flex justify-end ">
     <Social />
   </Container>
 </nav>
 
-<nav class="bg-neutral-600 z-20">
+<nav class="bg-neutral-600 z-20" aria-label="Hauptnavigation">
   <Container padding class="flex flex-wrap justify-between items-center py-5">
     <Logo />
     <button data-collapse-toggle="main-menu" type="button" class="inline-flex items-center p-2 text-sm rounded-lg lg:hidden focus:outline-none focus:ring-2" aria-controls="main-menu" aria-expanded={open} on:click={() => (open = !open)}>

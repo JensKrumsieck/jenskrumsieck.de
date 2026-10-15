@@ -21,7 +21,7 @@
         <FooterLink href="https://gruene-braunschweig.de/">B'90/DIE GRÜNEN Braunschweig</FooterLink>
       </div>
 
-      <nav class="bg-secondary-200">
+      <nav class="bg-secondary-200" aria-label="Soziale Netzwerke Fußzeile">
         <Container class="flex justify-end ">
           <Social />
         </Container>

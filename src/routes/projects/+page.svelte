@@ -5,13 +5,15 @@
   import IconLink from "$lib/components/button/IconLink.svelte";
   import { faGithub } from "@fortawesome/free-brands-svg-icons";
   import Projects from "$lib/components/blocks/Projects.svelte";
+  // @ts-ignore
+  import porphystruct from "$lib/assets/porphystruct.webp?enhanced&w=1200;800;400";
   import { faDownload, faEarthEurope } from "@fortawesome/free-solid-svg-icons";
 </script>
 
 <Container padding>
   <div class="flex flex-col z-10">
     <Title>Projekte</Title>
-    <Projects title="PorphyStruct" icon="ps_logo.svg" image="https://porphystruct.org/_astro/screenshot_hero.odwWJrsE_2f64sO.webp">
+    <Projects title="PorphyStruct" icon="ps_logo.svg" image={porphystruct}>
       <p>
         PorphyStruct ist ein innovatives digitales Werkzeug, das Wissenschaftlern die Möglichkeit gibt, die nicht-planaren Auslenkungen verschiedener Porphyrinoide zu analysieren. Durch die Verwendung der <em
           >normal-coordinate structure decomposition</em
@@ -55,7 +57,7 @@
           <Button href="https://chn.jenskrumsieck.de" external>chn.jenskrumsieck.de</Button>
         </div>
       </Projects>
-      <Projects title="Braunschweig Wahlcheck" icon="logo.svg">
+      <Projects title="Braunschweig Wahlcheck" icon="wahlcheck_logo.svg">
         <p>
           Für die Kommunalwahl in Braunschweig am 13.09.2026 gibt es keinen Wahl-O-Mat, deshalb habe ich den Braunschweig Wahlcheck entwickelt. Die verfügbaren Wahlprogramme wurden mit künstlicher Intelligenz durchsucht, die 40
           kommunalpolitische Thesen beantwortet. Wer dieselben Thesen mit Ja, Nein oder Neutral beantwortet, sieht, wie gut die eigenen Positionen zu den einzelnen Parteien passen, inklusive Zitat und Seitenzahl als Beleg.
@@ -67,7 +69,7 @@
           <Button href="https://bswahl.de" external>bswahl.de</Button>
         </div>
       </Projects>
-      <Projects title="Wahlanalyse für Braunschweig" icon="logo.svg">
+      <Projects title="Wahlanalyse für Braunschweig" icon="wahlanalyse_logo.svg">
         <p>
           Wahlauswertung für Braunschweig, das war das Ziel dieses Projekts. Mit dem Wahlanalyse-Portal können nicht nur alte Wahlergebnisse der Stadt Braunschweig grafisch aufbereitet eingesehen werden, es wird auch eine Prognose für die kommende
           Wahl auf Basis des aktuellen Bundestrends berechnet.
