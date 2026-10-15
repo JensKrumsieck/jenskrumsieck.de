@@ -13,7 +13,7 @@
 </script>
 
 <div class="flex md:flex-row flex-col-reverse my-8">
-  <div class="flex flex-col flex-1 [&>:last-child]:mt-auto">
+  <div class="flex flex-col flex-1 *:last:mt-auto">
     <div class="flex">
       <img src={icon} alt="" class="w-12 h-12 my-auto" />
       <Title tag="h2" class="ml-4">{title}</Title>

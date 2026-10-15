@@ -17,7 +17,7 @@
       <p>
         PorphyStruct ist ein innovatives digitales Werkzeug, das Wissenschaftlern die Möglichkeit gibt, die nicht-planaren Auslenkungen verschiedener Porphyrinoide zu analysieren. Durch die Verwendung der <em
           >normal-coordinate structure decomposition</em
-        > (NSD) Methode nd ihrer Erweiterung auf Corrole, Norcorrole, Porphycene und Corrphycene, ermöglicht PorphyStruct eine präzise und effiziente Analyse von Porphyrinoidstrukturen. PorphyStruct ist ein unverzichtbares Werkzeug für jeden, der in der
+        > (NSD) Methode und ihrer Erweiterung auf Corrole, Norcorrole, Porphycene und Corrphycene, ermöglicht PorphyStruct eine präzise und effiziente Analyse von Porphyrinoidstrukturen. PorphyStruct ist ein unverzichtbares Werkzeug für jeden, der in der
         Porphyrinforschung tätig ist.
       </p>
       <div class="flex md:flex-row flex-col flex-wrap md:space-x-5 my-8">
