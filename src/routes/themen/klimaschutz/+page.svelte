@@ -1,10 +1,10 @@
 <script lang="ts">
-    import mobi from "$lib/assets/mobi.jpg?enhanced";
-    import ListBlog from "$lib/components/blocks/ListBlog.svelte";
-    import Container from "$lib/components/layout/Container.svelte";
-    import Masonry from "$lib/components/layout/Masonry.svelte";
-    import Title from "$lib/components/typography/Title.svelte";
-    import SubTitle from "$lib/components/typography/SubTitle.svelte";
+    import mobi from "#lib/assets/mobi.jpg?enhanced";
+    import ListBlog from "#lib/components/blocks/ListBlog.svelte";
+    import Container from "#lib/components/layout/Container.svelte";
+    import Masonry from "#lib/components/layout/Masonry.svelte";
+    import Title from "#lib/components/typography/Title.svelte";
+    import SubTitle from "#lib/components/typography/SubTitle.svelte";
 
     export let data;
     let { posts = { results: [] } } = data;

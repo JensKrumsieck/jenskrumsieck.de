@@ -1,5 +1,5 @@
 import { json } from '@sveltejs/kit';
-import createClient from "$lib/content/prismic";
+import createClient from "#lib/content/prismic.js";
 
 
 /** @type {import('@sveltejs/kit').RequestHandler} */

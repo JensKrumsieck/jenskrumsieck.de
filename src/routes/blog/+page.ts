@@ -1,4 +1,4 @@
-import createClient from "$lib/content/prismic";
+import createClient from "#lib/content/prismic.js";
 export const ssr = true;
 
 /** @type {import('./$types').PageLoad} */

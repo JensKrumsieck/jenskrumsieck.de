@@ -1,5 +1,5 @@
-import createClient from "$lib/content/prismic";
-import { getDesc } from "$lib/util/text-helpers";
+import createClient from "#lib/content/prismic.js";
+import { getDesc } from "#lib/util/text-helpers.js";
 import * as prismic from '@prismicio/client'
 import { error } from '@sveltejs/kit'
 

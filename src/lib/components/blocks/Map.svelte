@@ -1,5 +1,5 @@
 <script lang="ts">
-    import geoJson from "$lib/assets/districts.geojson?raw";
+    import geoJson from "#lib/assets/districts.geojson?raw";
     import { onMount, onDestroy } from "svelte";
     import "leaflet/dist/leaflet.css";
     let geoJson_data = JSON.parse(geoJson);

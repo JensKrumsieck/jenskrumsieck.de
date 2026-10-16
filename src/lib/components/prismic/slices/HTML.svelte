@@ -1,7 +1,7 @@
 <script lang="ts">
   import * as prismic from "@prismicio/client";
   import ConsentEmbed from "../ConsentEmbed.svelte";
-  import { externalHost } from "$lib/util/text-helpers";
+  import { externalHost } from "#lib/util/text-helpers.js";
 
   export let slice;
   const html = prismic.asText(slice.primary.content) ?? "";

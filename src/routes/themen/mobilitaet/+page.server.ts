@@ -1,4 +1,4 @@
-import createClient from "$lib/content/prismic";
+import createClient from "#lib/content/prismic.js";
 import { filter } from "@prismicio/client";
 export const ssr = true;
 

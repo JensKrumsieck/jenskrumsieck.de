@@ -1,6 +1,6 @@
 <script lang="ts">
   import * as prismic from "@prismicio/client";
-  import Image from "$lib/components/layout/Image.svelte";
+  import Image from "#lib/components/layout/Image.svelte";
   export let slice;
   let width = 550;
   const img = slice.primary.content;

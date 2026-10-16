@@ -1,5 +1,5 @@
-import createClient from "$lib/content/prismic";
-import website from "$lib/util/website";
+import createClient from "#lib/content/prismic.js";
+import website from "#lib/util/website.js";
 import dayjs from "dayjs";
 
 

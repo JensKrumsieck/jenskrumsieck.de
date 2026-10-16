@@ -1,5 +1,5 @@
-import createClient from "$lib/content/prismic";
-import { INSTAGRAM_FEED_URL } from "$env/static/private";
+import createClient from "#lib/content/prismic.js";
+import { INSTAGRAM_FEED_URL } from '$app/env/private';
 export const ssr = true;
 
 type IgPost = {

@@ -1,8 +1,8 @@
 <script>
-  import ListBlog from "$lib/components/blocks/ListBlog.svelte";
-  import Container from "$lib/components/layout/Container.svelte";
-  import Title from "$lib/components/typography/Title.svelte";
-  import Button from "$lib/components/button/Button.svelte";
+  import ListBlog from "#lib/components/blocks/ListBlog.svelte";
+  import Container from "#lib/components/layout/Container.svelte";
+  import Title from "#lib/components/typography/Title.svelte";
+  import Button from "#lib/components/button/Button.svelte";
   export let data;
   $: ({ posts } = data);
 </script>

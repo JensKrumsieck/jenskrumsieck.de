@@ -1,19 +1,19 @@
 <script>
-  import Gallery from "$lib/components/prismic/slices/Gallery.svelte";
-  import RichText from "$lib/components/prismic/slices/RichText.svelte";
-  import PrismicSliceImage from "$lib/components/prismic/slices/PrismicImage.svelte";
-  import PrismicImage from "$lib/components/prismic/PrismicImage.svelte";
-  import Link from "$lib/components/prismic/slices/Link.svelte";
-  import HTML from "$lib/components/prismic/slices/HTML.svelte";
-  import Title from "$lib/components/typography/Title.svelte";
-  import Code from "$lib/components/prismic/slices/Code.svelte";
-  import Container from "$lib/components/layout/Container.svelte";
-  import Date from "$lib/components/blocks/Date.svelte";
+  import Gallery from "#lib/components/prismic/slices/Gallery.svelte";
+  import RichText from "#lib/components/prismic/slices/RichText.svelte";
+  import PrismicSliceImage from "#lib/components/prismic/slices/PrismicImage.svelte";
+  import PrismicImage from "#lib/components/prismic/PrismicImage.svelte";
+  import Link from "#lib/components/prismic/slices/Link.svelte";
+  import HTML from "#lib/components/prismic/slices/HTML.svelte";
+  import Title from "#lib/components/typography/Title.svelte";
+  import Code from "#lib/components/prismic/slices/Code.svelte";
+  import Container from "#lib/components/layout/Container.svelte";
+  import Date from "#lib/components/blocks/Date.svelte";
 
   import * as prismic from "@prismicio/client";
   import { SliceZone } from "@prismicio/svelte";
-  import Embed from "$lib/components/prismic/slices/Embed.svelte";
-  import website from "$lib/util/website";
+  import Embed from "#lib/components/prismic/slices/Embed.svelte";
+  import website from "#lib/util/website.js";
   export let data;
   let { post, title, description, image } = data;
   const components = {

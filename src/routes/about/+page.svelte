@@ -1,8 +1,8 @@
 <script lang="ts">
-  import Container from "$lib/components/layout/Container.svelte";
-  import CvItem from "$lib/components/blocks/CVItem.svelte";
-  import Button from "$lib/components/button/Button.svelte";
-    import SubTitle from "$lib/components/typography/SubTitle.svelte";
+  import Container from "#lib/components/layout/Container.svelte";
+  import CvItem from "#lib/components/blocks/CVItem.svelte";
+  import Button from "#lib/components/button/Button.svelte";
+    import SubTitle from "#lib/components/typography/SubTitle.svelte";
 </script>
 
 <Container padding class="my-12">

@@ -1,15 +1,15 @@
 <script lang="ts">
   import type { PageData } from "./$types";
   //@ts-ignore
-  import hero from "$lib/assets/hero.jpg?enhanced&w=2160;1920;1080";
-  import Button from "$lib/components/button/Button.svelte";
-  import Container from "$lib/components/layout/Container.svelte";
-  import ListBlog from "$lib/components/blocks/ListBlog.svelte";
-  import Title from "$lib/components/typography/Title.svelte";
-  import Masonry from "$lib/components/layout/Masonry.svelte";
-  import Topics from "$lib/components/blocks/Topics.svelte";
-  import Map from "$lib/components/blocks/Map.svelte";
-  import Date from "$lib/components/blocks/Date.svelte";
+  import hero from "#lib/assets/hero.jpg?enhanced&w=2160;1920;1080";
+  import Button from "#lib/components/button/Button.svelte";
+  import Container from "#lib/components/layout/Container.svelte";
+  import ListBlog from "#lib/components/blocks/ListBlog.svelte";
+  import Title from "#lib/components/typography/Title.svelte";
+  import Masonry from "#lib/components/layout/Masonry.svelte";
+  import Topics from "#lib/components/blocks/Topics.svelte";
+  import Map from "#lib/components/blocks/Map.svelte";
+  import Date from "#lib/components/blocks/Date.svelte";
   import Fa from "svelte-fa";
   import { faHeart, faComment } from "@fortawesome/free-solid-svg-icons";
 

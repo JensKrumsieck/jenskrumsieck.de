@@ -1,14 +1,14 @@
 <script lang="ts">
-  import Container from "$lib/components/layout/Container.svelte";
-  import Title from "$lib/components/typography/Title.svelte";
-  import Button from "$lib/components/button/Button.svelte";
-  import IconLink from "$lib/components/button/IconLink.svelte";
+  import Container from "#lib/components/layout/Container.svelte";
+  import Title from "#lib/components/typography/Title.svelte";
+  import Button from "#lib/components/button/Button.svelte";
+  import IconLink from "#lib/components/button/IconLink.svelte";
   import { faGithub } from "@fortawesome/free-brands-svg-icons";
-  import Projects from "$lib/components/blocks/Projects.svelte";
+  import Projects from "#lib/components/blocks/Projects.svelte";
   // @ts-ignore
-  import porphystruct from "$lib/assets/porphystruct.webp?enhanced&w=1200;800;400";
+  import porphystruct from "#lib/assets/porphystruct.webp?enhanced&w=1200;800;400";
   // @ts-ignore
-  import sciwinStudio from "$lib/assets/sciwin_studio.png?enhanced&w=1200;800;400";
+  import sciwinStudio from "#lib/assets/sciwin_studio.png?enhanced&w=1200;800;400";
   import { faDownload, faEarthEurope } from "@fortawesome/free-solid-svg-icons";
 </script>
 

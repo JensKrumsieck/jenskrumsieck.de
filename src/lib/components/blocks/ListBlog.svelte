@@ -1,7 +1,7 @@
 <script lang="ts">
   import Date from "../blocks/Date.svelte";
   import * as prismic from "@prismicio/client";
-  import { getExcerpt } from "$lib/util/text-helpers";
+  import { getExcerpt } from "#lib/util/text-helpers.js";
 
   type Props = {
     post: any;

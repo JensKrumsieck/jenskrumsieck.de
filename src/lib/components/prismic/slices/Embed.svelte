@@ -1,6 +1,6 @@
 <script lang="ts">
   import ConsentEmbed from "../ConsentEmbed.svelte";
-  import { externalHost } from "$lib/util/text-helpers";
+  import { externalHost } from "#lib/util/text-helpers.js";
 
   export let slice;
   let html = slice.primary.data.html

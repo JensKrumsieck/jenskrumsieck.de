@@ -4,12 +4,12 @@
   import "@fontsource/pt-sans/700.css";
   import "@fontsource/pt-sans/700-italic.css";
   import "../app.css";
-  import Nav from "$lib/components/layout/Nav.svelte";
-  import Footer from "$lib/components/layout/Footer.svelte";
+  import Nav from "#lib/components/layout/Nav.svelte";
+  import Footer from "#lib/components/layout/Footer.svelte";
   import { page } from "$app/state";
-  import website from "$lib/util/website";
+  import website from "#lib/util/website.js";
   import { onMount } from "svelte";
-  import { dev } from "$app/environment";
+  import { dev } from '$app/env';
   import * as Swetrix from "swetrix";
 
   onMount(() => {
@@ -27,12 +27,16 @@
 <svelte:head>
   <title
     >{page.status >= 400
-      ? "Fehler " + page.status + " - " + website.siteTitle
-      : page.data.title
-        ? page.data.title + " - " + website.siteTitle
-        : website.siteTitle}</title
-  >
-  <meta name="robots" content={page.status >= 400 ? "noindex,follow" : (page.data.robots ?? "index,follow")} />
+    ? "Fehler " + page.status + " - " + website.siteTitle
+    : page.data.title
+      ? page.data.title + " - " + website.siteTitle
+      : website.siteTitle}</title>
+
+  <meta
+    name="robots"
+    content={page.status >= 400 ? "noindex,follow" : page.data.robots ?? "index,follow"}
+  />
+
   <meta
     name="description"
     content={page.data.description ?? website.description}
@@ -45,7 +49,12 @@
   <meta property="og:type" content={page.data.post ? "article" : "website"} />
   <meta property="og:site_name" content={website.siteTitle} />
   <meta property="og:locale" content="de_DE" />
-  <meta property="og:url" content={website.siteUrl + page.url.pathname} />
+
+  <meta
+    property="og:url"
+    content={website.siteUrl + page.url.pathname}
+  />
+
   <meta
     property="og:title"
     content={page.data.title
@@ -56,7 +65,12 @@
     property="og:description"
     content={page.data.description ?? website.description}
   />
-  <meta property="og:image" content={page.data.image ?? website.image} />
+
+  <meta
+    property="og:image"
+    content={page.data.image ?? website.image}
+  />
+
   <meta
     property="og:image:alt"
     content={page.data.title

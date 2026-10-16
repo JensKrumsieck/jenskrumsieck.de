@@ -1,10 +1,10 @@
 <script lang="ts">
     import type { Picture } from "@sveltejs/enhanced-img";
     //@ts-ignore
-    import mobi from "$lib/assets/mobi.jpg?enhanced&w=1280;640;400";
+    import mobi from "#lib/assets/mobi.jpg?enhanced&w=1280;640;400";
 
     //@ts-ignore
-    import demo from "$lib/assets/demo.jpg?enhanced&w=1280;640;400";
+    import demo from "#lib/assets/demo.jpg?enhanced&w=1280;640;400";
 
     type Topic = {
         title: string;

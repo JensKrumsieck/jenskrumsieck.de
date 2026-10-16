@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Container from "$lib/components/layout/Container.svelte";
-  import Button from "$lib/components/button/Button.svelte";
+  import Container from "#lib/components/layout/Container.svelte";
+  import Button from "#lib/components/button/Button.svelte";
   import { page } from "$app/state";
 </script>
 

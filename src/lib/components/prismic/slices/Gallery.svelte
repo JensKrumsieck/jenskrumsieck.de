@@ -1,6 +1,6 @@
 <script lang="ts">
   import Gallery from "svelte-gallery";
-  import Image from "$lib/components/layout/Image.svelte";
+  import Image from "#lib/components/layout/Image.svelte";
   export let slice;
   type GalleryImage = { thumbSrc: string; src: string; width: number; height: number };
   let images: GalleryImage[] = [];
