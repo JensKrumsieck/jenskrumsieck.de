@@ -1,13 +1,14 @@
 <script lang="ts">
-  import Container from "#lib/components/layout/Container.svelte";
+  import Page from "#lib/components/layout/Page.svelte";
+  import SectionTitle from "#lib/components/typography/SectionTitle.svelte";
   import CvItem from "#lib/components/blocks/CVItem.svelte";
   import Button from "#lib/components/button/Button.svelte";
     import SubTitle from "#lib/components/typography/SubTitle.svelte";
 </script>
 
-<Container padding class="my-12">
+<Page>
   <SubTitle tag="h1">Lebenslauf</SubTitle>
-  <h2 class="text-2xl font-gruene mt-3 text-primary-600">Berufserfahrung</h2>
+  <SectionTitle primary class="mt-3">Berufserfahrung</SectionTitle>
   <CvItem
     title="Wissenschaftlicher Mitarbeiter (FAIRagro)"
     institution="Johann Heinrich von Thünen-Institut, Team Forschungs- und Geodaten"
@@ -60,7 +61,7 @@
     </div>
   </CvItem>
 
-  <h2 class="text-2xl font-gruene mt-3 text-primary-600">Ausbildung</h2>
+  <SectionTitle primary class="mt-3">Ausbildung</SectionTitle>
   <CvItem title="Promotion in Anorganischer Chemie" institution="Technische Universität Braunschweig, Institut für Anorganische und Analytische Chemie" times="Juni 2018 - Januar 2024" image="tubs.svg">
     <div>
       <p><strong>Abschluss mit Auszeichnung (summa cum laude)</strong></p>
@@ -92,7 +93,7 @@
     </div>
   </CvItem>
 
-  <h2 class="text-2xl font-gruene mt-3 text-primary-600">Ehrenamt</h2>
+  <SectionTitle primary class="mt-3">Ehrenamt</SectionTitle>
   <CvItem title="Mitglied des Kreisvorstands" institution="BÜNDNIS 90/DIE GRÜNEN Braunschweig" times="seit März 2024" image="gruene.svg" tags={["Moderation", "Projektmanagement", "Wahlanalyse", "Wahlkampfplanung"]}>
     <ul class="list-disc">
       <li>
@@ -115,7 +116,7 @@
       </li>
     </ul>
   </CvItem>
-  <h2 class="text-2xl font-gruene mt-3 text-primary-600">Fortbildungen</h2>
+  <SectionTitle primary class="mt-3">Fortbildungen</SectionTitle>
   <div class="mt-3">
     <ul>
       <li>Kommunizieren & Kooperieren – Bundesakademie für öffentliche Verwaltung (BAköV), 2026</li>
@@ -126,7 +127,7 @@
     </ul>
   </div>
 
-  <h2 class="text-2xl font-gruene mt-3 text-primary-600">Kompetenzen</h2>
+  <SectionTitle primary class="mt-3">Kompetenzen</SectionTitle>
   <div class="mt-3">
     <h4 class=" text-xl font-black italic">IT-Fähigkeiten</h4>
     <ul>
@@ -143,7 +144,7 @@
     </p>
   </div>
 
-  <h2 class="text-2xl font-gruene mt-3 text-primary-600">Mitgliedschaften</h2>
+  <SectionTitle primary class="mt-3">Mitgliedschaften</SectionTitle>
   <ul class="mt-3">
     <li>Gesellschaft Deutscher Chemiker (GdCh; seit 2018)</li>
     <li>BÜNDNIS 90/DIE GRÜNEN (seit 2021)</li>
@@ -156,4 +157,4 @@
     <Button outlined href="/publications">Publikationsliste</Button>
     <Button outlined href="/projects">Projekte</Button>
   </div>
-</Container>
+</Page>

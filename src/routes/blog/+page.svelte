@@ -1,19 +1,13 @@
 <script>
-  import ListBlog from "#lib/components/blocks/ListBlog.svelte";
-  import Container from "#lib/components/layout/Container.svelte";
-  import Title from "#lib/components/typography/Title.svelte";
+  import PostGrid from "#lib/components/blocks/PostGrid.svelte";
+  import Page from "#lib/components/layout/Page.svelte";
   import Button from "#lib/components/button/Button.svelte";
   export let data;
   $: ({ posts } = data);
 </script>
 
-<Container padding class="mt-12">
-  <Title>Aktuelles</Title>
-  <div class="grid md:grid-cols-2 my-12 flex-wrap gap-4">
-    {#each posts.results as post}
-      <ListBlog {post} />
-    {/each}
-  </div>
+<Page title="Aktuelles" class="mt-12">
+  <PostGrid posts={posts.results} />
   {#if posts.total_pages > 1}
     <div class="flex justify-center items-center gap-4 mb-12">
       {#if posts.page > 1}
@@ -25,4 +19,4 @@
       {/if}
     </div>
   {/if}
-</Container>
+</Page>
