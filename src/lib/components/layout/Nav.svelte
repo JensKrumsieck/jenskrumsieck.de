@@ -31,6 +31,7 @@
         <NavLink href="/">Start</NavLink>
         <NavLink href="/blog">Beiträge</NavLink>
         <NavLink href="/themen">Meine Themen</NavLink>
+        <NavLink href="/rat">Im Rat</NavLink>
         <NavLink href="/about">Über Mich</NavLink>
       </ul>
     </div>

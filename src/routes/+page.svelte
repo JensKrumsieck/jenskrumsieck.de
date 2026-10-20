@@ -30,8 +30,8 @@
     <div class="flex flex-col md:max-w-[70%] justify-center text-neutral-600 z-2">
       <img src="/Sonnenblume_RGB_gelb.svg" alt="Sonnenblumen Logo von BÜNDNIS 90/DIE GRÜNEN" class="w-48 mb-12" />
       <h1 class="font-gruene text-6xl">Dr. Jens Krumsieck</h1>
-      <p class="text-3xl pt-2 font-bold">Mobilität | Gerechtigkeit | Zukunft</p>
-      <p class="text-2xl pt-4">Kandidat für den Stadtrat in Braunschweig-Südwest</p>
+      <p class="text-3xl pt-2 font-bold">Mobilität | Klimaschutz | Zukunft</p>
+      <p class="text-2xl pt-4">Ratsherr der Stadt Braunschweig</p>
       <div class="my-12 md:space-y-0 space-y-2">
         <Button href="/blog">Beiträge lesen</Button>
         <Button outlined href="/themen">Meine Themen</Button>
@@ -59,8 +59,8 @@
   <Title tag="h2">Mein Wahlbereich</Title>
   <h3 class="font-gruene text-lg">Wahlbereich 22 - Braunschweig-Südwest</h3>
   <p class="mt-2 mb-6">
-    Wahlbereich 22 umfasst die Stadtbezirke <em>221 Weststadt</em> und <em>222 Braunschweig-Südwest</em>. Damit fallen die Weststadt, Broitzem, Timmerlah, Geitelde, Stiddien und Rüningen in meinen Wahlbereich. Das heißt, wenn Sie in einem der
-    genannten Teile von Braunschweig wohnen, können Sie mir bzw. der Liste von BÜNDNIS 90/DIE GRÜNEN bei der Kommunalwahl am 13.09.2026 bis zu drei Stimmen geben.
+    Als Ratsherr vertrete ich den Wahlbereich 22. Er umfasst die Stadtbezirke <em>221 Weststadt</em> und <em>222 Braunschweig-Südwest</em>, also die Weststadt, Broitzem, Timmerlah, Geitelde, Stiddien und Rüningen. Vielen Dank für Ihr Vertrauen bei
+    der Kommunalwahl am 13.09.2026! Wenn Sie in einem dieser Stadtteile wohnen, sind Sie herzlich eingeladen, mich mit Ihren Anliegen anzusprechen.
   </p>
   <Map />
 </Container>
