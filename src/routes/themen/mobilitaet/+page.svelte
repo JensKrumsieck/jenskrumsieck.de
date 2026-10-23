@@ -1,8 +1,9 @@
 <script lang="ts">
     import mobi from "#lib/assets/mobi.jpg?enhanced";
-    import ListBlog from "#lib/components/blocks/ListBlog.svelte";
+    import PostGrid from "#lib/components/blocks/PostGrid.svelte";
+    import MoreLink from "#lib/components/button/MoreLink.svelte";
+    import Prose from "#lib/components/typography/Prose.svelte";
     import Container from "#lib/components/layout/Container.svelte";
-    import Masonry from "#lib/components/layout/Masonry.svelte";
     import Title from "#lib/components/typography/Title.svelte";
     import SubTitle from "#lib/components/typography/SubTitle.svelte";
 
@@ -12,7 +13,7 @@
 
 <Container padding>
     <Title>Mobilität & Verkehr</Title>
-    <div class="prose prose-lg max-w-none">
+    <Prose>
         <h3>Die Verkehrswende ist eine Gerechtigkeitsfrage.</h3>
         <enhanced:img src={mobi} alt="Mobilität und Verkehr" class="float-right w-64 m-4" />
         <p>
@@ -40,16 +41,12 @@
             <li>Car- und Bikesharing verknüpfen alles miteinander und machen ein Leben ohne eigenes Auto alltagstauglich.</li>
         </ul>
         <p>Mobilität entscheidet darüber, wie gerecht, wie lebenswert und wie zukunftsfähig unser Braunschweig ist. Genau dafür setze ich mich ein.</p>
-    </div>
+    </Prose>
     <SubTitle class="mt-12">Aktuelle Beiträge</SubTitle>
 </Container>
 <Container>
-    <Masonry gridGap="1rem">
-        {#each posts?.results as post}
-            <ListBlog {post} />
-        {/each}
-    </Masonry>
+    <PostGrid posts={posts?.results} layout="masonry" />
 </Container>
 <Container class="md:justify-center flex flex-col mt-12">
-    <a href="/blog" class="justify-end self-end mt-4 font-bold text-xl hover:text-secondary-500"> Alle Artikel lesen! &rArr; </a>
+    <MoreLink href="/blog">Alle Artikel lesen!</MoreLink>
 </Container>

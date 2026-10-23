@@ -1,13 +1,12 @@
 <script lang="ts">
-  import Container from "#lib/components/layout/Container.svelte";
-  import Title from "#lib/components/typography/Title.svelte";
+  import Page from "#lib/components/layout/Page.svelte";
+  import SectionTitle from "#lib/components/typography/SectionTitle.svelte";
   import PubItem from "#lib/components/blocks/PubItem.svelte";
   import Button from "#lib/components/button/Button.svelte";
 </script>
 
-<Container padding class="my-12">
-  <Title>Veröffentlichungen</Title>
-  <h2 class="py-4 text-2xl font-gruene">Bücher</h2>
+<Page title="Veröffentlichungen">
+  <SectionTitle class="py-4">Bücher</SectionTitle>
   <PubItem
     image="buch_thumb.png"
     title="PorphyStruct: Entwicklung einer Software zur quantitativen Bestimmung nicht-planarer Auslenkungen von porphyrinoiden Makrozyklen & Synthese neuer Metallkomplexe von Isoporphyrin-Liganden"
@@ -18,7 +17,7 @@
     isbn="978-3-8439-5446-4"
   />
 
-  <h2 class="py-4 text-2xl font-gruene">Beiträge in Publikationsorganen mit wissenschaftlicher Qualitätsprüfung</h2>
+  <SectionTitle class="py-4">Beiträge in Publikationsorganen mit wissenschaftlicher Qualitätsprüfung</SectionTitle>
   <PubItem title="Do Corroles Stabilize Tetravalent Antimony?" names={["S. Eulberg", "N. Schulze", "J. Krumsieck", "N. Klein", "M. Bröring"]} location="Angew. Chem. Int. Ed." edition="62" date="2023" pages="e202306598" doi="10.1002/anie.202306598" />
   <PubItem
     title="PorphyStruct – A Digital Tool for the Quantitative Assignment of Non-Planar Distortion Modes in Four-Membered Porphyrinoids"
@@ -48,7 +47,7 @@
     doi="10.1002/anie.201604297"
   />
 
-  <h2 class="py-4 text-2xl font-gruene">Tagungsbeiträge</h2>
+  <SectionTitle class="py-4">Tagungsbeiträge</SectionTitle>
   <PubItem
     image="sciwin6.png"
     title="SciWIn-Client and SciWIn-Studio: Simplifying FAIR Computational Workflows"
@@ -145,4 +144,4 @@
     <Button outlined href="/about">Über Mich</Button>
     <Button outlined href="/projects">Projekte</Button>
   </div>
-</Container>
+</Page>

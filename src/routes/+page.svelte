@@ -4,14 +4,13 @@
   import hero from "#lib/assets/hero.jpg?enhanced&w=2160;1920;1080";
   import Button from "#lib/components/button/Button.svelte";
   import Container from "#lib/components/layout/Container.svelte";
-  import ListBlog from "#lib/components/blocks/ListBlog.svelte";
+  import PostGrid from "#lib/components/blocks/PostGrid.svelte";
+  import MoreLink from "#lib/components/button/MoreLink.svelte";
+  import InstagramPost from "#lib/components/blocks/InstagramPost.svelte";
   import Title from "#lib/components/typography/Title.svelte";
   import Masonry from "#lib/components/layout/Masonry.svelte";
   import Topics from "#lib/components/blocks/Topics.svelte";
   import Map from "#lib/components/blocks/Map.svelte";
-  import Date from "#lib/components/blocks/Date.svelte";
-  import Fa from "svelte-fa";
-  import { faHeart, faComment } from "@fortawesome/free-solid-svg-icons";
 
   export let data: PageData;
   let { posts = { results: [] }, instagram = [] } = data;
@@ -30,8 +29,8 @@
     <div class="flex flex-col md:max-w-[70%] justify-center text-neutral-600 z-2">
       <img src="/Sonnenblume_RGB_gelb.svg" alt="Sonnenblumen Logo von BÜNDNIS 90/DIE GRÜNEN" class="w-48 mb-12" />
       <h1 class="font-gruene text-6xl">Dr. Jens Krumsieck</h1>
-      <p class="text-3xl pt-2 font-bold">Mobilität | Gerechtigkeit | Zukunft</p>
-      <p class="text-2xl pt-4">Kandidat für den Stadtrat in Braunschweig-Südwest</p>
+      <p class="text-3xl pt-2 font-bold">Mobilität | Klimaschutz | Zukunft</p>
+      <p class="text-2xl pt-4">Ratsherr der Stadt Braunschweig</p>
       <div class="my-12 md:space-y-0 space-y-2">
         <Button href="/blog">Beiträge lesen</Button>
         <Button outlined href="/themen">Meine Themen</Button>
@@ -42,12 +41,8 @@
 
 <Container padding class="md:justify-center flex flex-col mt-12">
   <Title tag="h2">Aktuelles</Title>
-  <div class="grid md:grid-cols-2 my-12 flex-wrap gap-4">
-    {#each posts.results as post}
-      <ListBlog {post} />
-    {/each}
-  </div>
-  <a href="/blog" class="justify-end self-end mt-4 font-bold text-xl hover:text-secondary-500"> Weitere Artikel lesen! &rArr; </a>
+  <PostGrid posts={posts.results} />
+  <MoreLink href="/blog">Weitere Artikel lesen!</MoreLink>
 </Container>
 
 <Container padding class="md:justify-center flex flex-col">
@@ -59,8 +54,8 @@
   <Title tag="h2">Mein Wahlbereich</Title>
   <h3 class="font-gruene text-lg">Wahlbereich 22 - Braunschweig-Südwest</h3>
   <p class="mt-2 mb-6">
-    Wahlbereich 22 umfasst die Stadtbezirke <em>221 Weststadt</em> und <em>222 Braunschweig-Südwest</em>. Damit fallen die Weststadt, Broitzem, Timmerlah, Geitelde, Stiddien und Rüningen in meinen Wahlbereich. Das heißt, wenn Sie in einem der
-    genannten Teile von Braunschweig wohnen, können Sie mir bzw. der Liste von BÜNDNIS 90/DIE GRÜNEN bei der Kommunalwahl am 13.09.2026 bis zu drei Stimmen geben.
+    Als Ratsherr vertrete ich den Wahlbereich 22. Er umfasst die Stadtbezirke <em>221 Weststadt</em> und <em>222 Braunschweig-Südwest</em>, also die Weststadt, Broitzem, Timmerlah, Geitelde, Stiddien und Rüningen. Vielen Dank für Ihr Vertrauen bei
+    der Kommunalwahl am 13.09.2026! Wenn Sie in einem dieser Stadtteile wohnen, sind Sie herzlich eingeladen, mich mit Ihren Anliegen anzusprechen.
   </p>
   <Map />
 </Container>
@@ -71,18 +66,9 @@
 <Container class="md:justify-center flex flex-col">
   <Masonry gridGap="1rem">
     {#each instagram as post}
-      <a href={post.permalink} target="_blank" rel="noopener noreferrer" class="group relative block break-inside-avoid rounded-lg shadow-lg overflow-hidden">
-        <img class="w-full rounded-lg group-hover:scale-105 transition-transform duration-300" src={post.image_url} alt={post.alt_text} loading="lazy" decoding="async" />
-        <div class="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/80 to-transparent pt-8 pb-3 px-3 flex items-center justify-between text-white text-sm">
-          <Date date={post.timestamp} />
-          <div class="flex items-center gap-3">
-            <span class="flex items-center gap-1"><Fa icon={faHeart} />{post.like_count}</span>
-            <span class="flex items-center gap-1"><Fa icon={faComment} />{post.comments_count}</span>
-          </div>
-        </div>
-      </a>
+      <InstagramPost {post} />
     {/each}
   </Masonry>
 
-  <a href="https://instagram.com/jens.ation" class="justify-end self-end mt-4 font-bold text-xl hover:text-secondary-500"> Zum Instagram Profil &rArr; </a>
+  <MoreLink href="https://instagram.com/jens.ation">Zum Instagram Profil</MoreLink>
 </Container>
