@@ -3,7 +3,7 @@
   import SectionTitle from "#lib/components/typography/SectionTitle.svelte";
   import CvItem from "#lib/components/blocks/CVItem.svelte";
   import Button from "#lib/components/button/Button.svelte";
-    import SubTitle from "#lib/components/typography/SubTitle.svelte";
+  import SubTitle from "#lib/components/typography/SubTitle.svelte";
 </script>
 
 <Page>
@@ -18,12 +18,12 @@
   >
     <div>
       <ul class="list-disc">
-        <li>Entwicklung einer Software zur automatisierten Erstellung von Datenpipelines und Workflows (CLI-Anwendung in Rust).</li>
-        <li>Konzeption und Implementierung reproduzierbarer Analyseprozesse (CI/CD, Docker, GitHub Actions)</li>
+        <li>Entwicklung einer Software zur automatisierten Erstellung von Datenpipelines und Workflows (Anwendungen in Rust).</li>
+        <li>Konzeption und Implementierung reproduzierbarer Datenverarbeitungs- und Analyseprozesse</li>
         <li>Analyse und Strukturierung komplexer Forschungsdaten im Kontext landwirtschaftlicher und umweltbezogener Fragestellungen</li>
         <li>Mitarbeit im NFDI-Konsortium <a href="https://fairagro.net">FAIRagro</a> zur Förderung von FAIR-Datenprinzipien in der Agrarforschung.</li>
         <li>Entwicklung datengetriebener Tools (u. a. Python, Webex API) zur Unterstützung wissenschaftlicher Arbeitsprozesse.</li>
-        <li>Administration und Nutzung von Linux-basierten Systemen für datenintensive Anwendungen</li>
+        <li>Betrieb und Nutzung Linux-basierter Entwicklungs- und Ausführungsumgebungen</li>
       </ul>
     </div>
   </CvItem>
@@ -40,7 +40,7 @@
         <li>Implementierung numerischer und geometrischer Analyseverfahren für wissenschaftliche Datensätze</li>
         <li>Durchführung und Auswertung quantenchemischer Simulationen (DFT) auf Hochleistungsrechnern (SLURM)</li>
         <li>Statistische Analyse experimenteller Daten (u. a. spektroskopische Datensätze) mit Python.</li>
-        <li>Synthese und Charakterisierung anorganischer Molekülverbindungen unter Verwendung der etablierten Methoden (z.B. ESI-MS, UV/Vis, NMR, EPR)</li>
+        <li>Synthese und Charakterisierung anorganischer Molekülverbindungen mittels ESI-MS, UV/Vis-, NMR- und EPR-Spektroskopie.</li>
         <li>Publikation wissenschaftlicher Ergebnisse sowie Präsentation auf Konferenzen</li>
         <li>Betreuung von Studierenden und Anleitung wissenschaftlicher Arbeiten</li>
       </ul>
@@ -92,18 +92,30 @@
       <strong> Abschluss (2.4) </strong>
     </div>
   </CvItem>
-
+  <SectionTitle primary class="mt-3">Kommunalpolitik und Gremien</SectionTitle>
+  <CvItem title="Ratsmitglied (Ratsherr der Stadt Braunschweig)" institution="Gruppe BÜNDNIS 90/DIE GRÜNEN - Volt - Die PARTEI" times="seit November 2026" image="gruene.svg" tags={[]}>
+    <strong>Sprecher für A, B, C und die 6</strong>
+    <ul class="list-disc">
+      <li>Ordentliches Mitglied im Auschuss 1</li>
+      <li>Ordentliches Mitglied im Auschuss 2</li>
+      <li>Ordentliches Mitglied im Auschuss 3</li>
+      <li>Stellvertretendes Mitglied im Auschuss 4</li>
+    </ul>
+  </CvItem>
+  <CvItem title="Aufsichtsratsmitglied" institution="???" times="seit November 2026" image="gruene.svg" tags={[]}></CvItem>
+  <CvItem title="Aufsichtsratsmitglied" institution="???" times="seit November 2026" image="gruene.svg" tags={[]}></CvItem>
+  <CvItem title="Mitglieder der Gesellschafterversammlung" institution="???" times="seit November 2026" image="gruene.svg" tags={[]}></CvItem>
+  <CvItem title="Beiratsmitglied" institution="???" times="seit November 2026" image="gruene.svg" tags={[]}></CvItem>
   <SectionTitle primary class="mt-3">Ehrenamt</SectionTitle>
-  <CvItem title="Mitglied des Kreisvorstands" institution="BÜNDNIS 90/DIE GRÜNEN Braunschweig" times="seit März 2024" image="gruene.svg" tags={["Moderation", "Projektmanagement", "Wahlanalyse", "Wahlkampfplanung"]}>
+  <CvItem title="Mitglied des Kreisvorstands" institution="BÜNDNIS 90/DIE GRÜNEN Braunschweig" times="März 2024 - Oktober 2026" image="gruene.svg" tags={["Moderation", "Projektmanagement", "Wahlanalyse", "Wahlkampfplanung"]}>
     <ul class="list-disc">
       <li>
         Wahlkampfmanager für die Europawahl 2024 und Bundestagswahl 2025
         <ul class="list-disc ml-6">
           <li>Material- und Kostenplanung</li>
-          <li>Planen und Durchführen von Wahlkampfaktionen (Plakatieren, Stände, Haustürwahlkampf)</li>
-          <li>Aktivierung von (Neu-)Mitgliedern</li>
-          <li>Planung des Wahlkampfverlaufs</li>
-          <li>Wahlanalyse und Bericht</li>
+          <li>Organisation von Wahlkampfaktionen</li>
+          <li>Mitgliederaktivierung</li>
+          <li>Wahlkampfanalyse und Berichterstattung</li>
         </ul>
       </li>
       <li>
@@ -118,7 +130,7 @@
   </CvItem>
   <SectionTitle primary class="mt-3">Fortbildungen</SectionTitle>
   <div class="mt-3">
-    <ul>
+    <ul class="list-disc ml-6">
       <li>Kommunizieren & Kooperieren – Bundesakademie für öffentliche Verwaltung (BAköV), 2026</li>
       <li>Machine Learning (Python) – Graduiertenakademie „GradTUBS“ – 2022</li>
       <li>Künstliche Intelligenz: Möglichkeiten und Grenzen (Einführungsworkshop) – Graduiertenakademie „GradTUBS“ – 2021</li>
@@ -131,7 +143,7 @@
   <div class="mt-3">
     <h4 class=" text-xl font-black italic">IT-Fähigkeiten</h4>
     <ul>
-      <li><strong>Programmierung</strong>: C#, Rust, Python, (etwas TypeScript/JavaScript für private Projekte).</li>
+      <li><strong>Programmierung</strong>: Rust, C#, Python, (etwas TypeScript/JavaScript für private Projekte).</li>
       <li><strong>DevOps</strong>: Git, GitHub Actions CI, Docker</li>
       <li><strong>Betriebssysteme</strong>: Windows, Linux (Ubuntu)</li>
     </ul>
