@@ -163,6 +163,7 @@
     <li>Allgemeiner Deutscher Fahrradclub (ADFC; seit 2022)</li>
     <li>ver.di (seit 2023)</li>
     <li>Verkehrsclub Deutschland (VCD; seit 2024)</li>
+    <li>Kommunalpolitische Vereinigung GRÜNE Niedersachsen (KPVGrüN, seit 2026)</li>
   </ul>
 
   <div class="my-6">
