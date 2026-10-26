@@ -26,7 +26,8 @@
   let companies: Seat[] = [
     { title: "Gesellschaft 1", role: "Aufsichtsrat", description: "Platzhalter: Kurzbeschreibung der Gesellschaft." },
     { title: "Gesellschaft 2", role: "Aufsichtsrat", description: "Platzhalter: Kurzbeschreibung der Gesellschaft." },
-    { title: "Gesellschaft 3", role: "Gesellschafterversammlung", description: "Platzhalter: Kurzbeschreibung der Gesellschaft." },
+    { title: "Gesellschaft 3", role: "Beirat", description: "Platzhalter: Kurzbeschreibung der Gesellschaft." },
+    { title: "Gesellschaft 3", role: "Beirat", description: "Platzhalter: Kurzbeschreibung der Gesellschaft." },
   ];
 </script>
 
