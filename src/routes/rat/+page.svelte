@@ -17,10 +17,10 @@
 
   // Platzhalter, die Besetzung wird am 10.11. offiziell
   let committees: Seat[] = [
-    { title: "Ausschuss 1", role: "Ordentliches Mitglied", description: "Platzhalter: Kurzbeschreibung der Zuständigkeiten des Ausschusses." },
-    { title: "Ausschuss 2", role: "Ordentliches Mitglied", description: "Platzhalter: Kurzbeschreibung der Zuständigkeiten des Ausschusses." },
-    { title: "Ausschuss 3", role: "Ordentliches Mitglied", description: "Platzhalter: Kurzbeschreibung der Zuständigkeiten des Ausschusses." },
-    { title: "Ausschuss 4", role: "Stellvertretendes Mitglied", deputy: true, description: "Platzhalter: Kurzbeschreibung der Zuständigkeiten des Ausschusses." },
+    { title: "Ausschuss für Wirtschaft, Mobilität und Tiefbau", role: "Ordentliches Mitglied", description: "Platzhalter: Kurzbeschreibung der Zuständigkeiten des Ausschusses." },
+    { title: "Ausschuss für Klima, Umwelt, Grünflächen und Sport", role: "Ordentliches Mitglied", description: "Platzhalter: Kurzbeschreibung der Zuständigkeiten des Ausschusses." },
+    { title: "Ausschuss für Feuerwehr, Katastrophenschutz und Ordnung", role: "Ordentliches Mitglied", description: "Platzhalter: Kurzbeschreibung der Zuständigkeiten des Ausschusses." },
+    { title: "Ausschuss für Auftragsvergaben, Planung und Hochbau", role: "Stellvertretendes Mitglied", deputy: true, description: "Platzhalter: Kurzbeschreibung der Zuständigkeiten des Ausschusses." },
   ];
 
   let companies: Seat[] = [

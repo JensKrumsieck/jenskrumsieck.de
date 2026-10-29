@@ -107,12 +107,12 @@
   </CvItem>
   <SectionTitle primary class="mt-3">Kommunalpolitik und Gremien</SectionTitle>
   <CvItem title="Ratsmitglied (Ratsherr der Stadt Braunschweig)" institution="Gruppe BÜNDNIS 90/DIE GRÜNEN - Volt - Die PARTEI" times="seit November 2026" image="gruene.svg" tags={[]}>
-    <strong>Sprecher für A, B, C und die 6</strong>
+    <strong>Sprecher für öffentlichen Verkehr, Nachhaltigkeit und Ordnung</strong>
     <ul class="list-disc">
-      <li>Ordentliches Mitglied im Auschuss 1</li>
-      <li>Ordentliches Mitglied im Auschuss 2</li>
-      <li>Ordentliches Mitglied im Auschuss 3</li>
-      <li>Stellvertretendes Mitglied im Auschuss 4</li>
+      <li>Ordentliches Mitglied im Auschuss für Wirtschaft, Mobilität und Tiefbau</li>
+      <li>Ordentliches Mitglied im Auschuss für Klima, Umwelt, Grünflächen und Sport</li>
+      <li>Ordentliches Mitglied im Auschuss für Feuerwehr, Katastrophenschutz und Ordnung</li>
+      <li>Stellvertretendes Mitglied im Auschuss für Auftragsvergaben, Planung und Hochbau</li>
     </ul>
   </CvItem>
   <CvItem title="Aufsichtsratsmitglied" institution="???" times="seit November 2026" image="bsvg.jpg" tags={[]}></CvItem>
