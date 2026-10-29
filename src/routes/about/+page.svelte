@@ -1,13 +1,27 @@
 <script lang="ts">
-  import Container from "#lib/components/layout/Container.svelte";
+  import Page from "#lib/components/layout/Page.svelte";
+  import SectionTitle from "#lib/components/typography/SectionTitle.svelte";
   import CvItem from "#lib/components/blocks/CVItem.svelte";
   import Button from "#lib/components/button/Button.svelte";
-    import SubTitle from "#lib/components/typography/SubTitle.svelte";
+  import SubTitle from "#lib/components/typography/SubTitle.svelte";
+  import website from "#lib/util/website.js";
+
+  // marks this page as the profile of the Person node defined in +layout.svelte
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    url: website.siteUrl + "/about",
+    mainEntity: { "@type": "Person", "@id": website.personId, name: website.author },
+  };
 </script>
 
-<Container padding class="my-12">
+<svelte:head>
+  {@html `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, "\\u003c")}</script>`}
+</svelte:head>
+
+<Page>
   <SubTitle tag="h1">Lebenslauf</SubTitle>
-  <h2 class="text-2xl font-gruene mt-3 text-primary-600">Berufserfahrung</h2>
+  <SectionTitle primary class="mt-3">Berufserfahrung</SectionTitle>
   <CvItem
     title="Wissenschaftlicher Mitarbeiter (FAIRagro)"
     institution="Johann Heinrich von Thünen-Institut, Team Forschungs- und Geodaten"
@@ -17,12 +31,12 @@
   >
     <div>
       <ul class="list-disc">
-        <li>Entwicklung einer Software zur automatisierten Erstellung von Datenpipelines und Workflows (CLI-Anwendung in Rust).</li>
-        <li>Konzeption und Implementierung reproduzierbarer Analyseprozesse (CI/CD, Docker, GitHub Actions)</li>
+        <li>Entwicklung einer Software zur automatisierten Erstellung von Datenpipelines und Workflows (Anwendungen in Rust).</li>
+        <li>Konzeption und Implementierung reproduzierbarer Datenverarbeitungs- und Analyseprozesse</li>
         <li>Analyse und Strukturierung komplexer Forschungsdaten im Kontext landwirtschaftlicher und umweltbezogener Fragestellungen</li>
         <li>Mitarbeit im NFDI-Konsortium <a href="https://fairagro.net">FAIRagro</a> zur Förderung von FAIR-Datenprinzipien in der Agrarforschung.</li>
         <li>Entwicklung datengetriebener Tools (u. a. Python, Webex API) zur Unterstützung wissenschaftlicher Arbeitsprozesse.</li>
-        <li>Administration und Nutzung von Linux-basierten Systemen für datenintensive Anwendungen</li>
+        <li>Betrieb und Nutzung Linux-basierter Entwicklungs- und Ausführungsumgebungen</li>
       </ul>
     </div>
   </CvItem>
@@ -39,7 +53,7 @@
         <li>Implementierung numerischer und geometrischer Analyseverfahren für wissenschaftliche Datensätze</li>
         <li>Durchführung und Auswertung quantenchemischer Simulationen (DFT) auf Hochleistungsrechnern (SLURM)</li>
         <li>Statistische Analyse experimenteller Daten (u. a. spektroskopische Datensätze) mit Python.</li>
-        <li>Synthese und Charakterisierung anorganischer Molekülverbindungen unter Verwendung der etablierten Methoden (z.B. ESI-MS, UV/Vis, NMR, EPR)</li>
+        <li>Synthese und Charakterisierung anorganischer Molekülverbindungen mittels ESI-MS, UV/Vis-, NMR- und EPR-Spektroskopie.</li>
         <li>Publikation wissenschaftlicher Ergebnisse sowie Präsentation auf Konferenzen</li>
         <li>Betreuung von Studierenden und Anleitung wissenschaftlicher Arbeiten</li>
       </ul>
@@ -60,7 +74,7 @@
     </div>
   </CvItem>
 
-  <h2 class="text-2xl font-gruene mt-3 text-primary-600">Ausbildung</h2>
+  <SectionTitle primary class="mt-3">Ausbildung</SectionTitle>
   <CvItem title="Promotion in Anorganischer Chemie" institution="Technische Universität Braunschweig, Institut für Anorganische und Analytische Chemie" times="Juni 2018 - Januar 2024" image="tubs.svg">
     <div>
       <p><strong>Abschluss mit Auszeichnung (summa cum laude)</strong></p>
@@ -91,18 +105,30 @@
       <strong> Abschluss (2.4) </strong>
     </div>
   </CvItem>
-
-  <h2 class="text-2xl font-gruene mt-3 text-primary-600">Ehrenamt</h2>
-  <CvItem title="Mitglied des Kreisvorstands" institution="BÜNDNIS 90/DIE GRÜNEN Braunschweig" times="seit März 2024" image="gruene.svg" tags={["Moderation", "Projektmanagement", "Wahlanalyse", "Wahlkampfplanung"]}>
+  <SectionTitle primary class="mt-3">Kommunalpolitik und Gremien</SectionTitle>
+  <CvItem title="Ratsmitglied (Ratsherr der Stadt Braunschweig)" institution="Gruppe BÜNDNIS 90/DIE GRÜNEN - Volt - Die PARTEI" times="seit November 2026" image="gruene.svg" tags={[]}>
+    <strong>Sprecher für öffentlichen Verkehr, Nachhaltigkeit und Ordnung</strong>
+    <ul class="list-disc">
+      <li>Ordentliches Mitglied im Auschuss für Wirtschaft, Mobilität und Tiefbau</li>
+      <li>Ordentliches Mitglied im Auschuss für Klima, Umwelt, Grünflächen und Sport</li>
+      <li>Ordentliches Mitglied im Auschuss für Feuerwehr, Katastrophenschutz und Ordnung</li>
+      <li>Stellvertretendes Mitglied im Auschuss für Auftragsvergaben, Planung und Hochbau</li>
+    </ul>
+  </CvItem>
+  <CvItem title="Aufsichtsratsmitglied" institution="???" times="seit November 2026" image="bsvg.jpg" tags={[]}></CvItem>
+  <CvItem title="Aufsichtsratsmitglied" institution="???" times="seit November 2026" image="kvm.webp" tags={[]}></CvItem>
+  <CvItem title="Beiratsmitglied" institution="???" times="seit November 2026" image="bellis.png" tags={[]}></CvItem>
+  <CvItem title="Beiratsmitglied" institution="???" times="seit November 2026" image="sebs.svg" tags={[]}></CvItem>
+  <SectionTitle primary class="mt-3">Ehrenamt</SectionTitle>
+  <CvItem title="Mitglied des Kreisvorstands" institution="BÜNDNIS 90/DIE GRÜNEN Braunschweig" times="März 2024 - Oktober 2026" image="gruene.svg" tags={["Moderation", "Projektmanagement", "Wahlanalyse", "Wahlkampfplanung"]}>
     <ul class="list-disc">
       <li>
         Wahlkampfmanager für die Europawahl 2024 und Bundestagswahl 2025
         <ul class="list-disc ml-6">
           <li>Material- und Kostenplanung</li>
-          <li>Planen und Durchführen von Wahlkampfaktionen (Plakatieren, Stände, Haustürwahlkampf)</li>
-          <li>Aktivierung von (Neu-)Mitgliedern</li>
-          <li>Planung des Wahlkampfverlaufs</li>
-          <li>Wahlanalyse und Bericht</li>
+          <li>Organisation von Wahlkampfaktionen</li>
+          <li>Mitgliederaktivierung</li>
+          <li>Wahlkampfanalyse und Berichterstattung</li>
         </ul>
       </li>
       <li>
@@ -115,9 +141,9 @@
       </li>
     </ul>
   </CvItem>
-  <h2 class="text-2xl font-gruene mt-3 text-primary-600">Fortbildungen</h2>
+  <SectionTitle primary class="mt-3">Fortbildungen</SectionTitle>
   <div class="mt-3">
-    <ul>
+    <ul class="list-disc ml-6">
       <li>Kommunizieren & Kooperieren – Bundesakademie für öffentliche Verwaltung (BAköV), 2026</li>
       <li>Machine Learning (Python) – Graduiertenakademie „GradTUBS“ – 2022</li>
       <li>Künstliche Intelligenz: Möglichkeiten und Grenzen (Einführungsworkshop) – Graduiertenakademie „GradTUBS“ – 2021</li>
@@ -126,34 +152,35 @@
     </ul>
   </div>
 
-  <h2 class="text-2xl font-gruene mt-3 text-primary-600">Kompetenzen</h2>
+  <SectionTitle primary class="mt-3">Kompetenzen</SectionTitle>
   <div class="mt-3">
-    <h4 class=" text-xl font-black italic">IT-Fähigkeiten</h4>
+    <h3 class=" text-xl font-black italic">IT-Fähigkeiten</h3>
     <ul>
-      <li><strong>Programmierung</strong>: C#, Rust, Python, (etwas TypeScript/JavaScript für private Projekte).</li>
+      <li><strong>Programmierung</strong>: Rust, C#, Python, (etwas TypeScript/JavaScript für private Projekte).</li>
       <li><strong>DevOps</strong>: Git, GitHub Actions CI, Docker</li>
       <li><strong>Betriebssysteme</strong>: Windows, Linux (Ubuntu)</li>
     </ul>
   </div>
   <div class="my-3">
-    <h4 class="text-xl font-black italic">Sprachen</h4>
+    <h3 class="text-xl font-black italic">Sprachen</h3>
     <p>
       <strong>Deutsch</strong> (Muttersprache), <strong>Englisch</strong>
       (C1)
     </p>
   </div>
 
-  <h2 class="text-2xl font-gruene mt-3 text-primary-600">Mitgliedschaften</h2>
+  <SectionTitle primary class="mt-3">Mitgliedschaften</SectionTitle>
   <ul class="mt-3">
     <li>Gesellschaft Deutscher Chemiker (GdCh; seit 2018)</li>
     <li>BÜNDNIS 90/DIE GRÜNEN (seit 2021)</li>
     <li>Allgemeiner Deutscher Fahrradclub (ADFC; seit 2022)</li>
     <li>ver.di (seit 2023)</li>
     <li>Verkehrsclub Deutschland (VCD; seit 2024)</li>
+    <li>Kommunalpolitische Vereinigung GRÜNE Niedersachsen (KPVGrüN, seit 2026)</li>
   </ul>
 
   <div class="my-6">
     <Button outlined href="/publications">Publikationsliste</Button>
     <Button outlined href="/projects">Projekte</Button>
   </div>
-</Container>
+</Page>

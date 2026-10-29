@@ -20,10 +20,11 @@ export async function load({ fetch, params }) {
     title: prismic.asText(post.data.title),
     description: getDesc(
       prismic.asText(post.data.body?.find((s: any) => s.primary?.content)?.primary.content) ?? "",
-      250
+      155
     ),
     keywords: post.tags.join(", "),
-    image: prismic.asImageSrc(post.data.hero_image),
+    // og:image size recommended by Facebook/LinkedIn, the layout announces 1200x630
+    image: prismic.asImageSrc(post.data.hero_image, { w: 1200, h: 630, fit: "crop" }),
 
   };
 }

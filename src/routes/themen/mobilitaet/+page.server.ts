@@ -13,5 +13,9 @@ export async function load() {
         console.error("Failed to load posts", e)
         return { results: [] }
     })
-    return { posts, title: "Mobilität & Verkehr" }
+    return {
+        posts,
+        title: "Mobilität & Verkehr",
+        description: "Verkehrswende als Gerechtigkeitsfrage: Jens Krumsieck setzt sich im Rat für besseren ÖPNV, sichere Radwege und Car- & Bikesharing in Braunschweig ein.",
+    }
 }

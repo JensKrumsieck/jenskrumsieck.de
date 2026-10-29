@@ -12,7 +12,7 @@
     src={prismic.asImageSrc(slice.primary.content)}
     thumbSrc={prismic.asImageSrc(slice.primary.content) + "&w=" + width}
     {width}
-    alt={slice.primary.content.alt ? slice.primary.content.alt : "Ein Bild"}
+    alt={slice.primary.content.alt ?? ""}
     {height}
   />
   {#if slice.primary.content.copyright != undefined}

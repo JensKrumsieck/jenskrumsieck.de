@@ -2,7 +2,7 @@
   import Gallery from "svelte-gallery";
   import Image from "#lib/components/layout/Image.svelte";
   export let slice;
-  type GalleryImage = { thumbSrc: string; src: string; width: number; height: number };
+  type GalleryImage = { thumbSrc: string; src: string; width: number; height: number; alt: string };
   let images: GalleryImage[] = [];
   slice.items.forEach((item: any) => {
     let img = item.image;
@@ -13,6 +13,7 @@
       src: img.url,
       width: width,
       height: height,
+      alt: img.alt ?? "",
     });
   });
 </script>

@@ -6,5 +6,5 @@
 
 <Container padding>
     <Title>Meine Themen</Title>
-    <Topics />
+    <Topics headingTag="h2" />
 </Container>
