@@ -9,8 +9,8 @@ export async function GET({ }) {
         'Cache-Control': 'max-age=0, s-maxage=3600',
         'Content-Type': 'application/xml; charset=utf-8',
     }
-    const pages = ['blog', 'publications', 'about', 'projects', 'themen', 'themen/mobilitaet', 'themen/klimaschutz']
-    const statics = ['impressum', 'privacy']
+    // impressum and privacy are noindex, so they are left out on purpose
+    const pages = ['', 'blog', 'rat', 'publications', 'about', 'projects', 'themen', 'themen/mobilitaet', 'themen/klimaschutz']
     const client = createClient()
     const posts = await client.getAllByType('article', { orderings: { field: 'my.article.publish_date', direction: 'desc' } }).catch((error) => {
         console.error("Failed to load posts for sitemap", error)
@@ -18,30 +18,14 @@ export async function GET({ }) {
     })
     return new Response(`<?xml version="1.0" encoding="UTF-8" ?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-            <url>
-                <loc>${website.siteUrl}</loc>
-                <changefreq>daily</changefreq>
-                <priority>1.0</priority>
-            </url>
             ${pages.map(page =>
         `<url>
                 <loc>${website.siteUrl}/${page}</loc>
-                <changefreq>daily</changefreq>
-                <priority>0.7</priority>
-            </url>`
-    ).join("")}
-        ${statics.map(page =>
-        `<url>
-                <loc>${website.siteUrl}/${page}</loc>
-                <changefreq>monthly</changefreq>
-                <priority>0.4</priority>
             </url>`
     ).join("")}
             ${posts.map(post =>
         `<url>
                     <loc>${website.siteUrl}/blog/${encodeURIComponent(post.uid ?? '')}</loc>
-                    <changefreq>daily</changefreq>
-                    <priority>0.7</priority>
                     <lastmod>${dayjs(post.last_publication_date).format("YYYY-MM-DD")}</lastmod>
                 </url>`
     ).join("")}

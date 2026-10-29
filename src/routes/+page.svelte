@@ -64,11 +64,13 @@
   <Title tag="h2">Instagram</Title>
 </Container>
 <Container class="md:justify-center flex flex-col">
-  <Masonry gridGap="1rem">
-    {#each instagram as post}
-      <InstagramPost {post} />
-    {/each}
-  </Masonry>
+  {#await instagram then igPosts}
+    <Masonry gridGap="1rem">
+      {#each igPosts as post}
+        <InstagramPost {post} />
+      {/each}
+    </Masonry>
+  {/await}
 
   <MoreLink href="https://instagram.com/jens.ation">Zum Instagram Profil</MoreLink>
 </Container>

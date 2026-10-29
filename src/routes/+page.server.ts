@@ -17,16 +17,14 @@ type IgPost = {
 /** @type {import('./$types').PageServerLoad} */
 export async function load() {
     const client = createClient()
-    const [posts, instagram] = await Promise.all([
-        client.getByType('article', { fetchLinks: ['author.name'], orderings: { field: 'my.article.publish_date', direction: 'desc' }, pageSize: 4 })
-            .catch((error) => {
-                console.error("Failed to load posts", error)
-                return { results: [] }
-            }),
-        fetchInstagram()
-    ])
+    const posts = await client.getByType('article', { fetchLinks: ['author.name'], orderings: { field: 'my.article.publish_date', direction: 'desc' }, pageSize: 4 })
+        .catch((error) => {
+            console.error("Failed to load posts", error)
+            return { results: [] }
+        })
 
-    return { posts, instagram }
+    // not awaited: SvelteKit streams the feed, so a slow Instagram API doesn't delay the first byte
+    return { posts, instagram: fetchInstagram() }
 }
 
 async function fetchInstagram(): Promise<IgPost[]> {

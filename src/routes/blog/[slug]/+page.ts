@@ -23,7 +23,8 @@ export async function load({ fetch, params }) {
       250
     ),
     keywords: post.tags.join(", "),
-    image: prismic.asImageSrc(post.data.hero_image),
+    // og:image size recommended by Facebook/LinkedIn, the layout announces 1200x630
+    image: prismic.asImageSrc(post.data.hero_image, { w: 1200, h: 630, fit: "crop" }),
 
   };
 }

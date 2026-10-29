@@ -15,5 +15,9 @@ export async function load() {
       console.error("Failed to load posts", e);
       return { results: [] };
     });
-  return { posts, title: "Im Rat" };
+  return {
+    posts,
+    title: "Im Rat",
+    description: "Ausschüsse, Aufsichtsräte sowie Anträge und Anfragen von Dr. Jens Krumsieck, Ratsherr der Grünen im Rat der Stadt Braunschweig.",
+  };
 }

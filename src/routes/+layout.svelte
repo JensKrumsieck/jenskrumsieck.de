@@ -22,15 +22,20 @@
   });
 
   let { children } = $props();
+
+  const title = $derived(
+    page.status >= 400
+      ? "Fehler " + page.status + " - " + website.siteTitle
+      : page.data.title
+        ? page.data.title + " - " + website.siteTitle
+        : website.homeTitle,
+  );
+  // pages can override the canonical path, e.g. to keep ?page= on paginated lists
+  const canonical = $derived(website.siteUrl + (page.data.canonical ?? page.url.pathname));
 </script>
 
 <svelte:head>
-  <title
-    >{page.status >= 400
-    ? "Fehler " + page.status + " - " + website.siteTitle
-    : page.data.title
-      ? page.data.title + " - " + website.siteTitle
-      : website.siteTitle}</title>
+  <title>{title}</title>
 
   <meta
     name="robots"
@@ -43,24 +48,16 @@
   />
   <meta name="keywords" content={page.data.keywords ?? website.keywords} />
   <meta name="author" content={website.author} />
-  <link rel="canonical" href={website.siteUrl + page.url.pathname} />
+  <link rel="canonical" href={canonical} />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content={page.data.image ?? website.image} />
   <meta property="og:type" content={page.data.post ? "article" : "website"} />
   <meta property="og:site_name" content={website.siteTitle} />
   <meta property="og:locale" content="de_DE" />
 
-  <meta
-    property="og:url"
-    content={website.siteUrl + page.url.pathname}
-  />
+  <meta property="og:url" content={canonical} />
 
-  <meta
-    property="og:title"
-    content={page.data.title
-      ? page.data.title + " - " + website.siteTitle
-      : website.siteTitle}
-  />
+  <meta property="og:title" content={title} />
   <meta
     property="og:description"
     content={page.data.description ?? website.description}
@@ -70,27 +67,44 @@
     property="og:image"
     content={page.data.image ?? website.image}
   />
+  <!-- og_image.jpg and post images (cropped in blog/[slug]/+page.ts) are both 1200x630 -->
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-  <meta
-    property="og:image:alt"
-    content={page.data.title
-      ? page.data.title + " - " + website.siteTitle
-      : website.siteTitle}
-  />
+  <meta property="og:image:alt" content={title} />
   {@html `<script type="application/ld+json">${JSON.stringify({
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Person",
         name: website.author,
+        honorificPrefix: "Dr.",
         url: website.siteUrl,
         image: website.image,
-        jobTitle: "Wissenschaftler und Kandidat für den Stadtrat Braunschweig",
+        jobTitle: "Ratsherr der Stadt Braunschweig",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Braunschweig",
+          addressRegion: "Niedersachsen",
+          addressCountry: "DE",
+        },
+        memberOf: {
+          "@type": "Organization",
+          name: "BÜNDNIS 90/DIE GRÜNEN",
+          url: "https://gruene-braunschweig.de/",
+        },
+        alumniOf: {
+          "@type": "CollegeOrUniversity",
+          name: "Technische Universität Braunschweig",
+          url: "https://www.tu-braunschweig.de/",
+        },
         sameAs: [
           "https://instagram.com/jens.ation",
           "https://www.linkedin.com/in/jenskrumsieck",
           "https://github.com/JensKrumsieck",
           "https://www.facebook.com/jens.krumsieck/",
+          "https://www.researchgate.net/profile/Jens-Krumsieck",
+          "https://orcid.org/0000-0001-6242-5846",
         ],
       },
       {

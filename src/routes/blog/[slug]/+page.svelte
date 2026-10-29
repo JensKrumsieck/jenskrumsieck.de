@@ -26,6 +26,8 @@
     code: Code,
   };
   const hero_image = prismic.asImageSrc(post.data.hero_image);
+  // use the date shown on the page, Google expects structured data to match it
+  const published = post.data.publish_date ?? post.first_publication_date;
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -34,7 +36,7 @@
         headline: title,
         description: description,
         image: image ?? website.image,
-        datePublished: post.first_publication_date,
+        datePublished: published,
         dateModified: post.last_publication_date,
         url: website.siteUrl + "/blog/" + post.uid,
         author: {
@@ -59,6 +61,12 @@
 </script>
 
 <svelte:head>
+  <meta property="article:published_time" content={published} />
+  <meta property="article:modified_time" content={post.last_publication_date} />
+  <meta property="article:author" content={post.data.author?.data?.name ?? website.author} />
+  {#each post.tags as tag}
+    <meta property="article:tag" content={tag} />
+  {/each}
   {@html `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, "\\u003c")}</script>`}
 </svelte:head>
 
@@ -75,7 +83,7 @@
   <section>
     <Container class="p-6 bg-white relative shadow-lg">
       <div class="w-full md:w-96 md:float-right md:ml-8 mb-8 relative">
-        <PrismicImage image={post.data.hero_image} class="w-full" />
+        <PrismicImage image={post.data.hero_image} alt={title ?? ""} class="w-full" />
       </div>
       <SliceZone slices={post.data.body} {components} />
       <div class="flex flex-wrap gap-2 mt-4">

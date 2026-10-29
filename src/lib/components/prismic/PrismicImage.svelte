@@ -2,15 +2,20 @@
   import * as prismic from "@prismicio/client";
   import Image from "#lib/components/layout/Image.svelte";
   export let image;
+  // used when the image has no alt text in Prismic
+  export let alt = "";
   let clazz = ""
   export {clazz as class}
   let width = 1000;
+  let height = image.dimensions ? Math.round(image.dimensions.height / (image.dimensions.width / width)) : 0;
 </script>
 
 <Image
   src={prismic.asImageSrc(image)}
   thumbSrc={prismic.asImageSrc(image) + "&w=" + width}
-  alt={image.alt ? image.alt : "Ein Bild"}
+  {width}
+  {height}
+  alt={image.alt ? image.alt : alt}
   class={clazz}
 />
 {#if image.copyright != undefined}
