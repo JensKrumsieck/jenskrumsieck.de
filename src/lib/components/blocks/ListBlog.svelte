@@ -5,13 +5,15 @@
 
   type Props = {
     post: any;
+    loading?: "lazy" | "eager";
+    fetchpriority?: "high";
   };
 
-  let { post }: Props = $props();
+  let { post, loading = "lazy", fetchpriority }: Props = $props();
 </script>
 
 <a href={"/blog/" + post.uid} class="flex flex-col w-full hover:text-secondary-600 gap-4 bg-white rounded-lg shadow-md hover:bg-neutral-500">
-  <img loading="lazy" src={prismic.asImageSrc(post.data.hero_image) + "&w=800"} alt={prismic.asText(post.data.title)} class="h-72 shrink-0 rounded-t-lg object-cover object-top" />
+  <img {loading} {fetchpriority} src={prismic.asImageSrc(post.data.hero_image) + "&w=800"} alt={prismic.asText(post.data.title)} class="h-72 shrink-0 rounded-t-lg object-cover object-top" />
   <div class="px-2 pb-2 flex flex-col gap-2">
     <h3 class="text-2xl font-gruene">{prismic.asText(post.data.title)}</h3>
     <p>

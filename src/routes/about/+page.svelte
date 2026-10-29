@@ -4,7 +4,20 @@
   import CvItem from "#lib/components/blocks/CVItem.svelte";
   import Button from "#lib/components/button/Button.svelte";
   import SubTitle from "#lib/components/typography/SubTitle.svelte";
+  import website from "#lib/util/website.js";
+
+  // marks this page as the profile of the Person node defined in +layout.svelte
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    url: website.siteUrl + "/about",
+    mainEntity: { "@type": "Person", "@id": website.personId, name: website.author },
+  };
 </script>
+
+<svelte:head>
+  {@html `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, "\\u003c")}</script>`}
+</svelte:head>
 
 <Page>
   <SubTitle tag="h1">Lebenslauf</SubTitle>

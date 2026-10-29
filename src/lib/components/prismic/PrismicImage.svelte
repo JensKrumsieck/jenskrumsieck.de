@@ -4,6 +4,7 @@
   export let image;
   // used when the image has no alt text in Prismic
   export let alt = "";
+  export let priority = false;
   let clazz = ""
   export {clazz as class}
   let width = 1000;
@@ -16,6 +17,7 @@
   {width}
   {height}
   alt={image.alt ? image.alt : alt}
+  {priority}
   class={clazz}
 />
 {#if image.copyright != undefined}

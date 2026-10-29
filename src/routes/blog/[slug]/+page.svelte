@@ -28,6 +28,9 @@
   const hero_image = prismic.asImageSrc(post.data.hero_image);
   // use the date shown on the page, Google expects structured data to match it
   const published = post.data.publish_date ?? post.first_publication_date;
+  const authorName = post.data.author?.data?.name ?? website.author;
+  // reference the full Person node from the layout instead of describing a second, unlinked person
+  const me = { "@type": "Person", "@id": website.personId, name: website.author, url: website.siteUrl };
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -39,14 +42,8 @@
         datePublished: published,
         dateModified: post.last_publication_date,
         url: website.siteUrl + "/blog/" + post.uid,
-        author: {
-          "@type": "Person",
-          name: post.data.author?.data?.name ?? website.author,
-        },
-        publisher: {
-          "@type": "Person",
-          name: website.author,
-        },
+        author: authorName === website.author ? me : { "@type": "Person", name: authorName },
+        publisher: me,
       },
       {
         "@type": "BreadcrumbList",
@@ -83,7 +80,7 @@
   <section>
     <Container class="p-6 bg-white relative shadow-lg">
       <div class="w-full md:w-96 md:float-right md:ml-8 mb-8 relative">
-        <PrismicImage image={post.data.hero_image} alt={title ?? ""} class="w-full" />
+        <PrismicImage image={post.data.hero_image} alt={title ?? ""} class="w-full" priority />
       </div>
       <SliceZone slices={post.data.body} {components} />
       <div class="flex flex-wrap gap-2 mt-4">
