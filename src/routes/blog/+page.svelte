@@ -7,7 +7,7 @@
 </script>
 
 <Page title="Aktuelles" class="mt-12">
-  <PostGrid posts={posts.results} eager={2} />
+  <PostGrid posts={posts.results} eager={2} headingTag="h2" />
   {#if posts.total_pages > 1}
     <div class="flex justify-center items-center gap-4 mb-12">
       {#if posts.page > 1}

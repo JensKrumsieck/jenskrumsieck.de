@@ -13,8 +13,9 @@
 
 <Container padding>
     <Title>Mobilität & Verkehr</Title>
-    <Prose>
-        <h3>Die Verkehrswende ist eine Gerechtigkeitsfrage.</h3>
+    <!-- h2 for the heading order, styled like the prose h3 it used to be -->
+    <Prose class="prose-h2:text-[1.33333em] prose-h2:leading-normal prose-h2:mb-[.666667em] prose-h2:font-semibold">
+        <h2>Die Verkehrswende ist eine Gerechtigkeitsfrage.</h2>
         <enhanced:img src={mobi} alt="Mobilität und Verkehr" class="float-right w-64 m-4" />
         <p>
             Ich engagiere mich im Rat der Stadt Braunschweig, weil ich überzeugt bin: Mobilität ist die Grundstruktur unserer Stadt. Sie entscheidet darüber, wer Zugang zu Chancen hat und wer nicht. Wer gesund lebt und wer unter Lärm und Abgasen

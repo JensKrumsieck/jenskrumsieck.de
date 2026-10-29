@@ -7,13 +7,14 @@
     layout?: "grid" | "masonry";
     // number of leading posts visible without scrolling: their images skip lazy loading, the first one is fetched with high priority (LCP)
     eager?: number;
+    headingTag?: string;
   };
 
-  let { posts, layout = "grid", eager = 0 }: Props = $props();
+  let { posts, layout = "grid", eager = 0, headingTag }: Props = $props();
 </script>
 
 {#snippet item(post: any, i: number)}
-  <ListBlog {post} loading={i < eager ? "eager" : "lazy"} fetchpriority={i === 0 && eager > 0 ? "high" : undefined} />
+  <ListBlog {post} {headingTag} loading={i < eager ? "eager" : "lazy"} fetchpriority={i === 0 && eager > 0 ? "high" : undefined} />
 {/snippet}
 
 {#if layout === "masonry"}

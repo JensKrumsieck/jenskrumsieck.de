@@ -15,6 +15,6 @@ export async function load({ fetch, url }) {
     posts: posts,
     title: page > 1 ? `Blog (Seite ${page})` : "Blog",
     canonical: page > 1 ? `/blog?page=${page}` : "/blog",
-    description: "Hier veröffentlicht Jens Krumsieck Aktuelles aus seinem Leben. Beiträge rund um Chemie, Softwareentwicklung oder Politik werden in unregelmäßigen Abständen veröffentlicht."
+    description: "Aktuelles von Jens Krumsieck: Beiträge zu Kommunalpolitik in Braunschweig, Mobilität, Klimaschutz, Chemie und Softwareentwicklung."
   };
 }

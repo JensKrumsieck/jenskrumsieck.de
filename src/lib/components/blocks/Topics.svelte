@@ -6,6 +6,9 @@
     //@ts-ignore
     import demo from "#lib/assets/demo.jpg?enhanced&w=1280;640;400";
 
+    // h3 below a section h2 (start page), h2 directly below the page h1 (/themen)
+    export let headingTag = "h3";
+
     type Topic = {
         title: string;
         description: string;
@@ -45,7 +48,7 @@
                 <enhanced:img src={topic.image} alt={topic.title} class="object-cover rounded-sm w-full md:w-48 h-48" sizes="(min-width:1920px) 1280px, (min-width:1080px) 640px, (min-width:768px) 400px" />
             </div>
             <div>
-                <h3 class="font-gruene text-2xl">{topic.title}</h3>
+                <svelte:element this={headingTag} class="font-gruene text-2xl">{topic.title}</svelte:element>
                 <p>{@html topic.description}</p>
                 <span class="inline-block mt-3 font-bold text-secondary-600 group-hover:text-primary-600">Mehr lesen &rArr;</span>
             </div>

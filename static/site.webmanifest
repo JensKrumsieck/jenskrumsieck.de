@@ -1,6 +1,8 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Dr. Jens Krumsieck",
+    "short_name": "Jens Krumsieck",
+    "lang": "de",
+    "start_url": "/",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",

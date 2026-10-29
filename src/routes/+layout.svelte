@@ -36,7 +36,9 @@
   <meta name="description" content={page.data.description ?? website.description} />
   <meta name="keywords" content={page.data.keywords ?? website.keywords} />
   <meta name="author" content={website.author} />
-  <link rel="canonical" href={canonical} />
+  {#if page.status < 400}
+    <link rel="canonical" href={canonical} />
+  {/if}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content={page.data.image ?? website.image} />
   <meta property="og:type" content={page.data.post ? "article" : "website"} />

@@ -154,7 +154,7 @@
 
   <SectionTitle primary class="mt-3">Kompetenzen</SectionTitle>
   <div class="mt-3">
-    <h4 class=" text-xl font-black italic">IT-Fähigkeiten</h4>
+    <h3 class=" text-xl font-black italic">IT-Fähigkeiten</h3>
     <ul>
       <li><strong>Programmierung</strong>: Rust, C#, Python, (etwas TypeScript/JavaScript für private Projekte).</li>
       <li><strong>DevOps</strong>: Git, GitHub Actions CI, Docker</li>
@@ -162,7 +162,7 @@
     </ul>
   </div>
   <div class="my-3">
-    <h4 class="text-xl font-black italic">Sprachen</h4>
+    <h3 class="text-xl font-black italic">Sprachen</h3>
     <p>
       <strong>Deutsch</strong> (Muttersprache), <strong>Englisch</strong>
       (C1)
