@@ -15,19 +15,19 @@
     description: string;
   };
 
-  // Platzhalter, die Besetzung wird am 10.11. offiziell
+  // Besetzung wird am 10.11. offiziell
   let committees: Seat[] = [
-    { title: "Ausschuss für Wirtschaft, Mobilität und Tiefbau", role: "Ordentliches Mitglied", description: "Platzhalter: Kurzbeschreibung der Zuständigkeiten des Ausschusses." },
-    { title: "Ausschuss für Klima, Umwelt, Grünflächen und Sport", role: "Ordentliches Mitglied", description: "Platzhalter: Kurzbeschreibung der Zuständigkeiten des Ausschusses." },
-    { title: "Ausschuss für Feuerwehr, Katastrophenschutz und Ordnung", role: "Ordentliches Mitglied", description: "Platzhalter: Kurzbeschreibung der Zuständigkeiten des Ausschusses." },
-    { title: "Ausschuss für Auftragsvergaben, Planung und Hochbau", role: "Stellvertretendes Mitglied", deputy: true, description: "Platzhalter: Kurzbeschreibung der Zuständigkeiten des Ausschusses." },
+    { title: "Ausschuss für Wirtschaft, Mobilität und Tiefbau", role: "Ordentliches Mitglied", description: "Wirtschaftsförderung, Verkehrsplanung und ÖPNV, Rad- und Fußverkehr sowie Straßen- und Brückenbau." },
+    { title: "Ausschuss für Klima, Umwelt, Grünflächen und Sport", role: "Ordentliches Mitglied", description: "Klimaschutz und Klimaanpassung, Natur- und Umweltschutz, Parks und Stadtgrün sowie Sportförderung und städtische Sportanlagen." },
+    { title: "Ausschuss für Feuerwehr, Katastrophenschutz und Ordnung", role: "Ordentliches Mitglied", description: "Berufs- und Freiwillige Feuerwehr, Rettungsdienst, Bevölkerungsschutz sowie öffentliche Sicherheit und Ordnung." },
+    { title: "Ausschuss für Auftragsvergaben, Planung und Hochbau", role: "Stellvertretendes Mitglied", deputy: true, description: "Stadtplanung und Bebauungspläne, städtische Hochbauprojekte wie Schulen und Kitas sowie die Vergabe städtischer Aufträge." },
   ];
 
   let companies: Seat[] = [
-    { title: "Gesellschaft 1", role: "Aufsichtsrat", description: "Platzhalter: Kurzbeschreibung der Gesellschaft." },
-    { title: "Gesellschaft 2", role: "Aufsichtsrat", description: "Platzhalter: Kurzbeschreibung der Gesellschaft." },
-    { title: "Gesellschaft 3", role: "Beirat", description: "Platzhalter: Kurzbeschreibung der Gesellschaft." },
-    { title: "Gesellschaft 3", role: "Beirat", description: "Platzhalter: Kurzbeschreibung der Gesellschaft." },
+    { title: "Braunschweiger Verkehrs GmbH (BSVG)", role: "Aufsichtsrat", description: "Das städtische Verkehrsunternehmen betreibt Stadtbahn und Busse in Braunschweig und ist Eigentümerin der Stadtbahn-Infrastruktur." },
+    { title: "Kraftverkehr Mundstock GmbH (KVM)", role: "Aufsichtsrat", description: "Städtisches Busunternehmen, das der BSVG Fahrzeuge und Fahrpersonal für den Linienverkehr bereitstellt." },
+    { title: "Bellis GmbH", role: "Beirat", description: "Betreibt im Auftrag der Stadt die öffentliche Straßenbeleuchtung, das Verkehrsmanagement sowie Ampeln und Verkehrszeichen." },
+    { title: "Stadtentwässerung Braunschweig GmbH (SE|BS)", role: "Beirat", description: "Betreibt im Auftrag der Stadt das Kanalnetz und das Klärwerk Steinhof und sorgt so für die Abwasserentsorgung in Braunschweig." },
   ];
 </script>
 

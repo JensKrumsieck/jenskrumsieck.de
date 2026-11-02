@@ -115,10 +115,10 @@
       <li>Stellvertretendes Mitglied im Auschuss für Auftragsvergaben, Planung und Hochbau</li>
     </ul>
   </CvItem>
-  <CvItem title="Aufsichtsratsmitglied" institution="???" times="seit November 2026" image="bsvg.jpg" tags={[]}></CvItem>
-  <CvItem title="Aufsichtsratsmitglied" institution="???" times="seit November 2026" image="kvm.webp" tags={[]}></CvItem>
-  <CvItem title="Beiratsmitglied" institution="???" times="seit November 2026" image="bellis.png" tags={[]}></CvItem>
-  <CvItem title="Beiratsmitglied" institution="???" times="seit November 2026" image="sebs.svg" tags={[]}></CvItem>
+  <CvItem title="Aufsichtsratsmitglied" institution="Braunschweiger Verkehrs GmbH (BSVG)" times="seit November 2026" image="bsvg.jpg" tags={[]}></CvItem>
+  <CvItem title="Aufsichtsratsmitglied" institution="Kraftverkehr Mundstock GmbH (KVM)" times="seit November 2026" image="kvm.webp" tags={[]}></CvItem>
+  <CvItem title="Beiratsmitglied" institution="Bellis GmbH" times="seit November 2026" image="bellis.png" tags={[]}></CvItem>
+  <CvItem title="Beiratsmitglied" institution="Stadtentwässerung Braunschweig GmbH (SE|BS)" times="seit November 2026" image="sebs.svg" tags={[]}></CvItem>
   <SectionTitle primary class="mt-3">Ehrenamt</SectionTitle>
   <CvItem title="Mitglied des Kreisvorstands" institution="BÜNDNIS 90/DIE GRÜNEN Braunschweig" times="März 2024 - Oktober 2026" image="gruene.svg" tags={["Moderation", "Projektmanagement", "Wahlanalyse", "Wahlkampfplanung"]}>
     <ul class="list-disc">
