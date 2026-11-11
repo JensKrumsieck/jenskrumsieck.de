@@ -110,7 +110,7 @@
     <strong>Sprecher für öffentlichen Verkehr, Nachhaltigkeit und Ordnung</strong>
     <ul class="list-disc">
       <li>Ordentliches Mitglied im Auschuss für Wirtschaft, Mobilität und Tiefbau</li>
-      <li>Ordentliches Mitglied im Auschuss für Klima, Umwelt, Grünflächen und Sport</li>
+      <li>Ordentliches Mitglied im Auschuss für Klima, Umwelt, Sport und Grünflächen</li>
       <li>Ordentliches Mitglied im Auschuss für Feuerwehr, Katastrophenschutz und Ordnung</li>
       <li>Stellvertretendes Mitglied im Auschuss für Auftragsvergaben, Planung und Hochbau</li>
     </ul>
