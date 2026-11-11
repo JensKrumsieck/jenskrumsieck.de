@@ -1,8 +1,9 @@
 <script lang="ts">
     import mobi from "#lib/assets/mobi.jpg?enhanced";
-    import ListBlog from "#lib/components/blocks/ListBlog.svelte";
+    import PostGrid from "#lib/components/blocks/PostGrid.svelte";
+    import MoreLink from "#lib/components/button/MoreLink.svelte";
+    import Prose from "#lib/components/typography/Prose.svelte";
     import Container from "#lib/components/layout/Container.svelte";
-    import Masonry from "#lib/components/layout/Masonry.svelte";
     import Title from "#lib/components/typography/Title.svelte";
     import SubTitle from "#lib/components/typography/SubTitle.svelte";
 
@@ -12,12 +13,13 @@
 
 <Container padding>
     <Title>Mobilität & Verkehr</Title>
-    <div class="prose prose-lg max-w-none">
-        <h3>Die Verkehrswende ist eine Gerechtigkeitsfrage.</h3>
+    <!-- h2 for the heading order, styled like the prose h3 it used to be -->
+    <Prose class="prose-h2:text-[1.33333em] prose-h2:leading-normal prose-h2:mb-[.666667em] prose-h2:font-semibold">
+        <h2>Die Verkehrswende ist eine Gerechtigkeitsfrage.</h2>
         <enhanced:img src={mobi} alt="Mobilität und Verkehr" class="float-right w-64 m-4" />
         <p>
-            Ich kandidiere für den Rat der Stadt Braunschweig, weil ich überzeugt bin: Mobilität ist die Grundstruktur unserer Stadt. Sie entscheidet darüber, wer Zugang zu Chancen hat und wer nicht. Wer gesund lebt und wer unter Lärm und Abgasen
-            leidet. Ob Kinder sicher zur Schule kommmen, ob ältere Menschen selbstständig bleiben können und wer sich frei bewegem lamm und wer ausgeschlossen ist.
+            Ich engagiere mich im Rat der Stadt Braunschweig, weil ich überzeugt bin: Mobilität ist die Grundstruktur unserer Stadt. Sie entscheidet darüber, wer Zugang zu Chancen hat und wer nicht. Wer gesund lebt und wer unter Lärm und Abgasen
+            leidet. Ob Kinder sicher zur Schule kommen, ob ältere Menschen selbstständig bleiben können und wer sich frei bewegen kann und wer ausgeschlossen ist.
         </p>
         <p>
             Mobilität ist Sozialpolitik, weil Teilhabe Bewegungsfreiheit voraussetzt. Sie ist Wirtschaftspolitik, weil Braunschweig als Standort von VW, Alstom, Siemens und vielen Forschungsinstituten erreichbare Orte und zuverlässige Verbindungen
@@ -40,16 +42,12 @@
             <li>Car- und Bikesharing verknüpfen alles miteinander und machen ein Leben ohne eigenes Auto alltagstauglich.</li>
         </ul>
         <p>Mobilität entscheidet darüber, wie gerecht, wie lebenswert und wie zukunftsfähig unser Braunschweig ist. Genau dafür setze ich mich ein.</p>
-    </div>
+    </Prose>
     <SubTitle class="mt-12">Aktuelle Beiträge</SubTitle>
 </Container>
 <Container>
-    <Masonry gridGap="1rem">
-        {#each posts?.results as post}
-            <ListBlog {post} />
-        {/each}
-    </Masonry>
+    <PostGrid posts={posts?.results} layout="masonry" />
 </Container>
 <Container class="md:justify-center flex flex-col mt-12">
-    <a href="/blog" class="justify-end self-end mt-4 font-bold text-xl hover:text-secondary-500"> Alle Artikel lesen! &rArr; </a>
+    <MoreLink href="/blog">Alle Artikel lesen!</MoreLink>
 </Container>

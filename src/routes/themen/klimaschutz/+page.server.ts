@@ -13,5 +13,9 @@ export async function load() {
         console.error("Failed to load posts", e)
         return { results: [] }
     })
-    return { posts, title: "Umwelt- & Klimaschutz" }
+    return {
+        posts,
+        title: "Umwelt- & Klimaschutz",
+        description: "Klimaanpassung für Braunschweig: Jens Krumsieck setzt sich für Hochwasserschutz nach dem Schwammstadt-Prinzip, Entsiegelung und mehr Grün in der Stadt ein.",
+    }
 }

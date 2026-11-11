@@ -1,12 +1,10 @@
 <script>
-  import Container from "#lib/components/layout/Container.svelte";
-  import Title from "#lib/components/typography/Title.svelte";
+  import Page from "#lib/components/layout/Page.svelte";
+  import Prose from "#lib/components/typography/Prose.svelte";
 </script>
 
-<Container padding class="my-12">
-  <Title>Datenschutzerklärung</Title>
-
-  <article class="mt-12 prose max-w-none prose-lg prose-a:text-dark-green hover:prose-a:text-dark">
+<Page title="Datenschutzerklärung">
+  <Prose class="mt-12">
     <p>
       Mit dieser Datenschutzerklärung informiere ich Sie darüber, welche personenbezogenen Daten (z. B. IP-Adresse, Name, E-Mail-Adresse) beim Besuch dieser Website und bei der Kontaktaufnahme mit mir verarbeitet werden und welche Rechte Sie haben.
     </p>
@@ -132,5 +130,5 @@
 
     <h2>14. Aktualität dieser Datenschutzerklärung</h2>
     <p>Stand: Oktober 2026. Ich passe diese Erklärung an, wenn sich die Website, die eingesetzten Dienste oder die Rechtslage ändern.</p>
-  </article>
-</Container>
+  </Prose>
+</Page>

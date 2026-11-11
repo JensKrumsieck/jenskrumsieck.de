@@ -8,7 +8,7 @@
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(/fonts/GrueneTypeNeue-Regular.woff) format('woff');
+        src: url(/fonts/GrueneTypeNeue-Regular.woff2) format('woff2'), url(/fonts/GrueneTypeNeue-Regular.woff) format('woff');
     }
 }
 

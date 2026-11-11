@@ -1,8 +1,8 @@
 <script lang="ts">
-    import geoJson from "#lib/assets/districts.geojson?raw";
+    // loaded as a separate file instead of being bundled into the page's JS
+    import geoJsonUrl from "#lib/assets/districts.geojson?url";
     import { onMount, onDestroy } from "svelte";
     import "leaflet/dist/leaflet.css";
-    let geoJson_data = JSON.parse(geoJson);
     let mapEl: HTMLDivElement;
     let map: any;
     let width = $state(600);
@@ -23,7 +23,10 @@
     });
 
     onMount(async () => {
-        const L = (await import("leaflet")).default;
+        const [L, geoJson_data] = await Promise.all([
+            import("leaflet").then((m) => m.default),
+            fetch(geoJsonUrl).then((r) => r.json()),
+        ]);
         if (destroyed) return;
         map = L.map(mapEl, {
             zoomSnap: 0.1,

@@ -15,6 +15,7 @@
         <FooterLink bold href="/">Start</FooterLink>
         <FooterLink bold href="/blog">Beiträge</FooterLink>
         <FooterLink bold href="/themen">Meine Themen</FooterLink>
+        <FooterLink bold href="/rat">Im Rat</FooterLink>
         <FooterLink bold href="/about">Über Mich</FooterLink>
         <FooterLink href="/impressum">Impressum</FooterLink>
         <FooterLink href="/privacy">Datenschutzerklärung</FooterLink>

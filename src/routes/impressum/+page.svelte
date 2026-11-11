@@ -1,11 +1,10 @@
 <script>
-  import Container from "#lib/components/layout/Container.svelte";
-  import Title from "#lib/components/typography/Title.svelte";
+  import Page from "#lib/components/layout/Page.svelte";
+  import Prose from "#lib/components/typography/Prose.svelte";
 </script>
 
-<Container padding class="my-12">
-  <article class="prose max-w-none prose-lg prose-a:text-dark-green hover:prose-a:text-dark">
-    <Title>Impressum</Title>
+<Page title="Impressum">
+  <Prose>
     <h2 class="font-bold my-4 text-xl">Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG)</h2>
 
     <p>
@@ -70,5 +69,5 @@
         Jens Krumsieck auf <a href="https://www.youtube.com/c/JensKrumsieck">YouTube</a>
       </li>
     </ul>
-  </article>
-</Container>
+  </Prose>
+</Page>
