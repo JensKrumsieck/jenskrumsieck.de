@@ -20,7 +20,7 @@
     { title: "Ausschuss für Wirtschaft, Mobilität und Tiefbau", role: "Ordentliches Mitglied", description: "Wirtschaftsförderung, Verkehrsplanung und ÖPNV, Rad- und Fußverkehr sowie Straßen- und Brückenbau." },
     { title: "Ausschuss für Klima, Umwelt, Sport und Grünflächen", role: "Ordentliches Mitglied", description: "Klimaschutz und Klimaanpassung, Natur- und Umweltschutz, Parks und Stadtgrün sowie Sportförderung und städtische Sportanlagen." },
     { title: "Ausschuss für Feuerwehr, Katastrophenschutz und Ordnung", role: "Ordentliches Mitglied", description: "Berufs- und Freiwillige Feuerwehr, Rettungsdienst, Bevölkerungsschutz sowie öffentliche Sicherheit und Ordnung." },
-    { title: "Ausschuss für Auftragsvergaben, Planung und Hochbau", role: "Stellvertretendes Mitglied", deputy: true, description: "Stadtplanung und Bebauungspläne, städtische Hochbauprojekte wie Schulen und Kitas sowie die Vergabe städtischer Aufträge." },
+    { title: "Ausschuss für Planung, Hochbau und Auftragsvergaben", role: "Stellvertretendes Mitglied", deputy: true, description: "Stadtplanung und Bebauungspläne, städtische Hochbauprojekte wie Schulen und Kitas sowie die Vergabe städtischer Aufträge." },
   ];
 
   let companies: Seat[] = [

@@ -112,7 +112,7 @@
       <li>Ordentliches Mitglied im Auschuss für Wirtschaft, Mobilität und Tiefbau</li>
       <li>Ordentliches Mitglied im Auschuss für Klima, Umwelt, Sport und Grünflächen</li>
       <li>Ordentliches Mitglied im Auschuss für Feuerwehr, Katastrophenschutz und Ordnung</li>
-      <li>Stellvertretendes Mitglied im Auschuss für Auftragsvergaben, Planung und Hochbau</li>
+      <li>Stellvertretendes Mitglied im Auschuss für Planung, Hochbau und Auftragsvergaben</li>
     </ul>
   </CvItem>
   <CvItem title="Aufsichtsratsmitglied" institution="Braunschweiger Verkehrs GmbH (BSVG)" times="seit November 2026" image="bsvg.jpg" tags={[]}></CvItem>
